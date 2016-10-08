@@ -10,13 +10,10 @@
 - title: "Publications"
   href: "/publications/"
 
-- title: "Test Events"
-  href: "/test_events/"
-
 - title: "Events"
   href: "/events/"
   subcategories:
     - subtitle: "Lindau"
       subhref: "/events/Lindau/"
-    - subtitle: "SKA SA 2015"
-      subhref: "/events/SKA_SA_2015/"
+    - subtitle: "SKA SA"
+      subhref: "/events/SKA_SA/"
