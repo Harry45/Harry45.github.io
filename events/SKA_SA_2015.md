@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "SKA SA 2015 Conference"
-date:   2016-10-06 12:00:00
-categories: Meeting
+layout: page
+title: SKA SA 2015
+permalink: /events/SKA_SA_2015/
 ---
 
 The SKA SA (Square Kilometre Array South Africa) conference was held from Monday 30 November 2015 to Friday 4 December 2015.
