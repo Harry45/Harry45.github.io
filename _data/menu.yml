@@ -10,6 +10,9 @@
 - title: "Publications"
   href: "/publications/"
 
+- title: "Test Events"
+  href: "/test_events/"
+
 - title: "Events"
   href: "/events/"
   subcategories:
