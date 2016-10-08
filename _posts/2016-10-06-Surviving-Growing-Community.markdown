@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-08-16 15:36:27
-categories: jekyll update
+title:  "Surviving A Fast Growing Community Without Dying"
+date:   2016-10-06 12:00:00
+categories: PyConZA 2016
 ---
 
 <html>
