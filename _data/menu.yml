@@ -10,7 +10,5 @@
 - title: "Events"
   href: "/Events/"
   subcategories:
-    - subtitle: "Item 1"
-      subhref: "/Events/Lindau/"
-    - subtitle: "Item 2"
-      subhref: "/Events/SKA SA 2015/"
+    - subtitle: "Lindau"
+      subhref: "/Events/Lindau.md"
