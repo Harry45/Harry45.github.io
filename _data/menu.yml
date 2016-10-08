@@ -7,10 +7,10 @@
 - title: "CV"
   href: "/cv/"
 
-- title: "Miscellany"
-  href: "/miscellany/"
+- title: "Events"
+  href: "/events/"
   subcategories:
-    - subtitle: "Item 1"
-      subhref: "/miscellany/item-1/"
-    - subtitle: "Item 2"
-      subhref: "/miscellany/item-2/"
+    - subtitle: "Lindau"
+      subhref: "/events/Lindau/"
+    - subtitle: "SKA SA 2015"
+      subhref: "/events/SKA_SA_2015/"
