@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Test Events
-permalink: /posts/
+permalink: /test_events/
 ---
 
 Tell us about your blog. Hopefully it's cool.
