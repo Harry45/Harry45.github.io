@@ -10,5 +10,7 @@
 - title: "Events"
   href: "/Events/"
   subcategories:
-    - subtitle: "Lindau"
-      subhref: "/Events/Lindau"
+    - subtitle: "Item 1"
+      subhref: "/Events/item-1/"
+    - subtitle: "Item 2"
+      subhref: "/Events/item-2/"
