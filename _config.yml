@@ -1,9 +1,7 @@
 # Site settings
 title: Harry's World
 email: arrykrish@gmail.com
-description: > 501, Lower Main Road,
-Millskock House, Obervatory,
-Cape Town, 7935
+description: > 501, Lower Main Road, Millskock House, Obervatory, Cape Town, 7935
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://Harry45.github.io" # the base hostname & protocol for your site
 twitter_username: arrykrishna
