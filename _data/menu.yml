@@ -4,16 +4,13 @@
 - title: "Blog"
   href: "/blog/"
 
-- title: "CV"
-  href: "/cv/"
+- title: "Research"
+  href: "/research/"
 
-- title: "Publications"
-  href: "/publications/"
-
-- title: "Events"
-  href: "/events/"
+- title: "Travel"
+  href: "/travel/"
   subcategories:
-    - subtitle: "Lindau"
-      subhref: "/events/Lindau/"
-    - subtitle: "SKA SA"
-      subhref: "/events/SKA_SA/"
+  - subtitle: "Africa"
+    subhref: "/travel/Africa/"
+  - subtitle: "Europe"
+    subhref: "/travel/Europe/"

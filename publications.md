@@ -4,6 +4,11 @@ title: Publications
 permalink: /publications/
 ---
 
+<h1>Research</h1>
+
+<p align="justify">My research is mostly based on Bayesian Statistics. Recently, I have been looking at alternative ways of doing Bayesian Model Comparison. In literature, thermodynamic integration, nested sampling and reversible jump Monte Carlo are other methods of doing model comparison.</p>
+
+
 Below is an updated list of my publication.
 
 <ol type="1">

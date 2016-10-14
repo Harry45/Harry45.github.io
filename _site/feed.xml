@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arrykrishna Mootoovaloo</title>
+    <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 14 Oct 2016 12:13:20 +0200</pubDate>
+    <lastBuildDate>Fri, 14 Oct 2016 12:13:20 +0200</lastBuildDate>
+    <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>BIRO - Bayesian Inference for Radio Observations</title>
+        <description>&lt;style&gt;
+  .bottom-three {
+     margin-bottom: 0.5cm;
+  }
+&lt;/style&gt;
+
+&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 420px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/superJEDI.jpg&quot; alt=&quot;superJEDI in 2013 at Flic En Flac&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;superJEDI in 2013 at Flic En Flac&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p align=&quot;justify&quot;&gt;The superJEDI was organised in 2013, at Flic En Flac in Mauritius. I was not part of this wonderful event as I was still in my second year of my undergraduate study. However, Sheean and Suraj, who will later become my friends, were part of this amazing JEDI. The interesting fact about JEDI is that it is only in these kinds of meeting that we will come up with brilliant ideas, which can then lead to publications. For me personally, the major reason behind is the active participation of all people, being from undergraduate level to the highest position in the hierarchy.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;During one of those days, as Nadeem and Bruce were walking on the seaside, Bruce proposed the idea of having a Bayesian formalism in the context of radio interferometry. This led to the so-called BIRO (Bayesian Inference for Radio Obervation) project.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/117391380&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt; &lt;/iframe&gt; 
+&lt;/div&gt;
+
+&lt;p class=&quot;bottom-three&quot;&gt;
+
+&lt;p align=&quot;justify&quot;&gt;The aim of this project was to determine the scientific parameters, if possible, the systematic parameters also, using the visibility data directly. The conventional way of doing this is to first produce a radio image, from which all science will be done. This seems absurb, isn't it? Why do we have to produce an image when we have the raw data? To some extent, one might argue that the data is dominated by noise and hence it will be hard to work in the Fourier space, that is, with the visibility data. This clearly suggests that the best alternative is to have a full distribution of the parameters of interest, with a summary statistics.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Michelle, who was doing her PhD with Bruce at that time, took hold of the BIRO project. She started working on it as part of her PhD. Iniyan was also part of the BIRO project. While Michelle worked mostly on Bayesian Parameter Estimation, Iniyan's work was on Bayesian Model Selection. In a nutshell, Michelle was able to infer not only the scientific parameters but also the systematic parameters in a fully Bayesian formalism. She used MCMC (Markov Chain Monte Carlo) methods to map the full posterior distributions of the parameters. On the other hand, Iniyan used &lt;a href=&quot;http://johannesbuchner.github.io/PyMultiNest/&quot;&gt; PyMultinest&lt;/a&gt; to calculate the Bayesian Evidence (the quantity which tells us how one model is favoured over another). PyMultinest also returns the posterior distributions of the parameters. An illustration from the work done by Michelle and Iniyan is shown in the above video. Compared to &lt;a href=&quot;http://cdsads.u-strasbg.fr/abs/1974A%26AS...15..417H&quot;&gt;CLEAN&lt;/a&gt;, BIRO is much better in terms of performance.&lt;/p&gt;
+
+
+&lt;p align=&quot;justify&quot;&gt;Of course, the technique is not without problems. One arguement is that we have to know the sky model first, before proceeding with Bayesian Inference. Therefore, in BIRO projects, we would normally assume a known sky model, which then leads to the second assumption that the positions of the sources are known. Moreover, nested sampling is known to have unreliable performance for higher dimensions. However, the fruitful side of this fantastic idea by Bruce has led to the following publications: &lt;a href=&quot;https://arxiv.org/abs/1501.05304&quot;&gt;BIRO&lt;/a&gt;, &lt;a href=&quot;https://arxiv.org/abs/1501.07719&quot;&gt;MontBlanc&lt;/a&gt; and &lt;a href=&quot;https://arxiv.org/abs/1610.03773&quot;&gt;Resolving the blazar CGRaBS J0809+5341&lt;/a&gt;. More to come! Stay tuned!&lt;/p&gt;
+
+&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Oct 2016 09:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</guid>
+        
+        
+        <category>Research</category>
+        
+      </item>
+    
+      <item>
+        <title>Surviving A Fast Growing Community Without Dying</title>
+        <description>&lt;style&gt;
+blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+&lt;/style&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&quot;justify&quot;&gt;&lt;i&gt;&quot;Emotions matter. You can tell people how to behave, but you can't tell people how to think and not everyone reacts the same way&quot;&lt;/i&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 400px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/flavio.jpg&quot; alt=&quot;Flavio giving his talk at PyConZA (2016)&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Flavio giving his talk at PyConZA (2016)&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p align=&quot;justify&quot;&gt;The &lt;a href=&quot;https://za.pycon.org/&quot;&gt;PyConZA&lt;/a&gt; was organised on the 6&lt;sup&gt;th&lt;/sup&gt; and 7&lt;sup&gt;th&lt;/sup&gt; October this year at the River Club in Observatory. The most impressive talk, at least for me, which had nothing to do with Python was &lt;a href=&quot;https://it.linkedin.com/in/fpercoco&quot;&gt;Flavio&lt;/a&gt;'s talk. It was easy to follow him throughout the talk and he had a real sense of humour. Most importantly, I would strongly recommend this talk (which is now available on &lt;a href=&quot;https://www.youtube.com/watch?v=bW_AEmKbB_o&quot;&gt;Youtube&lt;/a&gt;) as I believe that every young persons willing to join the industry will be well prepared, at least morally.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;He started by defining the 3 most basic terms: system, culture and flexibility which were not even clear to me what they meant until he explained them in simple terms. Flavio defines a system as being a mean of empowering humans to be amazing, a culture as the way humans do things (alternatively another answer from the audience was to define it as the rule which defines how a system works) and flexibility as the level of tolerance for variance in the system. Someone in the audience also defined flexibility as the ability to change the system and the culture! Flavio went on to explain what he really meant by the above three terms. In particular, he emphasized that tolerating variance in your community is a way to empower humans, from any culture which leads them to be simply amazing. On the other hand, community creates processes, which in turn lead to governance. Governance itself is essential to ensure growth. Governance will in principle follow the community and it is therefore important to know and understand our community.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;He further described a set of attitudes and behaviours which are relevant in a growing community. Being a good listener is a crucial factor, although we cannot make everyone happy. Being humble and objective will simplify things to a huge extent. Usually, a community will set the expectations and it important to have clear expectations in order to be objective. It is also often a good practice to set the bar at a reasonable level. Above all, communicating the expectations is the key and it is sometimes better to over-communicate! Acknowledging our colleagues at the workplace is another important factor. The contribution of each and every person leads to excellent results.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Moreover, unlike computers, humans are subject to emotion. Related to the communication factor, we should also be aware of the culture gap. Different cultures bring different perspectives and it is important that we all strive for diversity. Tribal thinking is certainly bad. It is crucial to build a community of doers, rather than a community of ranters! Many humans wear different hats. You could be working for Facebook but you hold another research position in academia as well. It happens and therefore it is important to understand others' situations. On this note, we should all be aware of Time Zone! You may be based in Germany but you have a colleague in Japan and hence, you will have to cope with the situation.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;On a conclusive note, Flavio also spoke about statistics. Statistics indicate that statistics is not good! Give a human a number and he will do anything to make it bigger. As the community grows, the processes will evolve. But most importantly, &quot;technology is social before it's technical - Gilles Deleuza.&quot; Moreover, do not forget say thanks! &lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 10 Oct 2016 14:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/2016/10/Surviving-Growing-Community</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Surviving-Growing-Community</guid>
+        
+        
+        <category>Workshop and Conference</category>
+        
+      </item>
+    
+      <item>
+        <title>JEDI - An Alternate Route to Conventional Workshops</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;JEDI (Joint Exchange Development Initiative) is a programme brought forward by &lt;a href=&quot;https://cosmoaims.wordpress.com/2010/01/01/bruce-bassett/&quot;&gt;Prof Bruce Bassett&lt;/a&gt;, Dr Nadeem Oozeer and their team. The idea is straightforward. In most of the conferences, people will normally present their work and if it happens that we go to two different conferences, coincidentally, we might eventually find the same persons giving the same presentations. Therefore, instead of spending so much money on conferences, why don't we bring all academic staffs and students together for one week and work on a completely new project? &lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;So, we would normally organise it in a beautiful place (possibly in a different country, so that, some of the local students can benefit from it), work together, cook together, stay together, thus eliminating the gap between students and academic staffs. Having done so in the past few years, several projects initiated in JEDIs, have not only led to publications (see for example &lt;a href=&quot;https://arxiv.org/abs/1501.05304&quot;&gt;BIRO&lt;/a&gt; and video below) but also, students have had the chance to continue further studies, for example, undergraduate to MSc, MSc to PhD and so forth. In short, students have been able to advance in their career. For me personally, this programme also gives the students the opportunity to be future leaders.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;My participations in JEDIs have enabled me to learn a lot. I was lucky that I got the chance to be part of it at a very young age. I had good grades for my undergraduate studies (BSc (Hons) Physics with Computing) in Mauritius but I had no idea of where to use the skills and knowledge I had gained through this degree. It was not only until I participated in one JEDI that I came to learn about Data Science, Machine Learning, Deep Learning and so forth. The transfer of scientific ideas, skills, knowledge towards solving various other non-scientific problems is simply amazing. It all came back and I could use my mathematics and coding techniques again. As Steve Jobs rightly said, &quot;You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future.&quot;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Now that many students have an experience of how the JEDI works, we, students work together with Prof Bruce Bassett and his team to organise various such events in different places/countries in Africa. Until now, I have participated in a few of them and I was also sometimes on the organising team.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 10:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/2016/10/JEDI</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/JEDI</guid>
+        
+        
+        <category>Workshop and Conference</category>
+        
+      </item>
+    
+      <item>
+        <title>Gaussian Process</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;In the most simple term, one can think of Gaussian Process, GP as being distributions over functions. It is a supervised Machine Learning technique and was developed, in the attempt, to solve regression problems (&lt;a href=&quot;https://en.wikipedia.org/wiki/Gaussian_process&quot;&gt;Wikipedia&lt;/a&gt;). The cool thing about Gaussian Process is that we don't need a &quot;parametric model&quot; to fit the data. It learns using the kernel trick. For an introduction to these techniques, I would recommend the nice review by Prof Zoubin Ghahramani on &lt;a href=&quot;http://www.nature.com/nature/journal/v521/n7553/full/nature14541.html&quot;&gt;Probabilistic Machine Learning and Artificial Intelligence &lt;/a&gt;. Other nice books for GPs are &lt;a href=&quot;http://www.gaussianprocess.org/gpml/&quot;&gt;Gaussian Processes for Machine Learning &lt;/a&gt; by Carl Edward Rasmussen and Christopher K. I. Williams and &lt;a href=&quot;https://mitpress.mit.edu/books/machine-learning-0&quot;&gt;Machine Learning - A Probabilistic Perspective&lt;/a&gt; by Kevin Murphy. Before going into the actual explanation of what a GP is, it is important to have a brief background of how to find the marginals and conditionals of a Multivariate Nomal Distribution. See Chapter 4 from Kevin Murphy's book.&lt;/p&gt;
+
+&lt;h2&gt;Marginals and Conditionals&lt;/h2&gt;
+
+&lt;p align=&quot;justify&quot;&gt; Consider a 2D Gaussian Distribution whose parameters are given by &lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\boldsymbol{\mu}=\left(\begin{matrix}
+\mu_{1} \cr
+\mu_{2}
+\end{matrix}\right)\hspace{3cm}\boldsymbol{\Sigma}=\left(\begin{matrix}
+\Sigma_{11} &amp;amp; \Sigma_{12}\cr
+\Sigma_{21} &amp;amp; \Sigma_{22}
+\end{matrix}\right)
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Then, the joint distribution of $x_{1}$ and $x_{2}$, that is, $\mathcal{P}\left(x_{1},\,x_{2}\right)$ can be written as&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\mathcal{P}\left(x_{1},\,x_{2}\right)=\dfrac{1}{\left|2\pi\boldsymbol{\Sigma}\right|^{\frac{1}{2}}}\,\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{x}-\boldsymbol{\mu}\right)^{\textrm{T}}\boldsymbol{\Sigma}^{-1}\left(\mathbf{x}-\boldsymbol{\mu}\right)\right]
+\label{eq:2d_gaussian}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Using $\mathcal{P}\left(x_{1},\,x_{2}\right)=\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)\mathcal{P}\left(x_{2}\right)$, it can be shown that the conditional $\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)$ is also a quadratic with the mean and variance given by &lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\mu_{1\left|2\right.}=\mu_{1}+\Sigma_{12}\Sigma_{22}^{-1}\left(x_{2}-\mu_{2}\right)\hspace{3cm}\Sigma_{1\left|2\right.}=\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}
+\label{eq:marginals}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;such that&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)=\dfrac{1}{\sqrt{2\pi\Sigma_{1\left|2\right.}}}\,\textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{x_{1}-\mu_{1\left|2\right.}}{\Sigma_{1\left|2\right.}}\right)^{2}\right]
+ \label{eq:marginals_distribution}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Intuitively, this can be understood by the fact that if we take a slice across a 2D Multivariate Normal Distribution as shown in the picture below, the resulting distribution is also a Gaussian Distribution. &lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/images/2D-Gaussian.png&quot; alt=&quot;2D Gaussian Distribution&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;GP for Regression&lt;/h2&gt;
+
+&lt;p align=&quot;justify&quot;&gt;In Bayesian Parameter Inference, in which case we have a parametric model $\mathcal{M}$ and some data $\mathcal{D}$, we would want to infer the posterior distribution of the parameters, that is, $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M},\,\mathcal{D}\right.\right)$. On the other hand, a GP in fact defines a prior over the functions itself, such that it can be mapped to a posterior given some data $\mathcal{D}$. In this section, we will show how we can take adavantage of the nice properties of the above to predict the likely value of a function for a given $x_{*}$. The major assumption we will make is that the testing set of data is from the same distribution as the training set of data.&lt;/p&gt;
+
+&lt;h4&gt;&lt;b&gt;Noise-Free Case&lt;/b&gt;&lt;/h4&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Suppose we have a set of data, $\mathcal{D}=\left\{ \left(x_{i},\,f_{i}\right)\right\}$ for $i=1,2,3,\ldots N$, where $f$ is assumed to be an observable without noise. Now, given $x_{*}$, we would like to predict $f_{*}$ as well as its variance, $\Sigma_{*}$. In a sense, we effectively want the posterior distributions of $f_{*}$ given $x_{*}$, $x$ and $f$. Using Bayes' Theorem, we can write &lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)=\dfrac{\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)}{\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)}
+\label{eq:BayesTheorem}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;where $\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)$ is the posterior distribution of the function, $\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)$ is the prior, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)$ is the likelihood and $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ is the marginal likelihood which is simply given by&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=\int\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)d\mathbf{f}
+\label{eq:marginal_likelihood}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Given now a new data $x_{*}$, the posterior distribution of $f_{*}$ is simply obtained by marginalisation.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(y_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)=\int\mathcal{P}\left(y_{*}\left|\mathbf{f},\,x_{*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;The prior on the regression function which is a Gaussian Process, GP denoted by &lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+f\left(\mathbf{X}\right)\sim\textrm{GP}\left(\boldsymbol{\mu}\left(\mathbf{X}\right),\,\kappa\left(\mathbf{X},\,\mathbf{X}’\right)\right)
+\label{definition_gp}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;where $\boldsymbol{\mu}\left(\mathbf{X}\right)$ is the mean of the function while $\kappa\left(\mathbf{X},\,\mathbf{X}'\right)$ is the covariance matrix, which is constructed using a kernel. In particular, for this example, we will consider the squared-exponential kernel,&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\kappa\left(x,\,x’\right)=\sigma^{2}\,\textrm{exp}\left(-\dfrac{\left(x-x’\right)^{2}}{2\ell^{2}}\right)
+\label{squared_exponential}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;where $\ell$ and $\sigma$ control the horizontal and vertical variations respectively. The kernel encapsulates the correlation between two datapoints. What we would ideally want is the following - if two datapoints are close to each other, that is, $x-x'\approx0$, we would expect strong correlation, while if $x-x'\rightarrow\infty$, there should be minumum correlation between $x$ and $x'$. The kernel trick allows us to easily implement this. Note that there exists various other kernel types (for more details refer to &lt;a href=&quot;http://www.gaussianprocess.org/gpml/&quot;&gt;Gaussian Processes for Machine Learning &lt;/a&gt; by Carl Edward Rasmussen and Christopher K. I. Williams)&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\kappa\left(x,\,x’\right)=\begin{cases}
+\begin{matrix}
+\sigma^{2}\cr
+0
+\end{matrix} &amp;amp; \begin{matrix}
+x-x’=0\cr
+x-x’\rightarrow\infty
+\end{matrix}\end{cases}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;For the regression problem, the joint distribution is given by &lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\left(\begin{matrix}
+\mathbf{f}\cr
+\mathbf{f}_{*}
+\end{matrix}\right)\sim\left(\left(\begin{matrix}
+\boldsymbol{\mu}\cr
+\boldsymbol{\mu}_{*}
+\end{matrix}\right),\,\left(\begin{matrix}
+\mathbf{K} &amp; \mathbf{K}_{*}\cr
+\mathbf{K}_{*}^{\textrm{T}} &amp; \mathbf{K}_{**}
+\end{matrix}\right)\right) %]]&gt;&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;where $\mathbf{K}_{**} = \kappa\left(\mathbf{X}_{*},\,\mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)$ is simply&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}_{*},\,\mathbf{X},\,\mathbf{f}\right.\right)=\mathcal{N}\left(\mathbf{f}_{*}\left|\boldsymbol{\mu}_{*},\,\boldsymbol{\Sigma}_{*}\right.\right)&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt; where &lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\mu}_{*}=\boldsymbol{\mu}\left(\mathbf{X}_{*}\right)+\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\left(\mathbf{f}-\boldsymbol{\mu}\left(\mathbf{X}\right)\right)&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;We would notionally assume a mean function equal to 0 and the kernel must be &lt;a href=&quot;https://en.wikipedia.org/wiki/Positive-definite_matrix&quot;&gt;positive definite&lt;/a&gt;. Hence, &lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\mu}_{*}=\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{f}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}&lt;/script&gt;
+
+&lt;h4&gt;&lt;b&gt;Noisy Case&lt;/b&gt;&lt;/h4&gt;
+
+&lt;p&gt;If instead, we were to observe a noisy function given by $y=f\left(x\right)+\epsilon$ where $\epsilon\sim\mathcal{N}\left(0,\,\sigma_n^2\right)$, the matrix $\mathbf{K}$ is simply given by&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{K}_n=\mathbf{K}+\sigma_n^2\mathbf{I}&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;assuming that the observed data is corrupted by the noise independently. Then the prediction for the new function along with its uncertainty is given by&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\mu}_{*}=\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{f}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{K}_{*}&lt;/script&gt;
+
+&lt;h2&gt;Learning the Kernel Parameters&lt;/h2&gt;
+&lt;p align=&quot;justify&quot;&gt; The way to estimate the parameters is via maxmising the marginal likelihood, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ which is simply a multivariate Gaussian distribution given by $\mathcal{N}\left(\mathbf{y}\left|0,\,\mathbf{K}_{n}\right.\right)$. Hence, &lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=-\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{y}+\textrm{log}\left|\mathbf{K}_n \right|+N\textrm{log}\left(2\pi\right)\right]
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;where $N$ is the number of test data points. Essentially, the third term is does not depend on the kernel parameters and is simply an additive constant. Hence, the derivative of the marginal likelihood&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dfrac{\partial}{\partial\theta_{j}}\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=-\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\dfrac{\partial\mathbf{K}_{n}^{-1}}{\partial\theta_{j}}\mathbf{y}+\dfrac{\partial}{\partial\theta_{j}}\textrm{log}\left|\mathbf{K}_{n}\right|\right]&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;can further be simplified using the fact that $\dfrac{\partial\mathbf{K}_{n}^{-1}}{\partial\theta_{j}}=-\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\mathbf{K}_{n}^{-1}$ and that $ \dfrac{\partial}{\partial\theta_{j}}\textrm{log}\left|\mathbf{K}_{n}\right|=\textrm{tr}\left(\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\right)$ such that &lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dfrac{\partial}{\partial\theta_{j}}\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\mathbf{K}_{n}^{-1}\mathbf{y}-\textrm{tr}\left(\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\right)\right]&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Given that we now have the gradient, one could easily use an optimisation algorithm to estimate the hyper-parameters. An alternative method is to have a full Bayesian formalism for inferring the posterior distributions of the hyper-parameters.&lt;/p&gt;
+
+&lt;h2&gt;Examples&lt;/h2&gt;
+&lt;p align=&quot;justify&quot;&gt;Below, we consider two examples: noise-free and a noisy. For the following, for illustration, we assume that the kernel parameters $\sigma$ and $\ell$ are both equal to 1. We show how the Gaussian Process performs well in the noise-free and equally-spaced data as shown below. We consider a simple sinusoidal function of the form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f=\textrm{sin}\left(x\right)\hspace{2cm}\left[0,\,2\pi\right]&lt;/script&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/images/example_1_uniform.png&quot; alt=&quot;uniform_gp&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt; On the other hand, we generate noisy data, which are not equally-spaced. The point which we are mostly interested in is that the Gaussian Process basically demonstrates the level of confidence when we have or do not have data. As expected, we would be more confident when we have more data, and less confident when we don't have data. &lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/images/example_1_non_uniform.png&quot; alt=&quot;non_uniform_gp&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 08 Oct 2016 14:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/2016/10/Gaussian-Process</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Gaussian-Process</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
+    
+      <item>
+        <title>A Brief Overview of my Undergraduate Project</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 350px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/overlay_1.jpg&quot; alt=&quot;Hydra A&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Hydra A&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p align=&quot;justify&quot;&gt; X-ray cavities are bubbles which have been formed by the central active galactic nucleus (AGN) found at the centre of galaxy clusters, groups and giant ellipticals. There is an increasing evidence, as observed from radio/x-ray overlays, that these cavities are formed by the tip of jets of the central radio galaxy and is connected back to the nucleus, in a channel-like structure. These cavities are detected in x-ray images as surface brightness depressions. Besides, most these cavities are filled with radio-emission at 1.4 GHz while, there do exist cavities, referred to as ”ghost” bubbles which are misaligned with respect to the jet and are observed at lower radio frequency.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt; The formation of X-ray cavities is a consequence of AGN feedback which is responsible for the formation of other structures such as shocks and ripples. Typically, the formation of these structures may offset cooling in galaxy clusters and might presumably be one of the solutions to the classical cooling flow issue, which was proposed by &lt;a href=&quot;https://ned.ipac.caltech.edu/level5/Fabian3/frames.html&quot;&gt;Fabian (1994)&lt;/a&gt;. &lt;/p&gt;
+
+&lt;dl class=&quot;wp-caption alignleft&quot; style=&quot;max-width: 400px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/overlay_2.jpg&quot; alt=&quot;RBS 797 &quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;RBS 797 &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p align=&quot;justify&quot;&gt; Originally, it was believed that a cooling flow must be established at the centre of cluster of galaxy as the central atmosphere being very dense and hot, the x-ray gas must lose energy via the emission of x-ray. However, after the launching of Chandra and XMM-Newton satellites in the year 1999, it was observed that relatively little gas actually cools below 2 keV. We have investigated 9 clusters of galaxies, having redshifts $0.01 &amp;lt; z &amp;lt; 0.35$, which host x-ray cavities using CIAO 4.6 and CALDB 4.5.9. These cavities are aged about $10^7$ years. The most commonly used methods for calculating cavity ages include refill timescale $\left(t_r\right)$, buoyancy timescale $\left(t_b\right)$ and sound-crossing timescale $\left(t_s\right)$. In particular, $t_r &amp;lt; t_b &amp;lt; t_s$. The enthalpy of a cavity depends on the nature of lobes and lies between $2pV$ and $4pV$ as described by &lt;a href=&quot;https://arxiv.org/abs/0709.2152&quot;&gt;McNamara and Nulsen (2007)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt; The cavity power can be determined using the cavity age and enthalpy and is of the order of $10^{44}\, \textrm{ergs s}^{−1}$. In addition, the central radio source of each cluster of galaxy was studied, dealing with both strong and weak radio galaxies. Their radio luminosities at 1.4 GHz were calculated, using symbolic programming method in Matlab 2012Ra and typical value of radio luminosity $\left(\textrm{L}_{\textrm{rad}}\right)$ ranges from $0.9 − 315 \times 10^{42}\, \textrm{ergs s}^{−1}$. Using these values, together with the determined cavity power, a plot of radio luminosity against cavity power was made in the logarithmic scale, and it was found that the cavity power $\textrm{P}_{\textrm{cav}}$ varies as &lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\textrm{P}_{\textrm{cav}} = \left(5 \times 10^{38\pm1}\right)\,\textrm{L}_{\textrm{rad}}^{0.13\pm0.13}&lt;/script&gt;
+
+&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 410px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/overlay_3.jpg&quot; alt=&quot;Abell 2052&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Abell 2052&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p align=&quot;justify&quot;&gt;&lt;a href=&quot;https://arxiv.org/abs/astro-ph/0605323&quot;&gt;Rafferty et al. (2006)&lt;/a&gt; argued that the formation of x-ray cavities may be modelled by the mass accretion model. In this scenario, the jet is produced when a fraction of the gravitational binding energy of the material accreted is converted into outburst energy. While in another theory developed by &lt;a href=&quot;https://arxiv.org/abs/astro-ph/9810352&quot;&gt;Meier (1999)&lt;/a&gt;, it is possible for cavities to be formed via the spinning of the central rotating black hole. In this model, the spin energy is converted into jet power via a torque applied by the poloidal magnetic field strength.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;There could be different scenarios possible. For example, for Hydra A, the jet is aligned with the cavities while in RBS 797, the jet is roughly perpendicular to the orientation of the two cavities. On the other hand, Abell 2052 depicts an intricate ongoing activity at the core site.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;On a conclusive note, the coupling between the radio galaxy and cavities still needs to be fully exploited. Jets and cavities heat the intracluster medium, therby inhibiting cooling flow and affects accretion and galaxy growth. In fact, the nature of cavities, more precisely, its non-thermal nature opens a new world towards the study of magnetism in these characteristic sites. &lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Oct 2016 08:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</guid>
+        
+        
+        <category>Research</category>
+        
+      </item>
+    
+  </channel>
+</rss>
