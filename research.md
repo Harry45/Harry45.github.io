@@ -6,7 +6,7 @@ permalink: /research/
 
 {% include image.html url="Arrykrishna_Bayesian.jpg" caption="Myself at the InScida workshop organised at AIMS, Muizenburg" width=400 align="left" %}
 
-<p align="justify">My research is mostly based on Bayesian Statistics. Recently, I have been looking at alternative ways of doing Bayesian Model Comparison. In literature, thermodynamic integration, nested sampling and reversible jump Monte Carlo are other methods of doing model comparison. In addition, I am working on the application of Bayesian Methods in Radio Astronomy. Recently, we have looked into the problem of not only determining the type of source but also to predict the distance between two point sources, which are on top of each other but buried in noise.</p>
+<p align="justify">My research is mostly based on Bayesian Statistics. Recently, I have been looking at alternative ways of doing Bayesian Model Comparison. In literature, thermodynamic integration, nested sampling and reversible jump Monte Carlo are other methods of doing model comparison. In addition, I am working on the application of Bayesian Methods in Radio Astronomy. Recently, we have looked into the problem of not only determining the type of sources but also to predict the distance between two point sources, which are on top of each other but buried in noise.</p>
 
 <p align="justify">Moreover, I am also interested in Machine Learning and Deep Learning. I like to understand the concepts first and hence, I also work a little bit on the Mathematics of Machine Learning before proceeding to the Computing part. </p>
 
