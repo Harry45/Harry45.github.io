@@ -7,8 +7,8 @@
 - title: "Articles"
   href: "/articles/"
 
-- title: "Travel"
-  href: "/travel/"
+- title: "Blog"
+  href: "/blog/"
   subcategories:
   - subtitle: "Africa"
     subhref: "/travel/Africa/"

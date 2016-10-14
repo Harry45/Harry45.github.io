@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Articles
-permalink: /articles/
+title: Blog
+permalink: /blog/
 ---
 
 Below is a list of my recent posts. Most of my posts will be on research, academic, Mathematics, Machine Learning and Statistics topics. 
