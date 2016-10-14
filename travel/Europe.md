@@ -60,7 +60,7 @@ permalink: /travel/Europe/
 
 {% include image.html url="LesHouches_All_People.jpg" caption="Group Photo Taken At Les Houches Physics School" width=400 align="left" %}
 
-<p align="justify">I also went to École de Physique des Houches where the <a href="https://stat4astro2015.sciencesconf.org/">School of Astrostatics</a> was held. The major theme of this school was on Clustering and Classification and the aim was to bridge the gap between astronomers and statisticians. As far as I know, this has been a topic of heated debate in the astronomy community. Are astronomers "good" statisticians? In particular, there were several talks and tutorials on Bayesian Statistics and Machine Learning using R programming.</p>
+<p align="justify">I also went to École de Physique des Houches where the <a href="https://stat4astro2015.sciencesconf.org/">School of Astrostatistics</a> was held. The major theme of this school was on Clustering and Classification and the aim was to bridge the gap between astronomers and statisticians. As far as I know, this has been a topic of heated debate in the astronomy community. Are astronomers "good" statisticians? In particular, there were several talks and tutorials on Bayesian Statistics and Machine Learning using R programming.</p>
 
 <p align="justify">I remember it was the first time in my life, that I saw snow! Over and above, we went on top of Aiguille Du Midi and I must admit that for me, it was extremely cold. Normally, the average temperature in Mauritius, the place where I grew up, is around 25 <sup>o</sup>C. </p>
 
