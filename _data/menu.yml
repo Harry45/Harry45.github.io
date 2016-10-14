@@ -4,6 +4,9 @@
 - title: "Research"
   href: "/research/"
 
+- title: "Blog"
+  href: "/blog"
+
 - title: "Travel"
   href: "/travel/"
   subcategories:
