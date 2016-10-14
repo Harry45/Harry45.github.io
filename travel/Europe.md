@@ -12,16 +12,16 @@ permalink: /travel/Europe/
 
 <p align="justify"> I also took part in several events such as the Africa Outreach Breakfast and another breakfast which was on  Excellence in Science and Sports. Moreover, I had the opportunity to visit <a href="http://www.conti-online.com/generator/www/start/com/en/index_en.html">Continental</a> where I learnt about how Machine Learning techniques are being used for car braking systems. </p>
 
-<p align="justify"> In addition, I also took part in a Press Talk along with Vint Cerf, Google's Vice President and Chief Internet Evangelist. This event was organised by <a href="http://www.faz.net/">FAZ</a> (Frankfurter Allgemeine Zeitung) and was based mostly on how Artificial Intelligence might affect our life.</p>
+<p align="justify"> In addition, I took part in a Press Talk along with Vint Cerf, Google's Vice President and Chief Internet Evangelist. This event was organised by <a href="http://www.faz.net/">FAZ</a> (Frankfurter Allgemeine Zeitung) and was based mostly on how Artificial Intelligence might affect our life.</p>
 
 ## Switzerland
 {% include image.html url="Geneva.jpg" caption="Geneva" width=400 align="right" %}
 
 <p align="justify"> In 2015 and 2016, I had the opportunity to visit my co-supervisor, <a href="http://cosmology.unige.ch/users/martin-kunz">Professor Martin Kunz</a> at the University of Geneva. When I was in Geneva airport, I was so happy, simply because I was able to speak my French to the officer at the passport control.</p>
 
-<p align="justify"> The purpose of my visit was obviously to discuss the work which we were doing together. In 2015, as we had just started the project, we were still struggling to understand why the MCMC was not working in one situation, but one year later, in 2016, we were writing the paper together. Wow! </p>
+<p align="justify"> The purpose of my visit was obviously to discuss the work which we were doing together. In 2015, as we had just started the project, we were still struggling to understand why the MCMC was not working in one situation, but one year later, in 2016, we were writing the paper together! </p>
 
-<p align="justify">At that time, I was doing my Masters and I got to meet several PhD students at the university. They were all advising me about what it is like doing a PhD. I first met David Daverio when we were having lunch together. He was the coolest guy I've ever met. I also met Apple (Martin's wife) when we went hiking in 2015. When I saw her in 2016, she was expecting a baby. </p>
+<p align="justify">At that time, I was doing my Masters and I got to meet several PhD students at the university. They all advised me about what it is like doing a PhD. I first met David Daverio when we were having lunch together. He was the coolest guy I've ever met. I also met Apple (Martin's wife) when we went hiking in 2015. When I saw her in 2016, she was expecting a baby. </p>
 
 {% include image.html url="IDIAP.png" caption="IDIAP Research Institute" width=450 align="left" %}
 
@@ -38,7 +38,7 @@ permalink: /travel/Europe/
 
 <p align="justify">I was fortunate to meet <a href="http://olivierbachem.ch/">Olivier Bachem</a>, <a href="https://ch.linkedin.com/in/baharan-mirzasoleiman-0858b991">Baharan Mirzasoleiman</a>, <a href="https://ch.linkedin.com/in/nico-gorbach-69045b38">Nico Gorbach</a> and <a href="http://people.inf.ethz.ch/ybian/">Yatao Bian</a>. Nico did his undergraduate and masters study at the University of Cape Town. So he had an idea of the background I was coming from. In short, they all gave me an idea of how I should work if I were to do a PhD in Machine Learning at ETH Zurich. I also learnt about the PhD system, in which case PhD students would normally teach as well.</p>
 
-<p align="justify">I was particularly interested in deep learning and it turns out that the <a href="http://www.da.inf.ethz.ch/">Data Analytics Lab</a> was the group doing some work on that topic. Unfortunately, I did not get the opportunity to visit this group.</p>
+<p align="justify">I was particularly interested in deep learning and it turns out that the <a href="http://www.da.inf.ethz.ch/">Data Analytics Lab</a> was the group doing some work on that topic but unfortunately, I did not get the opportunity to visit the group.</p>
 
 ## United Kingdom
 
@@ -46,7 +46,7 @@ permalink: /travel/Europe/
 
 <p align="justify">I also had the opportunity to visit Dr Michelle Lochner who was doing her first post-doc in the <a href="http://www.ucl.ac.uk/star">UCL Astrophysics Group</a>. She worked with Bruce for her PhD. She was among the first students to have worked on the BIRO project, which was proposed in a JEDI. Michelle and I discussed a little bit about Statistical methods, which she also learnt and applied in the <a href="https://arxiv.org/abs/astro-ph/0611004">BEAMS</a> paper.</p>
 
-<p align="justify">Moreover, in 2016, before going to the summer school in Chania, I was lucky to visit <a href="http://astro.ic.ac.uk/ajaffe/home">Prof Andrew Jaffe</a> at Imperial College. We continued our work on using Bayesian Methods in radio astronomy. I also met several PhD students who encouraged me to join the department for a PhD.</p>
+<p align="justify">Moreover, in 2016, before going to the summer school in Chania, I was lucky to visit <a href="http://astro.ic.ac.uk/ajaffe/home">Prof Andrew Jaffe</a> at Imperial College. We continued our work on using Bayesian Methods in radio astronomy and I met several PhD students who encouraged me to join the department for a PhD.</p>
 
 ## Greece
 
