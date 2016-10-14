@@ -1,11 +1,11 @@
 - title: "About"
   href: "/about/"
 
-- title: "Articles"
-  href: "/articles/"
-
 - title: "Research"
   href: "/research/"
+
+- title: "Articles"
+  href: "/articles/"
 
 - title: "Travel"
   href: "/travel/"
