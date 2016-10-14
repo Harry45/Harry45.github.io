@@ -6,7 +6,7 @@ permalink: /about/
 
 {% include image.html url="/images/Harry_Lindau.jpg" caption="Myself at the Lindau Nobel Laureate Meeting (2016)" width=350 align="right" %}
 
-<p align="justify"> I am currently enrolled for a Masters in Astrophysics and Space Science at the <a href="https://www.uct.ac.za/">University of Cape Town</a>. Having completed the coursework component of <a href="https://www.star.ac.za/">NASSP</a> (National Astrophysics and Space Science Programme), I am now completing the research part at <a href="https://www.aims.ac.za/">AIMS</a> under the supervison of <a href="https://cosmoaims.wordpress.com/2010/01/01/bruce-bassett/">Professor Bruce Bassett</a>.</p>
+<p align="justify"> I am currently enrolled for a Masters in Astrophysics and Space Science at the <a href="https://www.uct.ac.za/">University of Cape Town</a>. Having completed the coursework component of <a href="https://www.star.ac.za/">NASSP</a> (National Astrophysics and Space Science Programme), I am now completing the research part at <a href="https://www.aims.ac.za/">AIMS</a> under the supervision of <a href="https://cosmoaims.wordpress.com/2010/01/01/bruce-bassett/">Professor Bruce Bassett</a>.</p>
 
 ## Family
 <p align="justify">I have an elder brother, a cute little brother and a lovely, beautiful little sister. My parents, who are my best mentors, have been very helpful and supportive. Moreover, as Henry Ward Beecher rightly said, "what a mother sings to the cradle goes all the way down to the coffin," my mother has provided me with both financial and moral support in all situations. </p>
