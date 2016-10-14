@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</loc>
       
         <lastmod>2016-10-13T09:00:00+02:00</lastmod>
       
@@ -18,7 +18,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/Surviving-Growing-Community</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</loc>
       
         <lastmod>2016-10-10T14:00:00+02:00</lastmod>
       
@@ -33,7 +33,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/JEDI</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/JEDI</loc>
       
         <lastmod>2016-10-09T10:00:00+02:00</lastmod>
       
@@ -48,7 +48,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/Gaussian-Process</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/Gaussian-Process</loc>
       
         <lastmod>2016-10-08T14:00:00+02:00</lastmod>
       
@@ -63,7 +63,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</loc>
       
         <lastmod>2016-10-07T08:00:00+02:00</lastmod>
       
@@ -79,24 +79,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/travel/Africa/</loc>
+      <loc>https://Harry45.github.io/travel/Africa/</loc>
       
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/travel/Europe/</loc>
-      
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -109,24 +94,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/about/</loc>
+      <loc>https://Harry45.github.io/travel/Europe/</loc>
       
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/blog/</loc>
-      
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -139,24 +109,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/cv/</loc>
+      <loc>https://Harry45.github.io/about/</loc>
       
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/feed.xml</loc>
-      
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -169,24 +124,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/categories/</loc>
+      <loc>https://Harry45.github.io/blog/</loc>
       
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/</loc>
-      
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -199,24 +139,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/css/main.css</loc>
+      <loc>https://Harry45.github.io/cv/</loc>
       
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/publications/</loc>
-      
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -229,9 +154,84 @@
   
     
     <url>
-      <loc>http://localhost:4000/research/</loc>
+      <loc>https://Harry45.github.io/feed.xml</loc>
       
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/categories/</loc>
+      
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/</loc>
+      
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/css/main.css</loc>
+      
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/publications/</loc>
+      
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/research/</loc>
+      
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -246,9 +246,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/travel/</loc>
+      <loc>https://Harry45.github.io/travel/</loc>
       
-        <lastmod>2016-10-14T12:13:20+02:00</lastmod>
+        <lastmod>2016-10-14T12:41:24+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
