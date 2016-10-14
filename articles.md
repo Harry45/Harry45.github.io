@@ -4,7 +4,7 @@ title: Articles
 permalink: /articles/
 ---
 
-I love blogging. I must admit that I don't do it regularly but I will surely write a post if it is of interest to me. Stay tuned! A full list of my blog posts is as follows.
+Below is a list of my recent posts. Most of my posts will be on research, academic, Mathematics, Machine Learning and Statistics topics. 
 
 <ul class="listing">
 {% for post in site.posts %}
