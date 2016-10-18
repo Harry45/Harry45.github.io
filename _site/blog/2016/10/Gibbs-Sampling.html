@@ -250,23 +250,40 @@ $$
 $$
 
 
-<h2>Python Code<h2>
+<h2>Python Code</h2>
 
-Now we have 
-
-```python
-a = b + c
-```
+<p align="justify"> Now we have all the mathematical tools to write the Python code. We will first define the linear function. The data is available on [Github](https://github.com/Harry45/Self-Taught/tree/master/Gibbs_Sampling). </p>
 
 
 
 
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">linear</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+	<span class="k">return</span> <span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">params</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c"># True Parameters</span>
+<span class="n">grad</span>  <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">yint</span>  <span class="o">=</span> <span class="mf">0.5</span>
+
+<span class="c"># Fraction considered as burn-in</span>
+<span class="n">frac</span>  <span class="o">=</span> <span class="mf">0.2</span>
+
+<span class="c"># Load the data </span>
+<span class="n">data</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s">'data_gibbs.txt'</span><span class="p">)</span>
+<span class="n">x</span>     <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">];</span> <span class="n">xmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="n">xmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">y</span>     <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span></code></pre></figure>
 
 
 
 
 
-</h2></h2></p>
+
+
+
+
+
+
+</p>
 
   </article>
 
