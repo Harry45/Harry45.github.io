@@ -143,7 +143,7 @@ $$
 
 <p align="justify"> Now we have all the mathematical tools to write the Python code. The simulated data is available on <a href="https://github.com/Harry45/Self-Taught/tree/master/Gibbs_Sampling">Github</a>. We first define the linear function and the true parameters (for the gradient, $\theta_{1}$ and the y-intercept, $\theta_{0}$) are 2.0 and 0.5. Note that in the code below, we have used m and c for the gradient and the y-intercept.</p>
 
-
+as `AND`, `OR`, `NOT`,
 
 
 {% highlight python %}
