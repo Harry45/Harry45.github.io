@@ -32,7 +32,7 @@ blockquote {
 
 
 
-<p align="justify">I was born on the 4<sup>th</sup> May 1991 in Mauritius, a tropic and stunning paradise island found in the Indian ocean. I grew up in a village named Goodlands which is found in the northern part. My father works in the construction industry while my mother is a housewife. My mother had the dream that we should all be well educated. As my elder brother is only one and a half year older than me, my mother insisted that I study together with him. Consequently, I started studying since I was 2 years old and I was enrolled in a local pre-primary school along with my elder brother. When I was 5 years old, I was admitted to a local primary school (SK Kanhye Government School) where I spent the next 6 years. </p>
+<p align="justify">I was born on the 4<sup>th</sup> May 1991 in Mauritius, the tropical and amazing paradise island found in the Indian ocean. I grew up in a village named Goodlands which is found in the northern part. My father works in the construction industry while my mother is a housewife. My mother had the dream that we should all be well educated. As my elder brother is only one and a half year older than me, my mother insisted that I study together with him. Consequently, I started studying since I was 2 years old and I was enrolled in a local pre-primary school along with my elder brother. When I was 5 years old, I was admitted to a local primary school (SK Kanhye Government School) where I spent the next 6 years. </p>
 
 {% include image.html url="/images/Big_Brother_and_I.png" caption="My elder brother and I (1994)" width=382 align="right" %}
 
