@@ -9,8 +9,8 @@ blockquote {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 100px;
+    margin-right: 0px;
 }
 </style>
 
