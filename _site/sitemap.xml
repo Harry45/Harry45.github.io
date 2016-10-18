@@ -3,6 +3,21 @@
   
     
     <url>
+      <loc>https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</loc>
+      
+        <lastmod>2016-10-17T14:00:00+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</loc>
       
         <lastmod>2016-10-13T09:00:00+02:00</lastmod>
@@ -81,7 +96,7 @@
     <url>
       <loc>https://Harry45.github.io/travel/Africa/</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -96,7 +111,7 @@
     <url>
       <loc>https://Harry45.github.io/travel/Europe/</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -111,7 +126,7 @@
     <url>
       <loc>https://Harry45.github.io/about/</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -126,7 +141,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -141,7 +156,7 @@
     <url>
       <loc>https://Harry45.github.io/feed.xml</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -156,7 +171,7 @@
     <url>
       <loc>https://Harry45.github.io/categories/</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -171,7 +186,7 @@
     <url>
       <loc>https://Harry45.github.io/</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -186,22 +201,7 @@
     <url>
       <loc>https://Harry45.github.io/css/main.css</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://Harry45.github.io/publications/</loc>
-      
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -216,7 +216,7 @@
     <url>
       <loc>https://Harry45.github.io/research/</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -233,7 +233,7 @@
     <url>
       <loc>https://Harry45.github.io/travel/</loc>
       
-        <lastmod>2016-10-14T18:26:44+02:00</lastmod>
+        <lastmod>2016-10-18T15:11:09+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

@@ -5,9 +5,164 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Oct 2016 18:26:44 +0200</pubDate>
-    <lastBuildDate>Fri, 14 Oct 2016 18:26:44 +0200</lastBuildDate>
+    <pubDate>Tue, 18 Oct 2016 15:11:09 +0200</pubDate>
+    <lastBuildDate>Tue, 18 Oct 2016 15:11:09 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>An Introduction to Gibbs Sampling</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;Gibbs sampling is a variant of Markov Chain Monte Carlo (MCMC) method. The idea is to update one of the parameters at a time, this requiring conditional distributions. As with the standard Metropolis-Hastings algorithm, samples generated from an accumulated Gibbs chain are correlated with nearby samples and hence, if independent samples are required, it is desired to thin the chain by taking every nth value. Moreover, the initial samples (burn-in) are negelected as they may not actually represent the underlying &quot;true&quot; distribution. The algorithm for Gibbs sampling is as follows:
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;Initialise $\boldsymbol{\theta}=\left(\theta_{0},\,\theta_{1},\,\ldots\theta_{n}\right)$.&lt;/li&gt; 
+&lt;li&gt;Sample for the parameters as below:&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Sample $\theta_{0}'$ from $\theta_{0}\left|\theta_{1},\,\theta_{2},\,\ldots\theta_{n}\right.$.&lt;/li&gt;
+&lt;li&gt;Sample $\theta_{1}'$ from $\theta_{1}\left|\theta_{0}',\,\theta_{2},\ldots\theta_{n}\right.$.&lt;/li&gt;
+&lt;li&gt;$\vdots$&lt;/li&gt;
+&lt;li&gt;Sample $\theta_{k}'$ from $\theta_{k}\left|\theta_{0}',\,\theta_{1}',\ldots,\,\theta_{k-1}',\,\theta_{k+1},\,\ldots\theta_{n}\right.$&lt;/li&gt;
+&lt;/ul&gt;&lt;/ol&gt;
+
+
+&lt;p align=&quot;justify&quot;&gt;However, notice that we need the conditional distributions. The advantage of Gibbs sampling is the that it reduces the need for &quot;tuning&quot; as in the case for the Metropolis-Hastings algorithm. In particular, the starting point can be guessed or can be found using an optimisation algorithm. &lt;/p&gt;
+
+&lt;h2&gt;Example - Bayesian Linear Regression&lt;/h2&gt;
+
+&lt;p align=&quot;justify&quot;&gt;We consider a simple Bayesian Linear Regression to illustrate Gibbs sampling in practice. Suppose we have the datapoints, $\mathcal{D}=\left\{ x_{i},\,y_{i}\right\} $ for $i=1,\,2,\ldots N$ which have been generated from the model $y=\theta_{0}+\theta_{1}x$.
+In other words,&lt;/p&gt; 
+
+\begin{align}
+y=\theta_{0}+\theta_{1}x+\epsilon
+\end{align}
+
+
+&lt;p align=&quot;justify&quot;&gt;where $\epsilon\sim\mathcal{N}\left(0.0,\,\sigma_{n}^{2}\right)$. Our aim is the find the full posterior distributions of the parameters $\theta_{0}$ and $\theta_{1}$. The joint posterior distribution is simply &lt;/p&gt;
+
+\begin{align}
+\mathcal{P}\left(\theta_{0},\,\theta_{1}\left|\mathcal{D}\right.\right)\propto\mathcal{P}\left(\mathcal{D}\left|\theta_{0},\,\theta_{1}\right.\right)\mathcal{P}\left(\theta_{0},\,\theta_{1}\right)
+\end{align}
+
+
+&lt;p align=&quot;justify&quot;&gt; where we assume factorisable priors, that is, $\mathcal{P}\left(\theta_{0},\,\theta_{1}\right)=\mathcal{P}\left(\theta_{0}\right)\,\mathcal{P}\left(\theta_{1}\right)$ and we consider Gaussian priors such that,&lt;/p&gt;
+
+\begin{align}
+\mathcal{P}\left(\theta_{0}\right)\sim\mathcal{N}\left(\mu_{0},\,\Sigma_{0}^{2}\right)\hspace{2cm}\mathcal{P}\left(\theta_{1}\right)\sim\mathcal{N}\left(\mu_{1},\,\Sigma_{1}^{2}\right)
+\end{align}
+
+&lt;h2&gt;Procedures&lt;/h2&gt;
+
+&lt;p align=&quot;justify&quot;&gt; We first define the design matrices, $\mathbf{D}_{0}$, $\mathbf{D}_{1}$ and the vector $\mathbf{b}$ as follows:&lt;/p&gt;
+
+$$
+\mathbf{D}_{0}=\left[\begin{matrix}
+\frac{1}{\sigma_{1}}\cr
+\frac{1}{\sigma_{2}}\cr
+\vdots\cr
+\vdots\cr
+\frac{1}{\sigma_{N}}
+\end{matrix}\right]\hspace{2cm}\mathbf{D}_{1}=\left[\begin{matrix}
+\frac{x_{1}}{\sigma_{1}}\cr
+\frac{x_{2}}{\sigma_{2}}\cr
+\vdots\cr
+\vdots\cr
+\frac{x_{N}}{\sigma_{N}}
+\end{matrix}\right]\hspace{2cm}\mathbf{b}=\left[\begin{matrix}
+\frac{y_{1}}{\sigma_{1}}\cr
+\frac{y_{2}}{\sigma_{2}}\cr
+\vdots\cr
+\vdots\cr
+\frac{y_{N}}{\sigma_{N}}
+\end{matrix}\right]
+$$
+
+
+&lt;p align=&quot;justify&quot;&gt; As we assume $\sigma_{n}$ to be known, the likelihood can be written as &lt;/p&gt;
+
+
+\begin{align}
+\mathcal{P}\left(\mathcal{D}\left|\theta_{1},\,\theta_{2}\right.\right)\propto\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{b}-\theta_{0}\mathbf{D}_{0}-\theta_{1}\mathbf{D}_{1}\right)^{\textrm{T}}\left(\mathbf{b}-\theta_{0}\mathbf{D}_{0}-\theta_{1}\mathbf{D}_{1}\right)\right]
+\end{align}
+
+
+&lt;p align=&quot;justify&quot;&gt; and the prior as &lt;/p&gt;
+
+\begin{align}
+\mathcal{P}\left(\theta_{0}\right)\propto\textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{\theta_{0}^{2}-2\mu_{0}\theta_{0}}{\Sigma_{0}^{2}}\right)\right]\textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{\theta_{1}^{2}-2\mu_{1}\theta_{1}}{\Sigma_{1}^{2}}\right)\right]
+\end{align}
+
+
+&lt;p align=&quot;justify&quot;&gt; The dependence of $\theta_{0}$ in the log-joint posterior distribution, that is, $\theta_{0}\left|\theta_{1},\,\mathcal{D}\right.$ is simply&lt;/p&gt;
+
+$$
+-\dfrac{1}{2}\left[\theta_{0}^{2}\left(\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{0}+\dfrac{1}{\Sigma_{0}^{2}}\right)+\theta_{0}\left(2\theta_{1}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{1}-2\mathbf{b}^{\textrm{T}}\mathbf{D}_{0}-\dfrac{2\mu_{0}}{\Sigma_{0}^{2}}\right)\right]
+$$
+
+
+&lt;p align=&quot;justify&quot;&gt; This is simply a quadratic function of $\theta_{0}$. If $a=\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{0}+\dfrac{1}{\Sigma_{0}^{2}}$
+and $b=2\theta_{1}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{1}-2\mathbf{b}^{\textrm{T}}\mathbf{D}_{0}-\dfrac{2\mu_{0}}{\Sigma_{0}^{2}}$,
+then &lt;/p&gt;
+
+$$
+\mathcal{P}\left(\theta_{0}\left|\theta_{1},\,\mathcal{D}\right.\right)\propto\textrm{exp}\left[-\dfrac{1}{2}\left(a\theta_{0}^{2}+b\theta_{0}\right)\right]
+$$
+
+
+&lt;p align=&quot;justify&quot;&gt; After completing the square,&lt;/p&gt;
+
+$$
+\mathcal{P}\left(\theta_{0}\left|\theta_{1},\,\mathcal{D}\right.\right)\propto\textrm{exp}\left[-\dfrac{a}{2}\left(\theta_{0}+\dfrac{b}{2a}\right)^{2}\right]
+$$
+
+
+&lt;p align=&quot;justify&quot;&gt; This is a Gaussian distribution with mean, $\mu$ and standard deviation, $\sigma$ given by &lt;/p&gt;
+
+$$
+\mu=-\dfrac{b}{2a}=\dfrac{-\theta_{1}\Sigma_{0}^{2}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{1}+\Sigma_{0}^{2}\mathbf{b}^{\textrm{T}}\mathbf{D}_{0}+\mu_{0}}{\Sigma_{0}^{2}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{0}+1}
+$$
+
+
+$$
+\sigma^{2}=\dfrac{1}{a}=\dfrac{\Sigma_{0}^{2}}{\Sigma_{0}^{2}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{0}+1}
+$$
+
+
+&lt;p align=&quot;justify&quot;&gt; Similarly, it can be shown that the dependence of $\theta_{1}$ in the joint posterior distribution, that is, $\mathcal{P}\left(\theta_{1}\left|\theta_{0},\,\mathcal{D}\right.\right)$ is Gaussian with &lt;/p&gt;
+
+$$
+\mu=\dfrac{-\theta_{0}\Sigma_{1}^{2}\mathbf{D}_{1}^{\textrm{T}}\mathbf{D}_{0}+\Sigma_{0}^{2}\mathbf{b}^{\textrm{T}}\mathbf{D}_{1}+\mu_{1}}{\Sigma_{1}^{2}\mathbf{D}_{1}^{\textrm{T}}\mathbf{D}_{1}+1}
+$$
+
+
+$$
+\sigma^{2}=\dfrac{\Sigma_{1}^{2}}{\Sigma_{1}^{2}\mathbf{D}_{1}^{\textrm{T}}\mathbf{D}_{1}+1}
+$$
+
+
+&lt;h2&gt;Python Code&lt;h2&gt;
+
+Now we have 
+
+```python
+a = b + c
+```
+
+
+
+
+
+
+
+
+
+&lt;/h2&gt;&lt;/h2&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Oct 2016 14:00:00 +0200</pubDate>
+        <link>https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
     
       <item>
         <title>BIRO - Bayesian Inference for Radio Observations</title>
@@ -79,11 +234,11 @@ blockquote {
 
 &lt;p align=&quot;justify&quot;&gt;He started by defining the 3 most basic terms: system, culture and flexibility which were not even clear to me what they meant until he explained them in simple terms. Flavio defines a system as being a mean of empowering humans to be amazing, a culture as the way humans do things (alternatively another answer from the audience was to define it as the rule which defines how a system works) and flexibility as the level of tolerance for variance in the system. Someone in the audience also defined flexibility as the ability to change the system and the culture! Flavio went on to explain what he really meant by the above three terms. In particular, he emphasized that tolerating variance in your community is a way to empower humans, from any culture which leads them to be simply amazing. On the other hand, community creates processes, which in turn lead to governance. Governance itself is essential to ensure growth. Governance will in principle follow the community and it is therefore important to know and understand our community.&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;He further described a set of attitudes and behaviours which are relevant in a growing community. Being a good listener is a crucial factor, although we cannot make everyone happy. Being humble and objective will simplify things to a huge extent. Usually, a community will set the expectations and it important to have clear expectations in order to be objective. It is also often a good practice to set the bar at a reasonable level. Above all, communicating the expectations is the key and it is sometimes better to over-communicate! Acknowledging our colleagues at the workplace is another important factor. The contribution of each and every person leads to excellent results.&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;He further described a set of attitudes and behaviours which are relevant in a growing community. Being a good listener is a crucial factor, although we cannot make everyone happy. Being humble and objective will simplify things to a huge extent. Usually, a community will set the expectations and it is important to have clear expectations in order to be objective. It is also often a good practice to set the bar at a reasonable level. Above all, communicating the expectations is the key and it is sometimes better to over-communicate! Acknowledging our colleagues at the workplace is another important factor. The contribution of each and every person leads to excellent results.&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;Moreover, unlike computers, humans are subject to emotion. Related to the communication factor, we should also be aware of the culture gap. Different cultures bring different perspectives and it is important that we all strive for diversity. Tribal thinking is certainly bad. It is crucial to build a community of doers, rather than a community of ranters! Many humans wear different hats. You could be working for Facebook but you hold another research position in academia as well. It happens and therefore it is important to understand others' situations. On this note, we should all be aware of Time Zone! You may be based in Germany but you have a colleague in Japan and hence, you will have to cope with the situation.&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;Moreover, unlike computers, humans, from different cultural background, are subject to emotion and different cultures bring different perspectives and hence, it is important that we all strive for diversity. On the other hand, tribal thinking is certainly bad. In fact, it is crucial to build a community of doers, rather than a community of ranters! It is also important to understand that many humans could wear different hats. You could be working for Facebook but you could be holding another research position in academia as well. It happens and therefore it is important to understand others' situations. On this note, we should all be aware of Time Zone! You may be based in Germany but you have a colleague in Japan and hence, you will have to cope with the situation.&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;On a conclusive note, Flavio also spoke about statistics. Statistics indicate that statistics is not good! Give a human a number and he will do anything to make it bigger. As the community grows, the processes will evolve. But most importantly, &quot;technology is social before it's technical - Gilles Deleuza.&quot; Moreover, do not forget say thanks! &lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;On a conclusive note, Flavio also spoke about statistics. Statistics indicate that statistics is not good! Ig we give a human a number, he will do anything to make it bigger. As the community grows, the processes will evolve. However, no matter how complicated it gets, &quot;technology is social before it's technical - Gilles Deleuza.&quot; On a final note, saying thanks will always make your colleague feel better and respected. &lt;/p&gt;
 
 </description>
         <pubDate>Mon, 10 Oct 2016 14:00:00 +0200</pubDate>
