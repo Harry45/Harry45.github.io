@@ -202,9 +202,25 @@ m = theta_op[0]
 c = theta_op[1]
 
 {% endhighlight %}
+<p align="justify">We are now ready to run the sampler. In particular, we fix the number of iterations to 200 000 and we reject the first 20 % of the chains.</p>
 
+{% highlight python %}
+iters = 2E5
+trace = np.zeros(shape = (int(iters), 2))
 
+def gibbs(m, c):
 
+	for i in range(int(iters)):
+		m = sample_grad(m, c)
+		c = sample_yint(m, c)
+		trace[i,:] = np.array([m, c])
 
+	return trace
 
+samples = gibbs(m,c)
+samples = samples[int(frac*iters):] # Reject first 20 % of the chains
+{% endhighlight %}
 
+<p align="justify">We finally get our nice 2D posterior distribution of the parameters. </p>
+
+{% include image.html url="/images/triangle_plot_bibbs.png" caption="2D posterior plot of the two parameters" width=500 align="centre" %}
