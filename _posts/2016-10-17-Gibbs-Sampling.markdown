@@ -223,4 +223,4 @@ samples = samples[int(frac*iters):] # Reject first 20 % of the chains
 
 <p align="justify">We finally get our nice 2D posterior distribution of the parameters. </p>
 
-{% include image.html url="/images/triangle_plot_gibbs.png" caption="2D posterior plot of the two parameters" width=500 align="centre" %}
+{% include image.html url="/images/triangle_plot_gibbs.png" caption="2D posterior plot of the two parameters" width=500 align="center" %}
