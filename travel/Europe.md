@@ -10,7 +10,7 @@ permalink: /travel/Europe/
 
 <p align="justify">I was one of the 400 participants who got selected to attend the 66<sup>th</sup> <a href="http://www.lindau-nobel.org/">Lindau Nobel Laureate</a> Meeting in Germany. This meeting also gathered 31 Nobel Prize winners and we had the opportunity to meet them and discuss various topics in a rather informal fashion.</p>
 
-<p align="justify"> I also took part in several events such as the Africa Outreach Breakfast and another breakfast which was on  Excellence in Science and Sports. Moreover, I had the opportunity to visit <a href="http://www.conti-online.com/generator/www/start/com/en/index_en.html">Continental</a> where I learnt about how Machine Learning techniques are being used for car braking systems. </p>
+<p align="justify"> I also took part in several events such as the Africa Outreach Breakfast and another which was on  Excellence in Science and Sports. Moreover, I had the opportunity to visit <a href="http://www.conti-online.com/generator/www/start/com/en/index_en.html">Continental</a> where I learnt about how Machine Learning techniques are being used for car braking systems. </p>
 
 <p align="justify"> In addition, I took part in a Press Talk along with Vint Cerf, Google's Vice President and Chief Internet Evangelist. This event was organised by <a href="http://www.faz.net/">FAZ</a> (Frankfurter Allgemeine Zeitung) and was based mostly on how Artificial Intelligence might affect our life.</p>
 
