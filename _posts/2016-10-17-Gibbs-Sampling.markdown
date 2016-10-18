@@ -141,7 +141,9 @@ $$
 
 <h2>Python Code</h2>
 
-<p align="justify"> Now we have </p>
+<p align="justify"> Now we have all the mathematical tools to write the Python code. We will first define the linear function. The data is available on [Github](https://github.com/Harry45/Self-Taught/tree/master/Gibbs_Sampling). </p>
+
+
 
 {% highlight python %}
 def linear(params):
