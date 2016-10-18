@@ -12,7 +12,7 @@ permalink: /travel/Europe/
 
 <p align="justify"> I also took part in several events such as the Africa Outreach Breakfast and another one which was on Excellence in Science and Sports. Moreover, I had the opportunity to visit <a href="http://www.conti-online.com/generator/www/start/com/en/index_en.html">Continental</a> where I learnt about how Machine Learning techniques are being tested for car braking systems. </p>
 
-<p align="justify"> In addition, I took part in a Press Talk along with Vint Cerf, Google's Vice President and Chief Internet Evangelist. This event was organised by <a href="http://www.faz.net/">FAZ</a> (Frankfurter Allgemeine Zeitung) and was based mostly on how Artificial Intelligence might affect our life.</p>
+<p align="justify"> In addition, I took part in a Press Talk along with Vint Cerf, Google's Vice President and Chief Internet Evangelist. This event was organised by <a href="http://www.faz.net/">FAZ</a> (Frankfurter Allgemeine Zeitung) and was based mostly on how Artificial Intelligence might affect our life.I had the opportunity to visit my co-supervisor</p>
 
 ## Switzerland
 {% include image.html url="Geneva.jpg" caption="Geneva" width=400 align="right" %}
