@@ -141,9 +141,7 @@ $$
 
 <h2>Python Code</h2>
 
-<p align="justify"> Now we have all the mathematical tools to write the Python code. The simulated data is available on <a href="https://github.com/Harry45/Self-Taught/tree/master/Gibbs_Sampling">Github</a>. We first define the linear function and the true parameters (for the gradient, $\theta_{1}$ and the y-intercept, $\theta_{0}$) are 2.0 and 0.5. Note that in the code below, we have used m and c for the gradient and the y-intercept.</p>
-
-as `AND`, `OR`, `NOT`,
+<p align="justify"> Now we have all the mathematical tools to write the Python code. The simulated data is available on <a href="https://github.com/Harry45/Self-Taught/tree/master/Gibbs_Sampling">Github</a>. We first define the linear function and the true parameters (for the gradient, $\theta_{1}$ and the y-intercept, $\theta_{0}$) are 2.0 and 0.5. Note that in the code below, we have used m and c for the gradient and the y-intercept. We also the specify the fraction of the chain that we will later consider as burn-in.</p>
 
 
 {% highlight python %}
@@ -164,9 +162,46 @@ y     = data[:,1]
 sigma = data[:,2]
 {% endhighlight %}
 
+<p align="justify">The next step is to create the design matrices $\mathbf{D}_{0}$, $\mathbf{D}_{1}$ and the vector $\mathbf{b}. </p>
 
+{% highlight python %}
+# Create Design Matrices
+Dm = x/sigma
+Dc = 1.0/sigma
+b  = y/sigma
 
+# Define Priors (Gaussian Priors)
+mu_m = 2.0; mu_c = 1.0
+si_m = 2.0; si_c = 2.0
 
+# Define Functions for Sampling
+def sample_grad(m, c):
+	var  = 1.0/(np.dot(Dm.T, Dm) + 1.0/si_m**2)
+	mean = var*(np.dot(b.T, Dm) + (mu_m/si_m**2) - c * np.dot(Dc.T, Dm))
+	return np.random.normal(mean, np.sqrt(var))
+
+def sample_yint(m, c):
+	var  = 1.0/(np.dot(Dc.T, Dc) + 1.0/si_c**2)
+	mean = var*(np.dot(b.T, Dc) + (mu_c/si_c**2) - m * np.dot(Dc.T, Dm))	
+	return np.random.normal(mean, np.sqrt(var))
+
+# Define the log-likelihood for optimisation
+def loglikelihood(theta, data, Sigma):
+  theta0, theta1 = theta 
+  model     = linear(theta)
+  chiSquare = LA.norm((model - data)/Sigma)**2
+  loglike   = -0.5 * (chiSquare) 
+  return loglike
+
+# Use, for example, Powell method for optimisation
+chi_square = lambda *args: -2*loglikelihood(*args)
+result     = op.minimize(chi_square, [1.0, 1.0], args=(y, sigma), method = 'Powell', tol = 1E-5)
+theta_op   = np.array(result["x"])
+
+m = theta_op[0]
+c = theta_op[1]
+
+{% endhighlight %}
 
 
 
