@@ -139,12 +139,26 @@ $$
 $$
 
 
-<h2>Python Code<h2>
+<h2>Python Code</h2>
 
 <p align="justify"> Now we have </p>
 
 {% highlight python %}
-a = b + c
+def linear(params):
+	return params[0]*x + params[1]
+
+# True Parameters
+grad  = 2.0
+yint  = 0.5
+
+# Fraction considered as burn-in
+frac  = 0.2
+
+# Load the data 
+data  = np.loadtxt('data_gibbs.txt')
+x     = data[:,0]; xmin = min(x); xmax = max(x)
+y     = data[:,1]
+sigma = data[:,2]
 {% endhighlight %}
 
 
