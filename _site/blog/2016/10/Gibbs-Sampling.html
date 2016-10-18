@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>An Introduction to Gibbs Sampling</title>
-  <meta name="description" content="Gibbs sampling is a variant of Markov Chain Monte Carlo (MCMC) method. The idea is to update one of the parameters at a time, this requiring conditional dist...">
+  <meta name="description" content="Gibbs sampling is a variant of Markov Chain Monte Carlo (MCMC) method (Wikipedia). The idea is to update one of the parameters at a time, thus requiring cond...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="https://Harry45.github.io/blog/2016/10/Gibbs-Sampling">
@@ -124,7 +124,7 @@
   </header>
 
   <article class="post-content">
-    <p align="justify">Gibbs sampling is a variant of Markov Chain Monte Carlo (MCMC) method. The idea is to update one of the parameters at a time, this requiring conditional distributions. As with the standard Metropolis-Hastings algorithm, samples generated from an accumulated Gibbs chain are correlated with nearby samples and hence, if independent samples are required, it is desired to thin the chain by taking every nth value. Moreover, the initial samples (burn-in) are negelected as they may not actually represent the underlying "true" distribution. The algorithm for Gibbs sampling is as follows:
+    <p align="justify">Gibbs sampling is a variant of Markov Chain Monte Carlo (MCMC) method (<a href="https://en.wikipedia.org/wiki/Gibbs_sampling">Wikipedia</a>). The idea is to update one of the parameters at a time, thus requiring conditional distributions. As with the standard Metropolis-Hastings algorithm, samples generated from an accumulated Gibbs chain are correlated with nearby samples and hence, if independent samples are required, it is desired to thin the chain by taking every n<sup>th</sup> value. Moreover, the initial samples (burn-in) are negelected as they may not actually represent the underlying "true" distribution. The algorithm for Gibbs sampling is as follows:
 <ol type="1">
 <li>Initialise $\boldsymbol{\theta}=\left(\theta_{0},\,\theta_{1},\,\ldots\theta_{n}\right)$.</li> 
 <li>Sample for the parameters as below:</li>
@@ -136,7 +136,7 @@
 </ul></ol>
 
 
-<p align="justify">However, notice that we need the conditional distributions. The advantage of Gibbs sampling is the that it reduces the need for "tuning" as in the case for the Metropolis-Hastings algorithm. In particular, the starting point can be guessed or can be found using an optimisation algorithm. </p>
+<p align="justify">However, notice that we need the conditional distributions. The advantage of Gibbs sampling is that it reduces the need for "tuning" as in the case for the Metropolis-Hastings algorithm. In particular, the starting point can be guessed or can be found using an optimisation algorithm. </p>
 
 <h2>Example - Bayesian Linear Regression</h2>
 
@@ -333,7 +333,7 @@ $$
 
 <p align="justify">We finally get our nice 2D posterior distribution of the parameters. </p>
 
-<dl class="wp-caption aligncentre" style="max-width: 500px">
+<dl class="wp-caption aligncenter" style="max-width: 500px">
 
 <dt><a href=""><img class="" src="/images/triangle_plot_gibbs.png" alt="2D posterior plot of the two parameters" /></a></dt>
 

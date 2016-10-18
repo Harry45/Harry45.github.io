@@ -13,7 +13,7 @@ tags:
 excerpt:
 ---
 
-<p align="justify">Gibbs sampling is a variant of Markov Chain Monte Carlo (MCMC) method. The idea is to update one of the parameters at a time, this requiring conditional distributions. As with the standard Metropolis-Hastings algorithm, samples generated from an accumulated Gibbs chain are correlated with nearby samples and hence, if independent samples are required, it is desired to thin the chain by taking every nth value. Moreover, the initial samples (burn-in) are negelected as they may not actually represent the underlying "true" distribution. The algorithm for Gibbs sampling is as follows:
+<p align="justify">Gibbs sampling is a variant of Markov Chain Monte Carlo (MCMC) method (<a href="https://en.wikipedia.org/wiki/Gibbs_sampling">Wikipedia</a>). The idea is to update one of the parameters at a time, thus requiring conditional distributions. As with the standard Metropolis-Hastings algorithm, samples generated from an accumulated Gibbs chain are correlated with nearby samples and hence, if independent samples are required, it is desired to thin the chain by taking every n<sup>th</sup> value. Moreover, the initial samples (burn-in) are negelected as they may not actually represent the underlying "true" distribution. The algorithm for Gibbs sampling is as follows:
 <ol type="1">
 <li>Initialise $\boldsymbol{\theta}=\left(\theta_{0},\,\theta_{1},\,\ldots\theta_{n}\right)$.</li> 
 <li>Sample for the parameters as below:</li>
