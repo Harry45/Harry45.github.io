@@ -9,8 +9,8 @@ blockquote {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 </style>
 
@@ -26,7 +26,7 @@ blockquote {
 ## Early Life
 
 <blockquote>
-<p align="center"><i>"Mauritius was made first and then heaven, heaven being copied after Mauritius."</i> - Mark Twain</p>
+<p align="justify"><i>"Mauritius was made first and then heaven, heaven being copied after Mauritius."</i> - Mark Twain</p>
 </blockquote>
 
 
