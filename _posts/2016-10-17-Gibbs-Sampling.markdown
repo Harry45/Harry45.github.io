@@ -25,7 +25,7 @@ excerpt:
 </ul></ol>
 
 
-<p align="justify">However, notice that we need the conditional distributions. The advantage of Gibbs sampling is the that it reduces the need for "tuning" as in the case for the Metropolis-Hastings algorithm. In particular, the starting point can be guessed or can be found using an optimisation algorithm. </p>
+<p align="justify">However, notice that we need the conditional distributions. The advantage of Gibbs sampling is that it reduces the need for "tuning" as in the case for the Metropolis-Hastings algorithm. In particular, the starting point can be guessed or can be found using an optimisation algorithm. </p>
 
 <h2>Example - Bayesian Linear Regression</h2>
 
