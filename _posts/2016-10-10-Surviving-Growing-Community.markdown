@@ -37,7 +37,7 @@ blockquote {
 
 <p align="justify">Moreover, unlike computers, humans, from different cultural background, are subject to emotion and different cultures bring different perspectives and hence, it is important that we all strive for diversity. On the other hand, tribal thinking is certainly bad. In fact, it is crucial to build a community of doers, rather than a community of ranters! It is also important to understand that many humans could wear different hats. You could be working for Facebook but you could be holding another research position in academia as well. It happens and therefore it is important to understand others' situations. On this note, we should all be aware of Time Zone! You may be based in Germany but you have a colleague in Japan and hence, you will have to cope with the situation.</p>
 
-<p align="justify">On a conclusive note, Flavio also spoke about statistics. Statistics indicate that statistics is not good! Ig we give a human a number, he will do anything to make it bigger. As the community grows, the processes will evolve. However, no matter how complicated it gets, "technology is social before it's technical - Gilles Deleuza." On a final note, saying thanks will always make your colleague feel better and respected. </p>
+<p align="justify">On a conclusive note, Flavio also spoke about statistics. Statistics indicate that statistics is not good! If we give a human a number, he will do anything to make it bigger. As the community grows, the processes will evolve. However, no matter how complicated it gets, "technology is social before it's technical - Gilles Deleuza." On a final note, saying thanks will always make your colleague feel better and respected. </p>
 
 
 
