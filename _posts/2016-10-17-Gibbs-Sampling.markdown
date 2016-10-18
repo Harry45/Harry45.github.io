@@ -162,7 +162,7 @@ y     = data[:,1]
 sigma = data[:,2]
 {% endhighlight %}
 
-<p align="justify">The next step is to create the design matrices $\mathbf{D}_{0}$, $\mathbf{D}_{1}$ and the vector $\mathbf{b}. </p>
+<p align="justify">The next step is to create the design matrices $\mathbf{D}_{0}$, $\mathbf{D}_{1}$ and the vector $\mathbf{b}$. We also define the hyper-parameters for the Gaussian priors, followed by defining functions to sample for $m$ and $c$ respectively. We add another function which we will then use to optimize the best-fit parameters. These parameters are then used as the starting point in the Gibbs Sampling scheme.</p>
 
 {% highlight python %}
 # Create Design Matrices
