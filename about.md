@@ -26,7 +26,7 @@ blockquote {
 ## Early Life
 
 <blockquote>
-<p align="justify"><i>"Mauritius was made first and then heaven, heaven being copied after Mauritius."</i> - Mark Twain</p>
+<p align="center"><i>"Mauritius was made first and then heaven, heaven being copied after Mauritius."</i> - Mark Twain</p>
 </blockquote>
 
 
