@@ -13,20 +13,6 @@ tags:
 excerpt:
 ---
 
-blockquote {
-    font-family: Georgia, serif;
-    font-size: 12px;
-    font-style: normal;
-    width: 450px;
-    margin: 0.25em 0;
-    padding: 0.25em 40px;
-    line-height: 1.45;
-    position: relative;
-    color: #383838;
-    background:#ececec;
-}
-
-
 <p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in <code>scipy</code>, acceptance-rejection sampling and use our own method as well. The distribution which we will use is given by </p>
 
 \begin{align}
@@ -84,9 +70,8 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 <h2>Acceptance-Rejection Sampling</h2>
 
-<blockquote><h4>Proposition</h4>
 <p align="justify">Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.</p>
-</blockquote>
+
 
 <h2>Our Own Method</h2>
 {% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Generating our own samples" width=500 align="center" %}
