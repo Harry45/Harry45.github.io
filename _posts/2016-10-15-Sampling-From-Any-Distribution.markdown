@@ -13,6 +13,20 @@ tags:
 excerpt:
 ---
 
+<head>
+<style>
+div {
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+div.ex1 {
+    padding: 2px 20px 2px 20px;
+}
+
+</style>
+</head>
+
 <p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in <code>scipy</code>, acceptance-rejection sampling and use our own method as well. The distribution which we will use is given by </p>
 
 \begin{align}
@@ -59,16 +73,15 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 {% include image.html url="/images/scipy_continuous.jpg" caption="Samples generated using scipy" width=500 align="center" %}
 
-<p align="justify">I am happy with the way we can generate the PDF, CDF and even draw samples easily using <code>scipy</code>.</p>
+<p align="justify">The above plot shows the PDF, CDF and the samples generated from the distribution. In particular, we choose to draw 10 000 random samples. <code>rv_continuous</code> becomes useful when one needs more than just the samples. Once we have defined it, we can simply find other properties such as its mean, standard deviation and several more (see the <a href="https://docs.scipy.org/doc/scipy-0.16.0/reference/generated/scipy.stats.rv_continuous.html">documentation</a> for further details).</p>
 
 <h2>Acceptance-Rejection Sampling</h2>
 
-<p align="justify">Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.</p>
+<p align="justify">An alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme.</p>
+
+<div class="ex1"><p align="justify"> Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.</p></div><br>
 
 
 <h2>Our Own Method</h2>
 {% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Generating our own samples" width=500 align="center" %}
 
-<!--
-<a href="https://en.wikipedia.org/wiki/Gibbs_sampling">Wikipedia</a>
--->
