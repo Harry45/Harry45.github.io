@@ -180,7 +180,12 @@
 <dd>Estimating value of $\pi$ using Monte Carlo Method</dd>
 </dl>
 
-<p align="justify">An alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme.</p>
+<p align="justify">Imagine we have a square board of size $\ell$, on which there is a circle of radius $0.5\ell$ at the centre of the board, that is, at $\left(0.5\ell,0.5\ell\right)$ in a Cartesian coordinate system. We are throwing darts randomly on the board $N$ times. If, $n$ is the number of times that the darts lie within the circle, the probability of throwing the darts successfully into the circle is simply $\frac{n}{N}$. This is also roughly equal to the ratio of the area of the circle to the area of the square board. One could use this idea to have a rough estimate of the value of $\pi$, that is,</p>
+<p>\begin{align}
+\pi \approx 4 * \frac{n}{N}
+\end{align}</p>
+
+<p align="justify">As $N$ becomes larger, one would have a more accurate estimate of the number $\pi$. This is the idea behind Monte Carlo sampling. Through this lens, an alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme.</p>
 
 <p align="justify"> Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.</p>
 
