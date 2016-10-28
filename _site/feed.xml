@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 10:34:35 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 10:34:35 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 10:38:13 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 10:38:13 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -248,12 +248,12 @@ $$
 
 &lt;p align=&quot;justify&quot;&gt;Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). This generic shape of this distribution follows that of a black body spectrum. This distribution is used only for illustrate the idea of sampling and has no underlying explanation to the actual physics of black body radiation.&lt;/p&gt;
 
-&lt;div class=&quot;definition&quot;&gt;
-A set $C$ is *convex* if for all
-$x,y \in C$ and for all
-$\alpha \in [0,1]$ the point
-$\alpha x + (1-\alpha) y \in C$.
-&lt;/div&gt;
+&lt;p&gt;p(box). &lt;em&gt;Theorem.&lt;/em&gt;   Let $\mu_1,\ldots,\mu_n$ be continuous probability measures on $\RR^n$. 
+Let $\alpha_1,\ldots,\alpha_n\in[0,1]$.  Let $f_1,\ldots,f_n:S^{n-1}\rar\RR^n$ be functions 
+such that $\mu_i(H^{+}_{v,\sprod{v}{f_i(v)}})=\alpha_i$ for all $i\in[n]$ and all $v\in S^{n-1}$. 
+The $f_i$ need not be continuous, but the $\Im f_i$ have to be bounded. 
+If $\Im f_1,\ldots,\Im f_n$ can be separated by hyperplanes, then there exists a 
+hyperplane $H$ such that $\mu_i(H^+)=\alpha_i$ for all $i\in[n]$.&lt;/p&gt;
 
 &lt;h2&gt;Using Scipy&lt;/h2&gt;
 
