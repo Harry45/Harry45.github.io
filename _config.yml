@@ -9,6 +9,8 @@ github_username:  Harry45
 facebook_username: arrykrishna
 linkedin_username: arrykrishna
 # Build settings
+highlighter: rouge
+
 markdown: kramdown
 kramdown:
   input: GFM
