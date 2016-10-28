@@ -22,7 +22,8 @@ excerpt:
 <p align="justify">Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). This generic shape of this distribution follows that of a black body spectrum. This distribution is used only for illustrate the idea of sampling and has no underlying explanation to the actual physics of black body radiation.</p>
 
 {% highlight latex %}
-$a = b + c$
+a = b + c
+\mathcal{P}
 {% endhighlight %}
 
 
