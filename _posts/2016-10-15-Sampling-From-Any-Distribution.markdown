@@ -32,7 +32,7 @@ class blackbody(ss.rv_continuous):
         return (1.0/const) * p(x)
 {% endhighlight %}
 
-<p align="justify">We are now ready to use our above written functions to find $\mathcal{P}\left(x\\right)$, $\Phi\left(x\\right)$ and generate samples from the underlying distribution.</p>
+<p align="justify">We are now ready to use our above written functions to find $\mathcal{P}\left(x\right)$, $\Phi\left(x\right)$ and generate samples from the underlying distribution.</p>
 
 {% highlight python %}
 
