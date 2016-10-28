@@ -52,9 +52,7 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 {% include image.html url="/images/scipy_continuous.jpg" caption="Samples generated using scipy" width=500 align="right" %}
 
-<p align="justify">I am happy with the way we can generate the PDF, CDF and even draw samples easily using <span class='highlight'><code class='closure'>
-{% highlight python %}scipy{% endhighlight %}
-</code></span>.</p>
+<p align="justify">I am happy with the way we can generate the PDF, CDF and even draw samples easily using `scipy`.</p>
 
 <h2>Acceptance-Rejection Sampling</h2>
 
