@@ -19,7 +19,7 @@ excerpt:
 \mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 1}
 \end{align}
 
-<p align="justify">Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). This generic shape of this distribution follows that of a black body spectrum. This distribution is used only to illustrate the idea of sampling and has no underlying explanation to the actual physics of black body radiation.</p>
+<p align="justify">Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). This generic shape of this distribution follows that of a black body spectrum. This distribution is used only to illustrate the idea of sampling and we do not provide any relevant explanation to the actual physics of black body radiation in this post.</p>
 
 <h2>Using Scipy</h2>
 
@@ -76,5 +76,14 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 
 <h2>Our Own Method</h2>
+<p align="justify">What do we do if neither of the two methods work but we do have the PDF? The procedures we adopt here is as follows:</p>
+
+<ol type="1">
+  <li>Find the CDF using <code>np.cumsum</code></li>
+  <li>Generate a random number from a uniform distribution, $\mathcal{U}$\left[0,1\right] </li>
+  <li>Use <code>interp1d</code> from <code>scipy.interpolate</code> to estimate the random number.</li>
+</ol>
+
+
 {% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Generating our own samples" width=500 align="center" %}
 

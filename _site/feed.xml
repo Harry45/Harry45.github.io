@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 16:23:26 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 16:23:26 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 16:33:39 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 16:33:39 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -246,7 +246,7 @@ $$
 \mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 1}
 \end{align}&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). This generic shape of this distribution follows that of a black body spectrum. This distribution is used only to illustrate the idea of sampling and has no underlying explanation to the actual physics of black body radiation.&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). This generic shape of this distribution follows that of a black body spectrum. This distribution is used only to illustrate the idea of sampling and we do not provide any relevant explanation to the actual physics of black body radiation in this post.&lt;/p&gt;
 
 &lt;h2&gt;Using Scipy&lt;/h2&gt;
 
@@ -306,6 +306,14 @@ $$
 &lt;p align=&quot;justify&quot;&gt; Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.&lt;/p&gt;
 
 &lt;h2&gt;Our Own Method&lt;/h2&gt;
+&lt;p align=&quot;justify&quot;&gt;What do we do if neither of the two methods work but we do have the PDF? The procedures we adopt here is as follows:&lt;/p&gt;
+
+&lt;ol type=&quot;1&quot;&gt;
+  &lt;li&gt;Find the CDF using &lt;code&gt;np.cumsum&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Generate a random number from a uniform distribution, $\mathcal{U}$\left[0,1\right] &lt;/li&gt;
+  &lt;li&gt;Use &lt;code&gt;interp1d&lt;/code&gt; from &lt;code&gt;scipy.interpolate&lt;/code&gt; to estimate the random number.&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 500px&quot;&gt;
 
 &lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/own_cdf_pdf_samples.jpg&quot; alt=&quot;Generating our own samples&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
