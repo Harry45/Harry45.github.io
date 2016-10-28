@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 16:38:57 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 16:38:57 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 16:41:26 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 16:41:26 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -280,9 +280,9 @@ $$
 
 &lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 500px&quot;&gt;
 
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/scipy_continuous.jpg&quot; alt=&quot;Samples generated using scipy&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/scipy_continuous.jpg&quot; alt=&quot;Samples generated using &amp;lt;code&amp;gt;rv_continuous&amp;lt;/code&amp;gt; from &amp;lt;code&amp;gt;scipy.stats&amp;lt;/code&amp;gt;&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
 
-&lt;dd&gt;Samples generated using scipy&lt;/dd&gt;
+&lt;dd&gt;Samples generated using &lt;code&gt;rv_continuous&lt;/code&gt; from &lt;code&gt;scipy.stats&lt;/code&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 
 &lt;p align=&quot;justify&quot;&gt;The above plot shows the PDF, CDF and the samples generated from the distribution. In particular, we choose to draw 10 000 random samples. &lt;code&gt;rv_continuous&lt;/code&gt; becomes useful when one needs more than just the samples. Once we have defined it, we can simply find other properties such as its mean, standard deviation and several more (see the &lt;a href=&quot;https://docs.scipy.org/doc/scipy-0.16.0/reference/generated/scipy.stats.rv_continuous.html&quot;&gt;documentation&lt;/a&gt; for further details).&lt;/p&gt;
@@ -329,9 +329,9 @@ $$
 
 &lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 500px&quot;&gt;
 
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/own_cdf_pdf_samples.jpg&quot; alt=&quot;Generating our own samples&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/own_cdf_pdf_samples.jpg&quot; alt=&quot;Samples generated using the CDF and interpolation method&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
 
-&lt;dd&gt;Generating our own samples&lt;/dd&gt;
+&lt;dd&gt;Samples generated using the CDF and interpolation method&lt;/dd&gt;
 &lt;/dl&gt;
 
 &lt;p align=&quot;justify&quot;&gt;Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using &lt;code&gt;rv_continuous&lt;/code&gt;, doesn't it?&lt;/p&gt;
