@@ -13,7 +13,7 @@ tags:
 excerpt:
 ---
 
-<p align="justify"><code>scipy</code>One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>!</p>
+<p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>! Here, we will show three methods which we can use to generate random numbers from a distribution. The class <code>rv_continuous</code> in <code>scipy.stats</code> is straightforward to use. We simply need to define either the PDF or CDF using <code>_pdf</code> and <code>_cdf</code> respectively.</p>
 
 
 <h2>Using Scipy</h2>
@@ -52,7 +52,7 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 {% include image.html url="/images/scipy_continuous.jpg" caption="Samples generated using scipy" width=500 align="right" %}
 
-<p align="justify">I am happy with the way we can generate the PDF, CDF and even draw samples easily using `scipy`.</p>
+<p align="justify">I am happy with the way we can generate the PDF, CDF and even draw samples easily using <code>scipy</code>.</p>
 
 <h2>Acceptance-Rejection Sampling</h2>
 
