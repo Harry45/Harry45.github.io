@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 16:12:57 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 16:12:57 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 16:14:15 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 16:14:15 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -289,7 +289,7 @@ $$
 
 &lt;h2&gt;Acceptance-Rejection Sampling&lt;/h2&gt;
 
-&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 250px&quot;&gt;
+&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 275px&quot;&gt;
 
 &lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/circle_accept_reject.jpg&quot; alt=&quot;Estimating value of $\pi$ using Monte Carlo Method&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
 
