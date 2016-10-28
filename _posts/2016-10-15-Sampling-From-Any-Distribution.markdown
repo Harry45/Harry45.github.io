@@ -63,7 +63,7 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 <h2>Acceptance-Rejection Sampling</h2>
 
-{% include image.html url="/images/circle_accept_reject.jpg" caption="Samples generated using scipy" width=500 align="right" %}
+{% include image.html url="/images/circle_accept_reject.jpg" caption="Estimating value of $\pi$ using Monte Carlo Method" width=250 align="right" %}
 
 <p align="justify">An alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme.</p>
 

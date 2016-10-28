@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 15:50:56 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 15:50:56 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 15:53:26 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 15:53:26 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -289,11 +289,11 @@ $$
 
 &lt;h2&gt;Acceptance-Rejection Sampling&lt;/h2&gt;
 
-&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 500px&quot;&gt;
+&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 250px&quot;&gt;
 
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/circle_accept_reject.jpg&quot; alt=&quot;Samples generated using scipy&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/circle_accept_reject.jpg&quot; alt=&quot;Estimating value of $\pi$ using Monte Carlo Method&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
 
-&lt;dd&gt;Samples generated using scipy&lt;/dd&gt;
+&lt;dd&gt;Estimating value of $\pi$ using Monte Carlo Method&lt;/dd&gt;
 &lt;/dl&gt;
 
 &lt;p align=&quot;justify&quot;&gt;An alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme.&lt;/p&gt;
