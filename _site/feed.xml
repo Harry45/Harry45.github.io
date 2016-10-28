@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 16:33:39 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 16:33:39 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 16:34:49 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 16:34:49 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -310,7 +310,7 @@ $$
 
 &lt;ol type=&quot;1&quot;&gt;
   &lt;li&gt;Find the CDF using &lt;code&gt;np.cumsum&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Generate a random number from a uniform distribution, $\mathcal{U}$\left[0,1\right] &lt;/li&gt;
+  &lt;li&gt;Generate a random number from a uniform distribution, $\mathcal{U}\left[0,1\right]$ &lt;/li&gt;
   &lt;li&gt;Use &lt;code&gt;interp1d&lt;/code&gt; from &lt;code&gt;scipy.interpolate&lt;/code&gt; to estimate the random number.&lt;/li&gt;
 &lt;/ol&gt;
 

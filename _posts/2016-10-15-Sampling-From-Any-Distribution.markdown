@@ -80,7 +80,7 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 <ol type="1">
   <li>Find the CDF using <code>np.cumsum</code></li>
-  <li>Generate a random number from a uniform distribution, $\mathcal{U}$\left[0,1\right] </li>
+  <li>Generate a random number from a uniform distribution, $\mathcal{U}\left[0,1\right]$ </li>
   <li>Use <code>interp1d</code> from <code>scipy.interpolate</code> to estimate the random number.</li>
 </ol>
 
