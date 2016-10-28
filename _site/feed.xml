@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 10:55:18 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 10:55:18 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 10:57:04 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 10:57:04 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -281,7 +281,7 @@ $$
 &lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blackbody_distribution&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;norm_constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blackbody_distribution&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;norm_constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1E4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 500px&quot;&gt;
+&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 500px&quot;&gt;
 
 &lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/scipy_continuous.jpg&quot; alt=&quot;Samples generated using scipy&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
 
@@ -297,7 +297,7 @@ $$
 &lt;/blockquote&gt;
 
 &lt;h2&gt;Our Own Method&lt;/h2&gt;
-&lt;dl class=&quot;wp-caption alignleft&quot; style=&quot;max-width: 500px&quot;&gt;
+&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 500px&quot;&gt;
 
 &lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/own_cdf_pdf_samples.jpg&quot; alt=&quot;Generating our own samples&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
 

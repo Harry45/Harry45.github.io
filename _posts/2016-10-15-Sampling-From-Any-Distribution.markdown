@@ -64,7 +64,7 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 {% endhighlight %}
 
-{% include image.html url="/images/scipy_continuous.jpg" caption="Samples generated using scipy" width=500 align="right" %}
+{% include image.html url="/images/scipy_continuous.jpg" caption="Samples generated using scipy" width=500 align="center" %}
 
 <p align="justify">I am happy with the way we can generate the PDF, CDF and even draw samples easily using <code>scipy</code>.</p>
 
@@ -75,7 +75,7 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 </blockquote>
 
 <h2>Our Own Method</h2>
-{% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Generating our own samples" width=500 align="left" %}
+{% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Generating our own samples" width=500 align="center" %}
 
 <!--
 <a href="https://en.wikipedia.org/wiki/Gibbs_sampling">Wikipedia</a>
