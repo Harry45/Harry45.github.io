@@ -21,12 +21,9 @@ excerpt:
 
 <p align="justify">Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). This generic shape of this distribution follows that of a black body spectrum. This distribution is used only for illustrate the idea of sampling and has no underlying explanation to the actual physics of black body radiation.</p>
 
-p(box). *Theorem.*   Let $\mu_1,\ldots,\mu_n$ be continuous probability measures on $\RR^n$. 
-Let $\alpha_1,\ldots,\alpha_n\in[0,1]$.  Let $f_1,\ldots,f_n:S^{n-1}\rar\RR^n$ be functions 
-such that $\mu_i(H^{+}_{v,\sprod{v}{f_i(v)}})=\alpha_i$ for all $i\in[n]$ and all $v\in S^{n-1}$. 
-The $f_i$ need not be continuous, but the $\Im f_i$ have to be bounded. 
-If $\Im f_1,\ldots,\Im f_n$ can be separated by hyperplanes, then there exists a 
-hyperplane $H$ such that $\mu_i(H^+)=\alpha_i$ for all $i\in[n]$.
+{% highlight latex %}
+$a = b + c$
+{% endhighlight %}
 
 
 
