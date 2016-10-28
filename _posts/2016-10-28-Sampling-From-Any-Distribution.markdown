@@ -57,7 +57,7 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 {% endhighlight %}
 
-{% include image.html url="/images/scipy_continuous.jpg" caption="Samples generated using <code>rv_continuous</code> from <code>scipy.stats</code>" width=600 align="center" %}
+{% include image.html url="/images/scipy_continuous.jpg" caption="Samples generated using <code>rv_continuous</code> from <code>scipy.stats</code>" width=700 align="center" %}
 
 <p align="justify">The above plot shows the PDF, CDF and the samples generated from the distribution. In particular, we choose to draw 10 000 random samples. <code>rv_continuous</code> becomes useful when one needs more than just the samples. Once we have defined it, we can simply find other properties such as its mean, standard deviation and several more (see the <a href="https://docs.scipy.org/doc/scipy-0.16.0/reference/generated/scipy.stats.rv_continuous.html">documentation</a> for further details).</p>
 
@@ -99,6 +99,6 @@ def genSamples(N):
 own_samples = genSamples(1E4)
 {% endhighlight %}
 
-{% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Samples generated using the CDF and interpolation method" width=500 align="center" %}
+{% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Samples generated using the CDF and interpolation method" width=700 align="center" %}
 
 <p align="justify">Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using <code>rv_continuous</code>, doesn't it?</p>
