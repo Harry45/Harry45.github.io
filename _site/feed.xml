@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 16:09:27 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 16:09:27 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 16:12:57 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 16:12:57 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -296,12 +296,12 @@ $$
 &lt;dd&gt;Estimating value of $\pi$ using Monte Carlo Method&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;p align=&quot;justify&quot;&gt;Imagine we have a square board of size $\ell$, on which there is a circle of radius $0.5\ell$ at the centre of the board, that is, at $\left(0.5\ell,0.5\ell\right)$ in a Cartesian coordinate system. We are throwing darts randomly on the board $N$ times. If, $n$ is the number of times that the darts lie within the circle, the probability of throwing the darts successfully into the circle is simply $\frac{n}{N}$. This is also roughly equal to the ratio of the area of the circle to the area of the square board. One could use this idea to have a rough estimate of the value of $\pi$, that is,&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;Imagine we have a square board of size $l$, on which there is a circle of radius $0.5l$ at the centre of the board, that is, at $\left(0.5l,0.5l\right)$ in a Cartesian coordinate system. We are throwing darts randomly on the board $N$ times. If, $n$ is the number of times that the darts lie within the circle, the probability of throwing the darts successfully into the circle is simply $\frac{n}{N}$. This is also roughly equal to the ratio of the area of the circle to the area of the square board. One could use this idea to have a rough estimate of the value of $\pi$, that is,&lt;/p&gt;
 &lt;p&gt;\begin{align}
-\pi \approx 4 * \frac{n}{N}
+\pi \approx 4 \times \frac{n}{N}
 \end{align}&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;As $N$ becomes larger, one would have a more accurate estimate of the number $\pi$. This is the idea behind Monte Carlo sampling. Through this lens, an alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme.&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;As $N$ becomes larger, one would have a more accurate estimate of the number $\pi$. This is the idea behind Monte Carlo sampling. Through this lens, an alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme. It is also sometimes referred to as Lahiri's Sampling method.&lt;/p&gt;
 
 &lt;p align=&quot;justify&quot;&gt; Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.&lt;/p&gt;
 
