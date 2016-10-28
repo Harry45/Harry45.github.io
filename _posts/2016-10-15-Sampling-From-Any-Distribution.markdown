@@ -13,7 +13,7 @@ tags:
 excerpt:
 ---
 
-<p align="justify">`{% raw %}{% raw %}{% endraw %}`testOne of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>!</p>
+<p align="justify"><code>scipy</code>One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>!</p>
 
 
 <h2>Using Scipy</h2>
