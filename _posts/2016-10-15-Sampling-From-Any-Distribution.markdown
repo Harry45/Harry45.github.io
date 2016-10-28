@@ -13,11 +13,13 @@ tags:
 excerpt:
 ---
 
-<p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in <code>scipy</code>, rejection-rejection sampling and use our own method as well. The distribution which we will use is given by </p>
+<p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in <code>scipy</code>, acceptance-rejection sampling and use our own method as well. The distribution which we will use is given by </p>
 
 \begin{align}
 \mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 1}
 \end{align}
+
+<p align="justify">Note that we will use the following notations: $\mathcal{P}\left(.\right)$ is the probability distribution function (PDF) while $\Phi\left(.\right)$ is the cumulative distribution function (CDF).</p>
 
 <h2>Using Scipy</h2>
 

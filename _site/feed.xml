@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 10:18:09 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 10:18:09 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 10:21:04 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 10:21:04 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -240,11 +240,13 @@ $$
     
       <item>
         <title>Sampling From Any Distribution</title>
-        <description>&lt;p align=&quot;justify&quot;&gt;One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on &lt;a href=&quot;http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution&quot;&gt;stackoverflow&lt;/a&gt;! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in &lt;code&gt;scipy&lt;/code&gt;, rejection-rejection sampling and use our own method as well. The distribution which we will use is given by &lt;/p&gt;
+        <description>&lt;p align=&quot;justify&quot;&gt;One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on &lt;a href=&quot;http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution&quot;&gt;stackoverflow&lt;/a&gt;! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in &lt;code&gt;scipy&lt;/code&gt;, acceptance-rejection sampling and use our own method as well. The distribution which we will use is given by &lt;/p&gt;
 
 &lt;p&gt;\begin{align}
 \mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 1}
 \end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Note that we will use the following notations: $\mathcal{P}\left(.\right)$ is the probability distribution function (PDF) while $\Phi\left(.\right)$ is the cumulative distribution function (CDF).&lt;/p&gt;
 
 &lt;h2&gt;Using Scipy&lt;/h2&gt;
 
