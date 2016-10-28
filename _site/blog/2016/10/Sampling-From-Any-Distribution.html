@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Blog</title>
-  <meta name="description" content="501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935">
+  <title>Sampling From Any Distribution</title>
+  <meta name="description" content="x = np.linspace(1E-5, 10.0, 1E4)def p(x):	return (x**3)/(np.exp(2.0 * x) -1)# Define function to normalise the PDFdef normalisation(x):	return simps(p(x), x)...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://Harry45.github.io/blog/">
+  <link rel="canonical" href="https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution">
   <link rel="alternate" type="application/rss+xml" title="Arrykrishna Mootoovaloo" href="https://Harry45.github.io/feed.xml" />
 <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
 <link href='//fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
@@ -111,71 +111,91 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Blog</h1>
+    <h1 class="post-title">Sampling From Any Distribution</h1>
+    <p class="post-meta">Posted on October 15, 2016 by  A.Mootoovaloo  
+
+  in
+  
+  <a href="/categories/#Machine Learning and Statistics" title="Machine Learning and Statistics">Machine Learning and Statistics</a>&nbsp;
+  
+
+
+</p>
   </header>
 
   <article class="post-content">
-    <p>Below is a list of my recent posts. Most of my posts will be on research, academic, Mathematics, Machine Learning and Statistics topics.</p>
+    <p align="justify"></p>
 
-<ul class="listing">
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1E-5</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">1E4</span><span class="p">)</span>
 
-  
-  
-    
-    <li class="listing-seperator">2016</li>
-  
-  <li class="listing-item">
-    <time datetime="2016-10-17">2016-10-17</time>
-    <a href="/blog/2016/10/Gibbs-Sampling" title="An Introduction to Gibbs Sampling">An Introduction to Gibbs Sampling</a>
-  </li>
+<span class="k">def</span> <span class="nf">p</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
-  
-  
-  <li class="listing-item">
-    <time datetime="2016-10-15">2016-10-15</time>
-    <a href="/blog/2016/10/Sampling-From-Any-Distribution" title="Sampling From Any Distribution">Sampling From Any Distribution</a>
-  </li>
+<span class="c"># Define function to normalise the PDF</span>
+<span class="k">def</span> <span class="nf">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="k">return</span> <span class="n">simps</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
 
-  
-  
-  <li class="listing-item">
-    <time datetime="2016-10-13">2016-10-13</time>
-    <a href="/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations" title="BIRO - Bayesian Inference for Radio Observations">BIRO - Bayesian Inference for Radio Observations</a>
-  </li>
+<span class="c"># Define the distribution using rv_continuous</span>
+<span class="k">class</span> <span class="nc">blackbody</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">rv_continuous</span><span class="p">):</span> 
+    <span class="k">def</span> <span class="nf">_pdf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="n">const</span><span class="p">)</span> <span class="o">*</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></figure>
 
-  
-  
-  <li class="listing-item">
-    <time datetime="2016-10-10">2016-10-10</time>
-    <a href="/blog/2016/10/Surviving-Growing-Community" title="Surviving A Fast Growing Community Without Dying">Surviving A Fast Growing Community Without Dying</a>
-  </li>
+<p align="justify">We are now ready to use our above written functions to find $\mathcal{P}\left(x\\right)$, $\Phi\left(x\\right)$ and generate samples from the underlying distribution.</p>
 
-  
-  
-  <li class="listing-item">
-    <time datetime="2016-10-09">2016-10-09</time>
-    <a href="/blog/2016/10/JEDI" title="JEDI - An Alternate Route to Conventional Workshops">JEDI - An Alternate Route to Conventional Workshops</a>
-  </li>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">blackbody_distribution</span> <span class="o">=</span> <span class="n">blackbody</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"blackbody_distribution"</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
-  
-  
-  <li class="listing-item">
-    <time datetime="2016-10-08">2016-10-08</time>
-    <a href="/blog/2016/10/Gaussian-Process" title="Gaussian Process">Gaussian Process</a>
-  </li>
+<span class="c"># Find the normalisation constant first</span>
+<span class="n">norm_constant</span> <span class="o">=</span> <span class="n">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-  
-  
-  <li class="listing-item">
-    <time datetime="2016-10-07">2016-10-07</time>
-    <a href="/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project" title="A Brief Overview of my Undergraduate Project">A Brief Overview of my Undergraduate Project</a>
-  </li>
+<span class="c"># create pdf, cdf, random samples</span>
+<span class="n">pdf</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">)</span>
+<span class="n">cdf</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">)</span>
+<span class="n">samples</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mf">1E4</span><span class="p">)</span></code></pre></figure>
 
-</ul>
+<dl class="wp-caption alignright" style="max-width: 500px">
+
+<dt><a href=""><img class="" src="/images/scipy_continuous.jpg" alt="Samples generated using scipy" /></a></dt>
+
+<dd>Samples generated using scipy</dd>
+</dl>
+
+<dl class="wp-caption alignleft" style="max-width: 500px">
+
+<dt><a href=""><img class="" src="/images/own_cdf_pdf_samples.jpg" alt="Generating our own samples" /></a></dt>
+
+<dd>Generating our own samples</dd>
+</dl>
+
+<!--
+<a href="https://en.wikipedia.org/wiki/Gibbs_sampling">Wikipedia</a>
+-->
 
   </article>
 
+  <!-- mathjax -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+
+  </script>
+  <script type="text/javascript"
+        src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  
+
 </div>
+
 
       </div>
     </div>
