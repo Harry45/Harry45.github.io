@@ -198,6 +198,19 @@
   <li>Use <code>interp1d</code> from <code>scipy.interpolate</code> to estimate the random number.</li>
 </ol>
 
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Our Own pdf, cdf and samples</span>
+<span class="n">own_pdf</span> <span class="o">=</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">norm_constant</span>
+<span class="n">own_cdf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">own_pdf</span><span class="p">);</span> <span class="n">own_cdf</span> <span class="o">/=</span> <span class="nb">max</span><span class="p">(</span><span class="n">own_cdf</span><span class="p">)</span>
+
+<span class="c"># Define a function to return N samples</span>
+<span class="k">def</span> <span class="nf">genSamples</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+	<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
+	<span class="n">func_interp</span> <span class="o">=</span> <span class="n">interp1d</span><span class="p">(</span><span class="n">own_cdf</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+	<span class="n">samples</span> <span class="o">=</span> <span class="n">func_interp</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+	<span class="k">return</span> <span class="n">samples</span>
+
+<span class="n">own_samples</span> <span class="o">=</span> <span class="n">genSamples</span><span class="p">(</span><span class="mf">1E4</span><span class="p">)</span></code></pre></figure>
+
 <dl class="wp-caption aligncenter" style="max-width: 500px">
 
 <dt><a href=""><img class="" src="/images/own_cdf_pdf_samples.jpg" alt="Generating our own samples" /></a></dt>
@@ -205,6 +218,7 @@
 <dd>Generating our own samples</dd>
 </dl>
 
+<p align="justify">Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using <code>rv_continuous</code>, doesn't it?</p>
 
   </article>
 

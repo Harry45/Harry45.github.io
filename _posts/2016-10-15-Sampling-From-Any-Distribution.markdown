@@ -84,6 +84,21 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
   <li>Use <code>interp1d</code> from <code>scipy.interpolate</code> to estimate the random number.</li>
 </ol>
 
+{% highlight python %}
+# Our Own pdf, cdf and samples
+own_pdf = p(x)/norm_constant
+own_cdf = np.cumsum(own_pdf); own_cdf /= max(own_cdf)
+
+# Define a function to return N samples
+def genSamples(N):
+	u = np.random.uniform(0, 1, int(N))
+	func_interp = interp1d(own_cdf, x)
+	samples = func_interp(u)
+	return samples
+
+own_samples = genSamples(1E4)
+{% endhighlight %}
 
 {% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Generating our own samples" width=500 align="center" %}
 
+<p align="justify">Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using <code>rv_continuous</code>, doesn't it?</p>
