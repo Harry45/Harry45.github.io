@@ -13,7 +13,7 @@ tags:
 excerpt:
 ---
 
-<p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">Wikipedia</a>stakoverflow!</p>
+<p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stakoverflow</a>!</p>
 
 
 <h2>Using Scipy</h2>
@@ -51,6 +51,8 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 {% endhighlight %}
 
 {% include image.html url="/images/scipy_continuous.jpg" caption="Samples generated using scipy" width=500 align="right" %}
+
+<p align="justify">I am happy with the way we can generate the PDF, CDF and even draw samples easily using {% highlight python %}scipy{% endhighlight %}.</p>
 
 <h2>Acceptance-Rejection Sampling</h2>
 
