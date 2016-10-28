@@ -15,8 +15,8 @@ excerpt:
 
 blockquote {
     font-family: Georgia, serif;
-    font-size: 18px;
-    font-style: italic;
+    font-size: 12px;
+    font-style: normal;
     width: 450px;
     margin: 0.25em 0;
     padding: 0.25em 40px;
