@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Sampling From Any Distribution</title>
-  <meta name="description" content="x = np.linspace(1E-5, 10.0, 1E4)def p(x):	return (x**3)/(np.exp(2.0 * x) -1)# Define function to normalise the PDFdef normalisation(x):	return simps(p(x), x)...">
+  <meta name="description" content="One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution">
@@ -124,7 +124,9 @@
   </header>
 
   <article class="post-content">
-    <p align="justify"></p>
+    <p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">Wikipedia</a>stakoverflow!</p>
+
+<h2>Using Scipy</h2>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1E-5</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">1E4</span><span class="p">)</span>
 
@@ -159,6 +161,9 @@
 <dd>Samples generated using scipy</dd>
 </dl>
 
+<h2>Acceptance-Rejection Sampling</h2>
+
+<h2>Our Own Method</h2>
 <dl class="wp-caption alignleft" style="max-width: 500px">
 
 <dt><a href=""><img class="" src="/images/own_cdf_pdf_samples.jpg" alt="Generating our own samples" /></a></dt>
