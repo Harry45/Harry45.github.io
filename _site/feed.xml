@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 11:44:50 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 11:44:50 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 11:47:42 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 11:47:42 +0200</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -240,21 +240,7 @@ $$
     
       <item>
         <title>Sampling From Any Distribution</title>
-        <description>&lt;head&gt;
-&lt;style&gt;
-div {
-    border: 1px solid black;
-    background-color: lightblue;
-}
-
-div.ex1 {
-    padding: 2px 20px 2px 20px;
-}
-
-&lt;/style&gt;
-&lt;/head&gt;
-
-&lt;p align=&quot;justify&quot;&gt;One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on &lt;a href=&quot;http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution&quot;&gt;stackoverflow&lt;/a&gt;! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in &lt;code&gt;scipy&lt;/code&gt;, acceptance-rejection sampling and use our own method as well. The distribution which we will use is given by &lt;/p&gt;
+        <description>&lt;p align=&quot;justify&quot;&gt;One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on &lt;a href=&quot;http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution&quot;&gt;stackoverflow&lt;/a&gt;! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in &lt;code&gt;scipy&lt;/code&gt;, acceptance-rejection sampling and use our own method as well. The distribution which we will use is given by &lt;/p&gt;
 
 &lt;p&gt;\begin{align}
 \mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 1}
@@ -305,8 +291,7 @@ div.ex1 {
 
 &lt;p align=&quot;justify&quot;&gt;An alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme.&lt;/p&gt;
 
-&lt;div class=&quot;ex1&quot;&gt;&lt;p align=&quot;justify&quot;&gt; Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.&lt;/p&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt; Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.&lt;/p&gt;
 
 &lt;h2&gt;Our Own Method&lt;/h2&gt;
 &lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 500px&quot;&gt;
