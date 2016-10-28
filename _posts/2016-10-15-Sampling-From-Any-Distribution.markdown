@@ -70,6 +70,10 @@ samples = blackbody_distribution.rvs(const = norm_constant, size = 1E4)
 
 <h2>Acceptance-Rejection Sampling</h2>
 
+<blockquote><h4>Proposition</h4>
+<p align="justify">Suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$ (for example, $x = a + t(b–a)$ where $t$ is uniform in $\left[0, 1\right]$). Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.</p>
+</blockquote>
+
 <h2>Our Own Method</h2>
 {% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Generating our own samples" width=500 align="left" %}
 
