@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title:  "Sampling From Any Distribution"
-date:   2016-10-15 08:26:00
+date:   2016-10-28 08:26:00
 author: A.Mootoovaloo
 permalink:
 categories:
