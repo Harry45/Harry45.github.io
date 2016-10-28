@@ -19,7 +19,7 @@ excerpt:
 \mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 1}
 \end{align}
 
-<p align="justify">Note that we will use the following notations: $\mathcal{P}\left(.\right)$ is the probability distribution function (PDF) while $\Phi\left(.\right)$ is the cumulative distribution function (CDF).</p>
+<p align="justify">Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF).</p>
 
 <h2>Using Scipy</h2>
 
