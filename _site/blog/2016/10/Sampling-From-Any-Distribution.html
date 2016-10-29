@@ -127,7 +127,7 @@
     <p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in <code>scipy</code>, acceptance-rejection sampling and will consider interpolation method as well. The distribution which we will use is given by </p>
 
 <p>\begin{align}
-\mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 1}
+\mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 0.1}
 \end{align}</p>
 
 <p align="justify">where $k$ is the normalisation constant. Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). The generic shape of this distribution follows that of a black body spectrum. This distribution is used only to illustrate the idea of sampling and we do not provide any relevant explanation to the actual physics of black body radiation in this post.</p>
@@ -139,7 +139,7 @@
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">1E4</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">p</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-	<span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">)</span>
+	<span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.1</span><span class="p">)</span>
 
 <span class="c"># Define function to normalise the PDF</span>
 <span class="k">def</span> <span class="nf">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -152,7 +152,7 @@
 
 <p align="justify">We are now ready to use our above written functions to find $\mathcal{P}\left(x\right)$, $\Phi\left(x\right)$ and generate samples from the underlying distribution. We first need to instantiate it with the lower and upper limits given by <code>a</code> and <code>b</code> respectively. In principle, if not defined, it will be considered to be from $-\infty$ to $+\infty$.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">blackbody_distribution</span> <span class="o">=</span> <span class="n">blackbody</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"blackbody_distribution"</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mf">1E-6</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">blackbody_distribution</span> <span class="o">=</span> <span class="n">blackbody</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"blackbody_distribution"</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
 
 <span class="c"># Find the normalisation constant first</span>
 <span class="n">norm_constant</span> <span class="o">=</span> <span class="n">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>

@@ -16,7 +16,7 @@ excerpt:
 <p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in <code>scipy</code>, acceptance-rejection sampling and will consider interpolation method as well. The distribution which we will use is given by </p>
 
 \begin{align}
-\mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 1}
+\mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 0.1}
 \end{align}
 
 <p align="justify">where $k$ is the normalisation constant. Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). The generic shape of this distribution follows that of a black body spectrum. This distribution is used only to illustrate the idea of sampling and we do not provide any relevant explanation to the actual physics of black body radiation in this post.</p>
@@ -29,7 +29,7 @@ excerpt:
 x = np.linspace(0.0, 10.0, 1E4)
 
 def p(x):
-	return (x**3)/(np.exp(2.0 * x) -0.1)
+	return (x**3)/(np.exp(2.0 * x) - 0.1)
 
 # Define function to normalise the PDF
 def normalisation(x):
@@ -45,7 +45,7 @@ class blackbody(ss.rv_continuous):
 
 {% highlight python %}
 
-blackbody_distribution = blackbody(name="blackbody_distribution", a=1E-6)
+blackbody_distribution = blackbody(name="blackbody_distribution", a=0.0)
 
 # Find the normalisation constant first
 norm_constant = normalisation(x)
