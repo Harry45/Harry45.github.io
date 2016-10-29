@@ -26,10 +26,10 @@ excerpt:
 <p align="justify">The class <code>rv_continuous</code> in <code>scipy.stats</code> is straightforward to use. We simply need to define either the PDF or CDF using <code>_pdf</code> and <code>_cdf</code> respectively as shown below. We first define the PDF, followed by a function to normalise it. Note also that the PDF that we define in the class should be normalised.</p>
 
 {% highlight python %}
-x = np.linspace(1E-5, 10.0, 1E4)
+x = np.linspace(0.0, 10.0, 1E4)
 
 def p(x):
-	return (x**3)/(np.exp(2.0 * x) -1)
+	return (x**3)/(np.exp(2.0 * x) -0.1)
 
 # Define function to normalise the PDF
 def normalisation(x):
@@ -45,7 +45,7 @@ class blackbody(ss.rv_continuous):
 
 {% highlight python %}
 
-blackbody_distribution = blackbody(name="blackbody_distribution", a=0)
+blackbody_distribution = blackbody(name="blackbody_distribution", a=1E-6)
 
 # Find the normalisation constant first
 norm_constant = normalisation(x)
