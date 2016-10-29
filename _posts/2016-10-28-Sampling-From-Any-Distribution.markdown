@@ -101,4 +101,4 @@ own_samples = genSamples(1E4)
 
 {% include image.html url="/images/own_cdf_pdf_samples.jpg" caption="Samples generated using the CDF and interpolation method" width=700 align="center" %}
 
-<p align="justify">Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using <code>rv_continuous</code>, doesn't it?</p>
+<p align="justify">Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using <code>rv_continuous</code>!</p>
