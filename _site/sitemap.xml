@@ -5,7 +5,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution</loc>
       
-        <lastmod>2016-10-28T10:26:00+02:00</lastmod>
+        <lastmod>2016-10-28T12:26:00+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -20,7 +20,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</loc>
       
-        <lastmod>2016-10-17T14:00:00+02:00</lastmod>
+        <lastmod>2016-10-17T16:00:00+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -35,7 +35,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</loc>
       
-        <lastmod>2016-10-13T09:00:00+02:00</lastmod>
+        <lastmod>2016-10-13T11:00:00+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -50,7 +50,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</loc>
       
-        <lastmod>2016-10-10T14:00:00+02:00</lastmod>
+        <lastmod>2016-10-10T16:00:00+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -65,7 +65,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/2016/10/JEDI</loc>
       
-        <lastmod>2016-10-09T10:00:00+02:00</lastmod>
+        <lastmod>2016-10-09T12:00:00+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -80,7 +80,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/2016/10/Gaussian-Process</loc>
       
-        <lastmod>2016-10-08T14:00:00+02:00</lastmod>
+        <lastmod>2016-10-08T16:00:00+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -95,7 +95,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</loc>
       
-        <lastmod>2016-10-07T08:00:00+02:00</lastmod>
+        <lastmod>2016-10-07T10:00:00+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -111,7 +111,7 @@
     <url>
       <loc>https://Harry45.github.io/travel/Africa/</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -126,7 +126,7 @@
     <url>
       <loc>https://Harry45.github.io/travel/Europe/</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -141,7 +141,7 @@
     <url>
       <loc>https://Harry45.github.io/about/</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -156,7 +156,7 @@
     <url>
       <loc>https://Harry45.github.io/blog/</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -171,7 +171,7 @@
     <url>
       <loc>https://Harry45.github.io/feed.xml</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -186,7 +186,7 @@
     <url>
       <loc>https://Harry45.github.io/categories/</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -201,7 +201,7 @@
     <url>
       <loc>https://Harry45.github.io/</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -216,7 +216,7 @@
     <url>
       <loc>https://Harry45.github.io/css/main.css</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -231,7 +231,7 @@
     <url>
       <loc>https://Harry45.github.io/research/</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -246,9 +246,24 @@
   
     
     <url>
+      <loc>https://Harry45.github.io/teaching/</loc>
+      
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>https://Harry45.github.io/travel/</loc>
       
-        <lastmod>2016-12-06T09:50:29+02:00</lastmod>
+        <lastmod>2017-02-08T16:28:23+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

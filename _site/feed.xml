@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Dec 2016 09:50:29 +0200</pubDate>
-    <lastBuildDate>Tue, 06 Dec 2016 09:50:29 +0200</lastBuildDate>
+    <pubDate>Wed, 08 Feb 2017 16:28:23 +0400</pubDate>
+    <lastBuildDate>Wed, 08 Feb 2017 16:28:23 +0400</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -107,7 +107,7 @@
 
 &lt;p align=&quot;justify&quot;&gt;Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using &lt;code&gt;rv_continuous&lt;/code&gt;!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 28 Oct 2016 10:26:00 +0200</pubDate>
+        <pubDate>Fri, 28 Oct 2016 12:26:00 +0400</pubDate>
         <link>https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution</link>
         <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution</guid>
         
@@ -336,7 +336,7 @@ $$
 
 &lt;/p&gt;
 </description>
-        <pubDate>Mon, 17 Oct 2016 14:00:00 +0200</pubDate>
+        <pubDate>Mon, 17 Oct 2016 16:00:00 +0400</pubDate>
         <link>https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</link>
         <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</guid>
         
@@ -379,7 +379,7 @@ $$
 
 &lt;/p&gt;
 </description>
-        <pubDate>Thu, 13 Oct 2016 09:00:00 +0200</pubDate>
+        <pubDate>Thu, 13 Oct 2016 11:00:00 +0400</pubDate>
         <link>https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</link>
         <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</guid>
         
@@ -422,7 +422,7 @@ blockquote {
 &lt;p align=&quot;justify&quot;&gt;On a conclusive note, Flavio also spoke about statistics. Statistics indicate that statistics is not good! If we give a human a number, he will do anything to make it bigger. As the community grows, the processes will evolve. However, no matter how complicated it gets, &quot;technology is social before it's technical - Gilles Deleuza.&quot; On a final note, saying thanks will always make your colleague feel better and respected. &lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 10 Oct 2016 14:00:00 +0200</pubDate>
+        <pubDate>Mon, 10 Oct 2016 16:00:00 +0400</pubDate>
         <link>https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</link>
         <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</guid>
         
@@ -441,7 +441,7 @@ blockquote {
 
 &lt;p align=&quot;justify&quot;&gt;Now that many students have an experience of how the JEDI works, we, students work together with Prof Bruce Bassett and his team to organise various such events in different places/countries in Africa. Until now, I have participated in a few of them and I was also sometimes on the organising team.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 09 Oct 2016 10:00:00 +0200</pubDate>
+        <pubDate>Sun, 09 Oct 2016 12:00:00 +0400</pubDate>
         <link>https://Harry45.github.io/blog/2016/10/JEDI</link>
         <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/JEDI</guid>
         
@@ -615,7 +615,7 @@ x-x’\rightarrow\infty
 &lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/images/example_1_non_uniform.png&quot; alt=&quot;non_uniform_gp&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 08 Oct 2016 14:00:00 +0200</pubDate>
+        <pubDate>Sat, 08 Oct 2016 16:00:00 +0400</pubDate>
         <link>https://Harry45.github.io/blog/2016/10/Gaussian-Process</link>
         <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Gaussian-Process</guid>
         
@@ -663,7 +663,7 @@ x-x’\rightarrow\infty
 
 &lt;p align=&quot;justify&quot;&gt;On a conclusive note, the coupling between the radio galaxy and cavities still needs to be fully exploited. Jets and cavities heat the intracluster medium, thereby inhibiting cooling flow and affects accretion and galaxy growth. In fact, the nature of cavities, more precisely, its non-thermal nature opens a new world towards the study of magnetism in these characteristic sites. &lt;/p&gt;
 </description>
-        <pubDate>Fri, 07 Oct 2016 08:00:00 +0200</pubDate>
+        <pubDate>Fri, 07 Oct 2016 10:00:00 +0400</pubDate>
         <link>https://Harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</link>
         <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</guid>
         
