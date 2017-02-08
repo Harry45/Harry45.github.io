@@ -7,6 +7,12 @@
 - title: "Teaching"
   href: "/teaching/"
 
+  subcategories:
+  - subtitle: "A-Level Mathematics (9709)"
+    subhref: "/teaching/A-Level-Mathematics/"
+  - subtitle: "A-Level Further Mathematics (9231)"
+    subhref: "/teaching/A-Level-Further-Mathematics/"
+
 - title: "Research"
   href: "/research/"
 
