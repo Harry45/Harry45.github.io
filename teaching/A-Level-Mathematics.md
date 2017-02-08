@@ -7,15 +7,15 @@ permalink: /teaching/A-Level-Mathematics/
 ## Paper 1 (Pure Mathematics 1) 
 
 <ol>
-  <li>Quadratics<a href="">(pdf)</a></li>
-  <li>Functions<a href="">(pdf)</a></li>
-  <li>Coordinate Geometry<a href="">(pdf)</a></li>
-  <li>Circular Measure<a href="">(pdf)</a></li>
-  <li>Trigonometry<a href="">(pdf)</a></li>
-  <li>Vectors<a href="">(pdf)</a></li>
-  <li>Series<a href="">(pdf)</a></li>
-  <li>Differentiation<a href="">(pdf)</a></li>
-  <li>Integration<a href="">(pdf)</a></li>
+  <li>Quadratics</li>
+  <li>Functions</li>
+  <li>Coordinate Geometry</li>
+  <li>Circular Measure</li>
+  <li>Trigonometry</li>
+  <li>Vectors</li>
+  <li>Series</li>
+  <li>Differentiation</li>
+  <li>Integration</li>
 </ol>
 
 ## Paper 3 (Pure Mathematics 3)
