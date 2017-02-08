@@ -22,8 +22,4 @@ permalink: /teaching/A-Level-Mathematics/
 
 ## Paper 4 (Mechanics 1)
 
-## Paper 5 (Mechanics 2)
-
 ## Paper 6 (Statistics 1)
-
-## Paper 7 (Statistics 2)
