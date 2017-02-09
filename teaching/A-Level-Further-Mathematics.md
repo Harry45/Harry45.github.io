@@ -3,7 +3,7 @@ layout: post
 title: A-Level Further Mathematics (9231)
 permalink: /teaching/A-Level-Further-Mathematics/
 mathjax: true
-date:   2016-10-07 06:00:00
+date:   2017-02-09 06:00:00
 author: A.Mootoovaloo
 ---
 
