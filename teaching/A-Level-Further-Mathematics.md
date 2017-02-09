@@ -7,6 +7,11 @@ date:   2017-02-09 06:00:00
 author: A.Mootoovaloo
 ---
 
+<style>
+h3   {color: blue;}
+</style>
+
+
 ## Paper 1 (Pure Mathematics) 
 
 <ol>
@@ -23,7 +28,7 @@ author: A.Mootoovaloo
 
 ## Paper 2 (Mechanics and Statistics) 
 
-### Mechanics
+<h3>Mechanics</h3>
 
 <ol>
   <li>Momentum and Impulse</li>
@@ -33,7 +38,7 @@ author: A.Mootoovaloo
   <li>Simple Harmonic Motion</li>
 </ol>
 
-### Statistics
+<h3>Statistics</h3>
 
 
 <ol>
