@@ -1,8 +1,12 @@
 ---
-layout: page
+layout: post
 title: A-Level Mathematics (9709)
 permalink: /teaching/A-Level-Mathematics/
+mathjax: true
+date:   2016-10-07 06:00:00
+author: A.Mootoovaloo
 ---
+
 
 ## Paper 1 (Pure Mathematics 1) 
 

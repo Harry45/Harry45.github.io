@@ -3,6 +3,8 @@ layout: post
 title: A-Level Further Mathematics (9231)
 permalink: /teaching/A-Level-Further-Mathematics/
 mathjax: true
+date:   2016-10-07 06:00:00
+author: A.Mootoovaloo
 ---
 
 ## Paper 1 (Pure Mathematics) 
@@ -31,7 +33,7 @@ mathjax: true
   <li>Simple Harmonic Motion</li>
 </ol>
 
-### Mechanics
+### Statistics
 
 
 <ol>
