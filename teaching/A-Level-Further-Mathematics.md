@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: A-Level Further Mathematics (9231)
 permalink: /teaching/A-Level-Further-Mathematics/
 mathjax: true
