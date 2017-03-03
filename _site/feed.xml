@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Mar 2017 19:40:36 +0400</pubDate>
-    <lastBuildDate>Fri, 03 Mar 2017 19:40:36 +0400</lastBuildDate>
+    <pubDate>Fri, 03 Mar 2017 19:41:39 +0400</pubDate>
+    <lastBuildDate>Fri, 03 Mar 2017 19:41:39 +0400</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -97,7 +97,7 @@ $$
 \dfrac{\partial\mathbf{x}^{\textrm{T}}\mathbf{A}\mathbf{x}}{\partial\mathbf{x}}=2\mathbf{x}^{\textrm{T}}\mathbf{A}
 $$
 
-For further details, see &lt;a href=&quot;https://en.wikipedia.org/wiki/Matrix_calculus&quot;&gt;Wikipedia&lt;/a&gt; or the &lt;a href=&quot;http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3274/pdf/imm3274.pdf&quot;&gt;Matrix Cookbook&lt;/a&gt;
+For further details, see &lt;a href=&quot;https://en.wikipedia.org/wiki/Matrix_calculus&quot;&gt;Wikipedia&lt;/a&gt; or the &lt;a href=&quot;http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3274/pdf/imm3274.pdf&quot;&gt;Matrix Cookbook.&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p align=&quot;justify&quot;&gt;Using Equation \eqref{eq:likelihood} and the above useful identities, &lt;/p&gt;
