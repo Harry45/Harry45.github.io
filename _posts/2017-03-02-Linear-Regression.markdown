@@ -179,7 +179,7 @@ table {
 </style>
 
 <table class="tableizer-table" align = "left">
-<thead><tr class="tableizer-firstrow"><th>$\lambda/10^{-9}$ m </th><th>$V$/V</th><th>$\textrm{lg}\left(\lambda/10^{-9}\,\textrm{m}\right)$</th><th>$\textrm{lg}\left(V/\textrm{V}\right)$</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th>$\lambda/10^{-9}$ m </th><th>$V$/V</th><th>$\textrm{lg}\left(\lambda/10^{-9}\,\textrm{m}\right)$</th><th>$\textrm{lg}\left(V/\textrm{ V}\right)$</th></tr></thead><tbody>
  <tr><td align="center">630</td><td align="center">$1.9\pm0.1$</td><td align="center">2.80</td><td align="center">$ 0.28\pm0.05$ </td></tr>
  <tr><td align="center">620</td><td align="center">$2.0\pm0.1$</td><td align="center">2.79</td><td align="center">$0.30\pm0.05$ </td></tr>
  <tr><td align="center">590</td><td align="center">$2.3\pm0.1$</td><td align="center">2.77</td><td align="center">$0.36\pm0.04$</td></tr>
