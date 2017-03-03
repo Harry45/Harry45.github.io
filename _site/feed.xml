@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>https://Harry45.github.io/</link>
     <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Mar 2017 19:41:39 +0400</pubDate>
-    <lastBuildDate>Fri, 03 Mar 2017 19:41:39 +0400</lastBuildDate>
+    <pubDate>Fri, 03 Mar 2017 19:43:36 +0400</pubDate>
+    <lastBuildDate>Fri, 03 Mar 2017 19:43:36 +0400</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -170,7 +170,7 @@ table {
 &lt;/style&gt;
 
 &lt;table class=&quot;tableizer-table&quot; align=&quot;left&quot;&gt;
-&lt;thead&gt;&lt;tr class=&quot;tableizer-firstrow&quot;&gt;&lt;th&gt;$\lambda/10^{-9}$ m &lt;/th&gt;&lt;th&gt;$V$/V&lt;/th&gt;&lt;th&gt;$\textrm{lg}\left(\lambda/10^{-9}\,\textrm{m}\right)$&lt;/th&gt;&lt;th&gt;$\textrm{lg}\left(V/\textrm{ V}\right)$&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;thead&gt;&lt;tr class=&quot;tableizer-firstrow&quot;&gt;&lt;th&gt;$\lambda/10^{-9}$ m &lt;/th&gt;&lt;th&gt;$V/\textrm{V}$&lt;/th&gt;&lt;th&gt;$\textrm{lg}\left(\lambda/10^{-9}\,\textrm{m}\right)$&lt;/th&gt;&lt;th&gt;$\textrm{lg}\left(V/\textrm{V}\right)$&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
  &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;630&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$1.9\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.80&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$ 0.28\pm0.05$ &lt;/td&gt;&lt;/tr&gt;
  &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;620&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$2.0\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.79&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$0.30\pm0.05$ &lt;/td&gt;&lt;/tr&gt;
  &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;590&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$2.3\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.77&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$0.36\pm0.04$&lt;/td&gt;&lt;/tr&gt;
