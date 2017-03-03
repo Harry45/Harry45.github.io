@@ -13,7 +13,7 @@ tags:
 excerpt:
 ---
 
-<p align="justify">One common problem in Statistics is to learn a functional relationship between independent variables and dependent variable. For example, we may want to how the price of houses vary with the area of the land, the total size of the house and various other criteria. In this particular case, the price of the houses is the dependent variable, also often referred to as the response variable while the area of the land and total size of the house are the independent variables, also known as the attribute variables.</p>
+<p align="justify">One common problem in Statistics is to learn a functional relationship between independent variables and dependent variable. For example, we may want to know how the price of houses varies with the area of the land, the total size of the house and various other criteria. In this particular case, the price of the houses is the dependent variable, also often referred to as the response variable while the area of the land and total size of the house are the independent variables, also known as the attribute variables.</p>
 
 <p align="justify">We will first begin with linear modelling, that is, given a set of attributes, we want infer a linear relationship between the attributes and the response. The function which we want to fit is typically governed by a set of parameters, say $\theta_{i}$. However, before indulging into this topic, it is worth discussing linear and non-linear models.</p>
 
