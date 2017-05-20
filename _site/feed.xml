@@ -3,11 +3,152 @@
   <channel>
     <title>Arrykrishna Mootoovaloo</title>
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
-    <link>https://Harry45.github.io/</link>
-    <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Mar 2017 19:51:51 +0400</pubDate>
-    <lastBuildDate>Fri, 03 Mar 2017 19:51:51 +0400</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 20 May 2017 20:55:16 +0400</pubDate>
+    <lastBuildDate>Sat, 20 May 2017 20:55:16 +0400</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Bayesian School 2016</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+  MathJax.Hub.Config({ TeX: { extensions: [&quot;color.js&quot;] }});
+&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;The 2016 Bayesian School was organised at the University of Stellenbosch from the 21&lt;sup&gt;st&lt;/sup&gt; to 25&lt;sup&gt;th&lt;/sup&gt; November. In particular, the school focused on three main topics namely, Introductory Bayesian Methods, Monte Carlo Methods and Advanced Bayesian Methods which was taught by &lt;a href=&quot;http://astro.ic.ac.uk/aheavens/home&quot;&gt;Prof. Alan Heavens&lt;/a&gt; from Imperial College. &lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Apart from the lectures, another interesting part of the school was &quot;Research Hacks&quot;. The latter allows participants to meet in small groups, ask questions, exchange ideas and initiate collaboration. While these hacks predominantly followed the said-intentions, this also led to the publication of three papers (see &lt;a href=&quot;https://arxiv.org/abs/1704.03472&quot;&gt;arXiv:1704.03472&lt;/a&gt;, &lt;a href=&quot;https://arxiv.org/abs/1704.03467&quot;&gt;arXiv:1704.03467&lt;/a&gt; and &lt;a href=&quot;https://arxiv.org/abs/1704.07830&quot;&gt;arXiv:1704.07830&lt;/a&gt;). &lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;I learned quite a lot from Prof. Alan lectures and have also attempted some of the questions he proposed during the school. In particular, I will discuss two topics, namely KL Divergence and Bayesian Hierarchical Modelling below.&lt;/p&gt;
+
+&lt;h2&gt;Kullback-Leibler (KL) Divergence&lt;/h2&gt;
+&lt;p align=&quot;justify&quot;&gt;Suppose, we have a prior distribution which we denote as $\pi\left(\boldsymbol{\theta}\right)$ on the set of parameters $\boldsymbol{\theta}$. Afterwards, this is updated via Bayes' Theorem to a posterior distribution which we call $q\left(\boldsymbol{\theta}\right)$ and we want to know how much information we have gained from this update. This information can be quantified using the Kullback-Leibler (KL) Divergence,
+
+\begin{align}
+\textrm{D}_{\textrm{KL}}\left(q\left\Vert \pi\right.\right)=\int q\,\textrm{log}\left(\dfrac{q}{\pi}\right)d\theta
+\end{align}
+
+It is also referred to as the &lt;i&gt;relative entropy&lt;/i&gt;. If this quantity is measured in base of logarithm of 2, the information gain is in &lt;i&gt;bits&lt;/i&gt;, otherwise if measured in base of logarithm of $e$, the information gain is in &lt;i&gt;nats&lt;/i&gt;. To illustrate the KL Divergence, let us consider a simple example, the KL Divergence of two Gaussians. Consider the prior and posterior distributions with means $\mu_{1},\,\mu_{2}$ and variances $\sigma_{1}^{2},\,\sigma_{2}^{2}$. The KL Divergence of $q$ from $\pi$ is
+
+$$
+\textrm{D}\left(q\left\Vert \pi\right.\right)=\dfrac{\left(\mu_{1}-\mu_{2}\right)^{2}}{2\sigma_{1}^{2}}+\dfrac{\sigma_{2}^{2}}{2\sigma_{1}^{2}}-\dfrac{1}{2}-\textrm{log}\left(\dfrac{\sigma_{2}}{\sigma_{1}}\right)
+$$
+
+From the above result, if the variance of the posterior distribution, that is, $\sigma_{2}^{2}$ decreases, then the information content increases, while if there is a huge difference between the two means, the information gain may increase significantly.&lt;/p&gt;
+
+&lt;div style=&quot;background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;&quot;&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Another question related to KL Divergence was,&lt;/p&gt;&lt;br /&gt;
+
+&lt;p align=&quot;justify&quot; style=&quot;margin-left: 40px; margin-right: 40px&quot;&gt;&lt;i&gt;We have an experiment where a single datum $x$ is assumed to be drawn from a Gaussian Likelihood of mean $\mu$ and variance $\sigma^{2}$. Compute the KL divergence between an assumed Gaussian prior on $\mu$ (with mean zero and variance $\Sigma$) and the posterior.&lt;/i&gt;&lt;/p&gt;&lt;br /&gt;
+
+For this question, the KL Divergence is given by
+
+$$
+\textrm{D}_{\textrm{KL}}\left(q\left\Vert \pi\right.\right)=-\dfrac{1}{2}+\dfrac{\sigma^{2}}{2\left(\Sigma+\sigma^{2}\right)}+\dfrac{x^{2}\Sigma}{2\left(\Sigma+\sigma^{2}\right)^{2}}-\dfrac{1}{2}\textrm{log}\left(\dfrac{\sigma^{2}}{\Sigma+\sigma^{2}}\right)
+$$
+
+&lt;p align=&quot;justify&quot;&gt;If we had naively assumed a Dirac-Delta prior on the parameter, that is, $\Sigma=0$, then, $\textrm{D}_{\textrm{KL}}\left(q\left\Vert \pi\right.\right)=0$, which means there is no information gain. From my viewpoint, this example of computing the KL Divergence indicates the essence of incorporating priors in our analysis, which in turn leads us to advocating the Bayesian formalism.&lt;/p&gt;
+
+ 
+&lt;/div&gt;
+
+&lt;h2&gt;Bayesian Hierarchical Modelling&lt;/h2&gt;
+
+&lt;p align=&quot;justify&quot;&gt;This is also one of the topics which helped me to answer one of my questions: how do we proceed with parameter inference when we have error bars on both dependent and independent variables? The idea behind Bayesian Hierarchical Modelling (BHM) is to split the problem into steps where the full model now consists of a series of sub-models.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;BHM links each sub-models, thereby propagating uncertainties from one sub-model to another. Let us consider a simple example, where we are fitting a straight line, $y=mx$ to a single data point, $X$ and $Y$. The complication is that both $X$ and $Y$ have errors, $\sigma_{X}$ and $\sigma_{Y}$ respectively. The question is: how do we infer $m$? In other words, we want $\mathcal{P}\left(m\left|X,\,Y\right.\right)$.&lt;/p&gt;
+
+&lt;div style=&quot;background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;&quot;&gt;
+
+&lt;p align=&quot;justify&quot;&gt;In this part, we will go through the steps in the BHM. To start with, we first need to write Bayes' Theorem, that is,&lt;/p&gt;
+
+$$
+\mathcal{P}\left(m\left|X,\,Y\right.\right)=\dfrac{\mathcal{P}\left(X,\,Y\left|m\right.\right)\mathcal{P}\left(m\right)}{\mathcal{P}\left(X,\,Y\right)}\propto\mathcal{P}\left(X,\,Y\left|m\right.\right)\mathcal{P}\left(m\right)
+$$
+
+&lt;p align=&quot;justify&quot;&gt;We then introduce the so-called latent variables, $x$ and $y$ and since we are not interested in them, we will marginalise over them as follows,&lt;/p&gt;
+
+
+$$
+\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto \int {\color{red}\mathcal{P}\left(X,\,Y,\,x,\,y\left|m\right.\right)}\mathcal{P}\left(m\right)dxdy
+$$
+ 
+&lt;p align=&quot;justify&quot;&gt;Using the product rule, we have&lt;/p&gt;
+
+
+$$
+\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int{\color{red}\mathcal{P}\left(X,\,Y\left|x,\,y,\,m\right.\right){\color{blue}\mathcal{P}\left(x,\,y\left|m\right.\right)}}\mathcal{P}\left(m\right)dxdy
+$$
+ 
+&lt;p align=&quot;justify&quot;&gt;In this case, the first probability does not depend on $m$, that is, $\mathcal{P}\left(X,\,Y\left|x,\,y,\,m\right.\right) = \mathcal{P}\left(X,\,Y\left|x,\,y\right.\right)$ and using the product rule again, we have&lt;/p&gt;
+
+$$
+\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int{\color{red}\mathcal{P}\left(X,\,Y\left|x,\,y\right.\right){\color{blue}{\color{magenta}\mathcal{P}\left(y\left|m,\,x\right.\right)}\mathcal{P}\left(x\left|m\right.\right)}}\mathcal{P}\left(m\right)dxdy
+$$
+ 
+&lt;p align=&quot;justify&quot;&gt;Our model is deterministic, that is, $\mathcal{P}\left(y\left|m,\,x\right.\right) = \delta\left(y-mx\right)$. Therefore,&lt;/p&gt;
+
+
+$$
+\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int{\color{red}\mathcal{P}\left(X,\,Y\left|x,\,mx\right.\right){\color{magenta}\delta\left(y-mx\right)}{\color{blue}\mathcal{P}\left(x\right)}}\mathcal{P}\left(m\right)dxdy
+$$
+
+&lt;p align=&quot;justify&quot;&gt;Assuming uniform priors on $\mathcal{P}\left(x\right)$ and $\mathcal{P}\left(m\right)$, we have, &lt;/p&gt;
+
+$$
+\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int{\color{red}\mathcal{P}\left(X,\,Y\left|x,\,mx\right.\right)}\,dx
+$$
+
+&lt;p align=&quot;justify&quot;&gt;We further assume that we know the sampling distribution of $X$ and $Y$ and that they are indendent such that&lt;/p&gt;
+
+$$
+\mathcal{P}\left(X,\,Y\left|x,\,y\right.\right)=\mathcal{P}\left(X\left|x\right.\right)\mathcal{P}\left(Y\left|y\right.\right)
+$$
+ 
+&lt;p align=&quot;justify&quot;&gt;We further assume that the errors in $X$ and $Y$ are independent Gaussians and for simplicity we take $\sigma_{X}=\sigma_{Y}=1$. Therefore,&lt;/p&gt;
+
+$$
+\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int e^{-\frac{1}{2}\left(X-x\right)^{2}}e^{-\frac{1}{2}\left(Y-mx\right)^{2}}dx
+$$
+
+
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;After completing the square and performing the above integration, the unnormalised posterior distribution of $m$ is given by, &lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\dfrac{1}{\sqrt{1+m^{2}}}e^{-\frac{1}{2}\left(\frac{Y-mX}{\sqrt{1+m^{2}}}\right)^{2}}
+\label{eq:post_m}
+\end{equation}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;One can also consider the joint posterior distribution of $x$ and $m$, which is simply given by Bayes' Theorem,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(x,\,m\left|X,\,Y\right.\right)\propto\mathcal{P}\left(X,\,Y\left|x,\,mx\right.\right)\mathcal{P}\left(x\right)\mathcal{P}\left(m\right)&lt;/script&gt;
+
+&lt;p&gt;\begin{equation}
+\mathcal{P}\left(x,\,m\left|X,\,Y\right.\right)\propto e^{-\frac{1}{2}\left(X-x\right)^{2}}e^{-\frac{1}{2}\left(Y-mx\right)^{2}}
+\end{equation}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Consider the case where $X=10$ and $Y=15$. Using Equation \eqref{eq:post_m}, the posterior distribution of $m$ is shown in the left panel of the figure below. In addition, using Gibbs Sampling, the joint posterior distribution of $x$ and $m$ is shown in the right panel of the figure below. &lt;/p&gt;
+
+&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 800px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/posterior_m.jpg&quot; alt=&quot;The left panel shows the posterior distribution of $m$ while the right panel shows the joint posterior distribution of $x$ and $m$ using Gibbs Sampling.&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;The left panel shows the posterior distribution of $m$ while the right panel shows the joint posterior distribution of $x$ and $m$ using Gibbs Sampling.&lt;/dd&gt;
+&lt;/dl&gt;
+
+</description>
+        <pubDate>Thu, 02 Mar 2017 12:00:00 +0400</pubDate>
+        <link>http://localhost:4000/blog/2017/03/Bayesian-School-2016</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/03/Bayesian-School-2016</guid>
+        
+        
+        <category>Workshop and Conference</category>
+        
+      </item>
     
       <item>
         <title>Linear Regression</title>
@@ -213,8 +354,8 @@ $$
 
 </description>
         <pubDate>Thu, 02 Mar 2017 10:00:00 +0400</pubDate>
-        <link>https://Harry45.github.io/blog/2017/03/Linear-Regression</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2017/03/Linear-Regression</guid>
+        <link>http://localhost:4000/blog/2017/03/Linear-Regression</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/03/Linear-Regression</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -320,8 +461,8 @@ $$
 &lt;p align=&quot;justify&quot;&gt;Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using &lt;code&gt;rv_continuous&lt;/code&gt;!&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Oct 2016 12:26:00 +0400</pubDate>
-        <link>https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution</guid>
+        <link>http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -549,8 +690,8 @@ $$
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Oct 2016 16:00:00 +0400</pubDate>
-        <link>https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</guid>
+        <link>http://localhost:4000/blog/2016/10/Gibbs-Sampling</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Gibbs-Sampling</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -592,8 +733,8 @@ $$
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 13 Oct 2016 11:00:00 +0400</pubDate>
-        <link>https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</guid>
+        <link>http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</guid>
         
         
         <category>Research</category>
@@ -635,8 +776,8 @@ blockquote {
 
 </description>
         <pubDate>Mon, 10 Oct 2016 16:00:00 +0400</pubDate>
-        <link>https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</guid>
+        <link>http://localhost:4000/blog/2016/10/Surviving-Growing-Community</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Surviving-Growing-Community</guid>
         
         
         <category>Workshop and Conference</category>
@@ -654,8 +795,8 @@ blockquote {
 &lt;p align=&quot;justify&quot;&gt;Now that many students have an experience of how the JEDI works, we, students work together with Prof Bruce Bassett and his team to organise various such events in different places/countries in Africa. Until now, I have participated in a few of them and I was also sometimes on the organising team.&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 12:00:00 +0400</pubDate>
-        <link>https://Harry45.github.io/blog/2016/10/JEDI</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/JEDI</guid>
+        <link>http://localhost:4000/blog/2016/10/JEDI</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/JEDI</guid>
         
         
         <category>Workshop and Conference</category>
@@ -828,8 +969,8 @@ x-x’\rightarrow\infty
 
 </description>
         <pubDate>Sat, 08 Oct 2016 16:00:00 +0400</pubDate>
-        <link>https://Harry45.github.io/blog/2016/10/Gaussian-Process</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Gaussian-Process</guid>
+        <link>http://localhost:4000/blog/2016/10/Gaussian-Process</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Gaussian-Process</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -876,8 +1017,8 @@ x-x’\rightarrow\infty
 &lt;p align=&quot;justify&quot;&gt;On a conclusive note, the coupling between the radio galaxy and cavities still needs to be fully exploited. Jets and cavities heat the intracluster medium, thereby inhibiting cooling flow and affects accretion and galaxy growth. In fact, the nature of cavities, more precisely, its non-thermal nature opens a new world towards the study of magnetism in these characteristic sites. &lt;/p&gt;
 </description>
         <pubDate>Fri, 07 Oct 2016 10:00:00 +0400</pubDate>
-        <link>https://Harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</guid>
+        <link>http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</guid>
         
         
         <category>Research</category>
