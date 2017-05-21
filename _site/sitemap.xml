@@ -18,6 +18,21 @@
   
     
     <url>
+      <loc>http://localhost:4000/blog/2017/03/Bayesian-Model-Selection</loc>
+      
+        <lastmod>2017-03-02T10:00:00+04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/blog/2017/03/Linear-Regression</loc>
       
         <lastmod>2017-03-02T10:00:00+04:00</lastmod>
@@ -186,7 +201,7 @@
     <url>
       <loc>http://localhost:4000/travel/Africa/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -201,7 +216,7 @@
     <url>
       <loc>http://localhost:4000/travel/Europe/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -216,7 +231,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -231,7 +246,7 @@
     <url>
       <loc>http://localhost:4000/blog/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -246,7 +261,7 @@
     <url>
       <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -261,7 +276,7 @@
     <url>
       <loc>http://localhost:4000/categories/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -276,7 +291,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -291,7 +306,7 @@
     <url>
       <loc>http://localhost:4000/css/main.css</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -306,7 +321,7 @@
     <url>
       <loc>http://localhost:4000/research/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -323,7 +338,7 @@
     <url>
       <loc>http://localhost:4000/teaching/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -338,7 +353,7 @@
     <url>
       <loc>http://localhost:4000/travel/</loc>
       
-        <lastmod>2017-05-20T20:55:16+04:00</lastmod>
+        <lastmod>2017-05-21T10:41:18+04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
