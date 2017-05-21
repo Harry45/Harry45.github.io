@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title:  "Bayesian School 2016"
-date:   2017-03-02 08:00:00
+date:   2017-05-18 08:00:00
 author: A.Mootoovaloo
 permalink:
 categories:

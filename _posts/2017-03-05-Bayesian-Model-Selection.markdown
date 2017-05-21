@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title:  "Bayesian Model Selection"
-date:   2017-03-02 06:00:00
+date:   2017-05-20 06:00:00
 author: A.Mootoovaloo
 permalink:
 categories:
