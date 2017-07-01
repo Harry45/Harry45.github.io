@@ -5,9 +5,174 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 May 2017 10:41:18 +0400</pubDate>
-    <lastBuildDate>Sun, 21 May 2017 10:41:18 +0400</lastBuildDate>
+    <pubDate>Sat, 01 Jul 2017 09:20:01 +0400</pubDate>
+    <lastBuildDate>Sat, 01 Jul 2017 09:20:01 +0400</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Bayesian Evidence - The Gaussian Linear Model</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;Following our recent post on &lt;a href=&quot;https://harry45.github.io/blog/2017/05/Bayesian-Model-Selection&quot;&gt;Bayesian Model Selection&lt;/a&gt;, here we will illustrate it using a simple example of the Bayesian Evidence calculation using the &lt;a href=&quot;https://harry45.github.io/blog/2017/03/Linear-Regression&quot;&gt;Gaussian Linear Model&lt;/a&gt;. Consider the figure below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/TwoModels.jpg&quot; align=&quot;left&quot; width=&quot;410&quot; /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;We have our data, which is dominated by noise, $\mathbf{n}\sim\mathcal{N}\left(0,\,0.02\right)$. Here, we are motivated to consider two models, $\mathcal{M}_{1}$ and $\mathcal{M}_{2}$, given by
+
+$$
+y=\theta_{0}+\theta_{1}x+\theta_{2}x^{2}+\theta_{4}x^{4}
+$$
+
+$$
+y=\theta_{0}+\theta_{1}x+\theta_{4}x^{4}
+$$
+
+It is actually very hard to choose the best model just by looking at the fit. Note that the fitting method used here is the Maximum a Posteriori method, MAP where we assume the prior on each parameter is Gaussian distributed with mean 0 and variance 1, that is, $\theta_{i}\sim\mathcal{N}\left(0,\,1\right)$. Moreover, setting $\theta_{2}$ to zero reduces $\mathcal{M}_{1}$ to $\mathcal{M}_{2}$. This is a common scenario in various fitting problem we deal with in Statistics. If we naively perform a $\chi^{2}-$test, then the model with the larger number of parameters will always be selected. This is a case of overfitting we encounter and we should be cautious about it. The notation we will be using are: $\mathbf{D}$ as the design matrix and $\mathbf{P}$ as the covariance matrix for the priors. See &lt;a href=&quot;https://harry45.github.io/blog/2017/03/Linear-Regression&quot;&gt;here&lt;/a&gt; for further details on $\mathbf{D}$ and $\mathbf{b}$. The Bayesian Evidence is given by 
+
+$$
+\mathbb{Z}=\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)=\int\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)d\boldsymbol{\theta}
+$$
+
+$$
+\mathbb{Z}=\left(\sqrt{\left|2\pi\mathbf{P}^{-1}\right|}\,{\prod_{i}}\sqrt{2\pi\sigma_{i}^{2}}\right)^{-1}\int\textrm{exp}\left[-\dfrac{1}{2}\left\{  \left(\mathbf{b}-\mathbf{D}\boldsymbol{\theta}\right)^{\textrm{T}}\left(\mathbf{b}-\mathbf{D}\boldsymbol{\theta}\right)+\mathbf{\boldsymbol{\theta}}^{\textrm{T}}\mathbf{P}^{-1}\mathbf{\boldsymbol{\theta}}\right\}  \right]\,d\boldsymbol{\theta}
+$$
+&lt;/p&gt;
+
+&lt;div style=&quot;background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;&quot;&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Two very important tricks required to perform the above integral are:
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;b&gt;Completing the square&lt;/b&gt;&lt;/li&gt;
+  $$x^{\textrm{T}}Ax+x^{\textrm{T}}b+c=\left(x-h\right)^{\textrm{T}}A\left(x-h\right)+k$$
+  where 
+  $$h=-\dfrac{1}{2}A^{-1}b\;\;\;k=c-\dfrac{1}{4}b^{\textrm{T}}A^{-1}b$$
+  &lt;li&gt;&lt;b&gt;Multi-dimensional Gaussian Integral&lt;/b&gt;&lt;/li&gt;
+  $$
+  \int\textrm{exp}\left[-\dfrac{1}{2}x^{\textrm{T}}Ax\right]dx=\sqrt{\left|2\pi A^{-1}\right|}
+  $$
+&lt;/ol&gt;
+
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Using the above two important tricks, the Bayesian Evidence is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbb{Z}=\left({\prod_{i}}\sqrt{2\pi\sigma_{i}^{2}}\right)^{-1}\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{k}+\mathbf{b}^{\textrm{T}}\mathbf{b}\right)\right]\,\sqrt{\dfrac{\left|2\pi\left(\mathbf{D}^{\textrm{T}}\mathbf{D}+\mathbf{P}^{-1}\right)^{-1}\right|}{\left|2\pi\mathbf{P}^{-1}\right|}}&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;where $\mathbf{k}=-\left(\mathbf{D}^{\textrm{T}}\mathbf{b}\right)^{\textrm{T}}\left(\mathbf{D}^{\textrm{T}}\mathbf{D}+\mathbf{P}^{-1}\right)^{-1}\left(\mathbf{D}^{\textrm{T}}\mathbf{b}\right)
+$
+
+Using the above results, the log-Bayesian Evidence for the two models, $\mathcal{M}_{1}$ and $\mathcal{M}_{2}$ are 238.458 and 243.338 respectively. Therefore, the log-Bayes Factor, $\textrm{log B}_{21}$, which is simply the difference between the two numbers is 4.88, thus showing that  $\mathcal{M}_{2}$ is strongly favoured model over $\mathcal{M}_{1}$ (refer to the &lt;a href=&quot;https://harry45.github.io/blog/2017/05/Bayesian-Model-Selection&quot;&gt;Jeffreys’ scale&lt;/a&gt; in our previous blog post). 
+&lt;/p&gt;
+
+&lt;h2&gt;SDDR - Savage-Dickey Density Ratio&lt;/h2&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Savage-Dickey Density Ratio (SDDR) is a useful method for comparing nested models and is in fact, a good approximation to the Bayes Factor. For some parameter values, the extended model $\mathcal{M}_{1}$ reduces to the simpler model $\mathcal{M}_{0}$. Consider a complex model made up of two sets of parameters $\boldsymbol{\theta}=\left(\boldsymbol{\psi},\,\boldsymbol{\phi}\right)$ and the simple model is obtained by setting $\boldsymbol{\phi}=\boldsymbol{\phi}_{0}$. If we further assume that the priors are separable, which is a common scenario: 
+
+$$
+\mathcal{P}\left(\boldsymbol{\psi},\,\boldsymbol{\phi}\left|\mathcal{M}_{1}\right.\right)=\mathcal{P}\left(\boldsymbol{\psi}\left|\mathcal{M}_{1}\right.\right)\mathcal{P}\left(\boldsymbol{\phi}\left|\mathcal{M}_{1}\right.\right)
+$$
+
+then, the Bayes Factor can, in principle, be written as 
+
+\begin{equation}
+B_{01}=\left.\dfrac{\mathcal{P}\left(\boldsymbol{\phi}\left|\mathcal{D},\,\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\boldsymbol{\phi}\left|\mathcal{M}_{1}\right.\right)}\right|_{\boldsymbol{\phi}=\boldsymbol{\phi}_{0}}
+\end{equation}
+
+The above equation is referred to as the Savage-Dickey Density Ratio. In short, the SDDR is simply the ratio of the marginal posterior to the prior of the complex model, evaluated at the nested point, that is, at the simpler model's parameters value. 
+
+The SDDR is important to judge whether the inclusion of extra parameters in nested models are important when we are trying to fit the observed data. Moreover, in most problems, it is computationally challenging to compute the Bayesian Evidence and hence the Bayes Factor, as it is a multi-dimensional integral. The SDDR provides an alternative avenue to compute the Bayes Factor without computing the Bayesian Evidence provided the models are nested.
+&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 21 May 2017 10:00:00 +0400</pubDate>
+        <link>http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
+    
+      <item>
+        <title>Bayesian Model Selection</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+  MathJax.Hub.Config({ TeX: { extensions: [&quot;color.js&quot;] }});
+&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Given a data set, one could presumably use various models to explain the data. One of the key questions underlying science is that of model selection: how do we select between competing theories which purport to explain observed data? The great paradigm shifts in science fall squarely into this domain. With so many models available to us, overfitting remains a real issue. Hence, choosing the most suitable model is essential in the Statistics world.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;In the context of astronomy - as with most areas of science - the next two decades will see a massive increase in data volume through large surveys such as the Square Kilometre Array (SKA) and the Large Synoptic Survey Telescope (LSST). Robust statistical analysis to perform model selection at scale will be a critical factor in the success of such future surveys.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Although, we might have very good data, we may not know when to stop fitting. Two competing models may equally fit the data properly but how do we choose the most appropriate model? The solution in fact lies in the simpler model being preferred. This is known as the &lt;i&gt;Occam’s razor&lt;/i&gt;. The complex model which explains the data somewhat better compared to the simpler model should be penalised for the additional parameters that it introduces. Extra parameters bring about lack of predictability. In this spectrum, Bayesian model selection is becoming an increasingly important tool to determine whether or not the introduction of a new parameter is justified by the data.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;In this post, we will focus only on the calculation of the &lt;b&gt;Bayesian Evidence&lt;/b&gt;, which is often regarded as the average likelihood under the prior. The evidence is the normalisation integral of the product of the likelihood and the prior and is often referred to as the &lt;i&gt;model likelihood&lt;/i&gt;, or the &lt;i&gt;marginal likelihood&lt;/i&gt; and is denoted by $\mathbb{Z}$. It is interpreted as the probability of the data $\left(\mathcal{D}\right)$ given the model $\left(\mathcal{M}\right)$. The Bayesian Evidence is given as &lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+\mathbb{Z}\equiv\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)=\int\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)\,\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)\,d\boldsymbol{\theta}
+\end{equation}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;where $\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)$ is the likelihood function which should typically reflect the way the data is obtained and $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)$ is the prior distribution for the parameters. Using Bayes' theorem, we can write&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(\mathcal{M}\left|\mathcal{D}\right.\right)=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)\mathcal{P}\left(\mathcal{M}\right)}{\mathcal{P}\left(\mathcal{D}\right)}&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;The left-hand side of equation is the posterior probability of the model given the data. Consider two competing models $\mathcal{M}_{1}$ and $\mathcal{M}_{2}$. The ratio of the respective posterior probabilities of the models, given the data is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}\,\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Note that $\mathcal{P}\left(\mathcal{D}\right)$ is only a constant and can be dropped when calculating the ratio of posterior probability of the models. The ratio $$B_{12}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}$$ is the &lt;b&gt;Bayes factor&lt;/b&gt; and is, in fact, the ratio of the models' evidences. The ratio $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}$$ is the posterior odds while $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}$$ is the prior odds. Therefore, in words, one can describe the above as &lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;In the case of non-committal priors on the models, that is, $\mathcal{P}\left(\mathcal{M}_{1}\right)=\mathcal{P}\left(\mathcal{M}_{2}\right)$, the posterior odds are just equal to the Bayes factor. As $B_{12}$ increases, our belief that model $\mathcal{M}_{1}$ is better than model $\mathcal{M}_{2}$ increases. Otherwise, model $\mathcal{M}_{2}$ will be the preferred one. Therefore, the Bayes factor indicates how the relative odds vary in the light of new data, irrespective of the prior odds of the models. The Bayes factor is typically interpreted by referring to the Jeffreys' scale (see &lt;a href=&quot;http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572&quot;&gt;Kass et al., 1995&lt;/a&gt;). It is an empirically determined scale as shown in the table below &lt;/p&gt;
+
+&lt;style&gt;
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 53%;
+}
+
+&lt;/style&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+	table.tableizer-table {
+		font-size: 14px;
+		border: 2px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 6px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B;
+		padding: 6px; 
+		color: #FFF;
+		font-weight: bold;
+	}
+&lt;/style&gt;
+
+&lt;table class=&quot;tableizer-table&quot; align=&quot;center&quot;&gt;
+&lt;thead&gt;&lt;tr class=&quot;tableizer-firstrow&quot;&gt;&lt;th&gt;$\textrm{ln }\left(B_{12}\right)$&lt;/th&gt;&lt;th&gt;$B_{12}$&lt;/th&gt;&lt;th&gt;Evidence against $\mathcal{M}_{2}$&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;0 to 1&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;1 to 3&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Inconclusive&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;1 to 3&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;3 to 20&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Weak Evidence&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;3 to 5&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;20 to 150&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Moderate Evidence&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&amp;gt;5&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&amp;gt;150&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Strong Evidence&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+</description>
+        <pubDate>Sat, 20 May 2017 10:00:00 +0400</pubDate>
+        <link>http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
     
       <item>
         <title>Bayesian School 2016</title>
@@ -141,93 +306,12 @@ $$
 &lt;/dl&gt;
 
 </description>
-        <pubDate>Thu, 02 Mar 2017 12:00:00 +0400</pubDate>
-        <link>http://localhost:4000/blog/2017/03/Bayesian-School-2016</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/03/Bayesian-School-2016</guid>
+        <pubDate>Thu, 18 May 2017 12:00:00 +0400</pubDate>
+        <link>http://localhost:4000/blog/2017/05/Bayesian-School-2016</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-School-2016</guid>
         
         
         <category>Workshop and Conference</category>
-        
-      </item>
-    
-      <item>
-        <title>Bayesian Model Selection</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({ TeX: { extensions: [&quot;color.js&quot;] }});
-&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Given a data set, one could presumably use various models to explain the data. One of the key questions underlying science is that of model selection: how do we select between competing theories which purport to explain observed data? The great paradigm shifts in science fall squarely into this domain. With so many models available to us, overfitting remains a real issue. Hence, choosing the most suitable model is essential in the Statistics world.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;In the context of astronomy - as with most areas of science - the next two decades will see a massive increase in data volume through large surveys such as the Square Kilometre Array (SKA) and the Large Synoptic Survey Telescope (LSST). Robust statistical analysis to perform model selection at scale will be a critical factor in the success of such future surveys.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Although, we might have very good data, we may not know when to stop fitting. Two competing models may equally fit the data properly but how do we choose the most appropriate model? The solution in fact lies in the simpler model being preferred. This is known as the &lt;i&gt;Occam’s razor&lt;/i&gt;. The complex model which explains the data somewhat better compared to the simpler model should be penalised for the additional parameters that it introduces. Extra parameters bring about lack of predictability. In this spectrum, Bayesian model selection is becoming an increasingly important tool to determine whether or not the introduction of a new parameter is justified by the data.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;In this post, we will focus only on the calculation of the &lt;b&gt;Bayesian Evidence&lt;/b&gt;, which is often regarded as the average likelihood under the prior. The evidence is the normalisation integral of the product of the likelihood and the prior and is often referred to as the &lt;i&gt;model likelihood&lt;/i&gt;, or the &lt;i&gt;marginal likelihood&lt;/i&gt; and is denoted by $\mathbb{Z}$. It is interpreted as the probability of the data $\left(\mathcal{D}\right)$ given the model $\left(\mathcal{M}\right)$. The Bayesian Evidence is given as &lt;/p&gt;
-
-&lt;p&gt;\begin{equation}
-\mathbb{Z}\equiv\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)=\int\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)\,\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)\,d\boldsymbol{\theta}
-\end{equation}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;where $\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)$ is the likelihood function which should typically reflect the way the data is obtained and $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)$ is the prior distribution for the parameters. Using Bayes' theorem, we can write&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(\mathcal{M}\left|\mathcal{D}\right.\right)=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)\mathcal{P}\left(\mathcal{M}\right)}{\mathcal{P}\left(\mathcal{D}\right)}&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;The left-hand side of equation is the posterior probability of the model given the data. Consider two competing models $\mathcal{M}_{1}$ and $\mathcal{M}_{2}$. The ratio of the respective posterior probabilities of the models, given the data is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}\,\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Note that $\mathcal{P}\left(\mathcal{D}\right)$ is only a constant and can be dropped when calculating the ratio of posterior probability of the models. The ratio $$B_{12}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}$$ is the &lt;b&gt;Bayes factor&lt;/b&gt; and is, in fact, the ratio of the models' evidences. The ratio $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}$$ is the posterior odds while $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}$$ is the prior odds. Therefore, in words, one can describe the above as &lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;In the case of non-committal priors on the models, that is, $\mathcal{P}\left(\mathcal{M}_{1}\right)=\mathcal{P}\left(\mathcal{M}_{2}\right)$, the posterior odds are just equal to the Bayes factor. As $B_{12}$ increases, our belief that model $\mathcal{M}_{1}$ is better than model $\mathcal{M}_{2}$ increases. Otherwise, model $\mathcal{M}_{2}$ will be the preferred one. Therefore, the Bayes factor indicates how the relative odds vary in the light of new data, irrespective of the prior odds of the models. The Bayes factor is typically interpreted by referring to the Jeffreys' scale (see &lt;a href=&quot;http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572&quot;&gt;Kass et al., 1995&lt;/a&gt;). It is an empirically determined scale as shown in the table below &lt;/p&gt;
-
-&lt;style&gt;
-table, td, th {
-    border: 1px solid black;
-}
-
-table {
-    border-collapse: collapse;
-    width: 53%;
-}
-
-&lt;/style&gt;
-
-&lt;style type=&quot;text/css&quot;&gt;
-	table.tableizer-table {
-		font-size: 14px;
-		border: 2px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 6px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B;
-		padding: 6px; 
-		color: #FFF;
-		font-weight: bold;
-	}
-&lt;/style&gt;
-
-&lt;table class=&quot;tableizer-table&quot; align=&quot;center&quot;&gt;
-&lt;thead&gt;&lt;tr class=&quot;tableizer-firstrow&quot;&gt;&lt;th&gt;$\textrm{ln }\left(B_{12}\right)$&lt;/th&gt;&lt;th&gt;$B_{12}$&lt;/th&gt;&lt;th&gt;Evidence against $\mathcal{M}_{2}$&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;0 to 1&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;1 to 3&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Inconclusive&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;1 to 3&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;3 to 20&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Weak Evidence&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;3 to 5&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;20 to 150&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Moderate Evidence&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&amp;gt;5&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&amp;gt;150&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Strong Evidence&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-</description>
-        <pubDate>Thu, 02 Mar 2017 10:00:00 +0400</pubDate>
-        <link>http://localhost:4000/blog/2017/03/Bayesian-Model-Selection</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/03/Bayesian-Model-Selection</guid>
-        
-        
-        <category>Machine Learning and Statistics</category>
         
       </item>
     
@@ -1055,54 +1139,6 @@ x-x’\rightarrow\infty
         
         
         <category>Machine Learning and Statistics</category>
-        
-      </item>
-    
-      <item>
-        <title>A Brief Overview of my Undergraduate Project</title>
-        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 350px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/overlay_1.jpg&quot; alt=&quot;Hydra A&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;Hydra A&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p align=&quot;justify&quot;&gt; X-ray cavities are bubbles which have been formed by the central active galactic nucleus (AGN) found at the centre of galaxy clusters, groups and giant ellipticals. There is an increasing evidence, as observed from radio/x-ray overlays, that these cavities are formed by the tip of jets of the central radio galaxy and is connected back to the nucleus, in a channel-like structure. These cavities are detected in x-ray images as surface brightness depressions. Besides, most these cavities are filled with radio-emission at 1.4 GHz while, there do exist cavities, referred to as ”ghost” bubbles which are misaligned with respect to the jet and are observed at lower radio frequency.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt; The formation of X-ray cavities is a consequence of AGN feedback which is responsible for the formation of other structures such as shocks and ripples. Typically, the formation of these structures may offset cooling in galaxy clusters and might presumably be one of the solutions to the classical cooling flow issue, which was proposed by &lt;a href=&quot;https://ned.ipac.caltech.edu/level5/Fabian3/frames.html&quot;&gt;Fabian (1994)&lt;/a&gt;. &lt;/p&gt;
-
-&lt;dl class=&quot;wp-caption alignleft&quot; style=&quot;max-width: 400px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/overlay_2.jpg&quot; alt=&quot;RBS 797 &quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;RBS 797 &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p align=&quot;justify&quot;&gt; Originally, it was believed that a cooling flow must be established at the centre of cluster of galaxy as the central atmosphere being very dense and hot, the x-ray gas must lose energy via the emission of x-ray. However, after the launching of Chandra and XMM-Newton satellites in the year 1999, it was observed that relatively little gas actually cools below 2 keV. We have investigated 9 clusters of galaxies, having redshifts $0.01 &amp;lt; z &amp;lt; 0.35$, which host x-ray cavities using CIAO 4.6 and CALDB 4.5.9. These cavities are aged about $10^7$ years. The most commonly used methods for calculating cavity ages include refill timescale $\left(t_r\right)$, buoyancy timescale $\left(t_b\right)$ and sound-crossing timescale $\left(t_s\right)$. In particular, $t_r &amp;lt; t_b &amp;lt; t_s$. The enthalpy of a cavity depends on the nature of lobes and lies between $2pV$ and $4pV$ as described by &lt;a href=&quot;https://arxiv.org/abs/0709.2152&quot;&gt;McNamara and Nulsen (2007)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt; The cavity power can be determined using the cavity age and enthalpy and is of the order of $10^{44}\, \textrm{ergs s}^{−1}$. In addition, the central radio source of each cluster of galaxy was studied, dealing with both strong and weak radio galaxies. Their radio luminosities at 1.4 GHz were calculated, using symbolic programming method in Matlab 2012Ra and typical value of radio luminosity $\left(\textrm{L}_{\textrm{rad}}\right)$ ranges from $0.9 − 315 \times 10^{42}\, \textrm{ergs s}^{−1}$. Using these values, together with the determined cavity power, a plot of radio luminosity against cavity power was made in the logarithmic scale, and it was found that the cavity power $\textrm{P}_{\textrm{cav}}$ varies as &lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\textrm{P}_{\textrm{cav}} = \left(5 \times 10^{38\pm1}\right)\,\textrm{L}_{\textrm{rad}}^{0.13\pm0.13}&lt;/script&gt;
-
-&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 410px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/overlay_3.jpg&quot; alt=&quot;Abell 2052&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;Abell 2052&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p align=&quot;justify&quot;&gt;&lt;a href=&quot;https://arxiv.org/abs/astro-ph/0605323&quot;&gt;Rafferty et al. (2006)&lt;/a&gt; argued that the formation of x-ray cavities may be modelled by the mass accretion model. In this scenario, the jet is produced when a fraction of the gravitational binding energy of the material accreted is converted into outburst energy. While in another theory developed by &lt;a href=&quot;https://arxiv.org/abs/astro-ph/9810352&quot;&gt;Meier (1999)&lt;/a&gt;, it is possible for cavities to be formed via the spinning of the central rotating black hole. In this model, the spin energy is converted into jet power via a torque applied by the poloidal magnetic field strength.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;There could be different scenarios possible. For example, for Hydra A, the jet is aligned with the cavities while in RBS 797, the jet is roughly perpendicular to the orientation of the two cavities. On the other hand, Abell 2052 depicts an intricate ongoing activity at the core site.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;On a conclusive note, the coupling between the radio galaxy and cavities still needs to be fully exploited. Jets and cavities heat the intracluster medium, thereby inhibiting cooling flow and affects accretion and galaxy growth. In fact, the nature of cavities, more precisely, its non-thermal nature opens a new world towards the study of magnetism in these characteristic sites. &lt;/p&gt;
-</description>
-        <pubDate>Fri, 07 Oct 2016 10:00:00 +0400</pubDate>
-        <link>http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</guid>
-        
-        
-        <category>Research</category>
         
       </item>
     
