@@ -21,7 +21,7 @@ excerpt:
 
 <p align="justify">Apart from the lectures, another interesting part of the school was "Research Hacks". The latter allows participants to meet in small groups, ask questions, exchange ideas and initiate collaboration. While these hacks predominantly followed the said-intentions, this also led to the publication of three papers (see <a href="https://arxiv.org/abs/1704.03472">arXiv:1704.03472</a>, <a href="https://arxiv.org/abs/1704.03467">arXiv:1704.03467</a> and <a href="https://arxiv.org/abs/1704.07830">arXiv:1704.07830</a>). </p>
 
-<p align="justify">I learned quite a lot from Prof. Alan lectures and have also attempted some of the questions he proposed during the school. Also, there were various other interesting lectures. In particular, I will discuss two topics, namely KL Divergence and Bayesian Hierarchical Modelling below.</p>
+<p align="justify">I learned quite a lot from Prof. Alan lectures and have also attempted some of the questions he proposed during the school. Also, there were various other interesting lectures, related to Bayesian methods. In particular, I will discuss two topics, namely KL Divergence and Bayesian Hierarchical Modelling below.</p>
 
 <h2>Kullback-Leibler (KL) Divergence</h2>
 <p align="justify">Suppose, we have a prior distribution which we denote as $\pi\left(\boldsymbol{\theta}\right)$ on the set of parameters $\boldsymbol{\theta}$. Afterwards, this is updated via Bayes' Theorem to a posterior distribution which we call $q\left(\boldsymbol{\theta}\right)$ and we want to know how much information we have gained from this update. This information can be quantified using the Kullback-Leibler (KL) Divergence,
