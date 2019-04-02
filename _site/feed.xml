@@ -5,9 +5,27 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 31 Mar 2019 20:12:54 +0100</pubDate>
-    <lastBuildDate>Sun, 31 Mar 2019 20:12:54 +0100</lastBuildDate>
+    <pubDate>Tue, 02 Apr 2019 16:49:44 +0100</pubDate>
+    <lastBuildDate>Tue, 02 Apr 2019 16:49:44 +0100</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Emerging trends in AI and online education</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;On this day, &lt;a href=&quot;https://www.coursera.org/instructor/andrewng&quot;&gt;Professor Andrew Ng&lt;/a&gt; was at Imperial College London. He was not only there as a speaker for the the (&lt;a href=&quot;https://www.imperial.ac.uk/data-science/&quot;&gt;Data Science Institute, DSI&lt;/a&gt;) Distinguished Lecture programme but to also commemorate the 5th year anniversary of the existence of the DSI.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/andrew-ng.jpg&quot; align=&quot;left&quot; width=&quot;400&quot; styel=&quot;margin-right: 10px; margin-bottom: 10px&quot; /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;It was not a big suprise to see the full lecture theatre completely full of postgraduate students, vehement to hear from Prof. Andrew. Somewhat surprising though, was the fact that Prof. Andrew came in with a yellow notebook rather than a laptop as we were all expecting some sort of digital presentation.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 01 Apr 2019 07:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</guid>
+        
+        
+        <category>Workshop and Conference</category>
+        
+      </item>
     
       <item>
         <title>Bayesian Evidence - The Gaussian Linear Model</title>
@@ -965,180 +983,6 @@ blockquote {
         
         
         <category>Workshop and Conference</category>
-        
-      </item>
-    
-      <item>
-        <title>Gaussian Process</title>
-        <description>&lt;p align=&quot;justify&quot;&gt;In the most simple term, one can think of Gaussian Process, GP as being distributions over functions. It is a supervised Machine Learning technique and was developed, in the attempt, to solve regression problems (&lt;a href=&quot;https://en.wikipedia.org/wiki/Gaussian_process&quot;&gt;Wikipedia&lt;/a&gt;). The cool thing about Gaussian Process is that we don't need a &quot;parametric model&quot; to fit the data. It learns using the kernel trick. For an introduction to these techniques, I would recommend the nice review by Prof Zoubin Ghahramani on &lt;a href=&quot;http://www.nature.com/nature/journal/v521/n7553/full/nature14541.html&quot;&gt;Probabilistic Machine Learning and Artificial Intelligence &lt;/a&gt;. Other nice books for GPs are &lt;a href=&quot;http://www.gaussianprocess.org/gpml/&quot;&gt;Gaussian Processes for Machine Learning &lt;/a&gt; by Carl Edward Rasmussen and Christopher K. I. Williams and &lt;a href=&quot;https://mitpress.mit.edu/books/machine-learning-0&quot;&gt;Machine Learning - A Probabilistic Perspective&lt;/a&gt; by Kevin Murphy. Before going into the actual explanation of what a GP is, it is important to have a brief background of how to find the marginals and conditionals of a Multivariate Nomal Distribution. See Chapter 4 from Kevin Murphy's book.&lt;/p&gt;
-
-&lt;h2&gt;Marginals and Conditionals&lt;/h2&gt;
-
-&lt;p align=&quot;justify&quot;&gt; Consider a 2D Gaussian Distribution whose parameters are given by &lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\boldsymbol{\mu}=\left(\begin{matrix}
-\mu_{1} \cr
-\mu_{2}
-\end{matrix}\right)\hspace{3cm}\boldsymbol{\Sigma}=\left(\begin{matrix}
-\Sigma_{11} &amp;amp; \Sigma_{12}\cr
-\Sigma_{21} &amp;amp; \Sigma_{22}
-\end{matrix}\right)
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Then, the joint distribution of $x_{1}$ and $x_{2}$, that is, $\mathcal{P}\left(x_{1},\,x_{2}\right)$ can be written as&lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\mathcal{P}\left(x_{1},\,x_{2}\right)=\dfrac{1}{\left|2\pi\boldsymbol{\Sigma}\right|^{\frac{1}{2}}}\,\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{x}-\boldsymbol{\mu}\right)^{\textrm{T}}\boldsymbol{\Sigma}^{-1}\left(\mathbf{x}-\boldsymbol{\mu}\right)\right]
-\label{eq:2d_gaussian}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Using $\mathcal{P}\left(x_{1},\,x_{2}\right)=\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)\mathcal{P}\left(x_{2}\right)$, it can be shown that the conditional $\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)$ is also a quadratic with the mean and variance given by &lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\mu_{1\left|2\right.}=\mu_{1}+\Sigma_{12}\Sigma_{22}^{-1}\left(x_{2}-\mu_{2}\right)\hspace{3cm}\Sigma_{1\left|2\right.}=\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}
-\label{eq:marginals}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;such that&lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)=\dfrac{1}{\sqrt{2\pi\Sigma_{1\left|2\right.}}}\,\textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{x_{1}-\mu_{1\left|2\right.}}{\Sigma_{1\left|2\right.}}\right)^{2}\right]
- \label{eq:marginals_distribution}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Intuitively, this can be understood by the fact that if we take a slice across a 2D Multivariate Normal Distribution as shown in the picture below, the resulting distribution is also a Gaussian Distribution. &lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/images/2D-Gaussian.png&quot; alt=&quot;2D Gaussian Distribution&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;GP for Regression&lt;/h2&gt;
-
-&lt;p align=&quot;justify&quot;&gt;In Bayesian Parameter Inference, in which case we have a parametric model $\mathcal{M}$ and some data $\mathcal{D}$, we would want to infer the posterior distribution of the parameters, that is, $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M},\,\mathcal{D}\right.\right)$. On the other hand, a GP in fact defines a prior over the functions itself, such that it can be mapped to a posterior given some data $\mathcal{D}$. In this section, we will show how we can take adavantage of the nice properties of the above to predict the likely value of a function for a given $x_{*}$. The major assumption we will make is that the testing set of data is from the same distribution as the training set of data.&lt;/p&gt;
-
-&lt;h4&gt;&lt;b&gt;Noise-Free Case&lt;/b&gt;&lt;/h4&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Suppose we have a set of data, $\mathcal{D}=\left\{ \left(x_{i},\,f_{i}\right)\right\}$ for $i=1,2,3,\ldots N$, where $f$ is assumed to be an observable without noise. Now, given $x_{*}$, we would like to predict $f_{*}$ as well as its variance, $\Sigma_{*}$. In a sense, we effectively want the posterior distributions of $f_{*}$ given $x_{*}$, $x$ and $f$. Using Bayes' Theorem, we can write &lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)=\dfrac{\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)}{\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)}
-\label{eq:BayesTheorem}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;where $\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)$ is the posterior distribution of the function, $\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)$ is the prior, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)$ is the likelihood and $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ is the marginal likelihood which is simply given by&lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=\int\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)d\mathbf{f}
-\label{eq:marginal_likelihood}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Given now a new data $x_{*}$, the posterior distribution of $f_{*}$ is simply obtained by marginalisation.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(y_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)=\int\mathcal{P}\left(y_{*}\left|\mathbf{f},\,x_{*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;The prior on the regression function which is a Gaussian Process, GP denoted by &lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-f\left(\mathbf{X}\right)\sim\textrm{GP}\left(\boldsymbol{\mu}\left(\mathbf{X}\right),\,\kappa\left(\mathbf{X},\,\mathbf{X}’\right)\right)
-\label{definition_gp}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;where $\boldsymbol{\mu}\left(\mathbf{X}\right)$ is the mean of the function while $\kappa\left(\mathbf{X},\,\mathbf{X}'\right)$ is the covariance matrix, which is constructed using a kernel. In particular, for this example, we will consider the squared-exponential kernel,&lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\kappa\left(x,\,x’\right)=\sigma^{2}\,\textrm{exp}\left(-\dfrac{\left(x-x’\right)^{2}}{2\ell^{2}}\right)
-\label{squared_exponential}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;where $\ell$ and $\sigma$ control the horizontal and vertical variations respectively. The kernel encapsulates the correlation between two datapoints. What we would ideally want is the following - if two datapoints are close to each other, that is, $x-x'\approx0$, we would expect strong correlation, while if $x-x'\rightarrow\infty$, there should be minumum correlation between $x$ and $x'$. The kernel trick allows us to easily implement this. Note that there exists various other kernel types (for more details refer to &lt;a href=&quot;http://www.gaussianprocess.org/gpml/&quot;&gt;Gaussian Processes for Machine Learning &lt;/a&gt; by Carl Edward Rasmussen and Christopher K. I. Williams)&lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\kappa\left(x,\,x’\right)=\begin{cases}
-\begin{matrix}
-\sigma^{2}\cr
-0
-\end{matrix} &amp;amp; \begin{matrix}
-x-x’=0\cr
-x-x’\rightarrow\infty
-\end{matrix}\end{cases}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;For the regression problem, the joint distribution is given by &lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\left(\begin{matrix}
-\mathbf{f}\cr
-\mathbf{f}_{*}
-\end{matrix}\right)\sim\left(\left(\begin{matrix}
-\boldsymbol{\mu}\cr
-\boldsymbol{\mu}_{*}
-\end{matrix}\right),\,\left(\begin{matrix}
-\mathbf{K} &amp; \mathbf{K}_{*}\cr
-\mathbf{K}_{*}^{\textrm{T}} &amp; \mathbf{K}_{**}
-\end{matrix}\right)\right) %]]&gt;&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;where $\mathbf{K}_{**} = \kappa\left(\mathbf{X}_{*},\,\mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)$ is simply&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}_{*},\,\mathbf{X},\,\mathbf{f}\right.\right)=\mathcal{N}\left(\mathbf{f}_{*}\left|\boldsymbol{\mu}_{*},\,\boldsymbol{\Sigma}_{*}\right.\right)&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt; where &lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\mu}_{*}=\boldsymbol{\mu}\left(\mathbf{X}_{*}\right)+\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\left(\mathbf{f}-\boldsymbol{\mu}\left(\mathbf{X}\right)\right)&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;We would notionally assume a mean function equal to 0 and the kernel must be &lt;a href=&quot;https://en.wikipedia.org/wiki/Positive-definite_matrix&quot;&gt;positive definite&lt;/a&gt;. Hence, &lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\mu}_{*}=\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{f}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}&lt;/script&gt;
-
-&lt;h4&gt;&lt;b&gt;Noisy Case&lt;/b&gt;&lt;/h4&gt;
-
-&lt;p&gt;If instead, we were to observe a noisy function given by $y=f\left(x\right)+\epsilon$ where $\epsilon\sim\mathcal{N}\left(0,\,\sigma_n^2\right)$, the matrix $\mathbf{K}$ is simply given by&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{K}_n=\mathbf{K}+\sigma_n^2\mathbf{I}&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;assuming that the observed data is corrupted by the noise independently. Then the prediction for the new function along with its uncertainty is given by&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\mu}_{*}=\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{f}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{K}_{*}&lt;/script&gt;
-
-&lt;h2&gt;Learning the Kernel Parameters&lt;/h2&gt;
-&lt;p align=&quot;justify&quot;&gt; The way to estimate the parameters is via maxmising the marginal likelihood, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ which is simply a multivariate Gaussian distribution given by $\mathcal{N}\left(\mathbf{y}\left|0,\,\mathbf{K}_{n}\right.\right)$. Hence, &lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=-\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{y}+\textrm{log}\left|\mathbf{K}_n \right|+N\textrm{log}\left(2\pi\right)\right]
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;where $N$ is the number of test data points. Essentially, the third term is does not depend on the kernel parameters and is simply an additive constant. Hence, the derivative of the marginal likelihood&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dfrac{\partial}{\partial\theta_{j}}\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=-\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\dfrac{\partial\mathbf{K}_{n}^{-1}}{\partial\theta_{j}}\mathbf{y}+\dfrac{\partial}{\partial\theta_{j}}\textrm{log}\left|\mathbf{K}_{n}\right|\right]&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;can further be simplified using the fact that $\dfrac{\partial\mathbf{K}_{n}^{-1}}{\partial\theta_{j}}=-\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\mathbf{K}_{n}^{-1}$ and that $ \dfrac{\partial}{\partial\theta_{j}}\textrm{log}\left|\mathbf{K}_{n}\right|=\textrm{tr}\left(\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\right)$ such that &lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dfrac{\partial}{\partial\theta_{j}}\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\mathbf{K}_{n}^{-1}\mathbf{y}-\textrm{tr}\left(\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\right)\right]&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Given that we now have the gradient, one could easily use an optimisation algorithm to estimate the hyper-parameters. An alternative method is to have a full Bayesian formalism for inferring the posterior distributions of the hyper-parameters.&lt;/p&gt;
-
-&lt;h2&gt;Examples&lt;/h2&gt;
-&lt;p align=&quot;justify&quot;&gt;Below, we consider two examples: noise-free and a noisy. For the following, for illustration, we assume that the kernel parameters $\sigma$ and $\ell$ are both equal to 1. We show how the Gaussian Process performs well in the noise-free and equally-spaced data as shown below. We consider a simple sinusoidal function of the form&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;f=\textrm{sin}\left(x\right)\hspace{2cm}\left[0,\,2\pi\right]&lt;/script&gt;
-
-&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/images/example_1_uniform.png&quot; alt=&quot;uniform_gp&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt; On the other hand, we generate noisy data, which are not equally-spaced. The point which we are mostly interested in is that the Gaussian Process basically demonstrates the level of confidence when we have or do not have data. As expected, we would be more confident when we have more data, and less confident when we don't have data. &lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/images/example_1_non_uniform.png&quot; alt=&quot;non_uniform_gp&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 08 Oct 2016 13:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2016/10/Gaussian-Process</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Gaussian-Process</guid>
-        
-        
-        <category>Machine Learning and Statistics</category>
         
       </item>
     
