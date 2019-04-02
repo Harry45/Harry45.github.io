@@ -5,8 +5,8 @@
     <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jul 2017 09:20:01 +0400</pubDate>
-    <lastBuildDate>Sat, 01 Jul 2017 09:20:01 +0400</lastBuildDate>
+    <pubDate>Sun, 31 Mar 2019 20:12:54 +0100</pubDate>
+    <lastBuildDate>Sun, 31 Mar 2019 20:12:54 +0100</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -84,7 +84,7 @@ The SDDR is important to judge whether the inclusion of extra parameters in nest
 &lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 21 May 2017 10:00:00 +0400</pubDate>
+        <pubDate>Sun, 21 May 2017 07:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</guid>
         
@@ -165,7 +165,7 @@ table {
 &lt;/tbody&gt;&lt;/table&gt;
 
 </description>
-        <pubDate>Sat, 20 May 2017 10:00:00 +0400</pubDate>
+        <pubDate>Sat, 20 May 2017 07:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</guid>
         
@@ -184,7 +184,7 @@ table {
 
 &lt;p align=&quot;justify&quot;&gt;Apart from the lectures, another interesting part of the school was &quot;Research Hacks&quot;. The latter allows participants to meet in small groups, ask questions, exchange ideas and initiate collaboration. While these hacks predominantly followed the said-intentions, this also led to the publication of three papers (see &lt;a href=&quot;https://arxiv.org/abs/1704.03472&quot;&gt;arXiv:1704.03472&lt;/a&gt;, &lt;a href=&quot;https://arxiv.org/abs/1704.03467&quot;&gt;arXiv:1704.03467&lt;/a&gt; and &lt;a href=&quot;https://arxiv.org/abs/1704.07830&quot;&gt;arXiv:1704.07830&lt;/a&gt;). &lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;I learned quite a lot from Prof. Alan lectures and have also attempted some of the questions he proposed during the school. In particular, I will discuss two topics, namely KL Divergence and Bayesian Hierarchical Modelling below.&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;I learned quite a lot from Prof. Alan lectures and have also attempted some of the questions he proposed during the school. Also, there were various other interesting lectures, related to Bayesian methods. In particular, I will discuss two topics, namely KL Divergence and Bayesian Hierarchical Modelling below.&lt;/p&gt;
 
 &lt;h2&gt;Kullback-Leibler (KL) Divergence&lt;/h2&gt;
 &lt;p align=&quot;justify&quot;&gt;Suppose, we have a prior distribution which we denote as $\pi\left(\boldsymbol{\theta}\right)$ on the set of parameters $\boldsymbol{\theta}$. Afterwards, this is updated via Bayes' Theorem to a posterior distribution which we call $q\left(\boldsymbol{\theta}\right)$ and we want to know how much information we have gained from this update. This information can be quantified using the Kullback-Leibler (KL) Divergence,
@@ -306,7 +306,7 @@ $$
 &lt;/dl&gt;
 
 </description>
-        <pubDate>Thu, 18 May 2017 12:00:00 +0400</pubDate>
+        <pubDate>Thu, 18 May 2017 09:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2017/05/Bayesian-School-2016</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-School-2016</guid>
         
@@ -518,7 +518,7 @@ $$
 &lt;p align=&quot;justify&quot; style=&quot;margin-left:28em&quot;&gt;In addition to this, if we had some prior information on the parameters, then the concept of Bayesian Statistics is invoked. The concept is not very different, except that we would have had a prior probability distribution for each parameter. Additionally, instead of finding the MLE, we will end up having the MAP, that is, the Maximum a Posteriori estimates of the parameters. If uniform distributions are assumed, then the MAP coincide with the MLE.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 02 Mar 2017 10:00:00 +0400</pubDate>
+        <pubDate>Thu, 02 Mar 2017 06:00:00 +0000</pubDate>
         <link>http://localhost:4000/blog/2017/03/Linear-Regression</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/03/Linear-Regression</guid>
         
@@ -625,7 +625,7 @@ $$
 
 &lt;p align=&quot;justify&quot;&gt;Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using &lt;code&gt;rv_continuous&lt;/code&gt;!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 28 Oct 2016 12:26:00 +0400</pubDate>
+        <pubDate>Fri, 28 Oct 2016 09:26:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</guid>
         
@@ -854,7 +854,7 @@ $$
 
 &lt;/p&gt;
 </description>
-        <pubDate>Mon, 17 Oct 2016 16:00:00 +0400</pubDate>
+        <pubDate>Mon, 17 Oct 2016 13:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2016/10/Gibbs-Sampling</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Gibbs-Sampling</guid>
         
@@ -897,7 +897,7 @@ $$
 
 &lt;/p&gt;
 </description>
-        <pubDate>Thu, 13 Oct 2016 11:00:00 +0400</pubDate>
+        <pubDate>Thu, 13 Oct 2016 08:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</guid>
         
@@ -940,7 +940,7 @@ blockquote {
 &lt;p align=&quot;justify&quot;&gt;On a conclusive note, Flavio also spoke about statistics. Statistics indicate that statistics is not good! If we give a human a number, he will do anything to make it bigger. As the community grows, the processes will evolve. However, no matter how complicated it gets, &quot;technology is social before it's technical - Gilles Deleuza.&quot; On a final note, saying thanks will always make your colleague feel better and respected. &lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 10 Oct 2016 16:00:00 +0400</pubDate>
+        <pubDate>Mon, 10 Oct 2016 13:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2016/10/Surviving-Growing-Community</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Surviving-Growing-Community</guid>
         
@@ -959,7 +959,7 @@ blockquote {
 
 &lt;p align=&quot;justify&quot;&gt;Now that many students have an experience of how the JEDI works, we, students work together with Prof Bruce Bassett and his team to organise various such events in different places/countries in Africa. Until now, I have participated in a few of them and I was also sometimes on the organising team.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 09 Oct 2016 12:00:00 +0400</pubDate>
+        <pubDate>Sun, 09 Oct 2016 09:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2016/10/JEDI</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/JEDI</guid>
         
@@ -1133,7 +1133,7 @@ x-x’\rightarrow\infty
 &lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/images/example_1_non_uniform.png&quot; alt=&quot;non_uniform_gp&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 08 Oct 2016 16:00:00 +0400</pubDate>
+        <pubDate>Sat, 08 Oct 2016 13:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2016/10/Gaussian-Process</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Gaussian-Process</guid>
         
