@@ -19,4 +19,17 @@ excerpt:
 
 <p align="justify">It was not a big suprise to see the full lecture theatre completely full of postgraduate students, vehement to hear from Prof. Andrew. Somewhat surprising though, was the fact that Prof. Andrew came in with a yellow notebook rather than a laptop as we were all expecting some sort of digital presentation.</p>
 
+<p align="justify">Important topics discussed include:</p>
+
+<ul>
+  <li>ANI</li>
+  <li>AGI</li>
+  <li>Small Data</li>
+  <li>Generalizability</li>
+  <li>AI as an Engineering Technique</li>
+  <li>Jobs</li>
+  <li>Education</li>
+  <li>Creativity</li>
+</ul>
+
 
