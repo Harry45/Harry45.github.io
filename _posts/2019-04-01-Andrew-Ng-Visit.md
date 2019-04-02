@@ -17,13 +17,13 @@ excerpt:
 
 <img src="/images/andrew-ng.jpg" align="left" width = "400" style = "margin-right: 10px; margin-bottom: 10px"/>
 
-<p align="justify">It was not a big suprise to see the full lecture theatre completely full of postgraduate students, vehement to hear from Prof. Andrew. Somewhat surprising though, was the fact that Prof. Andrew came in with a yellow notebook rather than a laptop as we were all expecting some sort of digital presentation.</p>
+<p align="justify">It was not a big suprise to see the full lecture theatre completely full of postgraduate students, vehement to hear from Prof. Andrew. Somewhat surprising though, was the fact that Prof. Andrew came in with a yellow notebook rather than a laptop as we were all expecting some sort of digital presentation. </p>
 
-<p align="justify">Important topics discussed include:</p>
+<p align="justify">Important topics discussed include but not limited to:</p>
 
 <ul>
-  <li>ANI</li>
-  <li>AGI</li>
+  <li>ANI (Artificial Narrow Intelligence)</li>
+  <li>AGI (Artificial General Intelligence)</li>
   <li>Small Data</li>
   <li>Generalizability</li>
   <li>AI as an Engineering Technique</li>
