@@ -22,10 +22,13 @@ excerpt:
 <p align="justify">	On the same note, since he is also trying to automate grading system as well, teaching and research assistants spend more time discussing projects/ideas with students. Other important topics discussed include but not limited to:</p>
 
 <ul>
-  <li>ANI (Artificial Narrow Intelligence)</li>
-  <li>AGI (Artificial General Intelligence)</li>
+  <li><u>ANI (Artificial Narrow Intelligence)</u></li>
+  <p align="justify">Up to now, there has been major development in supervised learning, where an algorithm is fed with thousands, possibly millions of examples before one tests on unseen examples. This form of Machine Learning is at the forefront of most technological application these days.</p>
+  <li><u>AGI (Artificial General Intelligence)</u></li>
+  <p align="justify">On the other hand, we are also far from achieving AGI - a state where an agent will be able to take decision on its own. Clearly, the human brain is a complicated system and although much work has been done in the Neuroscience research field, having a full understanding of how the brain works, remains a delicate topic of research.</p>
   <li>Small Data</li>
   <li>Generalizability</li>
+  <p align="justify">Although, methods such as domain adaptation and transfer learning are currently being explored, Prof. Andrew believes that we are still far from</p>
   <li>AI as an Engineering Technique</li>
   <li>Jobs</li>
   <li>Education</li>

@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</loc>
+      <loc>https://Harry45.github.io/blog/2019/04/Andrew-Ng-Visit</loc>
       
         <lastmod>2019-04-01T07:00:00+01:00</lastmod>
       
@@ -18,7 +18,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</loc>
+      <loc>https://Harry45.github.io/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</loc>
       
         <lastmod>2017-05-21T07:00:00+01:00</lastmod>
       
@@ -33,7 +33,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</loc>
+      <loc>https://Harry45.github.io/blog/2017/05/Bayesian-Model-Selection</loc>
       
         <lastmod>2017-05-20T07:00:00+01:00</lastmod>
       
@@ -48,7 +48,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2017/05/Bayesian-School-2016</loc>
+      <loc>https://Harry45.github.io/blog/2017/05/Bayesian-School-2016</loc>
       
         <lastmod>2017-05-18T09:00:00+01:00</lastmod>
       
@@ -63,7 +63,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2017/03/Linear-Regression</loc>
+      <loc>https://Harry45.github.io/blog/2017/03/Linear-Regression</loc>
       
         <lastmod>2017-03-02T06:00:00+00:00</lastmod>
       
@@ -78,7 +78,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution</loc>
       
         <lastmod>2016-10-28T09:26:00+01:00</lastmod>
       
@@ -93,7 +93,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/Gibbs-Sampling</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</loc>
       
         <lastmod>2016-10-17T13:00:00+01:00</lastmod>
       
@@ -108,7 +108,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</loc>
       
         <lastmod>2016-10-13T08:00:00+01:00</lastmod>
       
@@ -123,7 +123,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/Surviving-Growing-Community</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</loc>
       
         <lastmod>2016-10-10T13:00:00+01:00</lastmod>
       
@@ -138,7 +138,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/JEDI</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/JEDI</loc>
       
         <lastmod>2016-10-09T09:00:00+01:00</lastmod>
       
@@ -153,7 +153,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/Gaussian-Process</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/Gaussian-Process</loc>
       
         <lastmod>2016-10-08T13:00:00+01:00</lastmod>
       
@@ -168,7 +168,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</loc>
+      <loc>https://Harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project</loc>
       
         <lastmod>2016-10-07T07:00:00+01:00</lastmod>
       
@@ -184,7 +184,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/teaching/A-Level-Further-Mathematics/</loc>
+      <loc>https://Harry45.github.io/teaching/A-Level-Further-Mathematics/</loc>
       
         <lastmod>2017-02-09T06:00:00+00:00</lastmod>
       
@@ -199,7 +199,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/teaching/A-Level-Mathematics/</loc>
+      <loc>https://Harry45.github.io/teaching/A-Level-Mathematics/</loc>
       
         <lastmod>2017-02-09T06:00:00+00:00</lastmod>
       
@@ -214,7 +214,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/teaching/A-Level-Physics/</loc>
+      <loc>https://Harry45.github.io/teaching/A-Level-Physics/</loc>
       
         <lastmod>2017-02-09T06:00:00+00:00</lastmod>
       
@@ -229,24 +229,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/travel/Africa/</loc>
+      <loc>https://Harry45.github.io/travel/Africa/</loc>
       
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/travel/Europe/</loc>
-      
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -259,24 +244,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/about/</loc>
+      <loc>https://Harry45.github.io/travel/Europe/</loc>
       
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/blog/</loc>
-      
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -289,24 +259,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/feed.xml</loc>
+      <loc>https://Harry45.github.io/about/</loc>
       
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/categories/</loc>
-      
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -319,24 +274,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/</loc>
+      <loc>https://Harry45.github.io/blog/</loc>
       
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/css/main.css</loc>
-      
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -349,9 +289,69 @@
   
     
     <url>
-      <loc>http://localhost:4000/research/</loc>
+      <loc>https://Harry45.github.io/feed.xml</loc>
       
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/categories/</loc>
+      
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/</loc>
+      
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/css/main.css</loc>
+      
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://Harry45.github.io/research/</loc>
+      
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -366,9 +366,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/teaching/</loc>
+      <loc>https://Harry45.github.io/teaching/</loc>
       
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -381,9 +381,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/travel/</loc>
+      <loc>https://Harry45.github.io/travel/</loc>
       
-        <lastmod>2019-04-02T16:49:44+01:00</lastmod>
+        <lastmod>2019-04-02T21:13:17+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

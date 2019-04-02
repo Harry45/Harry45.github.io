@@ -2,25 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arrykrishna Mootoovaloo</title>
-    <description>501, Lower Main Road, Millskock House, Observatory, Cape Town, 7935</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Apr 2019 16:49:44 +0100</pubDate>
-    <lastBuildDate>Tue, 02 Apr 2019 16:49:44 +0100</lastBuildDate>
+    <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
+    <link>https://Harry45.github.io/</link>
+    <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 02 Apr 2019 21:13:17 +0100</pubDate>
+    <lastBuildDate>Tue, 02 Apr 2019 21:13:17 +0100</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
         <title>Emerging trends in AI and online education</title>
         <description>&lt;p align=&quot;justify&quot;&gt;On this day, &lt;a href=&quot;https://www.coursera.org/instructor/andrewng&quot;&gt;Professor Andrew Ng&lt;/a&gt; was at Imperial College London. He was not only there as a speaker for the the (&lt;a href=&quot;https://www.imperial.ac.uk/data-science/&quot;&gt;Data Science Institute, DSI&lt;/a&gt;) Distinguished Lecture programme but to also commemorate the 5th year anniversary of the existence of the DSI.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/andrew-ng.jpg&quot; align=&quot;left&quot; width=&quot;400&quot; styel=&quot;margin-right: 10px; margin-bottom: 10px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/andrew-ng.jpg&quot; align=&quot;left&quot; width=&quot;400&quot; style=&quot;margin-right: 10px; margin-bottom: 10px&quot; /&gt;&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;It was not a big suprise to see the full lecture theatre completely full of postgraduate students, vehement to hear from Prof. Andrew. Somewhat surprising though, was the fact that Prof. Andrew came in with a yellow notebook rather than a laptop as we were all expecting some sort of digital presentation.&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;It was not a big suprise to see the full lecture theatre completely full of postgraduate students, vehement to hear from Prof. Andrew. Somewhat surprising though, was the fact that Prof. Andrew came in with a yellow notebook rather than a laptop as we were all expecting some sort of digital presentation. In fact, he chose to speak to the audience directly and use the white board to write a few important points. To me, this simple act, in itself, is an illustration of a true leader. He started off by speaking about his teaching courses at Stanford University. I personally think he is doing a fantastic job at revolutionalizing teaching methods. In particular, he refers to his own teaching system where students watch videos before coming to the class, and projects/ideas are discussed during teaching sessions. &lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;	On the same note, since he is also trying to automate grading system as well, teaching and research assistants spend more time discussing projects/ideas with students. Other important topics discussed include but not limited to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;u&gt;ANI (Artificial Narrow Intelligence)&lt;/u&gt;&lt;/li&gt;
+  &lt;p align=&quot;justify&quot;&gt;Up to now, there has been major development in supervised learning, where an algorithm is fed with thousands, possibly millions of examples before one tests on unseen examples. This form of Machine Learning is at the forefront of most technological application these days.&lt;/p&gt;
+  &lt;li&gt;&lt;u&gt;AGI (Artificial General Intelligence)&lt;/u&gt;&lt;/li&gt;
+  &lt;p align=&quot;justify&quot;&gt;On the other hand, we are also far from achieving AGI - a state where an agent will be able to take decision on its own. Clearly, the human brain is a complicated system and although much work has been done in the Neuroscience research field, having a full understanding of how the brain works, remains a delicate topic of research.&lt;/p&gt;
+  &lt;li&gt;Small Data&lt;/li&gt;
+  &lt;li&gt;Generalizability&lt;/li&gt;
+  &lt;p align=&quot;justify&quot;&gt;Although, methods such as domain adaptation and transfer learning are currently being explored, Prof. Andrew believes that we are still far from&lt;/p&gt;
+  &lt;li&gt;AI as an Engineering Technique&lt;/li&gt;
+  &lt;li&gt;Jobs&lt;/li&gt;
+  &lt;li&gt;Education&lt;/li&gt;
+  &lt;li&gt;Creativity&lt;/li&gt;
+&lt;/ul&gt;
 
 </description>
         <pubDate>Mon, 01 Apr 2019 07:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</guid>
+        <link>https://Harry45.github.io/blog/2019/04/Andrew-Ng-Visit</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2019/04/Andrew-Ng-Visit</guid>
         
         
         <category>Workshop and Conference</category>
@@ -103,8 +119,8 @@ The SDDR is important to judge whether the inclusion of extra parameters in nest
 
 </description>
         <pubDate>Sun, 21 May 2017 07:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</guid>
+        <link>https://Harry45.github.io/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -184,8 +200,8 @@ table {
 
 </description>
         <pubDate>Sat, 20 May 2017 07:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</guid>
+        <link>https://Harry45.github.io/blog/2017/05/Bayesian-Model-Selection</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2017/05/Bayesian-Model-Selection</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -325,8 +341,8 @@ $$
 
 </description>
         <pubDate>Thu, 18 May 2017 09:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2017/05/Bayesian-School-2016</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-School-2016</guid>
+        <link>https://Harry45.github.io/blog/2017/05/Bayesian-School-2016</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2017/05/Bayesian-School-2016</guid>
         
         
         <category>Workshop and Conference</category>
@@ -537,8 +553,8 @@ $$
 
 </description>
         <pubDate>Thu, 02 Mar 2017 06:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/2017/03/Linear-Regression</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/03/Linear-Regression</guid>
+        <link>https://Harry45.github.io/blog/2017/03/Linear-Regression</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2017/03/Linear-Regression</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -644,8 +660,8 @@ $$
 &lt;p align=&quot;justify&quot;&gt;Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using &lt;code&gt;rv_continuous&lt;/code&gt;!&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Oct 2016 09:26:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</guid>
+        <link>https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Sampling-From-Any-Distribution</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -873,8 +889,8 @@ $$
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Oct 2016 13:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2016/10/Gibbs-Sampling</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Gibbs-Sampling</guid>
+        <link>https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Gibbs-Sampling</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -916,8 +932,8 @@ $$
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 13 Oct 2016 08:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</guid>
+        <link>https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</guid>
         
         
         <category>Research</category>
@@ -959,8 +975,8 @@ blockquote {
 
 </description>
         <pubDate>Mon, 10 Oct 2016 13:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2016/10/Surviving-Growing-Community</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Surviving-Growing-Community</guid>
+        <link>https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/Surviving-Growing-Community</guid>
         
         
         <category>Workshop and Conference</category>
@@ -978,8 +994,8 @@ blockquote {
 &lt;p align=&quot;justify&quot;&gt;Now that many students have an experience of how the JEDI works, we, students work together with Prof Bruce Bassett and his team to organise various such events in different places/countries in Africa. Until now, I have participated in a few of them and I was also sometimes on the organising team.&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 09:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2016/10/JEDI</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/JEDI</guid>
+        <link>https://Harry45.github.io/blog/2016/10/JEDI</link>
+        <guid isPermaLink="true">https://Harry45.github.io/blog/2016/10/JEDI</guid>
         
         
         <category>Workshop and Conference</category>
