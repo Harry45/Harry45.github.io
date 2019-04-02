@@ -17,9 +17,9 @@ excerpt:
 
 <img src="/images/andrew-ng.jpg" align="left" width = "400" style = "margin-right: 10px; margin-bottom: 10px"/>
 
-<p align="justify">It was not a big suprise to see the full lecture theatre completely full of postgraduate students, vehement to hear from Prof. Andrew. Somewhat surprising though, was the fact that Prof. Andrew came in with a yellow notebook rather than a laptop as we were all expecting some sort of digital presentation. In fact, he chose to speak to the audience directly and use the white board to write a few important points. To me, this simple act, in itself, is an illustration of a true leader. He started off by speaking about his teaching courses at Stanford University. I personally think he is doing a fantastic job at revolutionalizing teaching methods. In particular, he refers to his own teaching system where students watch videos before coming to the class, and projects/ideas are discussed during teaching sessions. Since he is also trying to automate grading system as well, teaching and research assistants spend more time discussing projects/ideas with students.</p>
+<p align="justify">It was not a big suprise to see the full lecture theatre completely full of postgraduate students, vehement to hear from Prof. Andrew. Somewhat surprising though, was the fact that Prof. Andrew came in with a yellow notebook rather than a laptop as we were all expecting some sort of digital presentation. In fact, he chose to speak to the audience directly and use the white board to write a few important points. To me, this simple act, in itself, is an illustration of a true leader. He started off by speaking about his teaching courses at Stanford University. I personally think he is doing a fantastic job at revolutionalizing teaching methods. In particular, he refers to his own teaching system where students watch videos before coming to the class, and projects/ideas are discussed during teaching sessions. </p>
 
-<p align="justify">Important topics discussed include but not limited to:</p>
+<p align="justify">	On the same note, since he is also trying to automate grading system as well, teaching and research assistants spend more time discussing projects/ideas with students. Other important topics discussed include but not limited to:</p>
 
 <ul>
   <li>ANI (Artificial Narrow Intelligence)</li>
