@@ -240,25 +240,25 @@ x-x’\rightarrow\infty
 \boldsymbol{\mu}\cr
 \boldsymbol{\mu}_{*}
 \end{matrix}\right),\,\left(\begin{matrix}
-\mathbf{K} & \mathbf{K}_{*}\cr
-\mathbf{K}_{*}^{\textrm{T}} & \mathbf{K}_{**}
+\mathbf{K} & \mathbf{k}_{*}\cr
+\mathbf{k}_{*}^{\textrm{T}} & k_{**}
 \end{matrix}\right)\right) %]]></script>
 
-<p align="justify">where $\mathbf{K}_{**} = \kappa\left(\mathbf{X}_{*},\,\mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)$ is simply</p>
+<p align="justify">where $k_{**} = \kappa\left(\mathbf{X}_{*},\,\mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)$ is simply</p>
 
 <script type="math/tex; mode=display">\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}_{*},\,\mathbf{X},\,\mathbf{f}\right.\right)=\mathcal{N}\left(\mathbf{f}_{*}\left|\boldsymbol{\mu}_{*},\,\boldsymbol{\Sigma}_{*}\right.\right)</script>
 
 <p align="justify"> where </p>
 
-<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\boldsymbol{\mu}\left(\mathbf{X}_{*}\right)+\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\left(\mathbf{f}-\boldsymbol{\mu}\left(\mathbf{X}\right)\right)</script>
+<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\boldsymbol{\mu}\left(\mathbf{X}_{*}\right)+\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\left(\mathbf{f}-\boldsymbol{\mu}\left(\mathbf{X}\right)\right)</script>
 
-<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}</script>
+<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{k}_{*}</script>
 
 <p align="justify">We would notionally assume a mean function equal to 0 and the kernel must be <a href="https://en.wikipedia.org/wiki/Positive-definite_matrix">positive definite</a>. Hence, </p>
 
-<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{f}</script>
+<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{f}</script>
 
-<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}</script>
+<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}</script>
 
 <h4><b>Noisy Case</b></h4>
 
@@ -268,9 +268,9 @@ x-x’\rightarrow\infty
 
 <p align="justify">assuming that the observed data is corrupted by the noise independently. Then the prediction for the new function along with its uncertainty is given by</p>
 
-<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{f}</script>
+<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{f}</script>
 
-<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{K}_{*}</script>
+<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{k}_{*}</script>
 
 <h2>Learning the Kernel Parameters</h2>
 <p align="justify"> The way to estimate the parameters is via maxmising the marginal likelihood, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ which is simply a multivariate Gaussian distribution given by $\mathcal{N}\left(\mathbf{y}\left|0,\,\mathbf{K}_{n}\right.\right)$. Hence, </p>

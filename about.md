@@ -14,22 +14,29 @@ blockquote {
 }
 </style>
 
-{% include image.html url="/images/Harry_Lindau.jpg" caption="Myself at the Lindau Nobel Laureate Meeting (2016)" width=350 align="right" %}
+{% include image.html url="/images/Harry_Lindau.jpg" caption="Lindau Nobel Laureate Meeting (2016)" width=350 align="right" %}
 
-<p><b><font size="8">Academic Background</font></b></p>
+<p><b><font size="6">Academic Background</font></b></p>
 
 <p><b>PhD in Physics (Imperial College London)</b></p>
 <p align="justify"> I am currently a PhD candidate at the Imperial Centre for Inference and Cosmology, <a href="https://www.imperial.ac.uk/astrophysics/centre-for-inference-and-cosmology/">ICIC</a>, working with Prof. Alan Heavens, Prof. Andrew Jaffe and Dr. Florent Leclercq on weak lensing, compression and Gaussian Processes.</p> 
 
 <p><b>MSc in Astrophysics and Space Science (University of Cape Town)</b></p>
-<p align="justify"> Prior to joining Imperial College, I did a Masters in Astrophysics and Space Science at the <a href="https://www.uct.ac.za/">University of Cape Town</a>. In 2015, after completing the coursework component of <a href="https://www.star.ac.za/">NASSP</a> (National Astrophysics and Space Science Programme), I did the research part (which was based on radio astronomy and Bayesian Statistics) at <a href="https://www.aims.ac.za/">AIMS</a> under the supervision of <a href="https://cosmoaims.wordpress.com/2010/01/01/bruce-bassett/">Professor Bruce Bassett</a>.</p> 
+<p align="justify"> Prior to joining Imperial College, I did a Masters in Astrophysics and Space Science at the <a href="https://www.uct.ac.za/">University of Cape Town</a>. In 2015, after completing the coursework component of <a href="https://www.star.ac.za/">NASSP</a> (National Astrophysics and Space Science Programme), I did the research part (which was based on radio astronomy and Bayesian Statistics) at <a href="https://www.aims.ac.za/">AIMS</a> under the supervision of Prof. Bruce Bassett.</p> 
 
 <p><b>BSc (Hons) Physics with Computing (University of Mauritius)</b></p>
 <p align="justify"> From 2011 to 2014, I did my undergraduate study in Physics with Computing at the University of Mauritius where I worked on the analysis of X-ray cavities (see <a href="https://harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project">here</a>).</p>
 
-<p><b><font size="8">Previous Work</font></b></p>
+<p><b><font size="6">Previous Work</font></b></p>
 
-<p><b>Lead Data Scientist</b></p>
+<p><b>Lead Data Scientist (<a href="https://vensy.co.uk/">Vensy</a>)</b></p>
+<p align="justify">Much of my work at Vensy was to investigate a Twitter database in order to understand the engagement rate of atheletes, which eventually helps in driving the business forward.</p>
+
+<p><b>Data Scientist (<a href="https://gimmer.com/">Gimmer</a>)</b></p>
+<p align="justify">Part of the RnD team, working on predictive analysis and statistics, to build both data pipelines and machine learning algorithms to produce insightful metrics while designing ways to integrate these algorithms as tools within an automated crypto-trading platform.</p>
+
+<p><b>Private Tutor (Mauritius)</b></p>
+<p align="justify">Taught Mathematics, Physics, Additional Mathematics and Further Mathematics to more than 150 O-Level and A-Level students in Mauritius over a course of 3 years (2011 to 2014).</p>
 
 <!-- ## Family
 <p align="justify">I have an elder brother, a cute little brother and a lovely, beautiful little sister. My parents, who are my best mentors, have been very helpful and supportive. Moreover, as Henry Ward Beecher rightly said, "what a mother sings to the cradle goes all the way down to the coffin," my mother has provided me with both financial and moral support in all situations. </p>
