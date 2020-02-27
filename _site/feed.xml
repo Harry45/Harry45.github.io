@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Feb 2020 20:57:05 +0000</pubDate>
-    <lastBuildDate>Thu, 27 Feb 2020 20:57:05 +0000</lastBuildDate>
+    <pubDate>Thu, 27 Feb 2020 21:05:35 +0000</pubDate>
+    <lastBuildDate>Thu, 27 Feb 2020 21:05:35 +0000</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -57,7 +57,7 @@
         <title>Data Science Summer School 2018</title>
         <description>&lt;p align=&quot;justify&quot;&gt;The &lt;a href=&quot;https://2018.ds3-datascience-polytechnique.fr/&quot;&gt;Data Science Summer School&lt;/a&gt; was organised from the 25&lt;sup&gt;th&lt;/sup&gt; to the 29&lt;sup&gt;th&lt;/sup&gt; June 2018 at the École Polytechnique. The school had a broad spectrum of topics covered and the presence of Prof. Yann Lecun, leading expert in the deep learning and Cédric Villani, winner of the Fields medal in 2010, did not go unnoticed.&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;All the session on Monday were mostly related to the general non-technical issues around Machine Learning. In summary, we had the following lectures:&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;I will briefly touch upon the talks which I attended. All the session on Monday were mostly related to the general non-technical issues around Machine Learning and we had the following lectures:&lt;/p&gt;
 
 &lt;ol type=&quot;1&quot;&gt;
 
@@ -69,6 +69,33 @@ Trust and Transparency
 &lt;/li&gt;
 &lt;li&gt;
 Fairness in Machine Learning
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p align=&quot;justify&quot;&gt;On Tuesday and Wednesday, we had more technical talks in:&lt;/p&gt;
+
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;
+Machine Learning Research Design and the GDPR
+&lt;/li&gt;
+&lt;li&gt;
+Probabilistic Numerical Computation: A Role for Statisticians in Numerical Analysis?
+&lt;/li&gt;
+&lt;li&gt;
+Deep Learning for Medical Imaging and Precision Medicine
+&lt;/li&gt;
+&lt;li&gt;
+Deep Latent Variable Models in Medical Informatics
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p align=&quot;justify&quot;&gt;On Thursday and Friday, we had tutorials and I chose the following two:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;
+Representing and Comparing Probabilities with Kernels
+&lt;/li&gt;
+&lt;li&gt;
+Crash Course in Deep Learning and Pytorch
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
