@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Feb 2020 21:31:32 +0000</pubDate>
-    <lastBuildDate>Thu, 27 Feb 2020 21:31:32 +0000</lastBuildDate>
+    <pubDate>Thu, 27 Feb 2020 22:29:47 +0000</pubDate>
+    <lastBuildDate>Thu, 27 Feb 2020 22:29:47 +0000</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -47,6 +47,72 @@
         <pubDate>Mon, 01 Apr 2019 07:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</guid>
+        
+        
+        <category>Workshop and Conference</category>
+        
+      </item>
+    
+      <item>
+        <title>Methods for Statistical Inference (Paris)</title>
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 350px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/ihp.jpg&quot; alt=&quot;Institut Henri Poincaré&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;Institut Henri Poincaré&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p align=&quot;justify&quot;&gt;I had the opportunity to attend the Methods for Statistical Inference school, which was organised from the 22&lt;sup&gt;nd&lt;/sup&gt; to the 26&lt;sup&gt;th&lt;/sup&gt; October 2018 at the Institut Henri Poincaré, Paris. In particular, the goal of the school was not only to foster collaboration but to also understand if we have the right tools for cosmology over the next decade. In particular, the focus was also around extracting maximum cosmological information from data and identify new techniques and methods to go about addressing this topic.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;There was a series of interesting talks (around 25 talks), related to Bayesian techniques and Machine Learning. The ones which are related to the topics I am particularly interested were:&lt;/p&gt;
+
+&lt;ol type=&quot;1&quot;&gt;
+
+&lt;li&gt;
+Hierarchical modelling of weak lensing and photometric redshifts
+&lt;/li&gt;
+
+&lt;li&gt;
+Bayesian optimisation for likelihood-free cosmological inference
+&lt;/li&gt;
+
+&lt;li&gt;
+Bayesian analysis of astronomical catalogues, with application to measuring the Hubble constant using binary neutron stars
+&lt;/li&gt;
+
+&lt;li&gt;
+Deep Learning architectures for the estimation of photometric redshifts of galaxies and the classification of light curves
+&lt;/li&gt;
+
+&lt;li&gt;
+Promises and challenges of Deep Learning in Cosmology
+&lt;/li&gt;
+
+&lt;li&gt;
+Posteriors and marginals in low and high dimensions with applications to large scale structure analysis
+&lt;/li&gt;
+
+&lt;li&gt;
+Deep learning for science: steps to opening the pandora box
+&lt;/li&gt;
+
+&lt;li&gt;
+Bayesian data interpretation with large scale cosmological models
+&lt;/li&gt;
+
+&lt;li&gt;
+Machine learning based statistical inference
+&lt;/li&gt;
+
+&lt;li&gt;
+Learning Multiscale Physics with Deep Neural Networks
+&lt;/li&gt;
+
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 30 Oct 2018 20:00:00 +0000</pubDate>
+        <link>http://localhost:4000/blog/2018/10/Methods-for-Statistical-Inference-Paris</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/10/Methods-for-Statistical-Inference-Paris</guid>
         
         
         <category>Workshop and Conference</category>
@@ -1054,49 +1120,6 @@ $$
         
         
         <category>Machine Learning and Statistics</category>
-        
-      </item>
-    
-      <item>
-        <title>BIRO - Bayesian Inference for Radio Observations</title>
-        <description>&lt;style&gt;
-  .bottom-three {
-     margin-bottom: 0.5cm;
-  }
-&lt;/style&gt;
-
-&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 420px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/superJEDI.jpg&quot; alt=&quot;superJEDI in 2013 at Flic En Flac&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;superJEDI in 2013 at Flic En Flac&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p align=&quot;justify&quot;&gt;The superJEDI was organised in 2013, at Flic En Flac in Mauritius. I was not part of this wonderful event as I was still in my second year of my undergraduate study. However, Sheean and Suraj, who will later become my friends, were part of this amazing JEDI. The interesting fact about JEDI is that it is only in these kinds of meeting that we will come up with brilliant ideas, which can then lead to publications. For me personally, the major reason behind is the active participation of all people, being from undergraduate level to the highest position in the hierarchy.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;During one of those days, as Nadeem and Bruce were walking on the seaside, Bruce proposed the idea of having a Bayesian formalism in the context of radio interferometry. This led to the so-called BIRO (Bayesian Inference for Radio Obervation) project.&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center;&quot;&gt;
-&lt;iframe src=&quot;https://player.vimeo.com/video/117391380&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt; &lt;/iframe&gt; 
-&lt;/div&gt;
-
-&lt;p class=&quot;bottom-three&quot;&gt;
-
-&lt;p align=&quot;justify&quot;&gt;The aim of this project was to determine the scientific parameters, if possible, the systematic parameters also, using the visibility data directly. The conventional way of doing this is to first produce a radio image, from which all science will be done. This seems absurb, isn't it? Why do we have to produce an image when we have the raw data? To some extent, one might argue that the data is dominated by noise and hence it will be hard to work in the Fourier space, that is, with the visibility data. This clearly suggests that the best alternative is to have a full distribution of the parameters of interest, with a summary statistics.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Michelle, who was doing her PhD with Bruce at that time, took hold of the BIRO project. She started working on it as part of her PhD. Iniyan was also part of the BIRO project. While Michelle worked mostly on Bayesian Parameter Estimation, Iniyan's work was on Bayesian Model Selection. In a nutshell, Michelle was able to infer not only the scientific parameters but also the systematic parameters in a fully Bayesian formalism. She used MCMC (Markov Chain Monte Carlo) methods to map the full posterior distributions of the parameters. On the other hand, Iniyan used &lt;a href=&quot;http://johannesbuchner.github.io/PyMultiNest/&quot;&gt; PyMultinest&lt;/a&gt; to calculate the Bayesian Evidence (the quantity which tells us how one model is favoured over another). PyMultinest also returns the posterior distributions of the parameters. An illustration from the work done by Michelle and Iniyan is shown in the above video. Compared to &lt;a href=&quot;http://cdsads.u-strasbg.fr/abs/1974A%26AS...15..417H&quot;&gt;CLEAN&lt;/a&gt;, BIRO is much better in terms of performance.&lt;/p&gt;
-
-
-&lt;p align=&quot;justify&quot;&gt;Of course, the technique is not without problems. One arguement is that we have to know the sky model first, before proceeding with Bayesian Inference. Therefore, in BIRO projects, we would normally assume a known sky model, which then leads to the second assumption that the positions of the sources are known. Moreover, nested sampling is known to have unreliable performance for higher dimensions. However, the fruitful side of this fantastic idea by Bruce has led to the following publications: &lt;a href=&quot;https://arxiv.org/abs/1501.05304&quot;&gt;BIRO&lt;/a&gt;, &lt;a href=&quot;https://arxiv.org/abs/1501.07719&quot;&gt;MontBlanc&lt;/a&gt; and &lt;a href=&quot;https://arxiv.org/abs/1610.03773&quot;&gt;Resolving the blazar CGRaBS J0809+5341&lt;/a&gt;. We are currently extending the BIRO formalism to various other topics in radio astronomy.&lt;/p&gt;
-
-&lt;/p&gt;
-</description>
-        <pubDate>Thu, 13 Oct 2016 08:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations</guid>
-        
-        
-        <category>Research</category>
         
       </item>
     
