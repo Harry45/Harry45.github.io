@@ -14,7 +14,7 @@ excerpt:
 ---
 
 
-<p align="justify">The Yandex Machine Learning School was organised from the 16<sup>th</sup> 26<sup>th</sup> January. It was a quite intensive school with a series of lectures, homework, assignments, tutorials and exam over the course of 10 days only. In particular, topics covered included the following:</p>
+<p align="justify">The Yandex Machine Learning School was organised from the 16<sup>th</sup> to 26<sup>th</sup> January. It was a quite intensive school with a series of lectures, homework, assignments, tutorials and exam over the course of 10 days only. In particular, topics covered included the following:</p>
 
 <ol type="1">
 
