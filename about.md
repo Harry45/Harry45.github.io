@@ -16,7 +16,7 @@ blockquote {
 
 {% include image.html url="/images/Harry_Lindau.jpg" caption="Myself at the Lindau Nobel Laureate Meeting (2016)" width=350 align="right" %}
 
-### PhD in Physics (Imperial College London)
+<p><b>PhD in Physics (Imperial College London)</b></p>
 <p align="justify"> I am currently a PhD candidate at the Imperial Centre for Inference and Cosmology, <a href="https://www.imperial.ac.uk/astrophysics/centre-for-inference-and-cosmology/">ICIC</a>, working with Prof. Alan Heavens, Prof. Andrew Jaffe and Dr. Florent Leclercq on weak lensing, compression and Gaussian Processes.</p> 
 
 ### MSc in Astrophysics and Space Science (University of Cape Town)
