@@ -116,8 +116,8 @@ $$
 \boldsymbol{\mu}\cr
 \boldsymbol{\mu}_{*}
 \end{matrix}\right),\,\left(\begin{matrix}
-\mathbf{K} & \mathbf{K}_{*}\cr
-\mathbf{K}_{*}^{\textrm{T}} & \mathbf{K}_{**}
+\mathbf{K} & \mathbf{k}_{*}\cr
+\mathbf{k}_{*}^{\textrm{T}} & \mathbf{K}_{**}
 \end{matrix}\right)\right)
 $$
 
@@ -130,21 +130,21 @@ $$
 <p align="justify"> where </p>
 
 $$
-\boldsymbol{\mu}_{*}=\boldsymbol{\mu}\left(\mathbf{X}_{*}\right)+\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\left(\mathbf{f}-\boldsymbol{\mu}\left(\mathbf{X}\right)\right)
+\boldsymbol{\mu}_{*}=\boldsymbol{\mu}\left(\mathbf{X}_{*}\right)+\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\left(\mathbf{f}-\boldsymbol{\mu}\left(\mathbf{X}\right)\right)
 $$
 
 $$
-\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}
+\boldsymbol{\Sigma}_{*}=\mathbf{k}_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{k}_{*}
 $$
 
 <p align="justify">We would notionally assume a mean function equal to 0 and the kernel must be <a href="https://en.wikipedia.org/wiki/Positive-definite_matrix">positive definite</a>. Hence, </p>
 
 $$
-\boldsymbol{\mu}_{*}=\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{f}
+\boldsymbol{\mu}_{*}=\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{f}
 $$
 
 $$
-\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}
+\boldsymbol{\Sigma}_{*}=\mathbf{k}_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}
 $$
 
 <h4><b>Noisy Case</b></h4>
@@ -158,11 +158,11 @@ $$
 <p align="justify">assuming that the observed data is corrupted by the noise independently. Then the prediction for the new function along with its uncertainty is given by</p>
 
 $$
-\boldsymbol{\mu}_{*}=\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{f}
+\boldsymbol{\mu}_{*}=\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{f}
 $$
 
 $$
-\boldsymbol{\Sigma}_{*}=\mathbf{K}_{**}-\mathbf{K}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{K}_{*}
+\boldsymbol{\Sigma}_{*}=\mathbf{k}_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{k}_{*}
 $$
 
 <h2>Learning the Kernel Parameters</h2>
