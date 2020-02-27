@@ -117,11 +117,11 @@ $$
 \boldsymbol{\mu}_{*}
 \end{matrix}\right),\,\left(\begin{matrix}
 \mathbf{K} & \mathbf{k}_{*}\cr
-\mathbf{k}_{*}^{\textrm{T}} & \mathbf{K}_{**}
+\mathbf{k}_{*}^{\textrm{T}} & k_{**}
 \end{matrix}\right)\right)
 $$
 
-<p align="justify">where $\mathbf{K}_{**} = \kappa\left(\mathbf{X}_{*},\,\mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)$ is simply</p>
+<p align="justify">where $k_{**} = \kappa\left(\mathbf{X}_{*},\,\mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)$ is simply</p>
 
 $$
 \mathcal{P}\left(\mathbf{f}\left|\mathbf{X}_{*},\,\mathbf{X},\,\mathbf{f}\right.\right)=\mathcal{N}\left(\mathbf{f}_{*}\left|\boldsymbol{\mu}_{*},\,\boldsymbol{\Sigma}_{*}\right.\right)
@@ -134,7 +134,7 @@ $$
 $$
 
 $$
-\boldsymbol{\Sigma}_{*}=\mathbf{k}_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{k}_{*}
+\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{k}_{*}
 $$
 
 <p align="justify">We would notionally assume a mean function equal to 0 and the kernel must be <a href="https://en.wikipedia.org/wiki/Positive-definite_matrix">positive definite</a>. Hence, </p>
@@ -144,7 +144,7 @@ $$
 $$
 
 $$
-\boldsymbol{\Sigma}_{*}=\mathbf{k}_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}
+\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}
 $$
 
 <h4><b>Noisy Case</b></h4>
@@ -162,7 +162,7 @@ $$
 $$
 
 $$
-\boldsymbol{\Sigma}_{*}=\mathbf{k}_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{k}_{*}
+\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{k}_{*}
 $$
 
 <h2>Learning the Kernel Parameters</h2>
