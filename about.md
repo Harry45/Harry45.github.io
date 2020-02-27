@@ -19,10 +19,10 @@ blockquote {
 <p><b>PhD in Physics (Imperial College London)</b></p>
 <p align="justify"> I am currently a PhD candidate at the Imperial Centre for Inference and Cosmology, <a href="https://www.imperial.ac.uk/astrophysics/centre-for-inference-and-cosmology/">ICIC</a>, working with Prof. Alan Heavens, Prof. Andrew Jaffe and Dr. Florent Leclercq on weak lensing, compression and Gaussian Processes.</p> 
 
-### MSc in Astrophysics and Space Science (University of Cape Town)
+<p><b>MSc in Astrophysics and Space Science (University of Cape Town)</b></p>
 <p align="justify"> Prior to joining Imperial College, I did a Masters in Astrophysics and Space Science at the <a href="https://www.uct.ac.za/">University of Cape Town</a>. In 2015, after completing the coursework component of <a href="https://www.star.ac.za/">NASSP</a> (National Astrophysics and Space Science Programme), I did the research part (which was based on radio astronomy and Bayesian Statistics) at <a href="https://www.aims.ac.za/">AIMS</a> under the supervision of <a href="https://cosmoaims.wordpress.com/2010/01/01/bruce-bassett/">Professor Bruce Bassett</a>.</p> 
 
-### BSc (Hons) Physics with Computing (University of Mauritius)
+<p><b>BSc (Hons) Physics with Computing (University of Mauritius)</b></p>
 <p align="justify"> From 2011 to 2014, I did my undergraduate study in Physics with Computing at the University of Mauritius where I worked on the analysis of X-ray cavities (see <a href="https://harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project">here</a>).</p>
 
 
