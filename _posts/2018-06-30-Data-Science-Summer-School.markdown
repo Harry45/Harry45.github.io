@@ -14,4 +14,22 @@ excerpt:
 ---
 
 
-<p align="justify">The Data Science Summer School 2018 was organised from at the École Polytechnique</p>
+<p align="justify">The <a href="https://2018.ds3-datascience-polytechnique.fr/">Data Science Summer School</a> was organised from the 25<sup>th</sup> to the 29<sup>th</sup> June 2018 at the École Polytechnique. The school had a broad spectrum of topics covered and the presence of Prof. Yann Lecun, a leading expert in the deep learning and Cédric Villani, winner of the Fields medal in 2010, did not go unnoticed.</p>
+
+<p align="justify">All the session on Monday were mostly related to the general non-technical issues around Machine Learning. In summary, we had the following lectures:</p>
+
+
+
+
+<ol type="1">
+
+<li>
+Deep Learning
+</li>
+<li>
+Trust and Transparency
+</li>
+<li>
+Fairness in Machine Learning
+</li>
+</ol>

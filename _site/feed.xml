@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Feb 2020 12:21:22 +0000</pubDate>
-    <lastBuildDate>Thu, 27 Feb 2020 12:21:22 +0000</lastBuildDate>
+    <pubDate>Thu, 27 Feb 2020 20:54:37 +0000</pubDate>
+    <lastBuildDate>Thu, 27 Feb 2020 20:54:37 +0000</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -55,7 +55,22 @@
     
       <item>
         <title>Data Science Summer School 2018</title>
-        <description>&lt;p align=&quot;justify&quot;&gt;The Data Science Summer School 2018 was organised from at the École Polytechnique&lt;/p&gt;
+        <description>&lt;p align=&quot;justify&quot;&gt;The &lt;a href=&quot;https://2018.ds3-datascience-polytechnique.fr/&quot;&gt;Data Science Summer School&lt;/a&gt; was organised from the 25&lt;sup&gt;th&lt;/sup&gt; to the 29&lt;sup&gt;th&lt;/sup&gt; June 2018 at the École Polytechnique. The school had a broad spectrum of topics covered and the presence of Prof. Yann Lecun, a leading expert in the deep learning and Cédric Villani, winner of the Fields medal in 2010, did not go unnoticed.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;All the session on Monday were mostly related to the general non-technical issues around Machine Learning. In summary, we had the following lectures:&lt;/p&gt;
+
+&lt;ol type=&quot;1&quot;&gt;
+
+&lt;li&gt;
+Deep Learning
+&lt;/li&gt;
+&lt;li&gt;
+Trust and Transparency
+&lt;/li&gt;
+&lt;li&gt;
+Fairness in Machine Learning
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Sat, 30 Jun 2018 09:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2018/06/Data-Science-Summer-School</link>
