@@ -16,6 +16,8 @@ blockquote {
 
 {% include image.html url="/images/Harry_Lindau.jpg" caption="Myself at the Lindau Nobel Laureate Meeting (2016)" width=350 align="right" %}
 
+<p><b><font size="12">Academic Background</font></b></p>
+
 <p><b>PhD in Physics (Imperial College London)</b></p>
 <p align="justify"> I am currently a PhD candidate at the Imperial Centre for Inference and Cosmology, <a href="https://www.imperial.ac.uk/astrophysics/centre-for-inference-and-cosmology/">ICIC</a>, working with Prof. Alan Heavens, Prof. Andrew Jaffe and Dr. Florent Leclercq on weak lensing, compression and Gaussian Processes.</p> 
 
@@ -25,7 +27,9 @@ blockquote {
 <p><b>BSc (Hons) Physics with Computing (University of Mauritius)</b></p>
 <p align="justify"> From 2011 to 2014, I did my undergraduate study in Physics with Computing at the University of Mauritius where I worked on the analysis of X-ray cavities (see <a href="https://harry45.github.io/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project">here</a>).</p>
 
+<p><b><font size="12">Previous Work</font></b></p>
 
+<p><b>Lead Data Scientist</b></p>
 
 <!-- ## Family
 <p align="justify">I have an elder brother, a cute little brother and a lovely, beautiful little sister. My parents, who are my best mentors, have been very helpful and supportive. Moreover, as Henry Ward Beecher rightly said, "what a mother sings to the cradle goes all the way down to the coffin," my mother has provided me with both financial and moral support in all situations. </p>
