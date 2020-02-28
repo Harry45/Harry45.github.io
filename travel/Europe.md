@@ -8,7 +8,7 @@ permalink: /travel/Europe/
 
 {% include image.html url="Lindau_Press_Good.jpg" caption="Press talk on artificial intelligence in Lindau - from left to right: Yuan-sen Ting and Arrykrishna Mootoovaloo (young scientists), Turing-Award winner Vinton Cerf, Joachim Müller-Jung, head of the FAZ’s science/nature division, Prof. Rainer Blatt, 1 of 2 scientific chairmen and Mario Krenn from the Vienna Center for Quantum Science and Technology." width=520 align="left" %}
 
-<p align="justify">I was one of the 400 participants who got selected to attend the 66<sup>th</sup> <a href="http://www.lindau-nobel.org/">Lindau Nobel Laureate</a> Meeting in Germany. This meeting also gathered 31 Nobel Prize winners and we had the opportunity to meet them and discuss various topics in a rather informal fashion.I also took part in several events such as the Africa Outreach Breakfast and another one which was on Excellence in Science and Sports. Moreover, I had the opportunity to visit <a href="http://www.conti-online.com/generator/www/start/com/en/index_en.html">Continental</a> where I learnt about how Machine Learning techniques are being tested for car braking systems. Moreover, there was a discussion on Challenges and Opportunities in Big Data. </p>
+<p align="justify">I was one of the 400 participants who got selected to attend the 66<sup>th</sup> <a href="http://www.lindau-nobel.org/">Lindau Nobel Laureate</a> Meeting in Germany. This meeting also gathered 31 Nobel Prize winners and we had the opportunity to meet them and discuss various topics in a rather informal fashion. I also took part in several events such as the Africa Outreach Breakfast and another one which was on Excellence in Science and Sports. Moreover, I had the opportunity to visit <a href="http://www.conti-online.com/generator/www/start/com/en/index_en.html">Continental</a> where I learnt about how Machine Learning techniques are being tested for car braking systems. Moreover, there was a discussion on Challenges and Opportunities in Big Data. </p>
 
 <p align="justify"> In addition, I took part in a Press Talk along with Vint Cerf, Google's Vice President and Chief Internet Evangelist. This event was organised by <a href="http://www.faz.net/">FAZ</a> (Frankfurter Allgemeine Zeitung) and was based mostly on how Artificial Intelligence might affect our life.</p>
 
@@ -17,7 +17,7 @@ permalink: /travel/Europe/
 
 <p align="justify"> In 2015 and 2016, I had the opportunity to visit my co-supervisor, <a href="http://cosmology.unige.ch/users/martin-kunz">Professor Martin Kunz</a> at the University of Geneva where I could easily communicate in French, which is one of the local language in Mauritius.</p>
 
-<p align="justify"> The purpose of my visit was obviously to discuss the work which we were doing together. In 2015, as we had just started the project, we were still struggling to understand why the MCMC was not working in one situation, but one year later, in 2016, we were writing the paper together! </p>
+<p align="justify"> The purpose of my visit was obviously to discuss the work which we were doing together. In 2015, as we had just started the project, we were still struggling to understand why the MCMC was not working in one situation, but one year later, in 2016, we were writing the paper together.</p>
 
 <p align="justify">At that time, I was doing my Masters and I got to meet several PhD students at the university. They all advised me about what it is like doing a PhD. I first met David Daverio who was Martin's PhD student when we were having lunch together. I also met Apple (Martin's wife) when we went hiking in 2015. </p>
 
@@ -27,7 +27,7 @@ permalink: /travel/Europe/
 
 <p align="justify">James invited me to attend his talk in which he explained the work he was doing. This was held in François' office and his group of students was also present. I got to meet François and I was honoured to be in his office following the talk. Shortly after the talk, I had a chat with James and the take-away message from him was, "research is hard!"</p>
 
-<p align="justify">I have a plan of doing a PhD in Machine Learning and I found IDIAP quite interesting. It is located in a peaceful place, surrounded by beautiful mountains. I can also speak French and Martigny is not far from Geneva and Lausanne.</p>
+<p align="justify">I was very keen for doing a PhD in Machine Learning and I found IDIAP quite interesting. It is located in a peaceful place, surrounded by beautiful mountains. Since, I can also speak French, communication would not have been an issue.</p>
 
 
 {% include image.html url="ETH.JPG" caption="ETH Zurich" width=400 align="right" %}
@@ -60,7 +60,7 @@ permalink: /travel/Europe/
 
 <p align="justify">I also went to École de Physique des Houches where the <a href="https://stat4astro2015.sciencesconf.org/">School of Astrostatistics</a> was held. The major theme of this school was on Clustering and Classification and the aim was to bridge the gap between astronomers and statisticians. As far as I know, this has been a topic of heated debate in the astronomy community. Are astronomers "good" statisticians? In particular, there were several talks and tutorials on Bayesian Statistics and Machine Learning using R programming.</p>
 
-<p align="justify">I remember it was the first time in my life, that I saw snow! Over and above, we went on top of Aiguille Du Midi and I must admit that for me, it was extremely cold. Normally, the average temperature in Mauritius, the place where I grew up, is around 25 <sup>o</sup>C. </p>
+<p align="justify">It was the first time that I saw snow. We also went on top of Aiguille Du Midi and I must admit that for me, it was extremely cold. Normally, the average temperature in Mauritius, the place where I grew up, is around 25 <sup>o</sup>C. </p>
 
 
 

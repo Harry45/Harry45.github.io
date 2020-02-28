@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Feb 2020 22:29:47 +0000</pubDate>
-    <lastBuildDate>Thu, 27 Feb 2020 22:29:47 +0000</lastBuildDate>
+    <pubDate>Fri, 28 Feb 2020 00:43:37 +0000</pubDate>
+    <lastBuildDate>Fri, 28 Feb 2020 00:43:37 +0000</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -47,6 +47,24 @@
         <pubDate>Mon, 01 Apr 2019 07:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</guid>
+        
+        
+        <category>Workshop and Conference</category>
+        
+      </item>
+    
+      <item>
+        <title>CLASS and MontePython Workshop (Cambridge)</title>
+        <description>&lt;dl class=&quot;wp-caption alignleft&quot; style=&quot;max-width: 350px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/cambridge.jpg&quot; alt=&quot;University of Cambridge&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;University of Cambridge&lt;/dd&gt;
+&lt;/dl&gt;
+</description>
+        <pubDate>Thu, 15 Nov 2018 18:30:00 +0000</pubDate>
+        <link>http://localhost:4000/blog/2018/11/Cambridge-CLASS-MontePython</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/11/Cambridge-CLASS-MontePython</guid>
         
         
         <category>Workshop and Conference</category>
@@ -888,235 +906,6 @@ $$
         <pubDate>Fri, 28 Oct 2016 09:26:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution</guid>
-        
-        
-        <category>Machine Learning and Statistics</category>
-        
-      </item>
-    
-      <item>
-        <title>An Introduction to Gibbs Sampling</title>
-        <description>&lt;p align=&quot;justify&quot;&gt;Gibbs sampling is a variant of Markov Chain Monte Carlo (MCMC) method (&lt;a href=&quot;https://en.wikipedia.org/wiki/Gibbs_sampling&quot;&gt;Wikipedia&lt;/a&gt;). The idea is to update one of the parameters at a time, thus requiring conditional distributions. As with the standard Metropolis-Hastings algorithm, samples generated from an accumulated Gibbs chain are correlated with nearby samples and hence, if independent samples are required, it is desired to thin the chain by taking every n&lt;sup&gt;th&lt;/sup&gt; value. Moreover, the initial samples (burn-in) are negelected as they may not actually represent the underlying &quot;true&quot; distribution. The algorithm for Gibbs sampling is as follows:
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;Initialise $\boldsymbol{\theta}=\left(\theta_{0},\,\theta_{1},\,\ldots\theta_{n}\right)$.&lt;/li&gt; 
-&lt;li&gt;Sample for the parameters as below:&lt;/li&gt;
-&lt;ul&gt;
-&lt;li&gt;Sample $\theta_{0}'$ from $\theta_{0}\left|\theta_{0},\,\theta_{1},\,\ldots\theta_{n}\right.$.&lt;/li&gt;
-&lt;li&gt;Sample $\theta_{1}'$ from $\theta_{1}\left|\theta_{0}',\,\theta_{2},\ldots\theta_{n}\right.$.&lt;/li&gt;
-&lt;li&gt;$\vdots$&lt;/li&gt;
-&lt;li&gt;Sample $\theta_{k}'$ from $\theta_{k}\left|\theta_{0}',\,\theta_{1}',\ldots,\,\theta_{k-1}',\,\theta_{k+1},\,\ldots\theta_{n}\right.$&lt;/li&gt;
-&lt;/ul&gt;&lt;/ol&gt;
-
-
-&lt;p align=&quot;justify&quot;&gt;However, notice that we need the conditional distributions. The advantage of Gibbs sampling is that it reduces the need for &quot;tuning&quot; as in the case for the Metropolis-Hastings algorithm. In particular, the starting point can be guessed or can be found using an optimisation algorithm. &lt;/p&gt;
-
-&lt;h2&gt;Example - Bayesian Linear Regression&lt;/h2&gt;
-
-&lt;p align=&quot;justify&quot;&gt;We consider a simple Bayesian Linear Regression to illustrate Gibbs sampling in practice. Suppose we have the datapoints, $\mathcal{D}=\left\{ x_{i},\,y_{i}\right\} $ for $i=1,\,2,\ldots N$ which have been generated from the model $y=\theta_{0}+\theta_{1}x$.
-In other words,&lt;/p&gt; 
-
-\begin{align}
-y=\theta_{0}+\theta_{1}x+\epsilon
-\end{align}
-
-
-&lt;p align=&quot;justify&quot;&gt;where $\epsilon\sim\mathcal{N}\left(0.0,\,\sigma_{n}^{2}\right)$. Our aim is the find the full posterior distributions of the parameters $\theta_{0}$ and $\theta_{1}$. The joint posterior distribution is simply &lt;/p&gt;
-
-\begin{align}
-\mathcal{P}\left(\theta_{0},\,\theta_{1}\left|\mathcal{D}\right.\right)\propto\mathcal{P}\left(\mathcal{D}\left|\theta_{0},\,\theta_{1}\right.\right)\mathcal{P}\left(\theta_{0},\,\theta_{1}\right)
-\end{align}
-
-
-&lt;p align=&quot;justify&quot;&gt; where we assume factorisable priors, that is, $\mathcal{P}\left(\theta_{0},\,\theta_{1}\right)=\mathcal{P}\left(\theta_{0}\right)\,\mathcal{P}\left(\theta_{1}\right)$ and we consider Gaussian priors such that,&lt;/p&gt;
-
-\begin{align}
-\mathcal{P}\left(\theta_{0}\right)\sim\mathcal{N}\left(\mu_{0},\,\Sigma_{0}^{2}\right)\hspace{2cm}\mathcal{P}\left(\theta_{1}\right)\sim\mathcal{N}\left(\mu_{1},\,\Sigma_{1}^{2}\right)
-\end{align}
-
-&lt;h2&gt;Procedures&lt;/h2&gt;
-
-&lt;p align=&quot;justify&quot;&gt; We first define the design matrices, $\mathbf{D}_{0}$, $\mathbf{D}_{1}$ and the vector $\mathbf{b}$ as follows:&lt;/p&gt;
-
-$$
-\mathbf{D}_{0}=\left[\begin{matrix}
-\frac{1}{\sigma_{1}}\cr
-\frac{1}{\sigma_{2}}\cr
-\vdots\cr
-\vdots\cr
-\frac{1}{\sigma_{N}}
-\end{matrix}\right]\hspace{2cm}\mathbf{D}_{1}=\left[\begin{matrix}
-\frac{x_{1}}{\sigma_{1}}\cr
-\frac{x_{2}}{\sigma_{2}}\cr
-\vdots\cr
-\vdots\cr
-\frac{x_{N}}{\sigma_{N}}
-\end{matrix}\right]\hspace{2cm}\mathbf{b}=\left[\begin{matrix}
-\frac{y_{1}}{\sigma_{1}}\cr
-\frac{y_{2}}{\sigma_{2}}\cr
-\vdots\cr
-\vdots\cr
-\frac{y_{N}}{\sigma_{N}}
-\end{matrix}\right]
-$$
-
-
-&lt;p align=&quot;justify&quot;&gt; As we assume $\sigma_{n}$ to be known, the likelihood can be written as &lt;/p&gt;
-
-
-\begin{align}
-\mathcal{P}\left(\mathcal{D}\left|\theta_{0},\,\theta_{1}\right.\right)\propto\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{b}-\theta_{0}\mathbf{D}_{0}-\theta_{1}\mathbf{D}_{1}\right)^{\textrm{T}}\left(\mathbf{b}-\theta_{0}\mathbf{D}_{0}-\theta_{1}\mathbf{D}_{1}\right)\right]
-\end{align}
-
-
-&lt;p align=&quot;justify&quot;&gt; and the prior as &lt;/p&gt;
-
-\begin{align}
-\mathcal{P}\left(\theta_{0}\right)\propto\textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{\theta_{0}^{2}-2\mu_{0}\theta_{0}}{\Sigma_{0}^{2}}\right)\right]\textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{\theta_{1}^{2}-2\mu_{1}\theta_{1}}{\Sigma_{1}^{2}}\right)\right]
-\end{align}
-
-
-&lt;p align=&quot;justify&quot;&gt; The dependence of $\theta_{0}$ in the log-joint posterior distribution, that is, $\theta_{0}\left|\theta_{1},\,\mathcal{D}\right.$ is simply&lt;/p&gt;
-
-$$
--\dfrac{1}{2}\left[\theta_{0}^{2}\left(\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{0}+\dfrac{1}{\Sigma_{0}^{2}}\right)+\theta_{0}\left(2\theta_{1}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{1}-2\mathbf{b}^{\textrm{T}}\mathbf{D}_{0}-\dfrac{2\mu_{0}}{\Sigma_{0}^{2}}\right)\right]
-$$
-
-
-&lt;p align=&quot;justify&quot;&gt; This is simply a quadratic function of $\theta_{0}$. If $a=\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{0}+\dfrac{1}{\Sigma_{0}^{2}}$
-and $b=2\theta_{1}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{1}-2\mathbf{b}^{\textrm{T}}\mathbf{D}_{0}-\dfrac{2\mu_{0}}{\Sigma_{0}^{2}}$,
-then &lt;/p&gt;
-
-$$
-\mathcal{P}\left(\theta_{0}\left|\theta_{1},\,\mathcal{D}\right.\right)\propto\textrm{exp}\left[-\dfrac{1}{2}\left(a\theta_{0}^{2}+b\theta_{0}\right)\right]
-$$
-
-
-&lt;p align=&quot;justify&quot;&gt; After completing the square,&lt;/p&gt;
-
-$$
-\mathcal{P}\left(\theta_{0}\left|\theta_{1},\,\mathcal{D}\right.\right)\propto\textrm{exp}\left[-\dfrac{a}{2}\left(\theta_{0}+\dfrac{b}{2a}\right)^{2}\right]
-$$
-
-
-&lt;p align=&quot;justify&quot;&gt; This is a Gaussian distribution with mean, $\mu$ and standard deviation, $\sigma$ given by &lt;/p&gt;
-
-$$
-\mu=-\dfrac{b}{2a}=\dfrac{-\theta_{1}\Sigma_{0}^{2}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{1}+\Sigma_{0}^{2}\mathbf{b}^{\textrm{T}}\mathbf{D}_{0}+\mu_{0}}{\Sigma_{0}^{2}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{0}+1}
-$$
-
-
-$$
-\sigma^{2}=\dfrac{1}{a}=\dfrac{\Sigma_{0}^{2}}{\Sigma_{0}^{2}\mathbf{D}_{0}^{\textrm{T}}\mathbf{D}_{0}+1}
-$$
-
-
-&lt;p align=&quot;justify&quot;&gt; Similarly, it can be shown that the dependence of $\theta_{1}$ in the joint posterior distribution, that is, $\mathcal{P}\left(\theta_{1}\left|\theta_{0},\,\mathcal{D}\right.\right)$ is Gaussian with &lt;/p&gt;
-
-$$
-\mu=\dfrac{-\theta_{0}\Sigma_{1}^{2}\mathbf{D}_{1}^{\textrm{T}}\mathbf{D}_{0}+\Sigma_{0}^{2}\mathbf{b}^{\textrm{T}}\mathbf{D}_{1}+\mu_{1}}{\Sigma_{1}^{2}\mathbf{D}_{1}^{\textrm{T}}\mathbf{D}_{1}+1}
-$$
-
-
-$$
-\sigma^{2}=\dfrac{\Sigma_{1}^{2}}{\Sigma_{1}^{2}\mathbf{D}_{1}^{\textrm{T}}\mathbf{D}_{1}+1}
-$$
-
-
-&lt;h2&gt;Python Code&lt;/h2&gt;
-
-&lt;p align=&quot;justify&quot;&gt; Now we have all the mathematical tools to write the Python code. The simulated data is available on &lt;a href=&quot;https://github.com/Harry45/Self-Taught/tree/master/Gibbs_Sampling&quot;&gt;Github&lt;/a&gt;. We first define the linear function and the true parameters (for the gradient, $\theta_{1}$ and the y-intercept, $\theta_{0}$) are 2.0 and 0.5. Note that in the code below, we have used m and c for the gradient and the y-intercept. We also the specify the fraction of the chain that we will later consider as burn-in.&lt;/p&gt;
-
-
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;linear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# True Parameters&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;grad&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;yint&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Fraction considered as burn-in&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;frac&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Load the data &lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loadtxt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data_gibbs.txt'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xmin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xmax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-
-&lt;p align=&quot;justify&quot;&gt;The next step is to create the design matrices $\mathbf{D}_{0}$, $\mathbf{D}_{1}$ and the vector $\mathbf{b}$. We also define the hyper-parameters for the Gaussian priors, followed by defining functions to sample for $m$ and $c$ respectively. We add another function which we will then use to optimize the best-fit parameters. These parameters are then used as the starting point in the Gibbs Sampling scheme.&lt;/p&gt;
-
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Create Design Matrices&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Dm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Dc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Define Priors (Gaussian Priors)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;mu_m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mu_c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;si_m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;si_c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Define Functions for Sampling&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sample_grad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;si_m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu_m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;si_m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sample_yint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;si_c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu_c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;si_c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;	
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Define the log-likelihood for optimisation&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loglikelihood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;theta0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; 
-  &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;chiSquare&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;loglike&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chiSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loglike&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Use, for example, Powell method for optimisation&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;chi_square&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loglikelihood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;op&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minimize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chi_square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Powell'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1E-5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;theta_op&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta_op&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta_op&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p align=&quot;justify&quot;&gt;We are now ready to run the sampler. In particular, we fix the number of iterations to 200 000 and we reject the first 20 % of the chains.&lt;/p&gt;
-
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;iters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2E5&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;trace&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;gibbs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sample_grad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sample_yint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;trace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trace&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gibbs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frac&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Reject first 20 % of the chains&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-
-&lt;p align=&quot;justify&quot;&gt;We finally get our nice 2D posterior distribution of the parameters. &lt;/p&gt;
-
-&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 500px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/triangle_plot_gibbs.png&quot; alt=&quot;2D posterior plot of the two parameters&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;2D posterior plot of the two parameters&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;/p&gt;
-</description>
-        <pubDate>Mon, 17 Oct 2016 13:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2016/10/Gibbs-Sampling</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/Gibbs-Sampling</guid>
         
         
         <category>Machine Learning and Statistics</category>
