@@ -13,7 +13,7 @@ tags:
 excerpt:
 ---
 
-<p align="justify">On this day, <a href="https://www.coursera.org/instructor/andrewng">Professor Andrew Ng</a> was at Imperial College London. He was not only there as a speaker for the the (<a href="https://www.imperial.ac.uk/data-science/">Data Science Institute, DSI</a>) Distinguished Lecture programme but to also commemorate the 5th year anniversary of the existence of the DSI.</p>
+<p align="justify">On this day, <a href="https://www.coursera.org/instructor/andrewng">Professor Andrew Ng</a> was at Imperial College London. He was not only there as a speaker for the (<a href="https://www.imperial.ac.uk/data-science/">Data Science Institute, DSI</a>) Distinguished Lecture programme but to also commemorate the 5<sup>th</sup> year anniversary of the existence of the DSI.</p>
 
 <img src="/images/andrew-ng.jpg" align="left" width = "400" style = "margin-right: 10px; margin-bottom: 10px"/>
 

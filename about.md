@@ -14,7 +14,12 @@ blockquote {
 }
 </style>
 
-{% include image.html url="/images/Harry_Lindau.jpg" caption="Lindau Nobel Laureate Meeting (2016)" width=350 align="right" %}
+{% include image.html url="/images/Harry_Lindau.jpg" caption="Lindau Nobel Laureate Meeting (2016)" width=400 align="right" %}
+
+<p align="justify"> I am a PhD candidate at Imperial College London and I am very interested in Statistical Machine Learning. I am currently working towards building emulators using <b>Gaussian Processes</b> for accelerating computations in Cosmology. Moreover, I am also keen to address global challenges in sustainability using Machine Learning.</p> 
+
+<p align="justify">I have an avid passion for technology and zealous to learn new tools. Since my background is in Physics, I am passionate about solving problems in a meticulous and principled way, which will benefit the community at large. In the same spirit, Mathematics, the universal and common language amongst scientists and engineers, allows me to develop a deep understanding of the topic I am interested in. When I am not doing research, I enjoy reading and watching soccer.</p>
+
 
 <p><b><font size="6">Academic Background</font></b></p>
 
@@ -36,7 +41,7 @@ blockquote {
 <p align="justify">Part of the RnD team, working on predictive analysis and statistics, to build both data pipelines and machine learning algorithms to produce insightful metrics while designing ways to integrate these algorithms as tools within an automated crypto-trading platform.</p>
 
 <p><b>Private Tutor (Mauritius)</b></p>
-<p align="justify">Taught Mathematics, Physics, Additional Mathematics and Further Mathematics to more than 150 O-Level and A-Level students in Mauritius over a course of 3 years (2011 to 2014).</p>
+<p align="justify">Taught Mathematics, Physics, Additional Mathematics and Further Mathematics to more than 150 O-Level and A-Level students in Mauritius over a course of 4 years (2011 to 2014).</p>
 
 <!-- ## Family
 <p align="justify">I have an elder brother, a cute little brother and a lovely, beautiful little sister. My parents, who are my best mentors, have been very helpful and supportive. Moreover, as Henry Ward Beecher rightly said, "what a mother sings to the cradle goes all the way down to the coffin," my mother has provided me with both financial and moral support in all situations. </p>

@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-Below is a list of my recent posts. Most of my posts will be on research, academic, Mathematics, Machine Learning and Statistics topics. 
+Below is a list of my recent posts. Most of my posts will be on academic research, Mathematics, Machine Learning and Statistics topics. 
 
 <ul class="listing">
 {% for post in site.posts %}
