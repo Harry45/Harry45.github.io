@@ -16,6 +16,12 @@ layout: default
 </p>
   </header>
 
+  <head>
+    <title>Font Awesome Icons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
   <article class="post-content">
     {{ content }}
   </article>
@@ -41,6 +47,39 @@ layout: default
         src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
   {% endif %}
+
+  <!-- Table -->
+<style>
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+</style>
+
+<style type="text/css">
+        table.tableizer-table {
+                font-size: 13px;
+                border: 1px solid #CCC; 
+                font-family: Arial, Helvetica, sans-serif;
+                margin-right: 10px;
+                margin-bottom: 10px;
+        } 
+        .tableizer-table td {
+                padding: 6px;
+                margin: 3px;
+                border: 1px solid #CCC;
+        }
+        .tableizer-table th {
+                background-color: #104E8B;
+                padding: 6px; 
+                color: #FFF;
+                font-weight: bold;
+        }
+</style>
 
 </div>
 

@@ -16,11 +16,21 @@ permalink: /research/
 
 
 
+
 # Publications
 
 Below is an updated list of publications in which I was involved:
 
 <ol type="1">
+
+
+  <li>
+  <p><b>Imbalance Learning for Variable Star Classification</b>
+  <br>Zafiirah Hosenie, Robert Lyon, Benjamin Stappers, <font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Vanessa McBride
+  <br><a href="https://arxiv.org/abs/2002.12386">arXiv:2002.12386</a></p>
+  </li>
+  <p align="justify">The accurate automated classification of variable stars into their respective sub-types is difficult. Machine learning based solutions often fall foul of the imbalanced learning problem, which causes poor generalisation performance in practice, especially on rare variable star sub-types. In previous work, we attempted to overcome such deficiencies via the development of a hierarchical machine learning classifier. This 'algorithm-level' approach to tackling imbalance, yielded promising results on Catalina Real-Time Survey (CRTS) data, outperforming the binary and multi-class classification schemes previously applied in this area. In this work, we attempt to further improve hierarchical classification performance by applying 'data-level' approaches to directly augment the training data so that they better describe under-represented classes. We apply and report results for three data augmentation methods in particular: Randomly Augmented Sampled Light curves from magnitude Error (𝚁𝙰𝚂𝙻𝙴), augmenting light curves with Gaussian Process modelling (𝙶𝚙𝙵𝚒𝚝) and the Synthetic Minority Over-sampling Technique (𝚂𝙼𝙾𝚃𝙴). When combining the 'algorithm-level' (i.e. the hierarchical scheme) together with the 'data-level' approach, we further improve variable star classification accuracy by 1-4%. We found that a higher classification rate is obtained when using 𝙶𝚙𝙵𝚒𝚝 in the hierarchical model. Further improvement of the metric scores requires a better standard set of correctly identified variable stars and, perhaps enhanced features are needed.</p>
+
 
   <li>
   <p><b>Comparing Multi-class, Binary and Hierarchical Machine Learning Classification schemes for variable stars</b>

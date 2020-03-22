@@ -5,9 +5,135 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Feb 2020 13:40:11 +0000</pubDate>
-    <lastBuildDate>Sat, 29 Feb 2020 13:40:11 +0000</lastBuildDate>
+    <pubDate>Sun, 22 Mar 2020 17:39:02 +0000</pubDate>
+    <lastBuildDate>Sun, 22 Mar 2020 17:39:02 +0000</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Iterative Method For Likelihood Emulation</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;The paper, entitled '&lt;b&gt;&lt;font size=&quot;2.5&quot;&gt;Cosmological parameter estimation via iterative emulation of likelihoods&lt;/font&gt;&lt;/b&gt;' was published on &lt;a href=&quot;https://arxiv.org/abs/1912.08806&quot;&gt;arXiv&lt;/a&gt; recently. The idea behind is to use Gaussian Process to emulate the log-likelihood and to progressively augment the training set via Bayesian Optimisation. In this post, I shall illustrate the technique via simple straight line fitting example, which I believe will be trivial to follow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/bo.png&quot; align=&quot;right&quot; width=&quot;400&quot; style=&quot;margin-left: 10px; margin-bottom: 10px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;Analytical Posterior&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;To start with, we randomly draw 50 points uniformly from $x\in[0, 1]$ and compute $\mathbf{y}$, which is given by&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{y} = \theta\mathbf{x} + \boldsymbol{\epsilon}&lt;/script&gt;
+
+&lt;p align=&quot;justify&quot;&gt;We fix $\theta = 1$ and $\boldsymbol{\epsilon}\sim\mathcal{N}(0, 0.04^{2})$. We also assume a Gaussian prior for $\theta$, where $p(\theta)=\mathcal{N}(1,1)$. The posterior distribution of $\theta$ can be derived analytically and is in fact another Gaussian distribution, given by:
+$$
+p(\theta|\mathbf{y}) = \mathcal{N}(\mu, \sigma^{2})
+$$
+
+where 
+
+&lt;ul&gt;
+  &lt;li&gt;$\mu = 625\sigma^{2}\mathbf{D}^{\textrm{T}}\mathbf{y}$&lt;/li&gt;
+  &lt;li&gt;$\sigma^{2}=(1 + 625\mathbf{D}^{\textrm{T}}\mathbf{D})^{-1}$&lt;/li&gt;
+  &lt;li&gt;$\mathbf{D} = [x_{0},\,x_{1},\ldots x_{N-1}]^{\textrm{T}}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;with the factor 625 arising due to 1/0.04&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;Gaussian Process and Bayesian Optimization&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;Gaussian Process is a joint multivariate Gaussian distribution over functions with a continuous domain. We will not cover it in this post (for further details, see &lt;a href=&quot;https://harry45.github.io/blog/2016/10/Gaussian-Process&quot;&gt;here&lt;/a&gt;). The predictive distribution is a Normal distribution with mean and variance given respectively by:
+
+$$
+f_{*} = \mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{y}_{\textrm{train}}
+$$
+
+$$
+\sigma_{*}^{2} = k_{**} - \mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{k}_{*}
+$$
+
+On the other hand, Bayesian Optimization is a proxy for finding the optima of expensive objective functions via the acquisition function, which we will discuss briefly below. A typical example of expensive computation is in cosmology where we have a series of multiple integrations and other expensive computations (for example, when we also have to account for the systematics) prior to computing the log-likelihood in a Bayesian analysis.
+
+&lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot;&gt;Acquisition Functions&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+One class of acquisition function (also referred to infill function) is improvement-based function. &lt;i&gt;Probability of improvement&lt;/i&gt; (also called maximum probability of improvement or the P-algorithm) is one such example and is given by:
+
+$$
+\textrm{PI}(\theta) = \Phi(z)
+$$
+
+In the same spirit, the &lt;i&gt;expected improvement&lt;/i&gt; does not only consider the probability of improvement but also takes into account the magnitude of improvement that the additional point will provide. It reads:
+
+$$
+\textrm{EI}(\theta)=\begin{cases}
+\begin{array}{c}
+\left(\mu-f_{\textrm{max}}-\alpha\right)\Phi(z)+\sigma\phi(z)\\
+0
+\end{array} &amp;amp; \begin{array}{c}
+\textrm{if }\sigma&amp;gt;0\\
+\textrm{if }\sigma=0
+\end{array}\end{cases}
+$$
+
+where $\Phi(\centerdot)$ and $\phi(\centerdot)$ correspond to the Cumulative Distribution Function (CDF) and Probability Distribution Function (PDF) of a normal distribution respectively. $f_\textrm{max}$ refers to the maximum of the expensive function, given a set of inputs, $\theta$ and 
+
+$$
+z(\theta) = \frac{\mu(\theta) - f_{\textrm{max}} - \alpha}{\sigma(\theta)}.
+$$
+
+On the other hand, another acquisition function based on upper confidence bound is given by:
+
+$$
+\textrm{UCB}(\theta) = \mu + \alpha \sigma
+$$
+
+Note the additional parameter $\alpha$ in the acquisition functions. It is usually user-defined and it essentially controls the trade-off between exploration (region of high uncertainty) and exploitation (region with high mean).
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;Our Implementation&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;
+We initially start with just 4 training points (generated using Latin Hypercube samples, &lt;a href=&quot;https://en.wikipedia.org/wiki/Latin_hypercube_sampling&quot;&gt;LHS&lt;/a&gt;) given by the first 4 rows in the table at the bottom. We then use the Upper Confidence Bound (UCB) acquisition function (with $\alpha=15$) to iteratively add two points (the last two rows in red in the table) to the Gaussian Process model. See algorithm below for further details. 
+&lt;/p&gt;
+
+&lt;style&gt;
+table {width: 30%;}
+&lt;/style&gt;
+
+&lt;table class=&quot;tableizer-table&quot; align=&quot;left&quot;&gt;
+&lt;thead&gt;&lt;tr class=&quot;tableizer-firstrow&quot;&gt;&lt;th&gt;$\theta$ &lt;/th&gt;&lt;th&gt;$\textrm{log } L$&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;0.9662&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;-26.1204&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;1.0064&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;-17.2318&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;1.0223&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;-18.1605&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;1.0511&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;-26.2248&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;font color=&quot;red&quot;&gt;0.9860&lt;/font&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font color=&quot;red&quot;&gt;-19.7343&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;font color=&quot;red&quot;&gt;1.0369&lt;/font&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font color=&quot;red&quot;&gt;-21.2069&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/BO-Algorithm.png&quot; align=&quot;right&quot; width=&quot;600&quot; style=&quot;margin-right: 10px; margin-bottom: 10px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;Results and Conclusions&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;
+In this setup, we are able to reconstruct the log-likelihood almost perfectly after augmenting the data set in two iterations. As seen in the plot below in the right panel, the posterior distribution of $\theta$ is identical to the exact one (which we calculated analytically previously). The vertical broken line shows the value of $\theta=1$ which we initially used to generate the data. 
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/finalPosterior.png&quot; align=&quot;center&quot; width=&quot;800&quot; style=&quot;margin-bottom: 0.1px&quot; /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;
+However, in high dimensions, the volume of the parameter space increases and it is not easy to reconstruct a function perfectly (if this is the main objective). Moreover, the acquisition functions themselves contain multiple local optima (as seen in the Figure on the top) and the choice of the acquisition function is an interesting topic. They can often be greedy and favour exploitation over exploration, hence the choice of $\alpha$ also matters. 
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;References&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;A Tutorial on Bayesian Optimization (arXiv, &lt;a href=&quot;https://arxiv.org/abs/1012.2599&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;) &lt;/li&gt;
+&lt;li&gt;Cosmological parameter estimation via iterative emulation of likelihoods (arXiv, &lt;a href=&quot;https://arxiv.org/abs/1912.08806&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;) &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 10 Mar 2020 15:30:00 +0000</pubDate>
+        <link>http://localhost:4000/blog/2020/03/Iterative-Method-For-Likelihood-Emulation</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/03/Iterative-Method-For-Likelihood-Emulation</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
     
       <item>
         <title>Emerging trends in AI and online education</title>
@@ -47,24 +173,6 @@
         <pubDate>Mon, 01 Apr 2019 07:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</guid>
-        
-        
-        <category>Workshop and Conference</category>
-        
-      </item>
-    
-      <item>
-        <title>CLASS and MontePython Workshop (Cambridge)</title>
-        <description>&lt;dl class=&quot;wp-caption alignleft&quot; style=&quot;max-width: 350px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/cambridge.jpg&quot; alt=&quot;University of Cambridge&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;University of Cambridge&lt;/dd&gt;
-&lt;/dl&gt;
-</description>
-        <pubDate>Thu, 15 Nov 2018 18:30:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/2018/11/Cambridge-CLASS-MontePython</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2018/11/Cambridge-CLASS-MontePython</guid>
         
         
         <category>Workshop and Conference</category>
@@ -138,7 +246,7 @@ Learning Multiscale Physics with Deep Neural Networks
       </item>
     
       <item>
-        <title>Data Science Summer School 2018</title>
+        <title>Data Science Summer School 2018 (Paris)</title>
         <description>&lt;p align=&quot;justify&quot;&gt;The &lt;a href=&quot;https://2018.ds3-datascience-polytechnique.fr/&quot;&gt;Data Science Summer School&lt;/a&gt; was organised from the 25&lt;sup&gt;th&lt;/sup&gt; to the 29&lt;sup&gt;th&lt;/sup&gt; June 2018 at the École Polytechnique. The school had a broad spectrum of topics covered and the presence of Prof. Yann Lecun, leading expert in the deep learning and Cédric Villani, winner of the Fields medal in 2010, did not go unnoticed.&lt;/p&gt;
 
 &lt;p align=&quot;justify&quot;&gt;I will briefly touch upon the talks which I attended. All the session on Monday were mostly related to the general non-technical issues around Machine Learning and we had the following lectures:&lt;/p&gt;
@@ -194,12 +302,36 @@ Crash Course in Deep Learning and Pytorch
     
       <item>
         <title>COSMO21 and ADAIX (Valencia)</title>
-        <description>&lt;dl class=&quot;wp-caption alignleft&quot; style=&quot;max-width: 400px&quot;&gt;
+        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 400px&quot;&gt;
 
 &lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/valencia.jpeg&quot; alt=&quot;Valencia&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
 
 &lt;dd&gt;Valencia&lt;/dd&gt;
 &lt;/dl&gt;
+
+&lt;!--  &lt;img src=&quot;/images/andrew-ng.jpg&quot; align=&quot;left&quot; width = &quot;400&quot; style = &quot;margin-right: 10px; margin-bottom: 10px&quot;/&gt; --&gt;
+
+&lt;p align=&quot;justify&quot;&gt;The &lt;a href=&quot;http://ada.cosmostat.org/&quot;&gt;ADAIX&lt;/a&gt; and &lt;a href=&quot;https://cosmo21.cosmostat.org/&quot;&gt;COSMO21&lt;/a&gt; are typically held together and were held in Valencia from 20&lt;sup&gt;th&lt;/sup&gt; to 25&lt;sup&gt;th&lt;/sup&gt; May 2018. The ADAIX Summer School is more practical and the goal is to aid researchers to become more familiar with the latest tools and techniques in Data Science, which will eventually be very helpful in the era of massive surveys. In particular, we covered the following topics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Machine Learning&lt;/li&gt;
+  &lt;li&gt;Bayesian Methods&lt;/li&gt;
+  &lt;li&gt;Sparsity-based analysis&lt;/li&gt;
+  &lt;li&gt;Analysis of astronomical data with Python&lt;/li&gt;
+  &lt;li&gt;Compressed sensing based instrumentation&lt;/li&gt; 
+&lt;/ul&gt;
+
+&lt;p align=&quot;justify&quot;&gt;On the other hand, COSMO21 consisted of a series of talks from researchers and the ones which I was particularly interested in include:&lt;/p&gt;
+
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;Multiscale Cosmological Data Analysis with Deep Convolutional Networks (&lt;a href=&quot;http://cosmo21.cosmostat.org/wp-content/uploads/2018/06/talk_Mallat.pdf&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Joint Analysis of CMB and Large Scale Structure with Deep Learning (&lt;a href=&quot;http://cosmo21.cosmostat.org/wp-content/uploads/2018/05/talk_Ho.pdf&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Machine-Learning Strategies for Variable Source Classification (&lt;a href=&quot;
+http://cosmo21.cosmostat.org/wp-content/uploads/2018/05/talk_Hernitschek.pdf&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Sparsity and Deep Learning for modern surveys (&lt;a href=&quot;
+https://eiffl.github.io/Valencia2018/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Automatic physical inference (&lt;a href=&quot;http://cosmo21.cosmostat.org/wp-content/uploads/2018/05/talk_Charnock.pdf&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
         <pubDate>Wed, 30 May 2018 21:30:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2018/05/Cosmo21</link>
@@ -211,7 +343,7 @@ Crash Course in Deep Learning and Pytorch
       </item>
     
       <item>
-        <title>Yandex Machine Learning School 2018</title>
+        <title>Yandex Machine Learning School 2018 (London)</title>
         <description>&lt;p align=&quot;justify&quot;&gt;The Yandex Machine Learning School was organised from the 16&lt;sup&gt;th&lt;/sup&gt; to 26&lt;sup&gt;th&lt;/sup&gt; January. It was a quite intensive school with a series of lectures, homework, assignments, tutorials and exam over the course of 10 days only. In particular, topics covered included the following:&lt;/p&gt;
 
 &lt;ol type=&quot;1&quot;&gt;
@@ -422,43 +554,18 @@ The SDDR is important to judge whether the inclusion of extra parameters in nest
 &lt;p align=&quot;justify&quot;&gt;In the case of non-committal priors on the models, that is, $\mathcal{P}\left(\mathcal{M}_{1}\right)=\mathcal{P}\left(\mathcal{M}_{2}\right)$, the posterior odds are just equal to the Bayes factor. As $B_{12}$ increases, our belief that model $\mathcal{M}_{1}$ is better than model $\mathcal{M}_{2}$ increases. Otherwise, model $\mathcal{M}_{2}$ will be the preferred one. Therefore, the Bayes factor indicates how the relative odds vary in the light of new data, irrespective of the prior odds of the models. The Bayes factor is typically interpreted by referring to the Jeffreys' scale (see &lt;a href=&quot;http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572&quot;&gt;Kass et al., 1995&lt;/a&gt;). It is an empirically determined scale as shown in the table below &lt;/p&gt;
 
 &lt;style&gt;
-table, td, th {
-    border: 1px solid black;
-}
-
-table {
-    border-collapse: collapse;
-    width: 53%;
-}
-
+table {width: 53%;}
 &lt;/style&gt;
 
-&lt;style type=&quot;text/css&quot;&gt;
-	table.tableizer-table {
-		font-size: 14px;
-		border: 2px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 6px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B;
-		padding: 6px; 
-		color: #FFF;
-		font-weight: bold;
-	}
-&lt;/style&gt;
-
-&lt;table class=&quot;tableizer-table&quot; align=&quot;center&quot;&gt;
+&lt;center&gt; 
+&lt;table class=&quot;tableizer-table&quot;&gt;
 &lt;thead&gt;&lt;tr class=&quot;tableizer-firstrow&quot;&gt;&lt;th&gt;$\textrm{ln }\left(B_{12}\right)$&lt;/th&gt;&lt;th&gt;$B_{12}$&lt;/th&gt;&lt;th&gt;Evidence against $\mathcal{M}_{2}$&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
  &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;0 to 1&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;1 to 3&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Inconclusive&lt;/td&gt;&lt;/tr&gt;
  &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;1 to 3&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;3 to 20&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Weak Evidence&lt;/td&gt;&lt;/tr&gt;
  &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;3 to 5&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;20 to 150&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Moderate Evidence&lt;/td&gt;&lt;/tr&gt;
  &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&amp;gt;5&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&amp;gt;150&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Strong Evidence&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
+&lt;/center&gt;
 
 </description>
         <pubDate>Sat, 20 May 2017 07:00:00 +0100</pubDate>
@@ -741,34 +848,7 @@ $$
 See this &lt;a href=&quot;http://phys114115lab.capuphysics.ca/App%20A%20-%20uncertainties/appA%20propLogs.htm&quot;&gt;link&lt;/a&gt; for further detail. For this problem, we calculate $\textrm{lg }\lambda$ and $\textrm{lg }V$ to two decimal places. We assume that each data point is Gaussian distributed with mean, $\mu=\textrm{lg }V$ and standard deviation, $\sigma = \sigma_{\textrm{lg }V}$. An illustration of this assumption is shown on the right. We are now ready to plot the graph of $\textrm{lg }V$ versus $\textrm{lg }\lambda$. We find that the gradient is equal to $2.60$ while the $y$-intercept is equal to $7.56$.&lt;/p&gt;
 
 &lt;style&gt;
-table, td, th {
-    border: 1px solid black;
-}
-
-table {
-    border-collapse: collapse;
-    width: 53%;
-}
-
-&lt;/style&gt;
-
-&lt;style type=&quot;text/css&quot;&gt;
-	table.tableizer-table {
-		font-size: 13px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 6px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B;
-		padding: 6px; 
-		color: #FFF;
-		font-weight: bold;
-	}
+table {width: 53%;}
 &lt;/style&gt;
 
 &lt;table class=&quot;tableizer-table&quot; align=&quot;left&quot;&gt;

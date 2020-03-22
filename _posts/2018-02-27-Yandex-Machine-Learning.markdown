@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title:  "Yandex Machine Learning School 2018"
+title:  "Yandex Machine Learning School 2018 (London)"
 date:   2018-02-27 08:00:00
 author: A.Mootoovaloo
 permalink:

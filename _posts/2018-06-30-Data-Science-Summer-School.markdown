@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title:  "Data Science Summer School 2018"
+title:  "Data Science Summer School 2018 (Paris)"
 date:   2018-06-30 08:00:00
 author: A.Mootoovaloo
 permalink:

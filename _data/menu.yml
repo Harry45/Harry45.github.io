@@ -18,6 +18,12 @@
 - title: "Research"
   href: "/research/"
 
+- title: "Papers"
+  href: "/papers/"
+
+- title: "Books"
+  href: "/books/"
+
 - title: "Travel"
   href: "/travel/"
 
@@ -26,3 +32,4 @@
     subhref: "/travel/Africa/"
   - subtitle: "Europe"
     subhref: "/travel/Europe/"
+

@@ -50,43 +50,16 @@ $$
 
 
 <style>
-table, td, th {
-    border: 1px solid black;
-}
-
-table {
-    border-collapse: collapse;
-    width: 53%;
-}
-
+table {width: 53%;}
 </style>
 
-
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 14px;
-		border: 2px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 6px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B;
-		padding: 6px; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
-
-<table class="tableizer-table" align = "center">
+<center> 
+<table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>$\textrm{ln }\left(B_{12}\right)$</th><th>$B_{12}$</th><th>Evidence against $\mathcal{M}_{2}$</th></tr></thead><tbody>
  <tr><td align="center">0 to 1</td><td align="center">1 to 3</td><td align="center">Inconclusive</td></tr>
  <tr><td align="center">1 to 3</td><td align="center">3 to 20</td><td align="center">Weak Evidence</td></tr>
  <tr><td align="center">3 to 5</td><td align="center">20 to 150</td><td align="center">Moderate Evidence</td></tr>
  <tr><td align="center">>5</td><td align="center">>150</td><td align="center">Strong Evidence</td></tr>
 </tbody></table>
-
+</center>
 

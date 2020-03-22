@@ -147,36 +147,9 @@ See this <a href="http://phys114115lab.capuphysics.ca/App%20A%20-%20uncertaintie
 
 
 <style>
-table, td, th {
-    border: 1px solid black;
-}
-
-table {
-    border-collapse: collapse;
-    width: 53%;
-}
-
+table {width: 53%;}
 </style>
 
-
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 13px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 6px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B;
-		padding: 6px; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
 
 <table class="tableizer-table" align = "left">
 <thead><tr class="tableizer-firstrow"><th>$\lambda/10^{-9}$ m </th><th>$V/\,\textrm{V}$</th><th>$\textrm{lg}\left(\lambda/10^{-9}\,\textrm{m}\right)$</th><th>$\textrm{lg}\left(V/\,\textrm{V}\right)$</th></tr></thead><tbody>
