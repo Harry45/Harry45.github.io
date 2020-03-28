@@ -9,6 +9,7 @@ Below is a collection of papers, which I have found interesting (useful and rele
 
 <p><b><font size="4">2020</font></b></p>
 <ol type="1">
+	<li>A Survey of Deep Learning for Scientific Discovery (arXiv, <a href="https://arxiv.org/abs/2003.11755"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>The Case for Bayesian Deep Learning (arXiv, <a href="https://arxiv.org/abs/2001.10995"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>Lagrangian Neural Networks (arXiv, <a href="https://arxiv.org/pdf/2003.04630.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 </ol>
