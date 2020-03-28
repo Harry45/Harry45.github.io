@@ -12,7 +12,6 @@ tags:
   -
 excerpt:
 ---
-
 <p align="justify">The paper, entitled '<b><font size="2.5">Cosmological parameter estimation via iterative emulation of likelihoods</font></b>' was published on <a href="https://arxiv.org/abs/1912.08806">arXiv</a> recently. The idea behind is to use Gaussian Process to emulate the log-likelihood and to progressively augment the training set via Bayesian Optimisation. In this post, I shall illustrate the technique via simple straight line fitting example, which I believe will be trivial to follow.</p>
 
 <img src="/images/bo.png" align="right" width = "400" style = "margin-left: 10px; margin-bottom: 10px"/>
