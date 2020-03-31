@@ -164,6 +164,14 @@
 
 <ol type="1">
 
+  <li>
+  <p><b>Gaussian Processes and MOPED Compression for Weak Lensing</b>
+  <br /><font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Alan Heavens, Andrew Jaffe, Florent Leclercq
+  <br /><a href="https://iclr2020-fsai.github.io/FSAI/">ICLR</a></p>
+  </li>
+  <p align="justify">In this paper, we propose a Gaussian Process (GP) emulator for tomographic weak lensing band power spectra, which speeds up cosmological parameter inference by a factor of $\sim$ 12 − 30 when applied to the KiDS-450 data. The emulator is built upon 8 parameters (6 cosmological and 2 systematic) using 1000 Latin Hypercube training samples. Since the prediction from the emulator is Gaussian distributed, we can also include the theoretical uncertainty in the likelihood function using the predictive uncertainty to marginalise over the latent function. Including the GP uncertainty is more demanding since it requires an $\mathcal{O}(N^{2})$ operation, for train each band power at every step in the MCMC compared to $\mathcal{O}(N_{\textrm{train}})$ for the mean alone, where $N_{\textrm{train}}$ is the number of training points in the emulator. If we use the exact solver, that is CLASS, each likelihood computation takes ∼ 0.65 seconds while each likelihood evaluation with the mean and uncertainty of the GP is $\sim$ 0.03 and $\sim$ 0.09 seconds respectively. The algorithm can be sped further when using MOPED compression algorithm which eliminates the $\mathcal{O}(N^{3})$ cost in the likelihood evaluation, where $N$ is the number of data points. Finally, with the emulator, it is realistic to drop the Limber approximation and train on the very slow but accurate full integrals.</p>
+
+
 
   <li>
   <p><b>Imbalance Learning for Variable Star Classification</b>
