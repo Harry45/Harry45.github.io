@@ -107,6 +107,9 @@ Solving linear equations with messenger-field and conjugate gradient techniques 
 <li>Massive Lossless Data Compression and Multiple Parameter Estimation from Galaxy Spectra (MNRAS, 2000, <a href="https://academic.oup.com/mnras/article/317/4/965/1039456"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
 <li>Karhunen-Loève Eigenvalue Problems in Cosmology: How Should We Tackle Large Data Sets? (IOP, 1997, <a href="https://iopscience.iop.org/article/10.1086/303939"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
+<li>No free lunch theorems for optimization (IEEE, 1997, <a href="https://ieeexplore.ieee.org/document/585893"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
 </ol>
 
 
