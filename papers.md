@@ -19,6 +19,8 @@ for positive impact (Nature, <a href="https://www.nature.com/articles/s41467-020
 
 <p><b><font size="4">2019</font></b></p>
 <ol type="1">
+
+<li>A deep learning framework for neuroscience (Nature, <a href="https://www.nature.com/articles/s41593-019-0520-2.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>Posterior inference unchained with EL<sub>2</sub>O (arXiv, <a href="https://arxiv.org/abs/1901.04454"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
 <li>Monte Carlo Gradient Estimation in Machine Learning (arXiv, <a href="https://arxiv.org/abs/1906.10652"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
