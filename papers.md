@@ -11,7 +11,7 @@ Below is a collection of papers, which I have found interesting (useful and rele
 <p><b><font size="4">2020</font></b></p>
 <ol type="1">
 <li>AI for social good: unlocking the opportunity
-for positive impact (Nature, <a href="https://www.nature.com/articles/s41467-020-15871-z.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+for positive impact (Nature Communications, <a href="https://www.nature.com/articles/s41467-020-15871-z.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>A Survey of Deep Learning for Scientific Discovery (arXiv, <a href="https://arxiv.org/abs/2003.11755"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>The Case for Bayesian Deep Learning (arXiv, <a href="https://arxiv.org/abs/2001.10995"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>Lagrangian Neural Networks (arXiv, <a href="https://arxiv.org/pdf/2003.04630.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
@@ -20,7 +20,7 @@ for positive impact (Nature, <a href="https://www.nature.com/articles/s41467-020
 <p><b><font size="4">2019</font></b></p>
 <ol type="1">
 
-<li>A deep learning framework for neuroscience (Nature, <a href="https://www.nature.com/articles/s41593-019-0520-2.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+<li>A deep learning framework for neuroscience (Nature Neuroscience, <a href="https://www.nature.com/articles/s41593-019-0520-2.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>Posterior inference unchained with EL<sub>2</sub>O (arXiv, <a href="https://arxiv.org/abs/1901.04454"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
 <li>Monte Carlo Gradient Estimation in Machine Learning (arXiv, <a href="https://arxiv.org/abs/1906.10652"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
