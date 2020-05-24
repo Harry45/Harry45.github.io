@@ -14,7 +14,11 @@ blockquote {
 }
 </style>
 
-{% include image.html url="/images/Harry_Lindau.jpg" caption="Lindau Nobel Laureate Meeting (2016)" width=400 align="right" %}
+<!-- {% include image.html url="/images/Harry_Lindau.jpg" caption="Lindau Nobel Laureate Meeting (2016)" width=400 align="right" %} -->
+
+<!-- {% include image.html url="/images/A_Mootoovaloo.jpg" caption="" width=400 align="right" %} -->
+
+<img src="/images/A_Mootoovaloo.jpg" align="right" width = "400" style = "margin-left: 10px; margin-bottom: 10px"/>
 
 <p align="justify"> I am a PhD candidate at Imperial College London and I am very interested in Statistical Machine Learning. I am currently working towards building emulators using <b>Gaussian Processes</b> for accelerating computations in Cosmology. Moreover, I am also keen to address global challenges in sustainability using Machine Learning.</p> 
 
