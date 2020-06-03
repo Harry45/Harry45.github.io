@@ -62,10 +62,16 @@ Solving linear equations with messenger-field and conjugate gradient techniques 
 </ol>
 
 
+<p><b><font size="4">2013</font></b></p>
+<ol type="1">
+<li>Additive Gaussian Processes (arXiv, <a href="https://arxiv.org/abs/1112.4394"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+</ol>
+
+
 <p><b><font size="4">2011</font></b></p>
 <ol type="1">
 
-<li>Additive Gaussian Processes (arXiv, <a href="https://arxiv.org/abs/1112.4394"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+<li>Bayesian non-parametrics and the probabilistic approach to modelling (The Royal Society Publishing, <a href="https://doi.org/10.1098/rsta.2011.0553"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
 <li>Distributed Gaussian Processes (ICML, <a href="http://proceedings.mlr.press/v37/deisenroth15.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
