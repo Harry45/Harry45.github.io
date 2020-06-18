@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title:  "Black Lives Matter Movement"
+title:  "Black Lives Matter Protests"
 date:   2020-06-10 15:30:00
 author: A.Mootoovaloo
 permalink:
