@@ -21,10 +21,10 @@ excerpt:
 
 <p align="justify">I am surprised that we often respond according to the 'action-reaction' principle (Newton's first law: for every action there will be an equal and opposite reaction). If we did not have the protests related to the killing of Black people, then maybe there would have been no (re)action. My question is, why do we even have to call people Black, White or Coloured? Why do we need to associate a colour based on our skin colour? Since I come from Mauritius, I do not even know what my ethnic background is and this often gets asked when filling in forms. On the flip side, I am glad that various actions have been adopted since the protests and two which I am aware of are:
 <ol>
-  <li>The Presidential Scholarship for Black Students (<a href="https://www.imperial.ac.uk/giving/donate/black-scholarship/"><i style="font-size:12px" class="fa">&#xf08e;</i></a>))</li>
+  <li>The Presidential Scholarship for Black Students (<a href="https://www.imperial.ac.uk/giving/donate/black-scholarship/"><i style="font-size:12px" class="fa">&#xf08e;</i></a>)</li>
+  <li>Google commitments to racial equity (<a href="https://www.blog.google/inside-google/company-announcements/commitments-racial-equity/"><i style="font-size:12px" class="fa">&#xf08e;</i></a>)</li>
 </ol>
+
+I personally think that we can do more. I am certain that many people from Africa do not know how to leverage these opportunities. They need to be sensitised about the process and make them feel they have a place of belonging. I am grateful to all my colleagues that we now have sessions dedicated to BAME (Black Asian Minority Ethnic). I strongly believe that education is the main pillar towards building a fair and equal society. If a department (let us consider, for simplicity, just 100 universities from Europe and US) takes the initiative to fund at least 1 student from Africa every year for a time lapse of 10 years, then at the end of the process, we will have at least 1000 students who have had access to world-class education. I remember a saying from my parents, which essentially says, 'be a light that can never be extinguished' and I strongly opine that it's only education which enables one to be someone in life.
 </p>
-
-
-<!-- black asian minority ethnic (BAME)  -->
 
