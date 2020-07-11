@@ -29,5 +29,5 @@ http://gpss.cc/gpss20/"><i style="font-size:12px" class="fa">&#xf08e;</i></a>)</
 
 </ol>
 
-
-<p align="justify">This would not have been possible if I were to be physically present, simply because the latter cost at least £200 while with the virtual workshops, it costs no more than £50. I understand that it is not the same as being part of an actual workshop but I personally think I have been able to make the most out of them.</p>
+<!-- 
+<p align="justify">This would not have been possible if I were to be physically present, simply because the latter cost at least £200 while with the virtual workshops, it costs no more than £50. I understand that it is not the same as being part of an actual workshop but I personally think I have been able to make the most out of them.</p> -->
