@@ -172,15 +172,15 @@
 
 <p align="justify">where $\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)$ is the likelihood function which should typically reflect the way the data is obtained and $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)$ is the prior distribution for the parameters. Using Bayes' theorem, we can write</p>
 
-<script type="math/tex; mode=display">\mathcal{P}\left(\mathcal{M}\left|\mathcal{D}\right.\right)=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)\mathcal{P}\left(\mathcal{M}\right)}{\mathcal{P}\left(\mathcal{D}\right)}</script>
+\[\mathcal{P}\left(\mathcal{M}\left|\mathcal{D}\right.\right)=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)\mathcal{P}\left(\mathcal{M}\right)}{\mathcal{P}\left(\mathcal{D}\right)}\]
 
 <p align="justify">The left-hand side of equation is the posterior probability of the model given the data. Consider two competing models $\mathcal{M}_{1}$ and $\mathcal{M}_{2}$. The ratio of the respective posterior probabilities of the models, given the data is</p>
 
-<script type="math/tex; mode=display">\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}\,\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}</script>
+\[\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}\,\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}\]
 
 <p align="justify">Note that $\mathcal{P}\left(\mathcal{D}\right)$ is only a constant and can be dropped when calculating the ratio of posterior probability of the models. The ratio $$B_{12}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}$$ is the <b>Bayes factor</b> and is, in fact, the ratio of the models' evidences. The ratio $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}$$ is the posterior odds while $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}$$ is the prior odds. Therefore, in words, one can describe the above as </p>
 
-<script type="math/tex; mode=display">\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}</script>
+\[\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}\]
 
 <p align="justify">In the case of non-committal priors on the models, that is, $\mathcal{P}\left(\mathcal{M}_{1}\right)=\mathcal{P}\left(\mathcal{M}_{2}\right)$, the posterior odds are just equal to the Bayes factor. As $B_{12}$ increases, our belief that model $\mathcal{M}_{1}$ is better than model $\mathcal{M}_{2}$ increases. Otherwise, model $\mathcal{M}_{2}$ will be the preferred one. Therefore, the Bayes factor indicates how the relative odds vary in the light of new data, irrespective of the prior odds of the models. The Bayes factor is typically interpreted by referring to the Jeffreys' scale (see <a href="http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572">Kass et al., 1995</a>). It is an empirically determined scale as shown in the table below </p>
 

@@ -1,0 +1,32 @@
+I"P<style>
+  .bottom-three {
+     margin-bottom: 0.5cm;
+  }
+</style>
+
+<dl class="wp-caption alignright" style="max-width: 420px">
+
+<dt><a href=""><img class="" src="/images/superJEDI.jpg" alt="superJEDI in 2013 at Flic En Flac" /></a></dt>
+
+<dd>superJEDI in 2013 at Flic En Flac</dd>
+</dl>
+
+<p align="justify">The superJEDI was organised in 2013, at Flic En Flac in Mauritius. I was not part of this wonderful event as I was still in my second year of my undergraduate study. However, Sheean and Suraj, who will later become my friends, were part of this amazing JEDI. The interesting fact about JEDI is that it is only in these kinds of meeting that we will come up with brilliant ideas, which can then lead to publications. For me personally, the major reason behind is the active participation of all people, being from undergraduate level to the highest position in the hierarchy.</p>
+
+<p align="justify">During one of those days, as Nadeem and Bruce were walking on the seaside, Bruce proposed the idea of having a Bayesian formalism in the context of radio interferometry. This led to the so-called BIRO (Bayesian Inference for Radio Obervation) project.</p>
+
+<div style="text-align: center;">
+<iframe src="https://player.vimeo.com/video/117391380" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> 
+</div>
+
+<p class="bottom-three">
+
+<p align="justify">The aim of this project was to determine the scientific parameters, if possible, the systematic parameters also, using the visibility data directly. The conventional way of doing this is to first produce a radio image, from which all science will be done. This seems absurb, isn't it? Why do we have to produce an image when we have the raw data? To some extent, one might argue that the data is dominated by noise and hence it will be hard to work in the Fourier space, that is, with the visibility data. This clearly suggests that the best alternative is to have a full distribution of the parameters of interest, with a summary statistics.</p>
+
+<p align="justify">Michelle, who was doing her PhD with Bruce at that time, took hold of the BIRO project. She started working on it as part of her PhD. Iniyan was also part of the BIRO project. While Michelle worked mostly on Bayesian Parameter Estimation, Iniyan's work was on Bayesian Model Selection. In a nutshell, Michelle was able to infer not only the scientific parameters but also the systematic parameters in a fully Bayesian formalism. She used MCMC (Markov Chain Monte Carlo) methods to map the full posterior distributions of the parameters. On the other hand, Iniyan used <a href="http://johannesbuchner.github.io/PyMultiNest/"> PyMultinest</a> to calculate the Bayesian Evidence (the quantity which tells us how one model is favoured over another). PyMultinest also returns the posterior distributions of the parameters. An illustration from the work done by Michelle and Iniyan is shown in the above video. Compared to <a href="http://cdsads.u-strasbg.fr/abs/1974A%26AS...15..417H">CLEAN</a>, BIRO is much better in terms of performance.</p>
+
+
+<p align="justify">Of course, the technique is not without problems. One arguement is that we have to know the sky model first, before proceeding with Bayesian Inference. Therefore, in BIRO projects, we would normally assume a known sky model, which then leads to the second assumption that the positions of the sources are known. Moreover, nested sampling is known to have unreliable performance for higher dimensions. However, the fruitful side of this fantastic idea by Bruce has led to the following publications: <a href="https://arxiv.org/abs/1501.05304">BIRO</a>, <a href="https://arxiv.org/abs/1501.07719">MontBlanc</a> and <a href="https://arxiv.org/abs/1610.03773">Resolving the blazar CGRaBS J0809+5341</a>. We are currently extending the BIRO formalism to various other topics in radio astronomy.</p>
+
+</p>
+:ET

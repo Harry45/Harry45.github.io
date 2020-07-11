@@ -1,0 +1,39 @@
+I"Š<style>
+h3   {color: blue;}
+</style>
+
+<h2 id="paper-1-pure-mathematics">Paper 1 (Pure Mathematics)</h2>
+
+<ol>
+  <li>Polynomials and Rational Functions</li>
+  <li>Polar Coordinates</li>
+  <li>Summation of Series</li>
+  <li>Mathematical Induction</li>
+  <li>Differentiation and Integration</li>
+  <li>Differential Equations</li>
+  <li>Complex Numbers</li>
+  <li>Vectors</li>
+  <li>Matrices and Linear Spaces</li>
+</ol>
+
+<h2 id="paper-2-mechanics-and-statistics">Paper 2 (Mechanics and Statistics)</h2>
+
+<h3>Mechanics</h3>
+
+<ol>
+  <li>Momentum and Impulse</li>
+  <li>Circular Motion</li>
+  <li>Equilibrium of a Rigid Body Under Coplanar Forces</li>
+  <li>Rotation of a Rigid Body</li>
+  <li>Simple Harmonic Motion</li>
+</ol>
+
+<h3>Statistics</h3>
+
+<ol>
+  <li>Further Work on Distributions</li>
+  <li>Inference Using Normal and $t$-distributions</li>
+  <li>$\chi^{2}$-tests</li>
+  <li>Bivariate Data</li>
+</ol>
+:ET

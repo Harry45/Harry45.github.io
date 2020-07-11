@@ -5,9 +5,76 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 May 2020 21:33:04 +0100</pubDate>
-    <lastBuildDate>Sun, 24 May 2020 21:33:04 +0100</lastBuildDate>
-    <generator>Jekyll v3.3.0</generator>
+    <pubDate>Sat, 11 Jul 2020 14:53:59 +0100</pubDate>
+    <lastBuildDate>Sat, 11 Jul 2020 14:53:59 +0100</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Virtual Workshops</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;Since the COVID-19 lockdown, we have had to adapt to a completely new paradigm, that is, 'working from home'. Although not encouraged prior to this pandemic, I have personally found that I have been quite efficient at multi-tasking. In this post, I will focus on the virtual workshops which I have attended (or will attend).  &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;u&gt;ICLR 2020&lt;/u&gt; (26&lt;sup&gt;th&lt;/sup&gt; April to 1&lt;sup&gt;st&lt;/sup&gt; May, &lt;a href=&quot;https://iclr.cc/virtual_2020/index.html&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+	&lt;p align=&quot;justify&quot;&gt;I had the opportunity to present my work on Weak Lensing, Compression and Gaussian Processes (see &lt;a href=&quot;https://slideslive.com/38926202/gaussian-processes-emulator-and-moped-for-weak-lensing&quot;&gt;here&lt;/a&gt;) at the ICLR 2020. Apart from my work, it was quite inspiring to see how Machine Learning has developed from a purely scientific field to an engineering field. Today, it encompasses almost all branch of Science and Engineering. One of the main focus was on Climate Change, which is undeniably one of the hardest problems that humanity is currently facing.&lt;/p&gt;
+
+  &lt;li&gt;&lt;u&gt;MLSS 2020&lt;/u&gt; (28&lt;sup&gt;th&lt;/sup&gt; June to 10&lt;sup&gt;th&lt;/sup&gt; July, &lt;a href=&quot;http://mlss.tuebingen.mpg.de/2020/schedule.html&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+
+
+  &lt;p align=&quot;justify&quot;&gt;Although I did not register for this workshop, we all had the opportunity to follow all talks live on Youtube. In particular, since my work is closely related to Bayesian Analysis, I was inspired by &lt;a href=&quot;https://shakirm.com/&quot;&gt;Shakir&lt;/a&gt;'s talks (Bayesian Inference I and II). Another topic which got me thinking was Meta-Learning by &lt;a href=&quot;
+https://www.stats.ox.ac.uk/~teh/&quot;&gt;Prof. Yee Whye Teh&lt;/a&gt; in which he refers to the following:&lt;/p&gt;
+	&lt;blockquote&gt;
+	&lt;p align=&quot;justify&quot;&gt;&lt;small&gt;&lt;i&gt;&quot;Our training procedure is based on a simple machine learning principle: test and train
+	conditions must match&quot;&lt;/i&gt; -
+	 &lt;a href=&quot;https://papers.nips.cc/paper/6385-matching-networks-for-one-shot-learning&quot;&gt;Vinyals et al. 2016&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+  &lt;li&gt;ICML 2020 (12&lt;sup&gt;th&lt;/sup&gt; July to 18&lt;sup&gt;th&lt;/sup&gt; July, &lt;a href=&quot;https://icml.cc/virtual/2020&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+
+  &lt;li&gt;OxML 2020 (17&lt;sup&gt;th&lt;/sup&gt; August to 25&lt;sup&gt;th&lt;/sup&gt; August, &lt;a href=&quot;https://www.oxfordml.school/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+
+  &lt;li&gt;GPSS 2020 (14&lt;sup&gt;th&lt;/sup&gt; September to 17&lt;sup&gt;th&lt;/sup&gt; September, &lt;a href=&quot;
+http://gpss.cc/gpss20/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;!-- 
+&lt;p align=&quot;justify&quot;&gt;This would not have been possible if I were to be physically present, simply because the latter cost at least £200 while with the virtual workshops, it costs no more than £50. I understand that it is not the same as being part of an actual workshop but I personally think I have been able to make the most out of them.&lt;/p&gt; --&gt;
+</description>
+        <pubDate>Fri, 10 Jul 2020 23:04:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/2020/07/Virtual-Workshops</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/07/Virtual-Workshops</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
+    
+      <item>
+        <title>Black Lives Matter Protests</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;Since the death of George Floyd on the 25&lt;sup&gt;th&lt;/sup&gt; May 2020 (see article on &lt;a href=&quot;https://en.wikipedia.org/wiki/Killing_of_George_Floyd&quot;&gt;Wikipedia&lt;/a&gt;), there has been ongoing protest not only in the US but all over the world, where people are expressing their concerns about systemic racism and unfair injustices on Black people. Growing up in Mauritius, which is a pluri-cultural, multi-lingual and multi-ethinic society, I have a deep feeling and connection with this issue and hopefully, through this post, I will put forward some of my views on this.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;It goes without saying that our past will define our future, and indeed, in the Mauritian context, despite the fact that our ancestors had been subject to slavery (&lt;a href=&quot;https://en.wikipedia.org/wiki/History_of_Mauritius&quot;&gt;History of Mauritius&lt;/a&gt;), today, we are enjoying the full freedom of religion, press, speech and many more. This makes us one of the highly ranked countries where these are generously acceptable. That said, I am not at all claiming that my island is a paradise, which is often the outlook at the international level. We still have much work to do, in order to combat, for example, poverty, crime, corruption and many more. I am almost certain that these form part of every countries' issues that need to be addressed.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;My next journey was in Cape Town where I spent two years for my MSc. As we all know, South Africa went through the Apartheid and I could still feel the tension among the people. Sadly, when I was there, students from the University of Cape Town were protesting for the Rhodes memorial to be removed (&lt;a href=&quot;https://en.wikipedia.org/wiki/Rhodes_Must_Fall&quot;&gt;Rhodes Must Fall&lt;/a&gt;). On Facebook, I could see Black people being referred to as 'Black Monkeys' and this had an impact on me. Are we living in a society where people are pretending everything is okay? On the other hand, I remember a friend telling me, 'you don't know what those people did to our parents and grand-parents'. Another friend told me that his grand-dad had to live with a bullet in his face because the doctor said that if it were to be removed, he would have passed away.&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;I am surprised that we often respond according to the 'action-reaction' principle (Newton's first law: for every action there will be an equal and opposite reaction). If we did not have the protests related to the killing of Black people, then maybe there would have been no (re)action. My question is, why do we even have to call people Black, White or Coloured? Why do we need to associate a colour based on our skin colour? Since I come from Mauritius, I do not even know what my ethnic background is and this often gets asked when filling in forms. On the flip side, I am glad that various actions have been adopted since the protests and two which I am aware of are:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;The Presidential Scholarship for Black Students (&lt;a href=&quot;https://www.imperial.ac.uk/giving/donate/black-scholarship/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Google commitments to racial equity (&lt;a href=&quot;https://www.blog.google/inside-google/company-announcements/commitments-racial-equity/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p align=&quot;justify&quot;&gt;I personally think that we can do more. I am certain that many people from Africa do not know how to leverage these opportunities. They need to be sensitised about the process and make them feel they have a place of belonging. I am grateful to all my colleagues that we now have sessions dedicated to BAME (Black Asian Minority Ethnic). I strongly believe that education is the main pillar towards building a fair and equal society. If a department (let us consider, for simplicity, just 100 universities from Europe and US) takes the initiative to fund at least 1 student from Africa every year for a time lapse of 10 years, then at the end of the process, we will have at least 1000 students who have had access to world-class education. I remember a saying from my parents, which essentially says, 'be a light that can never be extinguished' and I strongly opine that it's only education which enables one to be someone in life.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 10 Jun 2020 16:30:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/2020/06/Black-Lives-Matter</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/06/Black-Lives-Matter</guid>
+        
+        
+        <category>Social</category>
+        
+      </item>
     
       <item>
         <title>Iterative Method For Likelihood Emulation</title>
@@ -19,7 +86,7 @@
 
 &lt;p align=&quot;justify&quot;&gt;To start with, we randomly draw 50 points uniformly from $x\in[0, 1]$ and compute $\mathbf{y}$, which is given by&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{y} = \theta\mathbf{x} + \boldsymbol{\epsilon}&lt;/script&gt;
+\[\mathbf{y} = \theta\mathbf{x} + \boldsymbol{\epsilon}\]
 
 &lt;p align=&quot;justify&quot;&gt;We fix $\theta = 1$ and $\boldsymbol{\epsilon}\sim\mathcal{N}(0, 0.04^{2})$. We also assume a Gaussian prior for $\theta$, where $p(\theta)=\mathcal{N}(1,1)$. The posterior distribution of $\theta$ can be derived analytically and is in fact another Gaussian distribution, given by:
 $$
@@ -484,7 +551,7 @@ $$
 
 &lt;p align=&quot;justify&quot;&gt;Using the above two important tricks, the Bayesian Evidence is:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbb{Z}=\left({\prod_{i}}\sqrt{2\pi\sigma_{i}^{2}}\right)^{-1}\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{k}+\mathbf{b}^{\textrm{T}}\mathbf{b}\right)\right]\,\sqrt{\dfrac{\left|2\pi\left(\mathbf{D}^{\textrm{T}}\mathbf{D}+\mathbf{P}^{-1}\right)^{-1}\right|}{\left|2\pi\mathbf{P}^{-1}\right|}}&lt;/script&gt;
+\[\mathbb{Z}=\left({\prod_{i}}\sqrt{2\pi\sigma_{i}^{2}}\right)^{-1}\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{k}+\mathbf{b}^{\textrm{T}}\mathbf{b}\right)\right]\,\sqrt{\dfrac{\left|2\pi\left(\mathbf{D}^{\textrm{T}}\mathbf{D}+\mathbf{P}^{-1}\right)^{-1}\right|}{\left|2\pi\mathbf{P}^{-1}\right|}}\]
 
 &lt;p align=&quot;justify&quot;&gt;where $\mathbf{k}=-\left(\mathbf{D}^{\textrm{T}}\mathbf{b}\right)^{\textrm{T}}\left(\mathbf{D}^{\textrm{T}}\mathbf{D}+\mathbf{P}^{-1}\right)^{-1}\left(\mathbf{D}^{\textrm{T}}\mathbf{b}\right)
 $
@@ -541,15 +608,15 @@ The SDDR is important to judge whether the inclusion of extra parameters in nest
 
 &lt;p align=&quot;justify&quot;&gt;where $\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)$ is the likelihood function which should typically reflect the way the data is obtained and $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)$ is the prior distribution for the parameters. Using Bayes' theorem, we can write&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(\mathcal{M}\left|\mathcal{D}\right.\right)=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)\mathcal{P}\left(\mathcal{M}\right)}{\mathcal{P}\left(\mathcal{D}\right)}&lt;/script&gt;
+\[\mathcal{P}\left(\mathcal{M}\left|\mathcal{D}\right.\right)=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)\mathcal{P}\left(\mathcal{M}\right)}{\mathcal{P}\left(\mathcal{D}\right)}\]
 
 &lt;p align=&quot;justify&quot;&gt;The left-hand side of equation is the posterior probability of the model given the data. Consider two competing models $\mathcal{M}_{1}$ and $\mathcal{M}_{2}$. The ratio of the respective posterior probabilities of the models, given the data is&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}\,\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}&lt;/script&gt;
+\[\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}\,\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}\]
 
 &lt;p align=&quot;justify&quot;&gt;Note that $\mathcal{P}\left(\mathcal{D}\right)$ is only a constant and can be dropped when calculating the ratio of posterior probability of the models. The ratio $$B_{12}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}$$ is the &lt;b&gt;Bayes factor&lt;/b&gt; and is, in fact, the ratio of the models' evidences. The ratio $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}$$ is the posterior odds while $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}$$ is the prior odds. Therefore, in words, one can describe the above as &lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}&lt;/script&gt;
+\[\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}\]
 
 &lt;p align=&quot;justify&quot;&gt;In the case of non-committal priors on the models, that is, $\mathcal{P}\left(\mathcal{M}_{1}\right)=\mathcal{P}\left(\mathcal{M}_{2}\right)$, the posterior odds are just equal to the Bayes factor. As $B_{12}$ increases, our belief that model $\mathcal{M}_{1}$ is better than model $\mathcal{M}_{2}$ increases. Otherwise, model $\mathcal{M}_{2}$ will be the preferred one. Therefore, the Bayes factor indicates how the relative odds vary in the light of new data, irrespective of the prior odds of the models. The Bayes factor is typically interpreted by referring to the Jeffreys' scale (see &lt;a href=&quot;http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572&quot;&gt;Kass et al., 1995&lt;/a&gt;). It is an empirically determined scale as shown in the table below &lt;/p&gt;
 
@@ -571,332 +638,6 @@ table {width: 53%;}
         <pubDate>Sat, 20 May 2017 07:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</guid>
-        
-        
-        <category>Machine Learning and Statistics</category>
-        
-      </item>
-    
-      <item>
-        <title>Bayesian School 2016</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({ TeX: { extensions: [&quot;color.js&quot;] }});
-&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;The 2016 Bayesian School was organised at the University of Stellenbosch from the 21&lt;sup&gt;st&lt;/sup&gt; to 25&lt;sup&gt;th&lt;/sup&gt; November. In particular, the school focused on three main topics namely, Introductory Bayesian Methods, Monte Carlo Methods and Advanced Bayesian Methods which was taught by &lt;a href=&quot;http://astro.ic.ac.uk/aheavens/home&quot;&gt;Prof. Alan Heavens&lt;/a&gt; from Imperial College. &lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Apart from the lectures, another interesting part of the school was &quot;Research Hacks&quot;. The latter allows participants to meet in small groups, ask questions, exchange ideas and initiate collaboration. While these hacks predominantly followed the said-intentions, this also led to the publication of three papers (see &lt;a href=&quot;https://arxiv.org/abs/1704.03472&quot;&gt;arXiv:1704.03472&lt;/a&gt;, &lt;a href=&quot;https://arxiv.org/abs/1704.03467&quot;&gt;arXiv:1704.03467&lt;/a&gt; and &lt;a href=&quot;https://arxiv.org/abs/1704.07830&quot;&gt;arXiv:1704.07830&lt;/a&gt;). &lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;I learned quite a lot from Prof. Alan lectures and have also attempted some of the questions he proposed during the school. Also, there were various other interesting lectures, related to Bayesian methods. In particular, I will discuss two topics, namely KL Divergence and Bayesian Hierarchical Modelling below.&lt;/p&gt;
-
-&lt;h2&gt;Kullback-Leibler (KL) Divergence&lt;/h2&gt;
-&lt;p align=&quot;justify&quot;&gt;Suppose, we have a prior distribution which we denote as $\pi\left(\boldsymbol{\theta}\right)$ on the set of parameters $\boldsymbol{\theta}$. Afterwards, this is updated via Bayes' Theorem to a posterior distribution which we call $q\left(\boldsymbol{\theta}\right)$ and we want to know how much information we have gained from this update. This information can be quantified using the Kullback-Leibler (KL) Divergence,
-
-\begin{align}
-\textrm{D}_{\textrm{KL}}\left(q\left\Vert \pi\right.\right)=\int q\,\textrm{log}\left(\dfrac{q}{\pi}\right)d\theta
-\end{align}
-
-It is also referred to as the &lt;i&gt;relative entropy&lt;/i&gt;. If this quantity is measured in base of logarithm of 2, the information gain is in &lt;i&gt;bits&lt;/i&gt;, otherwise if measured in base of logarithm of $e$, the information gain is in &lt;i&gt;nats&lt;/i&gt;. To illustrate the KL Divergence, let us consider a simple example, the KL Divergence of two Gaussians. Consider the prior and posterior distributions with means $\mu_{1},\,\mu_{2}$ and variances $\sigma_{1}^{2},\,\sigma_{2}^{2}$. The KL Divergence of $q$ from $\pi$ is
-
-$$
-\textrm{D}\left(q\left\Vert \pi\right.\right)=\dfrac{\left(\mu_{1}-\mu_{2}\right)^{2}}{2\sigma_{1}^{2}}+\dfrac{\sigma_{2}^{2}}{2\sigma_{1}^{2}}-\dfrac{1}{2}-\textrm{log}\left(\dfrac{\sigma_{2}}{\sigma_{1}}\right)
-$$
-
-From the above result, if the variance of the posterior distribution, that is, $\sigma_{2}^{2}$ decreases, then the information content increases, while if there is a huge difference between the two means, the information gain may increase significantly.&lt;/p&gt;
-
-&lt;div style=&quot;background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;&quot;&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Another question related to KL Divergence was,&lt;/p&gt;&lt;br /&gt;
-
-&lt;p align=&quot;justify&quot; style=&quot;margin-left: 40px; margin-right: 40px&quot;&gt;&lt;i&gt;We have an experiment where a single datum $x$ is assumed to be drawn from a Gaussian Likelihood of mean $\mu$ and variance $\sigma^{2}$. Compute the KL divergence between an assumed Gaussian prior on $\mu$ (with mean zero and variance $\Sigma$) and the posterior.&lt;/i&gt;&lt;/p&gt;&lt;br /&gt;
-
-For this question, the KL Divergence is given by
-
-$$
-\textrm{D}_{\textrm{KL}}\left(q\left\Vert \pi\right.\right)=-\dfrac{1}{2}+\dfrac{\sigma^{2}}{2\left(\Sigma+\sigma^{2}\right)}+\dfrac{x^{2}\Sigma}{2\left(\Sigma+\sigma^{2}\right)^{2}}-\dfrac{1}{2}\textrm{log}\left(\dfrac{\sigma^{2}}{\Sigma+\sigma^{2}}\right)
-$$
-
-&lt;p align=&quot;justify&quot;&gt;If we had naively assumed a Dirac-Delta prior on the parameter, that is, $\Sigma=0$, then, $\textrm{D}_{\textrm{KL}}\left(q\left\Vert \pi\right.\right)=0$, which means there is no information gain. From my viewpoint, this example of computing the KL Divergence indicates the essence of incorporating priors in our analysis, which in turn leads us to advocating the Bayesian formalism.&lt;/p&gt;
-
- 
-&lt;/div&gt;
-
-&lt;h2&gt;Bayesian Hierarchical Modelling&lt;/h2&gt;
-
-&lt;p align=&quot;justify&quot;&gt;This is also one of the topics which helped me to answer one of my questions: how do we proceed with parameter inference when we have error bars on both dependent and independent variables? The idea behind Bayesian Hierarchical Modelling (BHM) is to split the problem into steps where the full model now consists of a series of sub-models.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;BHM links each sub-models, thereby propagating uncertainties from one sub-model to another. Let us consider a simple example, where we are fitting a straight line, $y=mx$ to a single data point, $X$ and $Y$. The complication is that both $X$ and $Y$ have errors, $\sigma_{X}$ and $\sigma_{Y}$ respectively. The question is: how do we infer $m$? In other words, we want $\mathcal{P}\left(m\left|X,\,Y\right.\right)$.&lt;/p&gt;
-
-&lt;div style=&quot;background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;&quot;&gt;
-
-&lt;p align=&quot;justify&quot;&gt;In this part, we will go through the steps in the BHM. To start with, we first need to write Bayes' Theorem, that is,&lt;/p&gt;
-
-$$
-\mathcal{P}\left(m\left|X,\,Y\right.\right)=\dfrac{\mathcal{P}\left(X,\,Y\left|m\right.\right)\mathcal{P}\left(m\right)}{\mathcal{P}\left(X,\,Y\right)}\propto\mathcal{P}\left(X,\,Y\left|m\right.\right)\mathcal{P}\left(m\right)
-$$
-
-&lt;p align=&quot;justify&quot;&gt;We then introduce the so-called latent variables, $x$ and $y$ and since we are not interested in them, we will marginalise over them as follows,&lt;/p&gt;
-
-
-$$
-\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto \int {\color{red}\mathcal{P}\left(X,\,Y,\,x,\,y\left|m\right.\right)}\mathcal{P}\left(m\right)dxdy
-$$
- 
-&lt;p align=&quot;justify&quot;&gt;Using the product rule, we have&lt;/p&gt;
-
-
-$$
-\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int{\color{red}\mathcal{P}\left(X,\,Y\left|x,\,y,\,m\right.\right){\color{blue}\mathcal{P}\left(x,\,y\left|m\right.\right)}}\mathcal{P}\left(m\right)dxdy
-$$
- 
-&lt;p align=&quot;justify&quot;&gt;In this case, the first probability does not depend on $m$, that is, $\mathcal{P}\left(X,\,Y\left|x,\,y,\,m\right.\right) = \mathcal{P}\left(X,\,Y\left|x,\,y\right.\right)$ and using the product rule again, we have&lt;/p&gt;
-
-$$
-\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int{\color{red}\mathcal{P}\left(X,\,Y\left|x,\,y\right.\right){\color{blue}{\color{magenta}\mathcal{P}\left(y\left|m,\,x\right.\right)}\mathcal{P}\left(x\left|m\right.\right)}}\mathcal{P}\left(m\right)dxdy
-$$
- 
-&lt;p align=&quot;justify&quot;&gt;Our model is deterministic, that is, $\mathcal{P}\left(y\left|m,\,x\right.\right) = \delta\left(y-mx\right)$. Therefore,&lt;/p&gt;
-
-
-$$
-\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int{\color{red}\mathcal{P}\left(X,\,Y\left|x,\,mx\right.\right){\color{magenta}\delta\left(y-mx\right)}{\color{blue}\mathcal{P}\left(x\right)}}\mathcal{P}\left(m\right)dxdy
-$$
-
-&lt;p align=&quot;justify&quot;&gt;Assuming uniform priors on $\mathcal{P}\left(x\right)$ and $\mathcal{P}\left(m\right)$, we have, &lt;/p&gt;
-
-$$
-\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int{\color{red}\mathcal{P}\left(X,\,Y\left|x,\,mx\right.\right)}\,dx
-$$
-
-&lt;p align=&quot;justify&quot;&gt;We further assume that we know the sampling distribution of $X$ and $Y$ and that they are indendent such that&lt;/p&gt;
-
-$$
-\mathcal{P}\left(X,\,Y\left|x,\,y\right.\right)=\mathcal{P}\left(X\left|x\right.\right)\mathcal{P}\left(Y\left|y\right.\right)
-$$
- 
-&lt;p align=&quot;justify&quot;&gt;We further assume that the errors in $X$ and $Y$ are independent Gaussians and for simplicity we take $\sigma_{X}=\sigma_{Y}=1$. Therefore,&lt;/p&gt;
-
-$$
-\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\int e^{-\frac{1}{2}\left(X-x\right)^{2}}e^{-\frac{1}{2}\left(Y-mx\right)^{2}}dx
-$$
-
-
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;After completing the square and performing the above integration, the unnormalised posterior distribution of $m$ is given by, &lt;/p&gt;
-
-&lt;p&gt;\begin{equation}
-\mathcal{P}\left(m\left|X,\,Y\right.\right)\propto\dfrac{1}{\sqrt{1+m^{2}}}e^{-\frac{1}{2}\left(\frac{Y-mX}{\sqrt{1+m^{2}}}\right)^{2}}
-\label{eq:post_m}
-\end{equation}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;One can also consider the joint posterior distribution of $x$ and $m$, which is simply given by Bayes' Theorem,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}\left(x,\,m\left|X,\,Y\right.\right)\propto\mathcal{P}\left(X,\,Y\left|x,\,mx\right.\right)\mathcal{P}\left(x\right)\mathcal{P}\left(m\right)&lt;/script&gt;
-
-&lt;p&gt;\begin{equation}
-\mathcal{P}\left(x,\,m\left|X,\,Y\right.\right)\propto e^{-\frac{1}{2}\left(X-x\right)^{2}}e^{-\frac{1}{2}\left(Y-mx\right)^{2}}
-\end{equation}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Consider the case where $X=10$ and $Y=15$. Using Equation \eqref{eq:post_m}, the posterior distribution of $m$ is shown in the left panel of the figure below. In addition, using Gibbs Sampling, the joint posterior distribution of $x$ and $m$ is shown in the right panel of the figure below. &lt;/p&gt;
-
-&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 800px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/posterior_m.jpg&quot; alt=&quot;The left panel shows the posterior distribution of $m$ while the right panel shows the joint posterior distribution of $x$ and $m$ using Gibbs Sampling.&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;The left panel shows the posterior distribution of $m$ while the right panel shows the joint posterior distribution of $x$ and $m$ using Gibbs Sampling.&lt;/dd&gt;
-&lt;/dl&gt;
-
-</description>
-        <pubDate>Thu, 18 May 2017 09:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2017/05/Bayesian-School-2016</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-School-2016</guid>
-        
-        
-        <category>Workshop and Conference</category>
-        
-      </item>
-    
-      <item>
-        <title>Linear Regression</title>
-        <description>&lt;p align=&quot;justify&quot;&gt;One common problem in Statistics is to learn a functional relationship between independent variables and dependent variable. For example, we may want to know how the price of houses varies with the area of the land, the total size of the house and various other criteria. In this particular case, the price of the houses is the dependent variable, also often referred to as the response variable while the area of the land and total size of the house are the independent variables, also known as the attribute variables.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;We will first begin with linear modelling, that is, given a set of attributes, we want infer a linear relationship between the attributes and the response. The function which we want to fit is typically governed by a set of parameters, say $\theta_{i}$. However, before indulging into this topic, it is worth discussing linear and non-linear models.&lt;/p&gt;
-
-&lt;div style=&quot;background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;&quot;&gt;
-&lt;b&gt;Linear and Non-Linear Models&lt;/b&gt;&lt;br /&gt;
-The equation
-
-\begin{align}
-y=\theta_{0} + \theta_{1}x + \theta_{2}x^2
-\end{align}
-
-is a linear model model because it is linear in the parameters $\theta_{i}$. In contrast, the model 
-
-\begin{align}
-y=\textrm{sin}\left(\omega x + \phi\right)
-\end{align}
-
-is a non-linear model since it includes parameters $\left(\omega,\,\phi\right)$ which are non-linear. 
- 
-&lt;/div&gt;
-
-&lt;h2&gt;Maximum Likelihood Method&lt;/h2&gt;
-&lt;p align=&quot;justify&quot;&gt;Suppose, we now want to fit a polynomial $f\left(x\right)$ of order $M$ to some observed data $\left(x_{i},\,y_{i}\right)$ where $i=0,\,1,\,2,\ldots N-1$. We further assume that they are corrupted with Gaussian noise, $\sigma_{i}$. Then, each observed datum can be described by a Gaussian:
-
-\begin{align}
-\mathcal{P}\left(y_{i}\left|\boldsymbol{\theta}\right.\right)=\dfrac{1}{\sqrt{2\pi\sigma_{i}^{2}}}\,\textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{y_{i}-f\left(x_{i}\left|\boldsymbol{\theta}\right.\right)}{\sigma_{i}}\right)^{2}\right]
-\end{align}
-
-where $\boldsymbol{\theta}$ is the set of parameters $\left(\theta_{0},\,\theta_{1},\ldots \theta_{M}\right)$. For simplicity, we will explain this method by using a linear fit to the data, that is, $f\left(x\left|\theta_{0},\,\theta_{1}\right.\right)=\theta_{0}+\theta_{1}x$. Assuming that the data point is independent from each other, the likelihood is simply a product of the individual probability distribution of the above. 
-
-&lt;/p&gt;
-
-&lt;div style=&quot;background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;&quot;&gt;
-&lt;b&gt;Matrix and Vector Notations&lt;/b&gt;&lt;br /&gt;
-We will define the vector $\mathbf{b}$ as:
-
-$$
-\mathbf{b=\left(\begin{array}{c}
-\frac{y_{0}}{\sigma_{0}}\\
-\\
-\vdots\\
-\\
-\frac{y_{N-1}}{\sigma_{N-1}}
-\end{array}\right)}
-$$
-
-and the design matrix, $\mathbf{D}$ as: 
-
-$$
-\mathbf{D}=\left(\begin{array}{cc}
-\frac{1}{\sigma_{0}} &amp;amp; \frac{x_{0}}{\sigma_{0}}\\
-\\
-\\
-\\
-\frac{1}{\sigma_{N-1}} &amp;amp; \frac{x_{N-1}}{\sigma_{N-1}}
-\end{array}\right)
- 
-$$
-&lt;/div&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Therefore, the likelihood (ignoring the pre-factor) can be written as:
-
-\begin{align}
-\mathcal{P}\left(\mathbf{y}\left|\boldsymbol{\theta}\right.\right)\propto\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{b-\mathbf{D}\boldsymbol{\theta}}\right)^{\textrm{T}}\left(\mathbf{b-\mathbf{D}\boldsymbol{\theta}}\right)\right]
-\label{eq:likelihood}
-\end{align}
-
-Our aim is to maximise the likelihood. Therefore, the derivative of the likelihood with respect to the parameters should be equal to zero. However, maximising the likelihood is equivalent to maximising the log-likelihood since the latter is a monotonic transformation applied to the likelihood. Some useful tricks when differentiating with respect to a vector are given below.&lt;/p&gt;
-
-&lt;div style=&quot;background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;&quot;&gt;
-&lt;b&gt;Differentiating with respect to a vector&lt;/b&gt;&lt;br /&gt;
-
-$$
-\dfrac{\partial\mathbf{A}\mathbf{x}}{\partial\mathbf{x}}=\mathbf{A}
-$$
-
-$$
-\dfrac{\partial\mathbf{x}^{\textrm{T}}\mathbf{A}}{\partial\mathbf{x}}=\mathbf{A}^{\textrm{T}}
-$$
-
-If $\mathbf{A}$ is a symmetric matrix, 
-$$
-\dfrac{\partial\mathbf{x}^{\textrm{T}}\mathbf{A}\mathbf{x}}{\partial\mathbf{x}}=2\mathbf{x}^{\textrm{T}}\mathbf{A}
-$$
-
-For further details, see &lt;a href=&quot;https://en.wikipedia.org/wiki/Matrix_calculus&quot;&gt;Wikipedia&lt;/a&gt; or the &lt;a href=&quot;http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3274/pdf/imm3274.pdf&quot;&gt;Matrix Cookbook.&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Using Equation \eqref{eq:likelihood} and the above useful identities, &lt;/p&gt;
-
-&lt;p&gt;\begin{align}
-\boldsymbol{\theta}_{\textrm{MLE}}=\left(\mathbf{D}^{\textrm{T}}\mathbf{D}\right)^{-1}\mathbf{D}^{\textrm{T}}\mathbf{b}
-\end{align}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt; The matrix $\mathbf{C}=\left(\mathbf{D}^{\textrm{T}}\mathbf{D}\right)^{-1}$ is called the covariance matrix and gives the standard uncertainties associated with the parameters determined. In particular, the diagonal elements of this matrix give the variances of the parameters while the off-diagonal elements give the covariances between the parameters $\theta_{j}$ and $\theta_{k}$. Hence, the errors on the parameters are equal to the square root of the diagonal elements of the covariance matrix $\mathbf{C}$.&lt;/p&gt;
-
-&lt;h2&gt;Example - A Physics Problem&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Linear_Regression_Circuit.png&quot; align=&quot;left&quot; width=&quot;420&quot; /&gt;&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;We will use the above explanation to answer a Physics problem (Physics 9702 November 2016 Paper 52). A student is investigating the characteristics of different light-emitting diodes (LEDs). Each LED
-needs a minimum potential difference across it to emit light. The circuit is set up as shown on the left. &lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;The potentiometer is adjusted until the LED just emits light. The potential difference $V$ across the LED is measured. The experiment is repeated for LEDs that emit light of different wavelength $\lambda$. It is suggested that $V$ and $\lambda$ are related by the equation
-
-\begin{align}
-V=p\lambda^{q}
-\end{align}
-
-where $p$ and $q$ are constants. Therefore, if we are to plot a graph of $\textrm{lg }V$ on the $y$-axis against $\textrm{lg }\lambda$ on the $x$-axis, the gradient of the straight line will correspond to $q$ while the $y$-intercept to $\textrm{lg }p$. To be explicit, 
-
-$$
-\textrm{lg }V = q\,\textrm{lg }\lambda + \textrm{lg }p
-$$
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Linear_Regression_Data.png&quot; align=&quot;right&quot; width=&quot;420&quot; /&gt;&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;The values of $V$ and $\lambda$ are given in the table below and we also calculate $\textrm{lg }\lambda$ and $\textrm{lg }V$, with its associated error. The error in $\textrm{lg }V$ is:
-
-$$
-\sigma_{\textrm{lg }V} = \dfrac{\Delta V}{V}
-$$
-
-See this &lt;a href=&quot;http://phys114115lab.capuphysics.ca/App%20A%20-%20uncertainties/appA%20propLogs.htm&quot;&gt;link&lt;/a&gt; for further detail. For this problem, we calculate $\textrm{lg }\lambda$ and $\textrm{lg }V$ to two decimal places. We assume that each data point is Gaussian distributed with mean, $\mu=\textrm{lg }V$ and standard deviation, $\sigma = \sigma_{\textrm{lg }V}$. An illustration of this assumption is shown on the right. We are now ready to plot the graph of $\textrm{lg }V$ versus $\textrm{lg }\lambda$. We find that the gradient is equal to $2.60$ while the $y$-intercept is equal to $7.56$.&lt;/p&gt;
-
-&lt;style&gt;
-table {width: 53%;}
-&lt;/style&gt;
-
-&lt;table class=&quot;tableizer-table&quot; align=&quot;left&quot;&gt;
-&lt;thead&gt;&lt;tr class=&quot;tableizer-firstrow&quot;&gt;&lt;th&gt;$\lambda/10^{-9}$ m &lt;/th&gt;&lt;th&gt;$V/\,\textrm{V}$&lt;/th&gt;&lt;th&gt;$\textrm{lg}\left(\lambda/10^{-9}\,\textrm{m}\right)$&lt;/th&gt;&lt;th&gt;$\textrm{lg}\left(V/\,\textrm{V}\right)$&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;630&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$1.9\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.80&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$ 0.28\pm0.05$ &lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;620&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$2.0\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.79&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$0.30\pm0.05$ &lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;590&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$2.3\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.77&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$0.36\pm0.04$&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;520&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$3.1\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.72&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$0.49\pm0.03$&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;490&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$3.7\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.69&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$0.57\pm0.03$&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;470&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$4.1\pm0.1$&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;2.67&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;$0.61\pm0.02$&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p align=&quot;justify&quot; style=&quot;margin-left:32em&quot;&gt;Moreover, the covariance matrix is: 
-
-$$
-\mathbf{C}=\left(\begin{array}{cc}
-0.670 &amp;amp; -0.258\\
--0.258 &amp;amp; 0.095
-\end{array}\right)
- 
-$$
-
-Hence, 
-
-$$
-q=-2.60\pm0.84
-$$
-
-$$
-\textrm{lg }p = 7.56\pm0.31
-$$
-&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/Linear_Regression_Fit.png&quot; align=&quot;right&quot; width=&quot;420&quot; /&gt;&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot; style=&quot;margin-top:3em&quot;&gt;Therefore, in short, the estimates of $p$ and $q$ are $3.61\times10^{7}$ and $-2.60$ respectively. We can also learn about the correlation between the two parameters from the covariance matrix. In particular, since the off-diagonal elements are negative, this implies that the two parameters are negatively correlated, that is, an increase in one parameter results in the decrease of the other. This is illustrated in the figure below, which also shows the credible intervals at $1\sigma$, $2\sigma$ and $3\sigma$. It is also worth mentioning that the distribution of the two parameters $\left(\textrm{lg }p,\,q\right)$ are Gaussian distributed since we are working with a linear model. In addition to this, we can use the values of $p$ and $q$ to estimate the minimum potential difference required if a different diode is used, for example, a diode emitting a wavelength of $950$ nm. 
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Linear_Regression_Correlation.png&quot; align=&quot;left&quot; width=&quot;420&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;Summary and Conclusion&lt;/h2&gt;
-&lt;p align=&quot;justify&quot; style=&quot;margin-left:28em&quot;&gt;In this post, we have gone through one method of inferring parameters, namely, the Maximum Likelihood Estimator. We have also provided an example to illustrate this method. It does provide a good estimate of the parameters along with their associated errors. Moreover, we can also learn about the correlation between the parameters using the covariance matrix. &lt;/p&gt;
-
-&lt;p align=&quot;justify&quot; style=&quot;margin-left:28em&quot;&gt;In addition to this, if we had some prior information on the parameters, then the concept of Bayesian Statistics is invoked. The concept is not very different, except that we would have had a prior probability distribution for each parameter. Additionally, instead of finding the MLE, we will end up having the MAP, that is, the Maximum a Posteriori estimates of the parameters. If uniform distributions are assumed, then the MAP coincide with the MLE.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 02 Mar 2017 06:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/2017/03/Linear-Regression</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/03/Linear-Regression</guid>
         
         
         <category>Machine Learning and Statistics</category>

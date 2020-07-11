@@ -217,7 +217,7 @@
 
 <p align="justify">Given now a new data $x_{*}$, the posterior distribution of $f_{*}$ is simply obtained by marginalisation.</p>
 
-<script type="math/tex; mode=display">\mathcal{P}\left(y_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)=\int\mathcal{P}\left(y_{*}\left|\mathbf{f},\,x_{*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}</script>
+\[\mathcal{P}\left(y_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)=\int\mathcal{P}\left(y_{*}\left|\mathbf{f},\,x_{*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}\]
 
 <p align="justify">The prior on the regression function which is a Gaussian Process, GP denoted by </p>
 
@@ -248,45 +248,44 @@ x-x’\rightarrow\infty
 
 <p align="justify">For the regression problem, the joint distribution is given by </p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\left(\begin{matrix}
+\[\left(\begin{matrix}
 \mathbf{f}\cr
 \mathbf{f}_{*}
 \end{matrix}\right)\sim\left(\left(\begin{matrix}
 \boldsymbol{\mu}\cr
 \boldsymbol{\mu}_{*}
 \end{matrix}\right),\,\left(\begin{matrix}
-\mathbf{K} & \mathbf{k}_{*}\cr
-\mathbf{k}_{*}^{\textrm{T}} & k_{**}
-\end{matrix}\right)\right) %]]></script>
+\mathbf{K} &amp; \mathbf{k}_{*}\cr
+\mathbf{k}_{*}^{\textrm{T}} &amp; k_{**}
+\end{matrix}\right)\right)\]
 
 <p align="justify">where $k_{**} = \kappa\left(\mathbf{X}_{*},\,\mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)$ is simply</p>
 
-<script type="math/tex; mode=display">\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}_{*},\,\mathbf{X},\,\mathbf{f}\right.\right)=\mathcal{N}\left(\mathbf{f}_{*}\left|\boldsymbol{\mu}_{*},\,\boldsymbol{\Sigma}_{*}\right.\right)</script>
+\[\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}_{*},\,\mathbf{X},\,\mathbf{f}\right.\right)=\mathcal{N}\left(\mathbf{f}_{*}\left|\boldsymbol{\mu}_{*},\,\boldsymbol{\Sigma}_{*}\right.\right)\]
 
 <p align="justify"> where </p>
 
-<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\boldsymbol{\mu}\left(\mathbf{X}_{*}\right)+\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\left(\mathbf{f}-\boldsymbol{\mu}\left(\mathbf{X}\right)\right)</script>
+\[\boldsymbol{\mu}_{*}=\boldsymbol{\mu}\left(\mathbf{X}_{*}\right)+\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\left(\mathbf{f}-\boldsymbol{\mu}\left(\mathbf{X}\right)\right)\]
 
-<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{k}_{*}</script>
+\[\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{k}_{*}\]
 
 <p align="justify">We would notionally assume a mean function equal to 0 and the kernel must be <a href="https://en.wikipedia.org/wiki/Positive-definite_matrix">positive definite</a>. Hence, </p>
 
-<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{f}</script>
+\[\boldsymbol{\mu}_{*}=\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{f}\]
 
-<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}</script>
+\[\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}^{-1}\mathbf{K}_{*}\]
 
 <h4><b>Noisy Case</b></h4>
 
 <p>If instead, we were to observe a noisy function given by $y=f\left(x\right)+\epsilon$ where $\epsilon\sim\mathcal{N}\left(0,\,\sigma_n^2\right)$, the matrix $\mathbf{K}$ is simply given by</p>
 
-<script type="math/tex; mode=display">\mathbf{K}_n=\mathbf{K}+\sigma_n^2\mathbf{I}</script>
+\[\mathbf{K}_n=\mathbf{K}+\sigma_n^2\mathbf{I}\]
 
 <p align="justify">assuming that the observed data is corrupted by the noise independently. Then the prediction for the new function along with its uncertainty is given by</p>
 
-<script type="math/tex; mode=display">\boldsymbol{\mu}_{*}=\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{f}</script>
+\[\boldsymbol{\mu}_{*}=\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{f}\]
 
-<script type="math/tex; mode=display">\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{k}_{*}</script>
+\[\boldsymbol{\Sigma}_{*}=k_{**}-\mathbf{k}_{*}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{k}_{*}\]
 
 <h2>Learning the Kernel Parameters</h2>
 <p align="justify"> The way to estimate the parameters is via maxmising the marginal likelihood, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ which is simply a multivariate Gaussian distribution given by $\mathcal{N}\left(\mathbf{y}\left|0,\,\mathbf{K}_{n}\right.\right)$. Hence, </p>
@@ -297,18 +296,18 @@ x-x’\rightarrow\infty
 
 <p align="justify">where $N$ is the number of test data points. Essentially, the third term is does not depend on the kernel parameters and is simply an additive constant. Hence, the derivative of the marginal likelihood</p>
 
-<script type="math/tex; mode=display">\dfrac{\partial}{\partial\theta_{j}}\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=-\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\dfrac{\partial\mathbf{K}_{n}^{-1}}{\partial\theta_{j}}\mathbf{y}+\dfrac{\partial}{\partial\theta_{j}}\textrm{log}\left|\mathbf{K}_{n}\right|\right]</script>
+\[\dfrac{\partial}{\partial\theta_{j}}\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=-\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\dfrac{\partial\mathbf{K}_{n}^{-1}}{\partial\theta_{j}}\mathbf{y}+\dfrac{\partial}{\partial\theta_{j}}\textrm{log}\left|\mathbf{K}_{n}\right|\right]\]
 
 <p align="justify">can further be simplified using the fact that $\dfrac{\partial\mathbf{K}_{n}^{-1}}{\partial\theta_{j}}=-\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\mathbf{K}_{n}^{-1}$ and that $ \dfrac{\partial}{\partial\theta_{j}}\textrm{log}\left|\mathbf{K}_{n}\right|=\textrm{tr}\left(\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\right)$ such that </p>
 
-<script type="math/tex; mode=display">\dfrac{\partial}{\partial\theta_{j}}\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\mathbf{K}_{n}^{-1}\mathbf{y}-\textrm{tr}\left(\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\right)\right]</script>
+\[\dfrac{\partial}{\partial\theta_{j}}\textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\mathbf{K}_{n}^{-1}\mathbf{y}-\textrm{tr}\left(\mathbf{K}_{n}^{-1}\dfrac{\partial\mathbf{K}_{n}}{\partial\theta_{j}}\right)\right]\]
 
 <p align="justify">Given that we now have the gradient, one could easily use an optimisation algorithm to estimate the hyper-parameters. An alternative method is to have a full Bayesian formalism for inferring the posterior distributions of the hyper-parameters.</p>
 
 <h2>Examples</h2>
 <p align="justify">Below, we consider two examples: noise-free and a noisy. For the following, for illustration, we assume that the kernel parameters $\sigma$ and $\ell$ are both equal to 1. We show how the Gaussian Process performs well in the noise-free and equally-spaced data as shown below. We consider a simple sinusoidal function of the form</p>
 
-<script type="math/tex; mode=display">f=\textrm{sin}\left(x\right)\hspace{2cm}\left[0,\,2\pi\right]</script>
+\[f=\textrm{sin}\left(x\right)\hspace{2cm}\left[0,\,2\pi\right]\]
 
 <p align="center"><img src="/images/example_1_uniform.png" alt="uniform_gp" width="60%" height="60%" /></p>
 

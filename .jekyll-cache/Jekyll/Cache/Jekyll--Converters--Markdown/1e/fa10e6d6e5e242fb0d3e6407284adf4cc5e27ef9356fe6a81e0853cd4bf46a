@@ -1,0 +1,96 @@
+I"0/<p align="justify">One of the recent topics which I had to study was how to sample from any distribution. While this seems to be a trivial question, Google did not help me much, although I did also try to post the problem on <a href="http://stackoverflow.com/questions/40263486/drawing-random-samples-from-any-distribution">stackoverflow</a>! Here, we will show three methods which we can use to generate random numbers from a distribution. In particular, we will look at some in-built functions in <code>scipy</code>, acceptance-rejection sampling and will consider interpolation method as well. The distribution which we will use is given by </p>
+
+<p>\begin{align}
+\mathcal{P}\left(x\right) = \dfrac{k\,x^3}{e^{2x} - 0.1}
+\end{align}</p>
+
+<p align="justify">where $k$ is the normalisation constant. Note that we will use the following notations: $\mathcal{P}\left(\centerdot\right)$ is the probability distribution function (PDF) while $\Phi\left(\centerdot\right)$ is the cumulative distribution function (CDF). The generic shape of this distribution follows that of a black body spectrum. This distribution is used only to illustrate the idea of sampling and we do not provide any relevant explanation to the actual physics of black body radiation in this post.</p>
+
+<h2>Using Scipy</h2>
+
+<p align="justify">The class <code>rv_continuous</code> in <code>scipy.stats</code> is straightforward to use. We simply need to define either the PDF or CDF using <code>_pdf</code> and <code>_cdf</code> respectively as shown below. We first define the PDF, followed by a function to normalise it. Note also that the PDF that we define in the class should be normalised.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">1E4</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">p</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.1</span><span class="p">)</span>
+
+<span class="c1"># Define function to normalise the PDF
+</span><span class="k">def</span> <span class="nf">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="k">return</span> <span class="n">simps</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Define the distribution using rv_continuous
+</span><span class="k">class</span> <span class="nc">blackbody</span><span class="p">(</span><span class="n">ss</span><span class="p">.</span><span class="n">rv_continuous</span><span class="p">):</span> 
+    <span class="k">def</span> <span class="nf">_pdf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="n">const</span><span class="p">)</span> <span class="o">*</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></figure>
+
+<p align="justify">We are now ready to use our above written functions to find $\mathcal{P}\left(x\right)$, $\Phi\left(x\right)$ and generate samples from the underlying distribution. We first need to instantiate it with the lower and upper limits given by <code>a</code> and <code>b</code> respectively. In principle, if not defined, it will be considered to be from $-\infty$ to $+\infty$.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">blackbody_distribution</span> <span class="o">=</span> <span class="n">blackbody</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"blackbody_distribution"</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+
+<span class="c1"># Find the normalisation constant first
+</span><span class="n">norm_constant</span> <span class="o">=</span> <span class="n">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># create pdf, cdf, random samples
+</span><span class="n">pdf</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">)</span>
+<span class="n">cdf</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">)</span>
+<span class="n">samples</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mf">1E4</span><span class="p">)</span></code></pre></figure>
+
+<dl class="wp-caption aligncenter" style="max-width: 700px">
+
+<dt><a href=""><img class="" src="/images/scipy_continuous.jpg" alt="Samples generated using &lt;code&gt;rv_continuous&lt;/code&gt; from &lt;code&gt;scipy.stats&lt;/code&gt;" /></a></dt>
+
+<dd>Samples generated using <code>rv_continuous</code> from <code>scipy.stats</code></dd>
+</dl>
+
+<p align="justify">The above plot shows the PDF, CDF and the samples generated from the distribution. In particular, we choose to draw 10 000 random samples. <code>rv_continuous</code> becomes useful when one needs more than just the samples. Once we have defined it, we can simply find other properties such as its mean, standard deviation and several more (see the <a href="https://docs.scipy.org/doc/scipy-0.16.0/reference/generated/scipy.stats.rv_continuous.html">documentation</a> for further details).</p>
+
+<h2>Acceptance-Rejection Sampling</h2>
+
+<dl class="wp-caption alignright" style="max-width: 265px">
+
+<dt><a href=""><img class="" src="/images/circle_accept_reject.jpg" alt="Estimating value of $\pi$ using Monte Carlo Method" /></a></dt>
+
+<dd>Estimating value of $\pi$ using Monte Carlo Method</dd>
+</dl>
+
+<p align="justify">Imagine we have a square board of size $l$, on which there is a circle of radius $0.5l$ at the centre of the board, that is, at $\left(0.5l,0.5l\right)$ in a Cartesian coordinate system. We are throwing darts randomly on the board, say $N$ times. If $n$ is the number of times that the darts lie within the circle, the probability of throwing the darts successfully into the circle is simply $\frac{n}{N}$. This is also roughly equal to the ratio of the area of the circle to the area of the square board. One could use this idea to have a rough estimate of the value of $\pi$, that is,</p>
+<p>\begin{align}
+\pi \approx 4 \times \frac{n}{N}
+\end{align}</p>
+
+<p align="justify">As $N$ becomes larger, one would have a more accurate estimate of the number $\pi$. This is the idea behind Monte Carlo sampling. Through this lens, an alternative way to sample from a normalised distribution is to use acceptance-rejection sampling scheme. It is also sometimes referred to as Lahiri's Sampling method. This method is advantageous in the sense that we do not need to know the CDF. However, one downfall is that samples may get rejected very often. Moreover, say we want $N$ random numbers, it is unlikely that we will get that number of samples relatively easily. In this post, we have not implemented this method. In short,</p>
+
+<p align="justify" style="padding: 0px 100px 0px 100px"> suppose $X$ is a scalar random variable taking values in the interval $\left[a, b\right]$ according to the continuous probability density function $f\left(x\right)$. Let $M$ be an upper bound for $f$ on $\left[a, b\right]$, $M$ assumed finite. Choose $x$ uniformly in $\left[a, b\right]$. Then choose $u$ uniformly in $\left[0, M\right]$. If $u\leq f\left(x\right)$, we select $x$. Otherwise we reject $x$ and start over.</p>
+
+<h2>Interpolation Method</h2>
+<p align="justify">What do we do if neither of the two methods work but we do have the PDF? The procedures we adopt here is as follows:</p>
+
+<ol type="1">
+  <li>Find the CDF using <code>np.cumsum</code></li>
+  <li>Generate a random number from a uniform distribution, $\mathcal{U}\left[0,1\right]$ </li>
+  <li>Use <code>interp1d</code> from <code>scipy.interpolate</code> to estimate the random number.</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Our Own pdf, cdf and samples
+</span><span class="n">own_pdf</span> <span class="o">=</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">norm_constant</span>
+<span class="n">own_cdf</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">own_pdf</span><span class="p">);</span> <span class="n">own_cdf</span> <span class="o">/=</span> <span class="nb">max</span><span class="p">(</span><span class="n">own_cdf</span><span class="p">)</span>
+
+<span class="c1"># Define a function to return N samples
+</span><span class="k">def</span> <span class="nf">genSamples</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+	<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
+	<span class="n">func_interp</span> <span class="o">=</span> <span class="n">interp1d</span><span class="p">(</span><span class="n">own_cdf</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+	<span class="n">samples</span> <span class="o">=</span> <span class="n">func_interp</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+	<span class="k">return</span> <span class="n">samples</span>
+
+<span class="n">own_samples</span> <span class="o">=</span> <span class="n">genSamples</span><span class="p">(</span><span class="mf">1E4</span><span class="p">)</span></code></pre></figure>
+
+<dl class="wp-caption aligncenter" style="max-width: 700px">
+
+<dt><a href=""><img class="" src="/images/own_cdf_pdf_samples.jpg" alt="Samples generated using the CDF and interpolation method" /></a></dt>
+
+<dd>Samples generated using the CDF and interpolation method</dd>
+</dl>
+
+<p align="justify">Here we have a nice distribution with 10 000 random samples drawn using the CDF. It looks similar to the one using <code>rv_continuous</code>!</p>
+:ET
