@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Jul 2020 14:53:59 +0100</pubDate>
-    <lastBuildDate>Sat, 11 Jul 2020 14:53:59 +0100</lastBuildDate>
+    <pubDate>Sat, 18 Jul 2020 15:40:38 +0100</pubDate>
+    <lastBuildDate>Sat, 18 Jul 2020 15:40:38 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -29,11 +29,11 @@ https://www.stats.ox.ac.uk/~teh/&quot;&gt;Prof. Yee Whye Teh&lt;/a&gt; in which 
 	&lt;/blockquote&gt;
 
 
-  &lt;li&gt;ICML 2020 (12&lt;sup&gt;th&lt;/sup&gt; July to 18&lt;sup&gt;th&lt;/sup&gt; July, &lt;a href=&quot;https://icml.cc/virtual/2020&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;ICML 2020&lt;/u&gt; (12&lt;sup&gt;th&lt;/sup&gt; July to 18&lt;sup&gt;th&lt;/sup&gt; July, &lt;a href=&quot;https://icml.cc/virtual/2020&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
 
-  &lt;li&gt;OxML 2020 (17&lt;sup&gt;th&lt;/sup&gt; August to 25&lt;sup&gt;th&lt;/sup&gt; August, &lt;a href=&quot;https://www.oxfordml.school/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;OxML 2020&lt;/u&gt; (17&lt;sup&gt;th&lt;/sup&gt; August to 25&lt;sup&gt;th&lt;/sup&gt; August, &lt;a href=&quot;https://www.oxfordml.school/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
 
-  &lt;li&gt;GPSS 2020 (14&lt;sup&gt;th&lt;/sup&gt; September to 17&lt;sup&gt;th&lt;/sup&gt; September, &lt;a href=&quot;
+  &lt;li&gt;&lt;u&gt;GPSS 2020&lt;/u&gt; (14&lt;sup&gt;th&lt;/sup&gt; September to 17&lt;sup&gt;th&lt;/sup&gt; September, &lt;a href=&quot;
 http://gpss.cc/gpss20/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
 
 &lt;/ol&gt;
@@ -51,12 +51,25 @@ http://gpss.cc/gpss20/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&qu
       </item>
     
       <item>
+        <title>Research Paper</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;In this post, I will go through the steps I have personally found useful to do my research and lead the latter towards a publication.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Jul 2020 19:08:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/2020/07/Research-Paper</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/07/Research-Paper</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
+    
+      <item>
         <title>Black Lives Matter Protests</title>
         <description>&lt;p align=&quot;justify&quot;&gt;Since the death of George Floyd on the 25&lt;sup&gt;th&lt;/sup&gt; May 2020 (see article on &lt;a href=&quot;https://en.wikipedia.org/wiki/Killing_of_George_Floyd&quot;&gt;Wikipedia&lt;/a&gt;), there has been ongoing protest not only in the US but all over the world, where people are expressing their concerns about systemic racism and unfair injustices on Black people. Growing up in Mauritius, which is a pluri-cultural, multi-lingual and multi-ethinic society, I have a deep feeling and connection with this issue and hopefully, through this post, I will put forward some of my views on this.&lt;/p&gt;
 
 &lt;p align=&quot;justify&quot;&gt;It goes without saying that our past will define our future, and indeed, in the Mauritian context, despite the fact that our ancestors had been subject to slavery (&lt;a href=&quot;https://en.wikipedia.org/wiki/History_of_Mauritius&quot;&gt;History of Mauritius&lt;/a&gt;), today, we are enjoying the full freedom of religion, press, speech and many more. This makes us one of the highly ranked countries where these are generously acceptable. That said, I am not at all claiming that my island is a paradise, which is often the outlook at the international level. We still have much work to do, in order to combat, for example, poverty, crime, corruption and many more. I am almost certain that these form part of every countries' issues that need to be addressed.&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;My next journey was in Cape Town where I spent two years for my MSc. As we all know, South Africa went through the Apartheid and I could still feel the tension among the people. Sadly, when I was there, students from the University of Cape Town were protesting for the Rhodes memorial to be removed (&lt;a href=&quot;https://en.wikipedia.org/wiki/Rhodes_Must_Fall&quot;&gt;Rhodes Must Fall&lt;/a&gt;). On Facebook, I could see Black people being referred to as 'Black Monkeys' and this had an impact on me. Are we living in a society where people are pretending everything is okay? On the other hand, I remember a friend telling me, 'you don't know what those people did to our parents and grand-parents'. Another friend told me that his grand-dad had to live with a bullet in his face because the doctor said that if it were to be removed, he would have passed away.&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;My next journey was in Cape Town where I spent two years for my MSc. As we all know, South Africa went through the Apartheid and I could still feel the tension among the people. Sadly, when I was there, students from the University of Cape Town were protesting for the Rhodes memorial to be removed (&lt;a href=&quot;https://en.wikipedia.org/wiki/Rhodes_Must_Fall&quot;&gt;Rhodes Must Fall&lt;/a&gt;). On Facebook, Black people were constantly being referred to as 'Black Monkeys' and this had an impact on me. Are we living in a society where people are pretending everything is okay? On the other hand, I remember a friend telling me, 'you don't know what those people did to our parents and grand-parents'. Another friend told me that his grand-dad had to live with a bullet in his face because the doctor said that if it were to be removed, he would have passed away.&lt;/p&gt;
 
 &lt;p align=&quot;justify&quot;&gt;I am surprised that we often respond according to the 'action-reaction' principle (Newton's first law: for every action there will be an equal and opposite reaction). If we did not have the protests related to the killing of Black people, then maybe there would have been no (re)action. My question is, why do we even have to call people Black, White or Coloured? Why do we need to associate a colour based on our skin colour? Since I come from Mauritius, I do not even know what my ethnic background is and this often gets asked when filling in forms. On the flip side, I am glad that various actions have been adopted since the protests and two which I am aware of are:&lt;/p&gt;
 &lt;ol&gt;
@@ -64,7 +77,7 @@ http://gpss.cc/gpss20/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&qu
   &lt;li&gt;Google commitments to racial equity (&lt;a href=&quot;https://www.blog.google/inside-google/company-announcements/commitments-racial-equity/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p align=&quot;justify&quot;&gt;I personally think that we can do more. I am certain that many people from Africa do not know how to leverage these opportunities. They need to be sensitised about the process and make them feel they have a place of belonging. I am grateful to all my colleagues that we now have sessions dedicated to BAME (Black Asian Minority Ethnic). I strongly believe that education is the main pillar towards building a fair and equal society. If a department (let us consider, for simplicity, just 100 universities from Europe and US) takes the initiative to fund at least 1 student from Africa every year for a time lapse of 10 years, then at the end of the process, we will have at least 1000 students who have had access to world-class education. I remember a saying from my parents, which essentially says, 'be a light that can never be extinguished' and I strongly opine that it's only education which enables one to be someone in life.&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;I personally think that we can do more to alleviate this issue of (systemic) racism in our society. I am certain that many people from Africa do not know how to leverage these opportunities. They need to be sensitised about the process and make them feel they have a place of belonging. I am grateful to all my colleagues that we now have sessions dedicated to BAME (Black Asian Minority Ethnic). I strongly believe that education is the main pillar towards building a fair and equal society. If a department (let us consider, for simplicity, just 100 universities from Europe and US) takes the initiative to fund at least 1 student from Africa every year for a time lapse of 10 years, then at the end of the process, we will have at least 1000 students who have had access to world-class education. I remember a saying from my parents, which essentially says, 'be a light that can never be extinguished' and I strongly opine that it's only education which enables one to be someone in life.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 10 Jun 2020 16:30:00 +0100</pubDate>
@@ -582,62 +595,6 @@ The SDDR is important to judge whether the inclusion of extra parameters in nest
         <pubDate>Sun, 21 May 2017 07:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model</guid>
-        
-        
-        <category>Machine Learning and Statistics</category>
-        
-      </item>
-    
-      <item>
-        <title>Bayesian Model Selection</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({ TeX: { extensions: [&quot;color.js&quot;] }});
-&lt;/script&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Given a data set, one could presumably use various models to explain the data. One of the key questions underlying science is that of model selection: how do we select between competing theories which purport to explain observed data? The great paradigm shifts in science fall squarely into this domain. With so many models available to us, overfitting remains a real issue. Hence, choosing the most suitable model is essential in the Statistics world.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;In the context of astronomy - as with most areas of science - the next two decades will see a massive increase in data volume through large surveys such as the Square Kilometre Array (SKA) and the Large Synoptic Survey Telescope (LSST). Robust statistical analysis to perform model selection at scale will be a critical factor in the success of such future surveys.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;Although, we might have very good data, we may not know when to stop fitting. Two competing models may equally fit the data properly but how do we choose the most appropriate model? The solution in fact lies in the simpler model being preferred. This is known as the &lt;i&gt;Occam’s razor&lt;/i&gt;. The complex model which explains the data somewhat better compared to the simpler model should be penalised for the additional parameters that it introduces. Extra parameters bring about lack of predictability. In this spectrum, Bayesian model selection is becoming an increasingly important tool to determine whether or not the introduction of a new parameter is justified by the data.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;In this post, we will focus only on the calculation of the &lt;b&gt;Bayesian Evidence&lt;/b&gt;, which is often regarded as the average likelihood under the prior. The evidence is the normalisation integral of the product of the likelihood and the prior and is often referred to as the &lt;i&gt;model likelihood&lt;/i&gt;, or the &lt;i&gt;marginal likelihood&lt;/i&gt; and is denoted by $\mathbb{Z}$. It is interpreted as the probability of the data $\left(\mathcal{D}\right)$ given the model $\left(\mathcal{M}\right)$. The Bayesian Evidence is given as &lt;/p&gt;
-
-&lt;p&gt;\begin{equation}
-\mathbb{Z}\equiv\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)=\int\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)\,\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)\,d\boldsymbol{\theta}
-\end{equation}&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;where $\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)$ is the likelihood function which should typically reflect the way the data is obtained and $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)$ is the prior distribution for the parameters. Using Bayes' theorem, we can write&lt;/p&gt;
-
-\[\mathcal{P}\left(\mathcal{M}\left|\mathcal{D}\right.\right)=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)\mathcal{P}\left(\mathcal{M}\right)}{\mathcal{P}\left(\mathcal{D}\right)}\]
-
-&lt;p align=&quot;justify&quot;&gt;The left-hand side of equation is the posterior probability of the model given the data. Consider two competing models $\mathcal{M}_{1}$ and $\mathcal{M}_{2}$. The ratio of the respective posterior probabilities of the models, given the data is&lt;/p&gt;
-
-\[\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}\,\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}\]
-
-&lt;p align=&quot;justify&quot;&gt;Note that $\mathcal{P}\left(\mathcal{D}\right)$ is only a constant and can be dropped when calculating the ratio of posterior probability of the models. The ratio $$B_{12}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}$$ is the &lt;b&gt;Bayes factor&lt;/b&gt; and is, in fact, the ratio of the models' evidences. The ratio $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}$$ is the posterior odds while $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}$$ is the prior odds. Therefore, in words, one can describe the above as &lt;/p&gt;
-
-\[\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}\]
-
-&lt;p align=&quot;justify&quot;&gt;In the case of non-committal priors on the models, that is, $\mathcal{P}\left(\mathcal{M}_{1}\right)=\mathcal{P}\left(\mathcal{M}_{2}\right)$, the posterior odds are just equal to the Bayes factor. As $B_{12}$ increases, our belief that model $\mathcal{M}_{1}$ is better than model $\mathcal{M}_{2}$ increases. Otherwise, model $\mathcal{M}_{2}$ will be the preferred one. Therefore, the Bayes factor indicates how the relative odds vary in the light of new data, irrespective of the prior odds of the models. The Bayes factor is typically interpreted by referring to the Jeffreys' scale (see &lt;a href=&quot;http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572&quot;&gt;Kass et al., 1995&lt;/a&gt;). It is an empirically determined scale as shown in the table below &lt;/p&gt;
-
-&lt;style&gt;
-table {width: 53%;}
-&lt;/style&gt;
-
-&lt;center&gt; 
-&lt;table class=&quot;tableizer-table&quot;&gt;
-&lt;thead&gt;&lt;tr class=&quot;tableizer-firstrow&quot;&gt;&lt;th&gt;$\textrm{ln }\left(B_{12}\right)$&lt;/th&gt;&lt;th&gt;$B_{12}$&lt;/th&gt;&lt;th&gt;Evidence against $\mathcal{M}_{2}$&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;0 to 1&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;1 to 3&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Inconclusive&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;1 to 3&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;3 to 20&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Weak Evidence&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;3 to 5&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;20 to 150&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Moderate Evidence&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&amp;gt;5&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&amp;gt;150&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;Strong Evidence&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;/center&gt;
-
-</description>
-        <pubDate>Sat, 20 May 2017 07:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/Bayesian-Model-Selection</guid>
         
         
         <category>Machine Learning and Statistics</category>
