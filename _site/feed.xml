@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Jul 2020 15:40:38 +0100</pubDate>
-    <lastBuildDate>Sat, 18 Jul 2020 15:40:38 +0100</lastBuildDate>
+    <pubDate>Fri, 14 Aug 2020 08:51:25 +0100</pubDate>
+    <lastBuildDate>Fri, 14 Aug 2020 08:51:25 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -31,6 +31,11 @@ https://www.stats.ox.ac.uk/~teh/&quot;&gt;Prof. Yee Whye Teh&lt;/a&gt; in which 
 
   &lt;li&gt;&lt;u&gt;ICML 2020&lt;/u&gt; (12&lt;sup&gt;th&lt;/sup&gt; July to 18&lt;sup&gt;th&lt;/sup&gt; July, &lt;a href=&quot;https://icml.cc/virtual/2020&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
 
+  &lt;p align=&quot;justify&quot;&gt;We had a plethora of talks, workshops and tutorials for ICML 2020. I was particularly focused on the Invertible Neural Networks, Normalizing Flows, and Explicit Likelihood Models workshop (&lt;a href=&quot;https://icml.cc/virtual/2020/workshop/5742&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;) and we had an interesting talk on how deep learning techniques are being used in Science by &lt;a href=&quot;https://en.wikipedia.org/wiki/Kyle_Cranmer&quot;&gt;Kyle Cranmer&lt;/a&gt;. Moreover, I also followed the nice tutorial on Bayesian Deep Learning and a Probabilistic Perspective of Model Construction (&lt;a href=&quot;https://icml.cc/virtual/2020/tutorial/5750&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;) by &lt;a href=&quot;https://cims.nyu.edu/~andrewgw/&quot;&gt;Andrew Wilson.&lt;/a&gt; We also had the opportunity to participate in various mentoring sessions (career advice, rising topics in Machine Learning, equality and many more) which are enormously helpful as a student.&lt;/p&gt;
+
+
+
+
   &lt;li&gt;&lt;u&gt;OxML 2020&lt;/u&gt; (17&lt;sup&gt;th&lt;/sup&gt; August to 25&lt;sup&gt;th&lt;/sup&gt; August, &lt;a href=&quot;https://www.oxfordml.school/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
 
   &lt;li&gt;&lt;u&gt;GPSS 2020&lt;/u&gt; (14&lt;sup&gt;th&lt;/sup&gt; September to 17&lt;sup&gt;th&lt;/sup&gt; September, &lt;a href=&quot;
@@ -52,7 +57,52 @@ http://gpss.cc/gpss20/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&qu
     
       <item>
         <title>Research Paper</title>
-        <description>&lt;p align=&quot;justify&quot;&gt;In this post, I will go through the steps I have personally found useful to do my research and lead the latter towards a publication.&lt;/p&gt;
+        <description>&lt;p align=&quot;justify&quot;&gt;In this post, I will go through the steps I have personally found useful to do my research and lead the latter towards a publication. In general, the first paper (as first author) is always the most challenging part. It is through this process that I have learned how to think critically and to answer questions such as 'why is this research important?', 'where is it going to be used', 'how is it different from previous work?', 'what are the new contributions to the field as a whole?', 'how do I manage my time properly?' and various others.&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;&lt;b&gt;Project definition&lt;/b&gt;&lt;/li&gt;
+	&lt;p align=&quot;justify&quot;&gt;In the very first step, we normally start with a project definition. However, there is always an element of risk when defining a project. Some friends of mine have confessed that their projects did not seem to be promising after spending a few months on them.&lt;/p&gt;	
+	&lt;li&gt;&lt;b&gt;Brainstorming&lt;/b&gt;&lt;/li&gt;
+	&lt;p align=&quot;justify&quot;&gt;To avoid pitfalls (as we discussed in the first point), I highly recommend having brainstorming sessions with your collaborators and identify possible risks and limitations.&lt;/p&gt;
+	&lt;blockquote&gt;
+	&lt;p align=&quot;justify&quot;&gt;&lt;small&gt;&lt;i&gt;&quot;If I had an hour to solve a problem I’d spend 55 minutes thinking about the problem and five minutes thinking about solutions.&quot;&lt;/i&gt; - Albert Einstein&lt;/small&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+	&lt;li&gt;&lt;b&gt;Identify a main reference paper&lt;/b&gt;&lt;/li&gt;
+	&lt;p align=&quot;justify&quot;&gt;In general, finding a main reference paper is fundamental to the whole process. This implies understanding the paper, Mathematics and be able to implement (code) at least part of the paper.&lt;/p&gt;
+	&lt;li&gt;&lt;b&gt;Fill in the gaps&lt;/b&gt;&lt;/li&gt;
+	&lt;p align=&quot;justify&quot;&gt;At this point, we typically have a blurry image of how to channel the main idea (project), a large part due to missing knowledge about a specific topic. It would be very helpful to master certain topics (through textbooks, notes, internet, Youtube, Github) in order to fill in the gaps.&lt;/p&gt;
+	&lt;li&gt;&lt;b&gt;Experiments&lt;/b&gt;&lt;/li&gt;
+	&lt;p align=&quot;justify&quot;&gt;This is probably the most important part in the entire process, where we will be writing and testing our codes. This step might seem to be daunting for we will encounter many failures. However,&lt;/p&gt;	
+	&lt;blockquote&gt;
+	&lt;p align=&quot;justify&quot;&gt;&lt;small&gt;&lt;i&gt;&quot;Failure provides the opportunity to begin again, more intelligently.&quot;&lt;/i&gt; - Henry Ford&lt;/small&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+	&lt;li&gt;&lt;b&gt;Updates&lt;/b&gt;&lt;/li&gt;
+	&lt;p align=&quot;justify&quot;&gt;	Crucially, it would be nice to simultaneously document our code and write a draft paper as we are working. This allows us to keep track of everything we have been working on since the start of the project.&lt;/p&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;b&gt;The Paper&lt;/b&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;Different papers have different format. It is important to first check and work with the right format in the very beginning itself to maximise efficiency. Below are some brief suggestions I received from my supervisors:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;&lt;u&gt;Abstract&lt;/u&gt;: Summarise key findings. Numbers are essential.&lt;/li&gt;
+	&lt;li&gt;&lt;u&gt;Introduction&lt;/u&gt;: Motivate the study.&lt;/li&gt;
+	&lt;li&gt;&lt;u&gt;Body&lt;/u&gt;: Elaborate on the theory, data, methods and results.&lt;/li&gt;
+	&lt;li&gt;&lt;u&gt;Conclusion&lt;/u&gt;: Remind the reader what the paper is about and explain briefly that the aims have been met.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;b&gt;Most Important Suggestions&lt;/b&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Keep in touch with your supervisors (emails and weekly meetings).&lt;/li&gt;
+	&lt;li&gt;Have at least one mentor - I have found it easier to speak to my collaborator who is a Research Fellow.&lt;/li&gt;
+	&lt;li&gt;Always make notes - we are in a world with a wealth of information. It is important to channel ideas and information.&lt;/li&gt;
+	&lt;li&gt;Do not stick with yourself. In other words, do not pigeonhole yourself.&lt;/li&gt;
+	&lt;li&gt;Ask questions - there is no stupid question.&lt;/li&gt;
+	&lt;blockquote&gt;
+	&lt;p align=&quot;justify&quot;&gt;&lt;small&gt;&lt;i&gt;&quot;If you ask a stupid question, you may feel stupid; if you don't ask a stupid question, you remain stupid.&quot;&lt;/i&gt; - Tony Rothman&lt;/small&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+	&lt;li&gt;Understanding is key. Some pieces of work are rather engineering but we should be able to explain the concept behind.&lt;/li&gt;
+	&lt;li&gt;Acknowledge that we do not understand something and as we seek knowledge/help/support, we shall receive.&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Fri, 10 Jul 2020 19:08:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2020/07/Research-Paper</link>
