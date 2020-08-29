@@ -72,6 +72,14 @@ Solving linear equations with messenger-field and conjugate gradient techniques 
 </ol>
 
 
+<p><b><font size="4">2012</font></b></p>
+<ol type="1">
+
+<li>Representation Learning: A Review and New Perspectives (arXiv, <a href="https://arxiv.org/pdf/1206.5538.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
+</ol>
+
+
 <p><b><font size="4">2011</font></b></p>
 <ol type="1">
 
