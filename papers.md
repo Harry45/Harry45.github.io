@@ -11,11 +11,20 @@ Below is a collection of papers, which I have found interesting (useful and rele
 
 <p><b><font size="4">2020</font></b></p>
 <ol type="1">
+
+
+<li>The carbon impact of artifcial intelligence (Nature Machine Intelligence, <a href="https://www.nature.com/articles/s42256-020-0219-9.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
 <li>Decolonial AI: Decolonial Theory as Sociotechnical Foresight in Artificial Intelligence (Philosophy and Technology, Springer, <a href="https://link.springer.com/content/pdf/10.1007/s13347-020-00405-8.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
 <li>AI for social good: unlocking the opportunity for positive impact (Nature Communications, <a href="https://www.nature.com/articles/s41467-020-15871-z.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
 <li>A Survey of Deep Learning for Scientific Discovery (arXiv, <a href="https://arxiv.org/abs/2003.11755"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
 <li>The Case for Bayesian Deep Learning (arXiv, <a href="https://arxiv.org/abs/2001.10995"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
 <li>Lagrangian Neural Networks (arXiv, <a href="https://arxiv.org/pdf/2003.04630.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+
 <li>Four Steps Towards Robust Artificial Intelligence (arXiv, <a href="https://arxiv.org/pdf/2002.06177.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 </ol>
 
