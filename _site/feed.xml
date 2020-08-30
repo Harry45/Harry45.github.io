@@ -5,42 +5,31 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Aug 2020 09:54:30 +0100</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2020 09:54:30 +0100</lastBuildDate>
+    <pubDate>Sun, 30 Aug 2020 05:19:05 +0100</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2020 05:19:05 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
         <title>Virtual Workshops</title>
         <description>&lt;p align=&quot;justify&quot;&gt;Since the COVID-19 lockdown, we have had to adapt to a completely new paradigm, that is, 'working from home'. Although not encouraged prior to this pandemic, I have personally found that I have been quite efficient at multi-tasking. In this post, I will focus on the virtual workshops which I have attended (or will attend).  &lt;/p&gt;
-
 &lt;ol&gt;
   &lt;li&gt;&lt;u&gt;ICLR 2020&lt;/u&gt; (26&lt;sup&gt;th&lt;/sup&gt; April to 1&lt;sup&gt;st&lt;/sup&gt; May, &lt;a href=&quot;https://iclr.cc/virtual_2020/index.html&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-	&lt;p align=&quot;justify&quot;&gt;I had the opportunity to present my work on Weak Lensing, Compression and Gaussian Processes (see &lt;a href=&quot;https://slideslive.com/38926202/gaussian-processes-emulator-and-moped-for-weak-lensing&quot;&gt;here&lt;/a&gt;) at the ICLR 2020. Apart from my work, it was quite inspiring to see how Machine Learning has developed from a purely scientific field to an engineering field. Today, it encompasses almost all branch of Science and Engineering. One of the main focus was on Climate Change, which is undeniably one of the hardest problems that humanity is currently facing.&lt;/p&gt;
-
+  &lt;p align=&quot;justify&quot;&gt;I had the opportunity to present my work on Weak Lensing, Compression and Gaussian Processes (see &lt;a href=&quot;https://slideslive.com/38926202/gaussian-processes-emulator-and-moped-for-weak-lensing&quot;&gt;here&lt;/a&gt;) at the ICLR 2020. Apart from my work, it was quite inspiring to see how Machine Learning has developed from a purely scientific field to an engineering field. Today, it encompasses almost all branch of Science and Engineering. One of the main focus was on Climate Change, which is undeniably one of the hardest problems that humanity is currently facing.&lt;/p&gt;
   &lt;li&gt;&lt;u&gt;MLSS 2020&lt;/u&gt; (28&lt;sup&gt;th&lt;/sup&gt; June to 10&lt;sup&gt;th&lt;/sup&gt; July, &lt;a href=&quot;http://mlss.tuebingen.mpg.de/2020/schedule.html&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-
-
   &lt;p align=&quot;justify&quot;&gt;Although I did not register for this workshop, we all had the opportunity to follow all talks live on Youtube. In particular, since my work is closely related to Bayesian Analysis, I was inspired by &lt;a href=&quot;https://shakirm.com/&quot;&gt;Shakir&lt;/a&gt;'s talks (Bayesian Inference I and II). Another topic which got me thinking was Meta-Learning by &lt;a href=&quot;
-https://www.stats.ox.ac.uk/~teh/&quot;&gt;Prof. Yee Whye Teh&lt;/a&gt; in which he refers to the following:&lt;/p&gt;
-	&lt;blockquote&gt;
-	&lt;p align=&quot;justify&quot;&gt;&lt;small&gt;&lt;i&gt;&quot;Our training procedure is based on a simple machine learning principle: test and train
-	conditions must match&quot;&lt;/i&gt; -
-	 &lt;a href=&quot;https://papers.nips.cc/paper/6385-matching-networks-for-one-shot-learning&quot;&gt;Vinyals et al. 2016&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-	&lt;/blockquote&gt;
-
-
+    https://www.stats.ox.ac.uk/~teh/&quot;&gt;Prof. Yee Whye Teh&lt;/a&gt; in which he refers to the following:&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p align=&quot;justify&quot;&gt;&lt;small&gt;&lt;i&gt;&quot;Our training procedure is based on a simple machine learning principle: test and train
+      conditions must match&quot;&lt;/i&gt; -
+      &lt;a href=&quot;https://papers.nips.cc/paper/6385-matching-networks-for-one-shot-learning&quot;&gt;Vinyals et al. 2016&lt;/a&gt;&lt;/small&gt;
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
   &lt;li&gt;&lt;u&gt;ICML 2020&lt;/u&gt; (12&lt;sup&gt;th&lt;/sup&gt; July to 18&lt;sup&gt;th&lt;/sup&gt; July, &lt;a href=&quot;https://icml.cc/virtual/2020&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-
   &lt;p align=&quot;justify&quot;&gt;We had a plethora of talks, workshops and tutorials for ICML 2020. I was particularly focused on the Invertible Neural Networks, Normalizing Flows, and Explicit Likelihood Models workshop (&lt;a href=&quot;https://icml.cc/virtual/2020/workshop/5742&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;) and we had an interesting talk on how deep learning techniques are being used in Science by &lt;a href=&quot;https://en.wikipedia.org/wiki/Kyle_Cranmer&quot;&gt;Kyle Cranmer&lt;/a&gt;. Moreover, I also followed the nice tutorial on Bayesian Deep Learning and a Probabilistic Perspective of Model Construction (&lt;a href=&quot;https://icml.cc/virtual/2020/tutorial/5750&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;) by &lt;a href=&quot;https://cims.nyu.edu/~andrewgw/&quot;&gt;Andrew Wilson.&lt;/a&gt; We also had the opportunity to participate in various mentoring sessions (career advice, rising topics in Machine Learning, equality and many more) which are enormously helpful as a student.&lt;/p&gt;
-
-
-
-
   &lt;li&gt;&lt;u&gt;OxML 2020&lt;/u&gt; (17&lt;sup&gt;th&lt;/sup&gt; August to 25&lt;sup&gt;th&lt;/sup&gt; August, &lt;a href=&quot;https://www.oxfordml.school/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-
+  &lt;p align=&quot;justify&quot;&gt;We started this workshop with two important lectures which were related to my own research. The two lectures were on Bayesian Machine Learning by Cheng Zhang and Gaussian Processes by James Hensman. Moreover we had a series of other interesting lectures on Neural Networks, Natural Language Processing (NLP), Computer Vision, Representation Learning, Causal Machine Learning, Reinforcement Learning and many more. Along wih these lectures, we had various tutorials and unconference sessions where participant themselves took the initiative to discuss a specific topic in depth.&lt;/p&gt; 
   &lt;li&gt;&lt;u&gt;GPSS 2020&lt;/u&gt; (14&lt;sup&gt;th&lt;/sup&gt; September to 17&lt;sup&gt;th&lt;/sup&gt; September, &lt;a href=&quot;
-http://gpss.cc/gpss20/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-
+    http://gpss.cc/gpss20/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;!-- 
