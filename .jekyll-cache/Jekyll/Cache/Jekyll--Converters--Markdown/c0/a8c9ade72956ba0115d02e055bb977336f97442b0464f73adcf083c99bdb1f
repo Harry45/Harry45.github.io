@@ -1,10 +1,4 @@
----
-layout: page
-title: Books
-permalink: /books/
----
-
-<p align="justify">Below is a list of books (hardcopy) which I have since January 2006.</p>
+I"¢<p align="justify">Below is a list of books (hardcopy) which I have since January 2006.</p>
 
 <p><b><font size="4">Machine Learning</font></b> (University)</p>
 <ol type="1">
@@ -76,3 +70,4 @@ permalink: /books/
 <li> Advanced Physics - <b>Tom Duncan</b></li>
 <li> Complete Physics - <b>S. Pople</b></li>
 </ol>
+:ET

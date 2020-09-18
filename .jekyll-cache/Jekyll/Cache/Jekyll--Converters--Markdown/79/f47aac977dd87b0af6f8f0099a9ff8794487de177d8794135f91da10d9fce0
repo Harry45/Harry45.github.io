@@ -1,10 +1,4 @@
----
-layout: page
-title: Books
-permalink: /books/
----
-
-<p align="justify">Below is a list of books (hardcopy) which I have since January 2006.</p>
+I"Œ<p align="justify">Below is a list of books (hardcopy) which I have since January 2006.</p>
 
 <p><b><font size="4">Machine Learning</font></b> (University)</p>
 <ol type="1">
@@ -38,7 +32,7 @@ permalink: /books/
 
 <p><b><font size="4">General</font></b></p>
 <ol type="1">
-<li> Leading the Workforce of the Future: Inspiring a Mindset of Passion, Innovation and Growth - <b>Hyacinth, Brigette Tasha</b></li>
+<li> Leading the Workforce of the Future: Inspiring a Mindset of Passion, Innovation and Growth
 <li> The Book of Why - <b>Judea Pearl</b></li>
 <li> QED - The Strange Theory of Light and Matter - <b>Richard Feynman</b></li>
 <li> Thinking, Fast and Slow - <b>Daniel Kahneman</b></li>
@@ -54,7 +48,7 @@ permalink: /books/
 <li> How Google Works - <b>Eric Schmidt</b></li>
 <li> The Four: The Hidden DNA of Amazon, Apple, Facebook and Google - <b>Scott Galloway</b></li>
 <li> Work Rules! Insights from Inside Google That Will Transform How You Live and Lead - <b>Laszlo Bock</b></li>
-</ol>
+&lt;/ol&gt;
 
 <p><b><font size="4">Physics and Mathematics</font></b> (A-Level)</p>
 <ol type="1">
@@ -76,3 +70,5 @@ permalink: /books/
 <li> Advanced Physics - <b>Tom Duncan</b></li>
 <li> Complete Physics - <b>S. Pople</b></li>
 </ol>
+</li></ol>
+:ET

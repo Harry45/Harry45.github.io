@@ -1,13 +1,4 @@
----
-layout: page
-title: Papers
-permalink: /papers/
----
-
-Below is a collection of papers, which I have found interesting (useful and relevant for my research).
-
-
-
+I""<p>Below is a collection of papers, which I have found interesting (useful and relevant for my research).</p>
 
 <p><b><font size="4">2020</font></b></p>
 <ol type="1">
@@ -41,9 +32,6 @@ Below is a collection of papers, which I have found interesting (useful and rele
 <li>Reconciling modern machine-learning practice and the classical bias–variance trade-off (PNAS, <a href="https://www.pnas.org/content/116/32/15849"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 </ol>
 
-
-
-
 <p><b><font size="4">2018</font></b></p>
 <ol type="1">
 <li>Generalized massive optimal data compression (MNRAS, <a href="https://academic.oup.com/mnrasl/article/476/1/L60/4909822"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
@@ -53,7 +41,7 @@ Below is a collection of papers, which I have found interesting (useful and rele
 
 
 <li>
-Solving linear equations with messenger-field and conjugate gradient techniques (A&A, <a href="https://www.aanda.org/articles/aa/full_html/2018/12/aa32987-18/aa32987-18.html"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+Solving linear equations with messenger-field and conjugate gradient techniques (A&amp;A, <a href="https://www.aanda.org/articles/aa/full_html/2018/12/aa32987-18/aa32987-18.html"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 </ol>
 
 <p><b><font size="4">2017</font></b></p>
@@ -64,14 +52,12 @@ Solving linear equations with messenger-field and conjugate gradient techniques 
 
 </ol>
 
-
 <p><b><font size="4">2015</font></b></p>
 <ol type="1">
 <li>Probabilistic machine learning and artificial intelligence (Nature, <a href="https://www.nature.com/articles/nature14541"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>Deep learning (Nature, <a href="https://www.nature.com/articles/nature14539"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>Taking the Human Out of the Loop: A Review of Bayesian Optimization (IEEE, <a href="https://ieeexplore.ieee.org/document/7352306"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 </ol>
-
 
 <p><b><font size="4">2013</font></b></p>
 <ol type="1">
@@ -82,15 +68,12 @@ Solving linear equations with messenger-field and conjugate gradient techniques 
 
 </ol>
 
-
-
 <p><b><font size="4">2012</font></b></p>
 <ol type="1">
 
 <li>Representation Learning: A Review and New Perspectives (arXiv, <a href="https://arxiv.org/pdf/1206.5538.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
 </ol>
-
 
 <p><b><font size="4">2011</font></b></p>
 <ol type="1">
@@ -105,14 +88,12 @@ Solving linear equations with messenger-field and conjugate gradient techniques 
 
 </ol>
 
-
 <p><b><font size="4">2010</font></b></p>
 <ol type="1">
 
 <li>A Tutorial on Bayesian Optimization (arXiv, <a href="https://arxiv.org/abs/1012.2599"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
 </ol>
-
 
 <p><b><font size="4">Before 2010</font></b></p>
 <ol type="1">
@@ -142,7 +123,6 @@ Solving linear equations with messenger-field and conjugate gradient techniques 
 
 </ol>
 
-
 <p><b><font size="4">Classical Papers</font></b></p>
 <ol type="1">
 
@@ -150,4 +130,4 @@ Solving linear equations with messenger-field and conjugate gradient techniques 
 
 </ol>
 
-
+:ET
