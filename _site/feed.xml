@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Sep 2020 09:23:54 +0100</pubDate>
-    <lastBuildDate>Sat, 19 Sep 2020 09:23:54 +0100</lastBuildDate>
+    <pubDate>Sat, 19 Sep 2020 09:27:40 +0100</pubDate>
+    <lastBuildDate>Sat, 19 Sep 2020 09:27:40 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -27,7 +27,7 @@
 
 &lt;ol&gt;
 
-&lt;li&gt;Deep Learning with PyTorch (&lt;a href=&quot;https://atcold.github.io/pytorch-Deep-Learning/&quot;&gt;Lecture Notes&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/playlist?list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq&quot;&gt;Videos&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Deep Learning with PyTorch (&lt;a href=&quot;https://atcold.github.io/pytorch-Deep-Learning/&quot;&gt;Lecture Notes&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/playlist?list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq&quot;&gt;Videos&lt;/a&gt;) by Prof. Yann LeCun and Alfredo Canziani&lt;/li&gt;
 
 &lt;li&gt;MIT 6. S191 Introduction to Deep Learning (&lt;a href=&quot;http://introtodeeplearning.com/&quot;&gt;Lecture Notes&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&quot;&gt;Videos&lt;/a&gt;)&lt;/li&gt;
 
