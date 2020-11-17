@@ -3,10 +3,12 @@ layout: post
 mathjax: true
 title:  "Gaussian Process"
 date:   2016-10-08 12:00:00
-author: A.Mootoovaloo
+author: A. Mootoovaloo
 permalink:
 categories:
-  - Machine Learning and Statistics
+
+  + Machine Learning and Statistics
+
 tags:
   - 
   -
@@ -28,14 +30,14 @@ excerpt:
 \end{matrix}\right)
 \end{align}
 
-<p align="justify">Then, the joint distribution of $x_{1}$ and $x_{2}$, that is, $\mathcal{P}\left(x_{1},\,x_{2}\right)$ can be written as</p>
+<p align="justify">Then, the joint distribution of $x_{1}$ and $x_{2}$, that is, $\mathcal{P}\left(x_{1}, \, x_{2}\right)$ can be written as</p>
 
 \begin{align}
-\mathcal{P}\left(x_{1},\,x_{2}\right)=\dfrac{1}{\left|2\pi\boldsymbol{\Sigma}\right|^{\frac{1}{2}}}\,\textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{x}-\boldsymbol{\mu}\right)^{\textrm{T}}\boldsymbol{\Sigma}^{-1}\left(\mathbf{x}-\boldsymbol{\mu}\right)\right]
+\mathcal{P}\left(x_{1}, \, x_{2}\right)=\dfrac{1}{\left|2\pi\boldsymbol{\Sigma}\right|^{\frac{1}{2}}}\, \textrm{exp}\left[-\dfrac{1}{2}\left(\mathbf{x}-\boldsymbol{\mu}\right)^{\textrm{T}}\boldsymbol{\Sigma}^{-1}\left(\mathbf{x}-\boldsymbol{\mu}\right)\right]
 \label{eq:2d_gaussian}
 \end{align}
 
-<p align="justify">Using $\mathcal{P}\left(x_{1},\,x_{2}\right)=\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)\mathcal{P}\left(x_{2}\right)$, it can be shown that the conditional $\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)$ is also a quadratic with the mean and variance given by </p>
+<p align="justify">Using $\mathcal{P}\left(x_{1}, \, x_{2}\right)=\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)\mathcal{P}\left(x_{2}\right)$, it can be shown that the conditional $\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)$ is also a quadratic with the mean and variance given by </p>
 
 \begin{align}
 \mu_{1\left|2\right.}=\mu_{1}+\Sigma_{12}\Sigma_{22}^{-1}\left(x_{2}-\mu_{2}\right)\hspace{3cm}\Sigma_{1\left|2\right.}=\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}
@@ -45,7 +47,7 @@ excerpt:
 <p align="justify">such that</p>
 
 \begin{align}
-\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)=\dfrac{1}{\sqrt{2\pi\Sigma_{1\left|2\right.}}}\,\textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{x_{1}-\mu_{1\left|2\right.}}{\Sigma_{1\left|2\right.}}\right)^{2}\right]
+\mathcal{P}\left(x_{1}\left|x_{2}\right.\right)=\dfrac{1}{\sqrt{2\pi\Sigma_{1\left|2\right.}}}\, \textrm{exp}\left[-\dfrac{1}{2}\left(\dfrac{x_{1}-\mu_{1\left|2\right.}}{\Sigma_{1\left|2\right.}}\right)^{2}\right]
  \label{eq:marginals_distribution}
 \end{align}
 
@@ -55,48 +57,48 @@ excerpt:
 
 <h2>GP for Regression</h2>
 
-<p align="justify">In Bayesian Parameter Inference, in which case we have a parametric model $\mathcal{M}$ and some data $\mathcal{D}$, we would want to infer the posterior distribution of the parameters, that is, $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M},\,\mathcal{D}\right.\right)$. On the other hand, a GP in fact defines a prior over the functions itself, such that it can be mapped to a posterior given some data $\mathcal{D}$. In this section, we will show how we can take adavantage of the nice properties of the above to predict the likely value of a function for a given $x_{*}$. The major assumption we will make is that the testing set of data is from the same distribution as the training set of data.</p>
+<p align="justify">In Bayesian Parameter Inference, in which case we have a parametric model $\mathcal{M}$ and some data $\mathcal{D}$, we would want to infer the posterior distribution of the parameters, that is, $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}, \, \mathcal{D}\right.\right)$. On the other hand, a GP in fact defines a prior over the functions itself, such that it can be mapped to a posterior given some data $\mathcal{D}$. In this section, we will show how we can take adavantage of the nice properties of the above to predict the likely value of a function for a given $x_{*}$. The major assumption we will make is that the testing set of data is from the same distribution as the training set of data.</p>
 
 <h4><b>Noise-Free Case</b></h4>
 
-<p align="justify">Suppose we have a set of data, $\mathcal{D}=\left\{ \left(x_{i},\,f_{i}\right)\right\}$ for $i=1,2,3,\ldots N$, where $f$ is assumed to be an observable without noise. Now, given $x_{*}$, we would like to predict $f_{*}$ as well as its variance, $\Sigma_{*}$. In a sense, we effectively want the posterior distributions of $f_{*}$ given $x_{*}$, $x$ and $f$. Using Bayes' Theorem, we can write </p>
+<p align="justify">Suppose we have a set of data, $\mathcal{D}=\left\{ \left(x_{i}, \, f_{i}\right)\right\}$ for $i=1, 2, 3, \ldots N$, where $f$ is assumed to be an observable without noise. Now, given $x_{*}$, we would like to predict $f_{*}$ as well as its variance, $\Sigma_{*}$. In a sense, we effectively want the posterior distributions of $f_{*}$ given $x_{*}$, $x$ and $f$. Using Bayes' Theorem, we can write </p>
 
 \begin{align}
-\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)=\dfrac{\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)}{\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)}
-\label{eq:BayesTheorem}
+\mathcal{P}\left(\mathbf{f}\left|\mathbf{y}, \, \mathbf{X}\right.\right)=\dfrac{\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}, \, \mathbf{f}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)}{\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)}
+\label{eq: BayesTheorem}
 \end{align}
 
-<p align="justify">where $\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)$ is the posterior distribution of the function, $\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)$ is the prior, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)$ is the likelihood and $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ is the marginal likelihood which is simply given by</p>
+<p align="justify">where $\mathcal{P}\left(\mathbf{f}\left|\mathbf{y}, \, \mathbf{X}\right.\right)$ is the posterior distribution of the function, $\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)$ is the prior, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}, \, \mathbf{f}\right.\right)$ is the likelihood and $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ is the marginal likelihood which is simply given by</p>
 
 \begin{align}
-\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=\int\mathcal{P}\left(\mathbf{y}\left|\mathbf{X},\,\mathbf{f}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)d\mathbf{f}
+\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=\int\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}, \, \mathbf{f}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}\right.\right)d\mathbf{f}
 \label{eq:marginal_likelihood}
 \end{align}
 
 <p align="justify">Given now a new data $x_{*}$, the posterior distribution of $f_{*}$ is simply obtained by marginalisation.</p>
 
 \begin{align}
-\mathcal{P}\left(y_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)=\int\mathcal{P}\left(y_{*}\left|\mathbf{f},\,x_{*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}
+\mathcal{P}\left(y_{*}\left|\mathbf{y}, \, \mathbf{X}, \, x_{*}\right.\right)=\int\mathcal{P}\left(y_{*}\left|\mathbf{f}, \, x_{*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y}, \, \mathbf{X}\right.\right)\, d\mathbf{f}
 \end{align}
 
 <p align="justify">The prior on the regression function which is a Gaussian Process, GP denoted by </p>
 
 \begin{align}
-f\left(\mathbf{X}\right)\sim\textrm{GP}\left(\boldsymbol{\mu}\left(\mathbf{X}\right),\,\kappa\left(\mathbf{X},\,\mathbf{X}'\right)\right)
+f\left(\mathbf{X}\right)\sim\textrm{GP}\left(\boldsymbol{\mu}\left(\mathbf{X}\right), \, \kappa\left(\mathbf{X}, \, \mathbf{X}'\right)\right)
 \label{definition_gp}
 \end{align}
 
-<p align="justify">where $\boldsymbol{\mu}\left(\mathbf{X}\right)$ is the mean of the function while $\kappa\left(\mathbf{X},\,\mathbf{X}'\right)$ is the covariance matrix, which is constructed using a kernel. In particular, for this example, we will consider the squared-exponential kernel,</p>
+<p align="justify">where $\boldsymbol{\mu}\left(\mathbf{X}\right)$ is the mean of the function while $\kappa\left(\mathbf{X}, \, \mathbf{X}'\right)$ is the covariance matrix, which is constructed using a kernel. In particular, for this example, we will consider the squared-exponential kernel, </p>
 
 \begin{align}
-\kappa\left(x,\,x'\right)=\sigma^{2}\,\textrm{exp}\left(-\dfrac{\left(x-x'\right)^{2}}{2\ell^{2}}\right)
+\kappa\left(x, \, x'\right)=\sigma^{2}\, \textrm{exp}\left(-\dfrac{\left(x-x'\right)^{2}}{2\ell^{2}}\right)
 \label{squared_exponential}
 \end{align}
 
 <p align="justify">where $\ell$ and $\sigma$ control the horizontal and vertical variations respectively. The kernel encapsulates the correlation between two datapoints. What we would ideally want is the following - if two datapoints are close to each other, that is, $x-x'\approx0$, we would expect strong correlation, while if $x-x'\rightarrow\infty$, there should be minumum correlation between $x$ and $x'$. The kernel trick allows us to easily implement this. Note that there exists various other kernel types (for more details refer to <a href="http://www.gaussianprocess.org/gpml/">Gaussian Processes for Machine Learning </a> by Carl Edward Rasmussen and Christopher K. I. Williams)</p>
 
 \begin{align}
-\kappa\left(x,\,x'\right)=\begin{cases}
+\kappa\left(x, \, x'\right)=\begin{cases}
 \begin{matrix}
 \sigma^{2}\cr
 0
@@ -107,7 +109,6 @@ x-x'\rightarrow\infty
 \end{align}
 
 <p align="justify">For the regression problem, the joint distribution is given by </p>
-
 
 \begin{equation*}
 x = 
@@ -120,16 +121,16 @@ $$
 \end{matrix}\right)\sim\left(\left(\begin{matrix}
 \boldsymbol{\mu}\cr
 \boldsymbol{\mu}_{*}
-\end{matrix}\right),\,\left(\begin{matrix}
+\end{matrix}\right), \, \left(\begin{matrix}
 \mathbf{K} & \mathbf{k}_{*}\cr
 \mathbf{k}_{*}^{\textrm{T}} & k_{**}
 \end{matrix}\right)\right)
 $$
 
-<p align="justify">where $k_{**} = \kappa\left(\mathbf{X}_{*},\,\mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)$ is simply</p>
+<p align="justify">where $k_{**} = \kappa\left(\mathbf{X}_{*}, \, \mathbf{X}_{*}\right)$. Using the above results given by Equations \eqref{eq:marginals}, the posterior distribution $\mathcal{P}\left(f_{*}\left|\mathbf{y}, \, \mathbf{X}, \, x_{*}\right.\right)$ is simply</p>
 
 $$
-\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}_{*},\,\mathbf{X},\,\mathbf{f}\right.\right)=\mathcal{N}\left(\mathbf{f}_{*}\left|\boldsymbol{\mu}_{*},\,\boldsymbol{\Sigma}_{*}\right.\right)
+\mathcal{P}\left(\mathbf{f}\left|\mathbf{X}_{*}, \, \mathbf{X}, \, \mathbf{f}\right.\right)=\mathcal{N}\left(\mathbf{f}_{*}\left|\boldsymbol{\mu}_{*}, \, \boldsymbol{\Sigma}_{*}\right.\right)
 $$
 
 <p align="justify"> where </p>
@@ -154,7 +155,7 @@ $$
 
 <h4><b>Noisy Case</b></h4>
 
-If instead, we were to observe a noisy function given by $y=f\left(x\right)+\epsilon$ where $\epsilon\sim\mathcal{N}\left(0,\,\sigma_n^2\right)$, the matrix $\mathbf{K}$ is simply given by 
+If instead, we were to observe a noisy function given by $y=f\left(x\right)+\epsilon$ where $\epsilon\sim\mathcal{N}\left(0, \, \sigma_n^2\right)$, the matrix $\mathbf{K}$ is simply given by 
 
 $$
 \mathbf{K}_n=\mathbf{K}+\sigma_n^2\mathbf{I}
@@ -171,7 +172,7 @@ $$
 $$
 
 <h2>Learning the Kernel Parameters</h2>
-<p align="justify"> The way to estimate the parameters is via maxmising the marginal likelihood, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ which is simply a multivariate Gaussian distribution given by $\mathcal{N}\left(\mathbf{y}\left|0,\,\mathbf{K}_{n}\right.\right)$. Hence, </p>
+<p align="justify"> The way to estimate the parameters is via maxmising the marginal likelihood, $\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)$ which is simply a multivariate Gaussian distribution given by $\mathcal{N}\left(\mathbf{y}\left|0, \, \mathbf{K}_{n}\right.\right)$. Hence, </p>
 
 \begin{align}
 \textrm{log }\mathcal{P}\left(\mathbf{y}\left|\mathbf{X}\right.\right)=-\dfrac{1}{2}\left[\mathbf{y}^{\textrm{T}}\mathbf{K}_{n}^{-1}\mathbf{y}+\textrm{log}\left|\mathbf{K}_n \right|+N\textrm{log}\left(2\pi\right)\right]
@@ -195,16 +196,11 @@ $$
 <p align="justify">Below, we consider two examples: noise-free and a noisy. For the following, for illustration, we assume that the kernel parameters $\sigma$ and $\ell$ are both equal to 1. We show how the Gaussian Process performs well in the noise-free and equally-spaced data as shown below. We consider a simple sinusoidal function of the form</p>
 
 $$
-f=\textrm{sin}\left(x\right)\hspace{2cm}\left[0,\,2\pi\right]
+f=\textrm{sin}\left(x\right)\hspace{2cm}\left[0, \, 2\pi\right]
 $$
-
-
 
 <p align="center"><img src="/images/example_1_uniform.png" alt="uniform_gp" width="60%" height="60%"></p>
 
 <p align="justify"> On the other hand, we generate noisy data, which are not equally-spaced. The point which we are mostly interested in is that the Gaussian Process basically demonstrates the level of confidence when we have or do not have data. As expected, we would be more confident when we have more data, and less confident when we don't have data. </p>
 
-
-
 <p align="center"><img src="/images/example_1_non_uniform.png" alt="non_uniform_gp" width="60%" height="60%"></p>
-
