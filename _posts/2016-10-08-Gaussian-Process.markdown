@@ -76,7 +76,7 @@ excerpt:
 <p align="justify">Given now a new data $x_{*}$, the posterior distribution of $f_{*}$ is simply obtained by marginalisation.</p>
 
 $$
-\mathcal{P}\left(y_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)=\int\mathcal{P}\left(y_{*}\left|\mathbf{f},\,x_{*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}
+\mathcal{P}\left(y_{\*}\left|\mathbf{y},\,\mathbf{X},\,x_{\*}\right.\right)=\int\mathcal{P}\left(y_{\*}\left|\mathbf{f},\,x_{\*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}
 $$
 
 <p align="justify">The prior on the regression function which is a Gaussian Process, GP denoted by </p>
@@ -107,6 +107,11 @@ x-x'\rightarrow\infty
 \end{align}
 
 <p align="justify">For the regression problem, the joint distribution is given by </p>
+
+
+\begin{equation*}
+x = 
+\end{equation*}
 
 $$
 \left(\begin{matrix}
