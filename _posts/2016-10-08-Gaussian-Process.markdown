@@ -75,9 +75,9 @@ excerpt:
 
 <p align="justify">Given now a new data $x_{*}$, the posterior distribution of $f_{*}$ is simply obtained by marginalisation.</p>
 
-$$
-\mathcal{P}\left(y_{s}\left|\mathbf{y},\,\mathbf{X},\,x_{s}\right.\right)=\int\mathcal{P}\left(y_{s}\left|\mathbf{f},\,x_{s}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}
-$$
+\begin{align}
+\mathcal{P}\left(y_{*}\left|\mathbf{y},\,\mathbf{X},\,x_{*}\right.\right)=\int\mathcal{P}\left(y_{*}\left|\mathbf{f},\,x_{*}\right.\right)\mathcal{P}\left(\mathbf{f}\left|\mathbf{y},\,\mathbf{X}\right.\right)\,d\mathbf{f}
+\end{align}
 
 <p align="justify">The prior on the regression function which is a Gaussian Process, GP denoted by </p>
 
