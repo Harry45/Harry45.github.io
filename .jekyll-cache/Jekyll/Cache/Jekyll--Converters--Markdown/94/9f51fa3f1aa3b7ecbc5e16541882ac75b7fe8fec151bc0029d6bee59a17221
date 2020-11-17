@@ -1,20 +1,6 @@
----
-layout: post
-mathjax: true
-title:  "Iterative Method For Likelihood Emulation"
-date:   2020-03-10 15:30:00
-author: A.Mootoovaloo
-permalink:
-categories:
-  - Machine Learning and Statistics
-tags:
-  - 
-  -
-excerpt:
----
-<p align="justify">The paper, entitled '<b><font size="2.5">Cosmological parameter estimation via iterative emulation of likelihoods</font></b>' was published on <a href="https://arxiv.org/abs/1912.08806">arXiv</a> recently. The idea behind is to use Gaussian Process to emulate the log-likelihood and to progressively augment the training set via Bayesian Optimisation. In this post, I shall illustrate the technique via simple straight line fitting example, which I believe will be trivial to follow.</p>
+I"C<p align="justify">The paper, entitled '<b><font size="2.5">Cosmological parameter estimation via iterative emulation of likelihoods</font></b>' was published on <a href="https://arxiv.org/abs/1912.08806">arXiv</a> recently. The idea behind is to use Gaussian Process to emulate the log-likelihood and to progressively augment the training set via Bayesian Optimisation. In this post, I shall illustrate the technique via simple straight line fitting example, which I believe will be trivial to follow.</p>
 
-<img src="/images/bo.png" align="right" width = "400" style = "margin-left: 10px; margin-bottom: 10px"/>
+<p><img src="/images/bo.png" align="right" width="400" style="margin-left: 10px; margin-bottom: 10px" /></p>
 
 <p><b><font size="3">Analytical Posterior</font></b></p>
 
@@ -39,7 +25,7 @@ where
 </ul>
 </p>
 
-with the factor 625 arising due to 1/0.04<sup>2</sup>.
+<p>with the factor 625 arising due to 1/0.04<sup>2</sup>.</p>
 
 <p><b><font size="3">Gaussian Process and Bayesian Optimization</font></b></p>
 
@@ -69,8 +55,8 @@ $$
 \begin{array}{c}
 \left(\mu-f_{\textrm{max}}-\alpha\right)\Phi(z)+\sigma\phi(z)\\
 0
-\end{array} & \begin{array}{c}
-\textrm{if }\sigma>0\\
+\end{array} &amp; \begin{array}{c}
+\textrm{if }\sigma&gt;0\\
 \textrm{if }\sigma=0
 \end{array}\end{cases}
 $$
@@ -96,12 +82,11 @@ Note the additional parameter $\alpha$ in the acquisition functions. It is usual
 We initially start with just 4 training points (generated using Latin Hypercube samples, <a href="https://en.wikipedia.org/wiki/Latin_hypercube_sampling">LHS</a>) given by the first 4 rows in the table at the bottom. We then use the Upper Confidence Bound (UCB) acquisition function (with $\alpha=15$) to iteratively add two points (the last two rows in red in the table) to the Gaussian Process model. See algorithm below for further details. 
 </p>
 
-
 <style>
 table {width: 30%;}
 </style>
 
-<table class="tableizer-table" align = "left">
+<table class="tableizer-table" align="left">
 <thead><tr class="tableizer-firstrow"><th>$\theta$ </th><th>$\textrm{log } L$</th></tr></thead><tbody>
  <tr><td align="center">0.9662</td><td align="center">-26.1204</td></tr>
  <tr><td align="center">1.0064</td><td align="center">-17.2318</td></tr>
@@ -111,7 +96,7 @@ table {width: 30%;}
  <tr><td align="center"><font color="red">1.0369</font></td><td align="center"><font color="red">-21.2069</font></td></tr>
 </tbody></table>
 
-<img src="/images/BO-Algorithm.png" align="right" width = "600" style = "margin-right: 10px; margin-bottom: 10px"/>
+<p><img src="/images/BO-Algorithm.png" align="right" width="600" style="margin-right: 10px; margin-bottom: 10px" /></p>
 
 <p><b><font size="3">Results and Conclusions</font></b></p>
 
@@ -119,7 +104,7 @@ table {width: 30%;}
 In this setup, we are able to reconstruct the log-likelihood almost perfectly after augmenting the data set in two iterations. As seen in the plot below in the right panel, the posterior distribution of $\theta$ is identical to the exact one (which we calculated analytically previously). The vertical broken line shows the value of $\theta=1$ which we initially used to generate the data. 
 </p>
 
-<img src="/images/finalPosterior.png" align="center" width = "800" style = "margin-bottom: 0.1px"/>
+<p><img src="/images/finalPosterior.png" align="center" width="800" style="margin-bottom: 0.1px" /></p>
 
 <p align="justify">
 However, in high dimensions, the volume of the parameter space increases and it is not easy to reconstruct a function perfectly (if this is the main objective). Moreover, the acquisition functions themselves contain multiple local optima (as seen in the Figure on the top) and the choice of the acquisition function is an interesting topic. They can often be greedy and favour exploitation over exploration, hence the choice of $\alpha$ also matters. 
@@ -130,3 +115,4 @@ However, in high dimensions, the volume of the parameter space increases and it 
 <li>A Tutorial on Bayesian Optimization (arXiv, <a href="https://arxiv.org/abs/1012.2599"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 <li>Cosmological parameter estimation via iterative emulation of likelihoods (arXiv, <a href="https://arxiv.org/abs/1912.08806"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 </ol>
+:ET

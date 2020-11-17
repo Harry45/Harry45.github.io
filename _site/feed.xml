@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Sep 2020 09:27:40 +0100</pubDate>
-    <lastBuildDate>Sat, 19 Sep 2020 09:27:40 +0100</lastBuildDate>
+    <pubDate>Tue, 17 Nov 2020 23:26:57 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Nov 2020 23:26:57 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -218,9 +218,12 @@
 
 &lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;Analytical Posterior&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
 
-&lt;p align=&quot;justify&quot;&gt;To start with, we randomly draw 50 points uniformly from $x\in[0, 1]$ and compute $\mathbf{y}$, which is given by&lt;/p&gt;
+&lt;p align=&quot;justify&quot;&gt;To start with, we randomly draw 50 points uniformly from $x\in[0, 1]$ and compute $\mathbf{y}$, which is given by
 
-\[\mathbf{y} = \theta\mathbf{x} + \boldsymbol{\epsilon}\]
+$$
+\mathbf{y} = \theta\mathbf{x} + \boldsymbol{\epsilon}
+$$
+&lt;/p&gt;
 
 &lt;p align=&quot;justify&quot;&gt;We fix $\theta = 1$ and $\boldsymbol{\epsilon}\sim\mathcal{N}(0, 0.04^{2})$. We also assume a Gaussian prior for $\theta$, where $p(\theta)=\mathcal{N}(1,1)$. The posterior distribution of $\theta$ can be derived analytically and is in fact another Gaussian distribution, given by:
 $$

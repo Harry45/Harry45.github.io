@@ -1,18 +1,4 @@
----
-layout: post
-mathjax: true
-title:  "Bayesian Model Selection"
-date:   2017-05-20 06:00:00
-author: A.Mootoovaloo
-permalink:
-categories:
-  - Machine Learning and Statistics
-tags:
-  - 
-  -
-excerpt:
----
-<script type="text/x-mathjax-config">
+I"¡<script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
 </script>
 
@@ -24,9 +10,9 @@ excerpt:
 
 <p align="justify">In this post, we will focus only on the calculation of the <b>Bayesian Evidence</b>, which is often regarded as the average likelihood under the prior. The evidence is the normalisation integral of the product of the likelihood and the prior and is often referred to as the <i>model likelihood</i>, or the <i>marginal likelihood</i> and is denoted by $\mathbb{Z}$. It is interpreted as the probability of the data $\left(\mathcal{D}\right)$ given the model $\left(\mathcal{M}\right)$. The Bayesian Evidence is given as </p>
 
-\begin{equation}
+<p>\begin{equation}
 \mathbb{Z}\equiv\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}\right.\right)=\int\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)\,\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)\,d\boldsymbol{\theta}
-\end{equation}
+\end{equation}</p>
 
 <p align="justify">where $\mathcal{P}\left(\mathcal{D}\left|\boldsymbol{\theta},\,\mathcal{M}\right.\right)$ is the likelihood function which should typically reflect the way the data is obtained and $\mathcal{P}\left(\boldsymbol{\theta}\left|\mathcal{M}\right.\right)$ is the prior distribution for the parameters. Using Bayes' theorem, we can write
 
@@ -43,15 +29,11 @@ $$
 $$
 </p>
 
-<p align="justify">Note that $\mathcal{P}\left(\mathcal{D}\right)$ is only a constant and can be dropped when calculating the ratio of posterior probability of the models. The ratio $$B_{12}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}$$ is the <b>Bayes factor</b> and is, in fact, the ratio of the models' evidences. The ratio $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}$$ is the posterior odds while $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}$$ is the prior odds. Therefore, in words, one can describe the above as 
+<p align="justify">Note that $\mathcal{P}\left(\mathcal{D}\right)$ is only a constant and can be dropped when calculating the ratio of posterior probability of the models. The ratio $$B_{12}=\dfrac{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{1}\right.\right)}{\mathcal{P}\left(\mathcal{D}\left|\mathcal{M}_{2}\right.\right)}$$ is the <b>Bayes factor</b> and is, in fact, the ratio of the models' evidences. The ratio $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\left|\mathcal{D}\right.\right)}{\mathcal{P}\left(\mathcal{M}_{2}\left|\mathcal{D}\right.\right)}$$ is the posterior odds while $$\dfrac{\mathcal{P}\left(\mathcal{M}_{1}\right)}{\mathcal{P}\left(\mathcal{M}_{2}\right)}$$ is the prior odds. Therefore, in words, one can describe the above as </p>
 
-$$
-\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}
-$$
-</p>
+\[\textrm{posterior odds}=\textrm{Bayes Factor}\times\textrm{prior odds}\]
 
 <p align="justify">In the case of non-committal priors on the models, that is, $\mathcal{P}\left(\mathcal{M}_{1}\right)=\mathcal{P}\left(\mathcal{M}_{2}\right)$, the posterior odds are just equal to the Bayes factor. As $B_{12}$ increases, our belief that model $\mathcal{M}_{1}$ is better than model $\mathcal{M}_{2}$ increases. Otherwise, model $\mathcal{M}_{2}$ will be the preferred one. Therefore, the Bayes factor indicates how the relative odds vary in the light of new data, irrespective of the prior odds of the models. The Bayes factor is typically interpreted by referring to the Jeffreys' scale (see <a href="http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572">Kass et al., 1995</a>). It is an empirically determined scale as shown in the table below </p>
-
 
 <style>
 table {width: 53%;}
@@ -63,7 +45,8 @@ table {width: 53%;}
  <tr><td align="center">0 to 1</td><td align="center">1 to 3</td><td align="center">Inconclusive</td></tr>
  <tr><td align="center">1 to 3</td><td align="center">3 to 20</td><td align="center">Weak Evidence</td></tr>
  <tr><td align="center">3 to 5</td><td align="center">20 to 150</td><td align="center">Moderate Evidence</td></tr>
- <tr><td align="center">>5</td><td align="center">>150</td><td align="center">Strong Evidence</td></tr>
+ <tr><td align="center">&gt;5</td><td align="center">&gt;150</td><td align="center">Strong Evidence</td></tr>
 </tbody></table>
 </center>
 
+:ET
