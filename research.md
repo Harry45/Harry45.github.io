@@ -2,7 +2,7 @@
 layout: page
 mathjax: true
 title: Publications
-permalink: /research/
+permalink: /publications/
 ---
 
 {% include image.html url="Arrykrishna_Bayesian.jpg" caption="InScida workshop organised at AIMS, Muizenburg" width=400 align="left" %}
