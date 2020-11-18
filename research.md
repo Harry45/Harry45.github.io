@@ -24,6 +24,12 @@ Below is an updated list of publications in which I was involved:
 <ol type="1">
 
   <li>
+  <p><b>Data Augmentation in a Hierarchical-Based Classification scheme for Variable Stars</b>
+  <br>Zafiirah Hosenie, Robert Lyon, Benjamin Stappers, <font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Vanessa McBrides</p>
+  </li>
+  <p align="justify">The accurate automated classification of variable stars into their respective sub-types is difficult. Machine learning based solutions often fall foul of the imbalanced learning problem, which causes poor generalisation performance in practice, especially on rare variable star sub-types. We attempted to overcome such deficiencies via the development of a hierarchical machine learning classifier. This ‘algorithm-level’ approach to tackling imbalance, yielded promising results on Catalina Real-Time Survey (CRTS) data. We attempt to further improve hierarchical classification performance by applying ‘data-level’ approaches to directly augment the training data so that they better describe under-represented classes. We apply and report results for three data augmentation methods in particular: Randomly Augmented Sampled Light curves from magnitude Error (RASLE), augmenting light curves with Gaussian Process modelling (GpFit) and the Synthetic Minority Over-sampling Technique (SMOTE). When combining the ‘algorithm-level’ (i.e. the hierarchical scheme) together with the ‘data-level’ approach, we further improve variable star classification accuracy by 1-4\%. We found that a higher classification rate is obtained when using GpFit in the hierarchical model.</p>
+
+  <li>
   <p><b>Parameter Inference for Weak Lensing using Gaussian Processes and MOPED</b>
   <br><font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Alan Heavens, Andrew Jaffe, Florent Leclercq
   <br><a href="https://doi.org/10.1093/mnras/staa2102">MNRAS</a>, <a href="https://arxiv.org/abs/2005.06551">arXiv:2005.06551</a>, <a href="https://github.com/Harry45/gp_emulator">Code</a></p>
