@@ -10,7 +10,7 @@ Below is a collection of papers, which I have found interesting (useful and rele
 <p><b><font size="4">2020</font></b></p>
 <ol type="1">
 
-<li>Challenges in Deploying Machine Learning: a Survey of Case Studies (NeurIPS 2020 <a href="https://arxiv.org/pdf/2011.09926.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
+<li>Challenges in Deploying Machine Learning: a Survey of Case Studies (NeurIPS 2020, <a href="https://arxiv.org/pdf/2011.09926.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
 <li>The carbon impact of artifcial intelligence (Nature Machine Intelligence, <a href="https://www.nature.com/articles/s42256-020-0219-9.pdf"><i style="font-size:12px" class="fa">&#xf08e;</i></a>) </li>
 
