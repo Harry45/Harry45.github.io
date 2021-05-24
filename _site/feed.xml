@@ -3,10 +3,10 @@
   <channel>
     <title>Arrykrishna Mootoovaloo</title>
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
-    <link>https://Harry45.github.io/</link>
-    <atom:link href="https://Harry45.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Nov 2020 20:57:14 +0000</pubDate>
-    <lastBuildDate>Wed, 18 Nov 2020 20:57:14 +0000</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 24 May 2021 09:24:38 +0100</pubDate>
+    <lastBuildDate>Mon, 24 May 2021 09:24:38 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -66,8 +66,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 18 Sep 2020 09:16:00 +0100</pubDate>
-        <link>https://Harry45.github.io/blog/2020/09/Machine-Learning-Resources</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2020/09/Machine-Learning-Resources</guid>
+        <link>http://localhost:4000/blog/2020/09/Machine-Learning-Resources</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/09/Machine-Learning-Resources</guid>
         
         
         <category>+</category>
@@ -118,8 +118,8 @@
 
 </description>
         <pubDate>Fri, 10 Jul 2020 23:04:00 +0100</pubDate>
-        <link>https://Harry45.github.io/blog/2020/07/Virtual-Workshops</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2020/07/Virtual-Workshops</guid>
+        <link>http://localhost:4000/blog/2020/07/Virtual-Workshops</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/07/Virtual-Workshops</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -176,8 +176,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 10 Jul 2020 19:08:00 +0100</pubDate>
-        <link>https://Harry45.github.io/blog/2020/07/Research-Paper</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2020/07/Research-Paper</guid>
+        <link>http://localhost:4000/blog/2020/07/Research-Paper</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/07/Research-Paper</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -202,8 +202,8 @@
 
 </description>
         <pubDate>Wed, 10 Jun 2020 16:30:00 +0100</pubDate>
-        <link>https://Harry45.github.io/blog/2020/06/Black-Lives-Matter</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2020/06/Black-Lives-Matter</guid>
+        <link>http://localhost:4000/blog/2020/06/Black-Lives-Matter</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/06/Black-Lives-Matter</guid>
         
         
         <category>Social</category>
@@ -331,8 +331,8 @@ However, in high dimensions, the volume of the parameter space increases and it 
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 10 Mar 2020 15:30:00 +0000</pubDate>
-        <link>https://Harry45.github.io/blog/2020/03/Iterative-Method-For-Likelihood-Emulation</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2020/03/Iterative-Method-For-Likelihood-Emulation</guid>
+        <link>http://localhost:4000/blog/2020/03/Iterative-Method-For-Likelihood-Emulation</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2020/03/Iterative-Method-For-Likelihood-Emulation</guid>
         
         
         <category>Machine Learning and Statistics</category>
@@ -375,8 +375,8 @@ However, in high dimensions, the volume of the parameter space increases and it 
 
 </description>
         <pubDate>Mon, 01 Apr 2019 07:00:00 +0100</pubDate>
-        <link>https://Harry45.github.io/blog/2019/04/Andrew-Ng-Visit</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2019/04/Andrew-Ng-Visit</guid>
+        <link>http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/04/Andrew-Ng-Visit</guid>
         
         
         <category>Workshop and Conference</category>
@@ -441,8 +441,8 @@ Learning Multiscale Physics with Deep Neural Networks
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 30 Oct 2018 20:00:00 +0000</pubDate>
-        <link>https://Harry45.github.io/blog/2018/10/Methods-for-Statistical-Inference-Paris</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2018/10/Methods-for-Statistical-Inference-Paris</guid>
+        <link>http://localhost:4000/blog/2018/10/Methods-for-Statistical-Inference-Paris</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/10/Methods-for-Statistical-Inference-Paris</guid>
         
         
         <category>Workshop and Conference</category>
@@ -496,8 +496,8 @@ Crash Course in Deep Learning and Pytorch
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 30 Jun 2018 09:00:00 +0100</pubDate>
-        <link>https://Harry45.github.io/blog/2018/06/Data-Science-Summer-School</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2018/06/Data-Science-Summer-School</guid>
+        <link>http://localhost:4000/blog/2018/06/Data-Science-Summer-School</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/06/Data-Science-Summer-School</guid>
         
         
         <category>Workshop and Conference</category>
@@ -538,8 +538,8 @@ https://eiffl.github.io/Valencia2018/&quot;&gt;&lt;i style=&quot;font-size:12px&
 
 </description>
         <pubDate>Wed, 30 May 2018 21:30:00 +0100</pubDate>
-        <link>https://Harry45.github.io/blog/2018/05/Cosmo21</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2018/05/Cosmo21</guid>
+        <link>http://localhost:4000/blog/2018/05/Cosmo21</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/05/Cosmo21</guid>
         
         
         <category>Workshop and Conference</category>
@@ -633,8 +633,8 @@ Generative Adversarial Networks and Autoencoders
 &lt;p align=&quot;justify&quot;&gt;All lectures and tutorials are found on &lt;a href=&quot;https://github.com/yandexdataschool/MLatImperial2018&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Feb 2018 08:00:00 +0000</pubDate>
-        <link>https://Harry45.github.io/blog/2018/02/Yandex-Machine-Learning</link>
-        <guid isPermaLink="true">https://Harry45.github.io/blog/2018/02/Yandex-Machine-Learning</guid>
+        <link>http://localhost:4000/blog/2018/02/Yandex-Machine-Learning</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/02/Yandex-Machine-Learning</guid>
         
         
         <category>Workshop and Conference</category>
