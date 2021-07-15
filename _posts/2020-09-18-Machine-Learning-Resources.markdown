@@ -6,9 +6,7 @@ date:   2020-09-18 08:16:00
 author: A. Mootoovaloo
 permalink:
 categories:
-
-  + Machine Learning and Statistics
-
+  - Machine Learning and Statistics
 tags:
   - 
   -
