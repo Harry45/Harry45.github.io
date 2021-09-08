@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Jul 2021 08:12:48 +0100</pubDate>
-    <lastBuildDate>Thu, 15 Jul 2021 08:12:48 +0100</lastBuildDate>
+    <pubDate>Wed, 08 Sep 2021 14:27:55 +0100</pubDate>
+    <lastBuildDate>Wed, 08 Sep 2021 14:27:55 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -16,6 +16,8 @@
 &lt;p&gt;&lt;b&gt;General Machine Learning&lt;/b&gt;&lt;/p&gt;
 
 &lt;ol&gt;
+
+&lt;li&gt; ML Tech Talks (&lt;a href=&quot;https://www.youtube.com/playlist?list=PLQY2H8rRoyvwmjfn7hM-Yg_6RIyoMnKQx&quot;&gt;Videos&lt;/a&gt;)&lt;/li&gt;
 
 &lt;li&gt;CPSC 540: Machine Learning 2013 (&lt;a href=&quot;https://www.cs.ubc.ca/~nando/540-2013/lectures.html&quot;&gt;Lecture Notes&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6&quot;&gt;Videos&lt;/a&gt;) by Prof. Nando de Freitas&lt;/li&gt;
 
