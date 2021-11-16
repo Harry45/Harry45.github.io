@@ -5,8 +5,8 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Sep 2021 14:27:55 +0100</pubDate>
-    <lastBuildDate>Wed, 08 Sep 2021 14:27:55 +0100</lastBuildDate>
+    <pubDate>Thu, 21 Oct 2021 09:18:11 +0100</pubDate>
+    <lastBuildDate>Thu, 21 Oct 2021 09:18:11 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -16,6 +16,8 @@
 &lt;p&gt;&lt;b&gt;General Machine Learning&lt;/b&gt;&lt;/p&gt;
 
 &lt;ol&gt;
+
+&lt;li&gt; The AI Epiphany (&lt;a href=&quot;https://www.youtube.com/channel/UCj8shE7aIn4Yawwbo2FceCQ&quot;&gt;Videos&lt;/a&gt;)&lt;/li&gt;
 
 &lt;li&gt; ML Tech Talks (&lt;a href=&quot;https://www.youtube.com/playlist?list=PLQY2H8rRoyvwmjfn7hM-Yg_6RIyoMnKQx&quot;&gt;Videos&lt;/a&gt;)&lt;/li&gt;
 
@@ -38,6 +40,14 @@
 &lt;li&gt;DeepMind x UCL 2020 (&lt;a href=&quot;https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF&quot;&gt;Lectures and Videos&lt;/a&gt;)&lt;/li&gt;
 
 &lt;li&gt;EE-559 – Deep Learning 2019 (&lt;a href=&quot;https://fleuret.org/ee559/&quot;&gt;Lecture Notes and Videos&lt;/a&gt;) by Prof. Fran&amp;ccedil;ois Fleuret&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;b&gt;Reinforcement Learning&lt;/b&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+
+&lt;li&gt; 2021 DeepMind x UCL Reinforcement Learning Lecture Series (&lt;a href=&quot;https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm&quot;&gt;Videos&lt;/a&gt;, Slides below YouTube Video)&lt;/li&gt;
 
 &lt;/ol&gt;
 
@@ -103,8 +113,8 @@
     &lt;p align=&quot;justify&quot;&gt;&lt;small&gt;&lt;i&gt;Deep Learning is a bit like smoking, you know that it's wrong but you do it anyway because you want to look cool.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
   &lt;/blockquote&gt;
 
-  &lt;li&gt;&lt;u&gt;NeurIPS 2020&lt;/u&gt; (6&lt;sup&gt;th&lt;/sup&gt; December to 12&lt;sup&gt;th&lt;/sup&gt; December, &lt;a href=&quot;https://nips.cc/Conferences/2020&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-
+&lt;!--   &lt;li&gt;&lt;u&gt;NeurIPS 2020&lt;/u&gt; (6&lt;sup&gt;th&lt;/sup&gt; December to 12&lt;sup&gt;th&lt;/sup&gt; December, &lt;a href=&quot;https://nips.cc/Conferences/2020&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
+ --&gt;
 &lt;/ol&gt;
 
 &lt;!-- 

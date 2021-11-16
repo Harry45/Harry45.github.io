@@ -19,6 +19,8 @@ excerpt:
 
 <ol>
 
+<li> The AI Epiphany (<a href="https://www.youtube.com/channel/UCj8shE7aIn4Yawwbo2FceCQ">Videos</a>)</li>
+
 <li> ML Tech Talks (<a href="https://www.youtube.com/playlist?list=PLQY2H8rRoyvwmjfn7hM-Yg_6RIyoMnKQx">Videos</a>)</li>
 
 <li>CPSC 540: Machine Learning 2013 (<a href="https://www.cs.ubc.ca/~nando/540-2013/lectures.html">Lecture Notes</a>, <a href="https://www.youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6">Videos</a>) by Prof. Nando de Freitas</li>
@@ -40,6 +42,15 @@ excerpt:
 <li>DeepMind x UCL 2020 (<a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF">Lectures and Videos</a>)</li>
 
 <li>EE-559 – Deep Learning 2019 (<a href="https://fleuret.org/ee559/">Lecture Notes and Videos</a>) by Prof. Fran&ccedil;ois Fleuret</li>
+
+</ol>
+
+
+<b>Reinforcement Learning</b>
+
+<ol>
+
+<li> 2021 DeepMind x UCL Reinforcement Learning Lecture Series (<a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm">Videos</a>, Slides below YouTube Video)</li>
 
 </ol>
 
