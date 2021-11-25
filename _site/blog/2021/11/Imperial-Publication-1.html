@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Categories</title>
-  <meta name="description" content="22, Derwentwater Road, Acton Town, London (W3 6DE)">
+  <title>Parameter Inference with MOPED and GP</title>
+  <meta name="description" content="In this post, I will cover briefly my first paper which was published in MNRAS during my PhD. An important step in this paper is the compression and emulatio...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/categories/">
+  <link rel="canonical" href="http://localhost:4000/blog/2021/11/Imperial-Publication-1">
   <link rel="alternate" type="application/rss+xml" title="Arrykrishna Mootoovaloo" href="http://localhost:4000/feed.xml" />
 <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
 <link href='//fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
@@ -140,7 +140,16 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Categories</h1>
+    <h1 class="post-title">Parameter Inference with MOPED and GP</h1>
+    <p class="post-meta">Posted on November 16, 2021 by  A.Mootoovaloo  
+
+  in
+  
+  <a href="/categories/#Machine Learning and Statistics" title="Machine Learning and Statistics">Machine Learning and Statistics</a>&nbsp;
+  
+
+
+</p>
   </header>
 
   <head>
@@ -148,114 +157,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
+  
   <article class="post-content">
-    
+    <p align="justify">In this post, I will cover briefly my first paper which was published in <a href="https://academic.oup.com/mnras/article/497/2/2213/5873022">MNRAS</a> during my PhD. An important step in this paper is the compression and emulation of the MOPED coefficients. MOPED is an algorithm developed by <a href="https://academic.oup.com/mnras/article/317/4/965/1039456">Heavens et al. 2000</a>, which essentially compresses a data vector of size $N$ to just $p$ numbers, where $p$ is the number of parameters in the model. The first and subsequent MOPED vectors are given respectively by</p>
 
+<p>\begin{align}
+\mathbf{b}_{1}=\frac{\mathbf{C}^{-1}\mathbf{\mu}_{,1}}{\sqrt{\mathbf{\mu}_{,1}^{\textrm{T}}\mathbf{C}^{-1}\mathbf{\mu}_{,1}}}
+\end{align}</p>
 
-<ul class="entry-meta inline-list">
-  
-    
-  	<li><a href="#Machine Learning and Statistics" class="tag"><span class="term">Machine Learning and Statistics</span> (<span class="count">12</span>)</a></li>
-  
-    
-  	<li><a href="#Research" class="tag"><span class="term">Research</span> (<span class="count">2</span>)</a></li>
-  
-    
-  	<li><a href="#Social" class="tag"><span class="term">Social</span> (<span class="count">1</span>)</a></li>
-  
-    
-  	<li><a href="#Workshop and Conference" class="tag"><span class="term">Workshop and Conference</span> (<span class="count">8</span>)</a></li>
-  
-</ul>
+<p align="justify">and</p>
 
+<p>\begin{align}
+\mathbf{b}_{\alpha}=\frac{\mathbf{C}^{-1}\mathbf{\mu}_{,\alpha}-\sum_{\beta=1}^{\alpha-1}(\mathbf{\mu}_{,\alpha}^{\textrm{T}}\mathbf{b}_{\beta})\mathbf{b}_{\beta}}{\sqrt{\mathbf{\mu}_{,\alpha}^{\textrm{T}}\mathbf{C}^{-1}\mathbf{\mu}_{,\alpha}-\sum_{\beta=1}^{\alpha-1}(\mathbf{\mu}_{,\alpha}^{\textrm{T}}\mathbf{b}_{\beta})^{2}}}\;\;(\alpha&gt;1).
+\end{align}</p>
 
-  
-	<article>
-	<h2 id="Machine Learning and Statistics" class="tag-heading">Machine Learning and Statistics</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2021/11/Imperial-Publication-2" title="Emulator for the 3D Matter Power Spectrum">Emulator for the 3D Matter Power Spectrum</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2021/11/Imperial-Publication-1" title="Parameter Inference with MOPED and GP">Parameter Inference with MOPED and GP</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2020/09/Machine-Learning-Resources" title="Machine Learning Resources">Machine Learning Resources</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2020/07/Virtual-Workshops" title="Virtual Workshops">Virtual Workshops</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2020/07/Research-Paper" title="Research Paper">Research Paper</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2020/03/Iterative-Method-For-Likelihood-Emulation" title="Iterative Method For Likelihood Emulation">Iterative Method For Likelihood Emulation</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2017/05/Bayesian-Evidence-The-Gaussian-Linear-Model" title="Bayesian Evidence - The Gaussian Linear Model">Bayesian Evidence - The Gaussian Linear Model</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2017/05/Bayesian-Model-Selection" title="Bayesian Model Selection">Bayesian Model Selection</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2017/03/Linear-Regression" title="Linear Regression">Linear Regression</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2016/10/Sampling-From-Any-Distribution" title="Sampling From Any Distribution">Sampling From Any Distribution</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2016/10/Gibbs-Sampling" title="An Introduction to Gibbs Sampling">An Introduction to Gibbs Sampling</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2016/10/Gaussian-Process" title="Gaussian Process">Gaussian Process</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
+<p align="justify"> The weighing vector, $\mathbf{b}$ encapsulates as much information as possible for a specific model parameter $\mathbf{\theta}_{\alpha}$. This vector is then used to find linear combination of the data, $\mathbf{d}$ such that the compressed data is</p>
 
-  
-	<article>
-	<h2 id="Research" class="tag-heading">Research</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2016/10/BIRO-Bayesian-Inference-For-Radio-Observations" title="BIRO - Bayesian Inference for Radio Observations">BIRO - Bayesian Inference for Radio Observations</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2016/10/A-Brief-Overview-Of-My-Undergraduate-Project" title="A Brief Overview of my Undergraduate Project">A Brief Overview of my Undergraduate Project</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
+<p>\begin{align}
+y_{\alpha}\equiv\mathbf{b}^{\textrm{T}}_{\alpha}\mathbf{d}
+\end{align}</p>
 
-  
-	<article>
-	<h2 id="Social" class="tag-heading">Social</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2020/06/Black-Lives-Matter" title="Black Lives Matter Protests">Black Lives Matter Protests</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
+<p align="justify">and the expected theoretical prediction is simply $y_{\alpha}\equiv\mathbf{b}^{\textrm{T}}_{\alpha}\mathbf{\mu}$. One would then use an MCMC algorithm to sample the posterior distribution of the model parameters using the MOPED compression algorithm. In particular, each MOPED vector is orthogonal to each other and is also normalised, hence the log-likelihood is simply</p>
 
-  
-	<article>
-	<h2 id="Workshop and Conference" class="tag-heading">Workshop and Conference</h2>
-		<ul>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2019/04/Andrew-Ng-Visit" title="Emerging trends in AI and online education">Emerging trends in AI and online education</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2018/10/Methods-for-Statistical-Inference-Paris" title="Methods for Statistical Inference (Paris)">Methods for Statistical Inference (Paris)</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2018/06/Data-Science-Summer-School" title="Data Science Summer School 2018 (Paris)">Data Science Summer School 2018 (Paris)</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2018/05/Cosmo21" title="COSMO21 and ADAIX (Valencia)">COSMO21 and ADAIX (Valencia)</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2018/02/Yandex-Machine-Learning" title="Yandex Machine Learning School 2018 (London)">Yandex Machine Learning School 2018 (London)</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2017/05/Bayesian-School-2016" title="Bayesian School 2016">Bayesian School 2016</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2016/10/Surviving-Growing-Community" title="Surviving A Fast Growing Community Without Dying">Surviving A Fast Growing Community Without Dying</a></li>
-    
-      <li class="entry-title"><a href="http://localhost:4000/blog/2016/10/JEDI" title="JEDI - An Alternate Route to Conventional Workshops">JEDI - An Alternate Route to Conventional Workshops</a></li>
-    
-		</ul>
-	</article><!-- /.hentry -->
+<p>\begin{align}
+\textrm{log}\,\mathcal{L} = -\frac{1}{2}\sum_{\alpha=1}^{p}(y_{\alpha}-\mathbf{b}_{\alpha}^{\textrm{T}}\mathbf{\mu})^{2}  + \textrm{constant}
+\end{align}</p>
+
+<p align="justify">However, calculating the MOPED coefficient at each step in an MCMC can be expensive if the forward model itself is expensive. Hence, a training set is first generated at $N$ Latin Hypercube samples (LHS) and the MOPED coefficients are computed at these points, followed by modelling $p$ separate Gaussian Processes. These are then used as surrogates to sample the posterior distribution of the model parameters and the result is shown in the figure below. The figure shows the posterior with the full accurate solver CLASS (in tan) and the posterior due to the emulator is shown in blue. The contours are plotted at 68% and 95% credible intervals.</p>
+
+<dl class="wp-caption aligncenter" style="max-width: 800px">
+
+<dt><a href=""><img class="" src="/images/triangle_plot_derived_sigma_8_semi_gp_maximin_1000_7D.jpg" alt="The full posterior distribution of all parameters using the MOPED compression scheme." /></a></dt>
+
+<dd>The full posterior distribution of all parameters using the MOPED compression scheme.</dd>
+</dl>
 
 
   </article>
 
   <!-- mathjax -->
   
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
 
+  </script>
+  <script type="text/javascript"
+        src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  
+
+  <!-- Table -->
+<style>
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+</style>
+
+<style type="text/css">
+        table.tableizer-table {
+                font-size: 13px;
+                border: 1px solid #CCC; 
+                font-family: Arial, Helvetica, sans-serif;
+                margin-right: 10px;
+                margin-bottom: 10px;
+        } 
+        .tableizer-table td {
+                padding: 6px;
+                margin: 3px;
+                border: 1px solid #CCC;
+        }
+        .tableizer-table th {
+                background-color: #104E8B;
+                padding: 6px; 
+                color: #FFF;
+                font-weight: bold;
+        }
+</style>
 
 </div>
+
 
       </div>
     </div>

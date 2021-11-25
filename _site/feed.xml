@@ -5,9 +5,96 @@
     <description>22, Derwentwater Road, Acton Town, London (W3 6DE)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Oct 2021 09:18:11 +0100</pubDate>
-    <lastBuildDate>Thu, 21 Oct 2021 09:18:11 +0100</lastBuildDate>
+    <pubDate>Thu, 25 Nov 2021 13:52:51 +0000</pubDate>
+    <lastBuildDate>Thu, 25 Nov 2021 13:52:51 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Emulator for the 3D Matter Power Spectrum</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;The 3D matter power spectrum, $P_{\delta}(k,z)$ is a key quantity which underpins most cosmological data analysis, such as galaxy clustering, weak lensing, 21 cm cosmology and various others. Crucially, the calculation of other (derived) power spectra can be fast if $P_{\delta}(k,z)$ is precomputed. In practice, the latter is the most expensive component and can be calculated either using Boltzmann solvers such as CLASS or CAMB, or via simulations, which can be computationally expensive depending on the resolution of the experiments. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/3D_pk.jpg&quot; align=&quot;left&quot; width=&quot;400&quot; style=&quot;margin-right: 10px; margin-bottom: 10px&quot; /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;This work was published in the &lt;a href=&quot;https://doi.org/10.1016/j.ascom.2021.100508&quot;&gt;Astronomy and Computing&lt;/a&gt; journal. Our contributions in this work are three fold. First, it addresses the point that we do not always need to assume a zero mean Gaussian Process model for performing emulation, in other words, one can also include some additional basis functions prior to defining the kernel matrix. This can be useful if we already have an approximate model of our function. Moreover, if we know how a particular function behaves, one can adopt a stringent prior on the regression coefficients for the parametric model, hence allowing us to encode our degree of belief about that specific parametric model. Second, since we are using a Radial Basis Function (RBF) kernel and the fact that it is infinitely differentiable enables us to estimate the first and second derivatives of the 3D matter power spectrum. The derived expressions for the derivatives also indicate that there is only element-wise matrix multiplication and no matrix inverse to compute. This makes the gradient calculations very fast. Finally, with the approach that we adopt, we show that the emulator can output various key power spectra, namely, the linear matter power spectrum at a reference redshift $z_{0}$ and the non-linear 3D matter power spectrum with/without an analytic baryon feedback model. Moreover, using the emulated 3D power spectrum and the tomographic redshift distributions, we also show that the weak lensing power spectrum and the intrinsic alignment (II and GI) can be generated in a very fast way using existing numerical techniques. The 3D matter power spectrum can be decomposed as  
+
+$$
+P_{\delta}(k,z)=D(z)[1+q(k,z)]P_{\textrm{lin}}(k,z_{0})
+$$
+
+Each component $D(z)$, $q(k,z)$ and $P_{\textrm{lin}}(k,z_{0})$ are then modelled as separate semi-parametric Gaussian Processes, where we assume a second order polynomial function for the parametric part.&lt;/p&gt;
+
+&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 800px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/all_gradients.jpg&quot; alt=&quot;The gradients of the power spectrum with respect to each cosmological parameter at a fixed redshift.&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;The gradients of the power spectrum with respect to each cosmological parameter at a fixed redshift.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p align=&quot;justify&quot;&gt;In the figure above, we show the gradient along at a fixed cosmological parameter (test point) and fixed redshift, $z=0$. The red curve corresponds to the gradients as calculated by CLASS using central difference method and the blue curves show the gradients output from the emulator. In particular, this gradient is strictly a 3D quantity, as a function of the wavenumber $k$, redshift, $z$ and the cosmological parameters $\boldsymbol{\theta}$. In other words, the gradient calculation from the emulator will be a tensor of size $(N_{k},\,N_{z},\,N_{p})$, where $N_{k}$ is the number of wavenumbers for $k\in[5\times 10^{-4},\,50]$, $N_{z}$ is the number of redshifts for $z\in[0.0,\,5]$ and $N_{p}$ is the number of parameters considered. In this case, $N_{p}=5$ and the default values for a finer grid in $k$ and $z$ are $N_{k}=1000$ and $N_{z}=100$ respectively.&lt;/p&gt;
+
+&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 600px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/simulator_emulator.jpg&quot; alt=&quot;The full posterior distribution of all parameters using the emulator on a toy dataset.&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;The full posterior distribution of all parameters using the emulator on a toy dataset.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p align=&quot;justify&quot;&gt;We also test the emulator on simulated weak-lensing bandpowers. We assume measurements over $10\leq\ell\leq 1500$ and 5 tomographic slices with Gaussian $n(z)$ centred on redshifts [0.5, 1.0, 1.5, 2.0, 2.5] and each having a standard deviation of 0.075. Ten bandpowers, equally spaced in logarithmic scale, are used and this gives us a set of 150 data points. Moreover, we simulate and then assume in the likelihood  independent Gaussian errors with, for simplicity, $\sigma=0.5\hat{\mathcal{B}}_{\ell}$, where $\hat{\mathcal{B}}_{\ell}$ is the bandpower evaluated at the fiducial set of cosmological parameters. For this particular case, we have set $A_{\textrm{IA}}=0$ but one can trivially include this factor and marginalise over it in the sampling process. The fiducial point $\boldsymbol{\theta}_{\textrm{fid}}=[0.12, 0.0225, 3.45, 1.0, 0.72]$ is used to generate the data and is shown by the black dots in the figure above. We use a Gaussian likelihood and uniform priors on all cosmological parameters, similar to the range of the inputs of the emulator. The figure below shows the results obtained when sampling the cosmological parameters on this toy data set. The red contours correspond to the result using the emulator while the pale blue colour refers to the posterior distributions using CLASS. We run three separate MCMC chains, each with 150 000 MCMC samples, two with the emulator and one with CLASS. On each of the three resulting pairs of runs, we compute the Gelman-Rubin convergence parameter. The worst $\hat{R}$ value is 1.002, consistent with all three chains being drawn from the same distribution, and corroborating the agreement shown in the above figure.  The emulator developed in this work is thus able to robustly recover the posterior distributions of all the cosmological parameters, compared to the accurate solver, CLASS.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 16 Nov 2021 07:11:00 +0000</pubDate>
+        <link>http://localhost:4000/blog/2021/11/Imperial-Publication-2</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2021/11/Imperial-Publication-2</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
+    
+      <item>
+        <title>Parameter Inference with MOPED and GP</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;In this post, I will cover briefly my first paper which was published in &lt;a href=&quot;https://academic.oup.com/mnras/article/497/2/2213/5873022&quot;&gt;MNRAS&lt;/a&gt; during my PhD. An important step in this paper is the compression and emulation of the MOPED coefficients. MOPED is an algorithm developed by &lt;a href=&quot;https://academic.oup.com/mnras/article/317/4/965/1039456&quot;&gt;Heavens et al. 2000&lt;/a&gt;, which essentially compresses a data vector of size $N$ to just $p$ numbers, where $p$ is the number of parameters in the model. The first and subsequent MOPED vectors are given respectively by&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\mathbf{b}_{1}=\frac{\mathbf{C}^{-1}\mathbf{\mu}_{,1}}{\sqrt{\mathbf{\mu}_{,1}^{\textrm{T}}\mathbf{C}^{-1}\mathbf{\mu}_{,1}}}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;and&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\mathbf{b}_{\alpha}=\frac{\mathbf{C}^{-1}\mathbf{\mu}_{,\alpha}-\sum_{\beta=1}^{\alpha-1}(\mathbf{\mu}_{,\alpha}^{\textrm{T}}\mathbf{b}_{\beta})\mathbf{b}_{\beta}}{\sqrt{\mathbf{\mu}_{,\alpha}^{\textrm{T}}\mathbf{C}^{-1}\mathbf{\mu}_{,\alpha}-\sum_{\beta=1}^{\alpha-1}(\mathbf{\mu}_{,\alpha}^{\textrm{T}}\mathbf{b}_{\beta})^{2}}}\;\;(\alpha&amp;gt;1).
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt; The weighing vector, $\mathbf{b}$ encapsulates as much information as possible for a specific model parameter $\mathbf{\theta}_{\alpha}$. This vector is then used to find linear combination of the data, $\mathbf{d}$ such that the compressed data is&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+y_{\alpha}\equiv\mathbf{b}^{\textrm{T}}_{\alpha}\mathbf{d}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;and the expected theoretical prediction is simply $y_{\alpha}\equiv\mathbf{b}^{\textrm{T}}_{\alpha}\mathbf{\mu}$. One would then use an MCMC algorithm to sample the posterior distribution of the model parameters using the MOPED compression algorithm. In particular, each MOPED vector is orthogonal to each other and is also normalised, hence the log-likelihood is simply&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\textrm{log}\,\mathcal{L} = -\frac{1}{2}\sum_{\alpha=1}^{p}(y_{\alpha}-\mathbf{b}_{\alpha}^{\textrm{T}}\mathbf{\mu})^{2}  + \textrm{constant}
+\end{align}&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;However, calculating the MOPED coefficient at each step in an MCMC can be expensive if the forward model itself is expensive. Hence, a training set is first generated at $N$ Latin Hypercube samples (LHS) and the MOPED coefficients are computed at these points, followed by modelling $p$ separate Gaussian Processes. These are then used as surrogates to sample the posterior distribution of the model parameters and the result is shown in the figure below. The figure shows the posterior with the full accurate solver CLASS (in tan) and the posterior due to the emulator is shown in blue. The contours are plotted at 68% and 95% credible intervals.&lt;/p&gt;
+
+&lt;dl class=&quot;wp-caption aligncenter&quot; style=&quot;max-width: 800px&quot;&gt;
+
+&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/triangle_plot_derived_sigma_8_semi_gp_maximin_1000_7D.jpg&quot; alt=&quot;The full posterior distribution of all parameters using the MOPED compression scheme.&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
+
+&lt;dd&gt;The full posterior distribution of all parameters using the MOPED compression scheme.&lt;/dd&gt;
+&lt;/dl&gt;
+
+</description>
+        <pubDate>Tue, 16 Nov 2021 07:11:00 +0000</pubDate>
+        <link>http://localhost:4000/blog/2021/11/Imperial-Publication-1</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2021/11/Imperial-Publication-1</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
     
       <item>
         <title>Machine Learning Resources</title>
@@ -502,143 +589,6 @@ Crash Course in Deep Learning and Pytorch
         <pubDate>Sat, 30 Jun 2018 09:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2018/06/Data-Science-Summer-School</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2018/06/Data-Science-Summer-School</guid>
-        
-        
-        <category>Workshop and Conference</category>
-        
-      </item>
-    
-      <item>
-        <title>COSMO21 and ADAIX (Valencia)</title>
-        <description>&lt;dl class=&quot;wp-caption alignright&quot; style=&quot;max-width: 400px&quot;&gt;
-
-&lt;dt&gt;&lt;a href=&quot;&quot;&gt;&lt;img class=&quot;&quot; src=&quot;/images/valencia.jpeg&quot; alt=&quot;Valencia&quot; /&gt;&lt;/a&gt;&lt;/dt&gt;
-
-&lt;dd&gt;Valencia&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;!--  &lt;img src=&quot;/images/andrew-ng.jpg&quot; align=&quot;left&quot; width = &quot;400&quot; style = &quot;margin-right: 10px; margin-bottom: 10px&quot;/&gt; --&gt;
-
-&lt;p align=&quot;justify&quot;&gt;The &lt;a href=&quot;http://ada.cosmostat.org/&quot;&gt;ADAIX&lt;/a&gt; and &lt;a href=&quot;https://cosmo21.cosmostat.org/&quot;&gt;COSMO21&lt;/a&gt; are typically held together and were held in Valencia from 20&lt;sup&gt;th&lt;/sup&gt; to 25&lt;sup&gt;th&lt;/sup&gt; May 2018. The ADAIX Summer School is more practical and the goal is to aid researchers to become more familiar with the latest tools and techniques in Data Science, which will eventually be very helpful in the era of massive surveys. In particular, we covered the following topics:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Machine Learning&lt;/li&gt;
-  &lt;li&gt;Bayesian Methods&lt;/li&gt;
-  &lt;li&gt;Sparsity-based analysis&lt;/li&gt;
-  &lt;li&gt;Analysis of astronomical data with Python&lt;/li&gt;
-  &lt;li&gt;Compressed sensing based instrumentation&lt;/li&gt; 
-&lt;/ul&gt;
-
-&lt;p align=&quot;justify&quot;&gt;On the other hand, COSMO21 consisted of a series of talks from researchers and the ones which I was particularly interested in include:&lt;/p&gt;
-
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;Multiscale Cosmological Data Analysis with Deep Convolutional Networks (&lt;a href=&quot;http://cosmo21.cosmostat.org/wp-content/uploads/2018/06/talk_Mallat.pdf&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Joint Analysis of CMB and Large Scale Structure with Deep Learning (&lt;a href=&quot;http://cosmo21.cosmostat.org/wp-content/uploads/2018/05/talk_Ho.pdf&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Machine-Learning Strategies for Variable Source Classification (&lt;a href=&quot;
-http://cosmo21.cosmostat.org/wp-content/uploads/2018/05/talk_Hernitschek.pdf&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Sparsity and Deep Learning for modern surveys (&lt;a href=&quot;
-https://eiffl.github.io/Valencia2018/&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Automatic physical inference (&lt;a href=&quot;http://cosmo21.cosmostat.org/wp-content/uploads/2018/05/talk_Charnock.pdf&quot;&gt;&lt;i style=&quot;font-size:12px&quot; class=&quot;fa&quot;&gt;&amp;#xf08e;&lt;/i&gt;&lt;/a&gt;)&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Wed, 30 May 2018 21:30:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2018/05/Cosmo21</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2018/05/Cosmo21</guid>
-        
-        
-        <category>Workshop and Conference</category>
-        
-      </item>
-    
-      <item>
-        <title>Yandex Machine Learning School 2018 (London)</title>
-        <description>&lt;p align=&quot;justify&quot;&gt;The Yandex Machine Learning School was organised from the 16&lt;sup&gt;th&lt;/sup&gt; to 26&lt;sup&gt;th&lt;/sup&gt; January. It was a quite intensive school with a series of lectures, homework, assignments, tutorials and exam over the course of 10 days only. In particular, topics covered included the following:&lt;/p&gt;
-
-&lt;ol type=&quot;1&quot;&gt;
-
-&lt;li&gt;
-Introduction to Machine Learning
-&lt;/li&gt;
-
-&lt;li&gt;
-$k$-Nearest Neighbour
-&lt;/li&gt;
-
-&lt;li&gt;
-Model Complexity
-&lt;/li&gt;
-
-&lt;li&gt;
-Principle Component Analysis, PCA
-&lt;/li&gt;
-
-&lt;li&gt;
-Singular Value Decomposition
-&lt;/li&gt;
-
-&lt;li&gt;
-Linear Regression
-&lt;/li&gt;
-
-&lt;li&gt;
-Linear Classification
-&lt;/li&gt;
-
-&lt;li&gt;
-Kernel Trick
-&lt;/li&gt;
-
-&lt;li&gt;
-Classifier Evaluation
-&lt;/li&gt;
-
-&lt;li&gt;
-Decision Trees
-&lt;/li&gt;
-
-&lt;li&gt;
-Ensemble Methods
-&lt;/li&gt;
-
-&lt;li&gt;
-Boosting
-&lt;/li&gt;
-
-&lt;li&gt;
-Neural Network
-&lt;/li&gt;
-
-&lt;li&gt;
-Tricks and Philosophy in Deep Learning
-&lt;/li&gt;
-
-&lt;li&gt;
-Deep Learning - Computer Vision Applications
-&lt;/li&gt;
-
-&lt;li&gt;
-Deep Learning - Recurrent Neural Network
-&lt;/li&gt;
-
-&lt;li&gt;
-Deep Learning - Recurrent Neural Network
-&lt;/li&gt;
-
-&lt;li&gt;
-Reinforcement Learning in a Nutshell
-&lt;/li&gt;
-
-&lt;li&gt;
-Generative Adversarial Networks and Autoencoders
-&lt;/li&gt;
-
-&lt;/ol&gt;
-
-&lt;p align=&quot;justify&quot;&gt;All lectures and tutorials are found on &lt;a href=&quot;https://github.com/yandexdataschool/MLatImperial2018&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 27 Feb 2018 08:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/2018/02/Yandex-Machine-Learning</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2018/02/Yandex-Machine-Learning</guid>
         
         
         <category>Workshop and Conference</category>

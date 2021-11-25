@@ -1,6 +1,23 @@
-I"><p>Below is a list of my recent posts. Most of my posts will be on academic research, Mathematics, Machine Learning and Statistics.</p>
+I"J<p>Below is a list of my recent posts. Most of my posts will be on academic research, Mathematics, Machine Learning and Statistics.</p>
 
 <ul class="listing">
+
+  
+  
+    
+    <li class="listing-seperator">2021</li>
+  
+  <li class="listing-item">
+    <time datetime="2021-11-16">2021-11-16</time>
+    <a href="/blog/2021/11/Imperial-Publication-2" title="Emulator for the 3D Matter Power Spectrum">Emulator for the 3D Matter Power Spectrum</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2021-11-16">2021-11-16</time>
+    <a href="/blog/2021/11/Imperial-Publication-1" title="Parameter Inference with MOPED and GP">Parameter Inference with MOPED and GP</a>
+  </li>
 
   
   
