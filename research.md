@@ -13,10 +13,6 @@ permalink: /publications/
 
  <!-- My research is mostly based on Bayesian Statistics. Recently, I have been looking at alternative ways of doing Bayesian Model Comparison. In literature, thermodynamic integration, nested sampling and reversible jump Monte Carlo are other methods of doing model comparison. In addition, I am working on the application of Bayesian Methods in Radio Astronomy. Recently, we have looked into the problem of not only determining the type of sources but also to predict the distance between two point sources, which are on top of each other but buried in noise. -->
 
-
-
-
-
 # Publications
 
 Below is an updated list of publications in which I was involved:
