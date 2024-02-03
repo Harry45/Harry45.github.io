@@ -171,31 +171,31 @@
 
 <p align="justify">The class <code>rv_continuous</code> in <code>scipy.stats</code> is straightforward to use. We simply need to define either the PDF or CDF using <code>_pdf</code> and <code>_cdf</code> respectively as shown below. We first define the PDF, followed by a function to normalise it. Note also that the PDF that we define in the class should be normalised.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">1E4</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">1E4</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">p</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-	<span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.1</span><span class="p">)</span>
+	<span class="nf">return </span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">exp</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.1</span><span class="p">)</span>
 
 <span class="c1"># Define function to normalise the PDF
 </span><span class="k">def</span> <span class="nf">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-	<span class="k">return</span> <span class="n">simps</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
+	<span class="k">return</span> <span class="nf">simps</span><span class="p">(</span><span class="nf">p</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># Define the distribution using rv_continuous
 </span><span class="k">class</span> <span class="nc">blackbody</span><span class="p">(</span><span class="n">ss</span><span class="p">.</span><span class="n">rv_continuous</span><span class="p">):</span> 
-    <span class="k">def</span> <span class="nf">_pdf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="n">const</span><span class="p">)</span> <span class="o">*</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></figure>
+    <span class="k">def</span> <span class="nf">_pdf</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
+        <span class="nf">return </span><span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="n">const</span><span class="p">)</span> <span class="o">*</span> <span class="nf">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></figure>
 
 <p align="justify">We are now ready to use our above written functions to find $\mathcal{P}\left(x\right)$, $\Phi\left(x\right)$ and generate samples from the underlying distribution. We first need to instantiate it with the lower and upper limits given by <code>a</code> and <code>b</code> respectively. In principle, if not defined, it will be considered to be from $-\infty$ to $+\infty$.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">blackbody_distribution</span> <span class="o">=</span> <span class="n">blackbody</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"blackbody_distribution"</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">blackbody_distribution</span> <span class="o">=</span> <span class="nf">blackbody</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sh">"</span><span class="s">blackbody_distribution</span><span class="sh">"</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
 
 <span class="c1"># Find the normalisation constant first
-</span><span class="n">norm_constant</span> <span class="o">=</span> <span class="n">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span class="n">norm_constant</span> <span class="o">=</span> <span class="nf">normalisation</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># create pdf, cdf, random samples
-</span><span class="n">pdf</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">)</span>
-<span class="n">cdf</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">)</span>
-<span class="n">samples</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mf">1E4</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">pdf</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="nf">pdf</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">)</span>
+<span class="n">cdf</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="nf">cdf</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">)</span>
+<span class="n">samples</span> <span class="o">=</span> <span class="n">blackbody_distribution</span><span class="p">.</span><span class="nf">rvs</span><span class="p">(</span><span class="n">const</span> <span class="o">=</span> <span class="n">norm_constant</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mf">1E4</span><span class="p">)</span></code></pre></figure>
 
 <dl class="wp-caption aligncenter" style="max-width: 700px">
 
@@ -234,17 +234,17 @@
 </ol>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Our Own pdf, cdf and samples
-</span><span class="n">own_pdf</span> <span class="o">=</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">norm_constant</span>
-<span class="n">own_cdf</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">own_pdf</span><span class="p">);</span> <span class="n">own_cdf</span> <span class="o">/=</span> <span class="nb">max</span><span class="p">(</span><span class="n">own_cdf</span><span class="p">)</span>
+</span><span class="n">own_pdf</span> <span class="o">=</span> <span class="nf">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">norm_constant</span>
+<span class="n">own_cdf</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">cumsum</span><span class="p">(</span><span class="n">own_pdf</span><span class="p">);</span> <span class="n">own_cdf</span> <span class="o">/=</span> <span class="nf">max</span><span class="p">(</span><span class="n">own_cdf</span><span class="p">)</span>
 
 <span class="c1"># Define a function to return N samples
 </span><span class="k">def</span> <span class="nf">genSamples</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-	<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
-	<span class="n">func_interp</span> <span class="o">=</span> <span class="n">interp1d</span><span class="p">(</span><span class="n">own_cdf</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-	<span class="n">samples</span> <span class="o">=</span> <span class="n">func_interp</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+	<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nf">int</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
+	<span class="n">func_interp</span> <span class="o">=</span> <span class="nf">interp1d</span><span class="p">(</span><span class="n">own_cdf</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+	<span class="n">samples</span> <span class="o">=</span> <span class="nf">func_interp</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
 	<span class="k">return</span> <span class="n">samples</span>
 
-<span class="n">own_samples</span> <span class="o">=</span> <span class="n">genSamples</span><span class="p">(</span><span class="mf">1E4</span><span class="p">)</span></code></pre></figure>
+<span class="n">own_samples</span> <span class="o">=</span> <span class="nf">genSamples</span><span class="p">(</span><span class="mf">1E4</span><span class="p">)</span></code></pre></figure>
 
 <dl class="wp-caption aligncenter" style="max-width: 700px">
 
@@ -410,7 +410,7 @@ table {
 
       <div class="footer-col  footer-col-3">
          <p class="text">
-22, Derwentwater Road, Acton Town, London (W3 6DE) 
+19, Miserden Crescent, Milton Keynes (MK4 4GJ) 
       </div>
     </div>
 

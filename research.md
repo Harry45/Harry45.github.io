@@ -24,6 +24,33 @@ Below is an updated list of publications in which I was involved:
 <ol type="1">
 
   <li>
+  <p><b>LimberJack.jl: auto-differentiable methods for angular power spectra analyses</b>
+  <br>J. Ruiz-Zapatero, D. Alonso, C. García-García, A. Nicola, <font color="#A52A2A"><b>A. Mootoovaloo</b></font>, J. M. Sullivan, M. Bonici, P. G. Ferreira
+  <br><a href="https://arxiv.org/abs/2310.08306">arXiv:2310.08306</a></p>
+  </li>
+  <p align="justify">We present LimberJack.jl, a fully auto-differentiable code for cosmological analyses of 2 point auto- and cross-correlation measurements from galaxy clustering, CMB lensing and weak lensing data written in Julia. Using Julia's auto-differentiation ecosystem, LimberJack.jl can obtain gradients for its outputs up to an order of magnitude faster than traditional finite difference methods. This makes LimberJack.jl greatly synergistic with gradient-based sampling methods, such as Hamiltonian Monte Carlo, capable of efficiently exploring parameter spaces with hundreds of dimensions. We first prove LimberJack.jl's reliability by reanalysing the DES Y1 $3\times 2$-point data. We then showcase its capabilities by using a $\mathcal{O}(100)$ parameters Gaussian Process to reconstruct the cosmic growth from a combination of DES Y1 galaxy clustering and weak lensing data, eBOSS QSO's, CMB lensing and redshift-space distortions. Our Gaussian process reconstruction of the growth factor is statistically consistent with the $\Lambda$CDM Planck 2018 prediction at all redshifts. Moreover, we show that the addition of RSD data is extremely beneficial to this type of analysis, reducing the uncertainty in the reconstructed growth factor by $20\%$ on average across redshift. LimberJack.jl is a fully open-source project available on Julia's general repository of packages and GitHub.</p>
+
+
+  <li>
+  <p><b>Extreme data compression for Bayesian model comparison</b>
+  <br>Alan F. Heavens, <font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Roberto Trotta, Elena Sellentin
+  <br><a href="https://iopscience.iop.org/article/10.1088/1475-7516/2023/11/048/pdf">JCAP</a>, <a href="https://arxiv.org/abs/2306.15998">arXiv:2306.15998</a></p>
+  </li>
+  <p align="justify">We develop extreme data compression for use in Bayesian model comparison via the MOPED algorithm, as well as more general score compression. We find that Bayes factors from data compressed with the MOPED algorithm are identical to those from their uncompressed datasets when the models are linear and the errors Gaussian. In other nonlinear cases, whether nested or not, we find negligible differences in the Bayes factors, and show this explicitly for the Pantheon-SH0ES supernova dataset. We also investigate the sampling properties of the Bayesian Evidence as a frequentist statistic, and find that extreme data compression reduces the sampling variance of the Evidence, but has no impact on the sampling distribution of Bayes factors. Since model comparison can be a very computationally-intensive task, MOPED extreme data compression may present significant advantages in computational time.</p>
+
+
+
+
+  <li>
+  <p><b>Analytical marginalisation over photometric redshift uncertainties in cosmic shear analyses</b>
+  <br>Jaime Ruiz-Zapatero, Boryana Hadzhiyska, David Alonso, Pedro G. Ferreira, Carlos García-García, <font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>
+  <br><a href="https://academic.oup.com/mnras/article/522/4/5037/7136163?login=false">MNRAS</a>, <a href="https://arxiv.org/abs/2301.11978">	arXiv:2301.11978</a></p>
+  </li>
+  <p align="justify">As the statistical power of imaging surveys grows, it is crucial to account for all systematic uncertainties. This is normally done by constructing a model of these uncertainties and then marginalizing over the additional model parameters. The resulting high dimensionality of the total parameter spaces makes inferring the cosmological parameters significantly more costly using traditional Monte-Carlo sampling methods. A particularly relevant example is the redshift distribution, $p(z)$, of the source samples, which may require tens of parameters to describe fully. However, relatively tight priors can be usually placed on these parameters through calibration of the associated systematics. In this paper we show, quantitatively, that a linearisation of the theoretical prediction with respect to these calibratable systematic parameters allows us to analytically marginalise over these extra parameters, leading to a factor $\sim 30$ reduction in the time needed for parameter inference, while accurately recovering the same posterior distributions for the cosmological parameters that would be obtained through a full numerical marginalisation over $160\; p(z)$ parameters. We demonstrate that this is feasible not only with current data and current achievable calibration priors but also for future Stage-IV datasets.</p>
+
+
+
+  <li>
   <p><b>Fast Approximate Model for the 3D Matter Power Spectrum</b>
   <br><font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Andrew Jaffe, Alan Heavens, Florent Leclercq
   <br>Accepted for publication in NeurIPS 2021</p>
@@ -77,7 +104,7 @@ Below is an updated list of publications in which I was involved:
   <p align="justify">Upcoming synoptic surveys are set to generate an unprecedented amount of data. This requires an automatic framework that can quickly and efficiently provide classification labels for several new object classification challenges. Using data describing 11 types of variable stars from the Catalina Real-Time Transient Surveys (CRTS), we illustrate how to capture the most important information from computed features and describe detailed methods of how to robustly use Information Theory for feature selection and evaluation. We apply three Machine Learning (ML) algorithms and demonstrate how to optimize these classifiers via cross-validation techniques. For the CRTS dataset, we find that the Random Forest (RF) classifier performs best in terms of balanced-accuracy and geometric means. We demonstrate substantially improved classification results by converting the multi-class problem into a binary classification task, achieving a balanced-accuracy rate of $\sim$99 per cent for the classification of $\delta$-Scuti and Anomalous Cepheids (ACEP). Additionally, we describe how classification performance can be improved via converting a 'flat-multi-class' problem into a hierarchical taxonomy. We develop a new hierarchical structure and propose a new set of classification features, enabling the accurate identification of subtypes of cepheids, RR Lyrae and eclipsing binary stars in CRTS data.</p>
 
   <li>
-  <p><b>Marginal Likelihoods from Monte Carlo Markov Chains</b> 
+  <p><b>Marginal Likelihoods from Monte Carlo Markov Chains</b>
   <br>Alan Heavens, Yabebal Fantaye, <font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Hans Eggers, Zafiirah Hosenie, Steve Kroon, Elena Sellentin
   <br><a href="https://arxiv.org/abs/1704.03472">arXiv:1704.03472</a>, <a href="https://github.com/Harry45/MCEvidence">Code</a></p>
   </li>
@@ -85,7 +112,7 @@ Below is an updated list of publications in which I was involved:
   <p align="justify">In this paper, we present a method for computing the marginal likelihood, also known as the model likelihood or Bayesian evidence, from Markov Chain Monte Carlo (MCMC), or other sampled posterior distributions. In order to do this, one needs to be able to estimate the density of points in parameter space, and this can be challenging in high numbers of dimensions. Here we present a Bayesian analysis, where we obtain the posterior for the marginal likelihood, using kth nearest-neighbour distances in parameter space, using the Mahalanobis distance metric, under the assumption that the points in the chain (thinned if required) are independent. We generalise the algorithm to apply to importance-sampled chains, where each point is assigned a weight. We illustrate this with an idealised posterior of known form with an analytic marginal likelihood, and show that for chains of length $∼10^{5}$ points, the technique is effective for parameter spaces with up to ∼20 dimensions. We also argue that $k=1$ is the optimal choice, and discuss failure modes for the algorithm. In a companion paper (<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.101301">Heavens et al. 2017</a>) we apply the technique to the main MCMC chains from the 2015 Planck analysis of cosmic background radiation data, to infer that quantitatively the simplest 6-parameter flat $\Lambda$CDM standard model of cosmology is preferred over all extensions considered.</p>
 
   <li>
-  <p><b>No evidence for extensions to the standard cosmological model</b> 
+  <p><b>No evidence for extensions to the standard cosmological model</b>
   <br>Alan Heavens, Yabebal Fantaye, Elena Sellentin, Hans Eggers, Zafiirah Hosenie, Steve Kroon, <font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>
   <br><a href="https://doi.org/10.1103/PhysRevLett.119.101301">PRL</a>, <a href="https://arxiv.org/abs/1704.03467">arXiv:1704.03467</a>, <a href="https://github.com/Harry45/MCEvidence">Code</a></p>
   </li>
@@ -93,7 +120,7 @@ Below is an updated list of publications in which I was involved:
   <p align="justify">We compute the Bayesian Evidence for models considered in the main analysis of Planck cosmic microwave background data. By utilising carefully-defined nearest-neighbour distances in parameter space, we reuse the Monte Carlo Markov Chains already produced for parameter inference to compute Bayes factors $B$ for many different model-dataset combinations. Standard 6-parameter flat $\Lambda$CDM model is favoured over all other models considered, with curvature being mildly favoured only when CMB lensing is not included. Many alternative models are strongly disfavoured by the data, including primordial correlated isocurvature models (ln$B$=−7.8), non-zero scalar-to-tensor ratio (ln$B$=−4.3), running of the spectral index (ln$B$=−4.7), curvature (ln$B$=−3.6), non-standard numbers of neutrinos (ln$B$=−3.1), non-standard neutrino masses (ln$B$=−3.2), non-standard lensing potential (ln$B$=−4.6), evolving dark energy (ln$B$=−3.2), sterile neutrinos (ln$B$=−6.9), and extra sterile neutrinos with a non-zero scalar-to-tensor ratio (ln$B$=−10.8). Other models are less strongly disfavoured with respect to flat $\Lambda$CDM. As with all analyses based on Bayesian Evidence, the final numbers depend on the widths of the parameter priors. We adopt the priors used in the Planck analysis, while performing a prior sensitivity analysis. Our quantitative conclusion is that extensions beyond the standard cosmological model are disfavoured by Planck data. Only when newer Hubble constant measurements are included does ΛCDM become disfavoured, and only mildly, compared with a dynamical dark energy model (ln$B\sim$+2).</p>
 
   <li>
-  <p><b>Bayes Factors via Savage-Dickey Supermodels</b> 
+  <p><b>Bayes Factors via Savage-Dickey Supermodels</b>
   <br><font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Bruce A. Bassett, Martin Kunz
   <br><a href="https://arxiv.org/abs/1609.02186">arXiv:1609.02186</a></p>
   </li>
