@@ -11,6 +11,10 @@ layout: default
   <title>Adjust Size of JavaScript App</title>
   <style>
     #particles-js {
+      position: relative;
+      top: 0%; /* Position at the vertical center */
+      left: 50%; /* Position at the horizontal center */
+      transform: translate(-50%, 0%);
       width: 86vh;
       height: 60vh;
       background-color: #e15a16;
@@ -32,8 +36,8 @@ layout: default
     window.onload = function () {
       var particlesContainer = document.getElementById('particles-js');
       // Set custom width and height
-      particlesContainer.style.width = '90vh'; // Set width to 100% of its container
-      particlesContainer.style.height = '60vh'; // Set height to 100% of the viewport height
+      particlesContainer.style.width = '200vh'; // Set width to 100% of its container
+      particlesContainer.style.height = '70vh'; // Set height to 100% of the viewport height
     };
   </script>
 
