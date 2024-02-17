@@ -137,42 +137,44 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-
-<style>
-blockquote {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-</style>
-
-<blockquote>
-<p align="justify"><i>"You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future."</i> - Steve Jobs</p>
-</blockquote>
+        <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" media="screen" href="js/demo/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adjust Size of JavaScript App</title>
+  <style>
+    #particles-js {
+      width: 100vh;
+      height: 100vh;
+      background-color: #e15a16;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- particles.js container -->
-<div id="particles-js"></div>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
 
-<!-- scripts -->
-<script src="js/particles.js"></script>
-<script src="js/demo/js/app.js"></script>
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/demo/js/app.js"></script>
+
+  <script>
+    // JavaScript to set custom width and height
+    window.onload = function () {
+      var particlesContainer = document.getElementById('particles-js');
+      // Set custom width and height
+      particlesContainer.style.width = '86vh'; // Set width to 100% of its container
+      particlesContainer.style.height = '60vh'; // Set height to 100% of the viewport height
+    };
+  </script>
 
 </body>
 
-<!-- <p align="justify"> I am excited to set up this site, through which I can keep you updated. I will be writing mostly about research/teaching and also on the various places I have visited where I had the opportunity to meet incredible people.</p> -->
-
-</div>
 </html>
-
       </div>
     </div>
 
