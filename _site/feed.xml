@@ -5,9 +5,110 @@
     <description>London, United Kingdom</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Feb 2024 09:19:54 +0000</pubDate>
-    <lastBuildDate>Sat, 17 Feb 2024 09:19:54 +0000</lastBuildDate>
+    <pubDate>Sat, 08 Jun 2024 09:50:58 +0100</pubDate>
+    <lastBuildDate>Sat, 08 Jun 2024 09:50:58 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Introduction to On Device AI</title>
+        <description>&lt;p align=&quot;justify&quot;&gt;This is a short summary of the course &lt;a href=&quot;https://learn.deeplearning.ai/courses/introduction-to-on-device-ai/lesson/1/introduction&quot;&gt;&lt;strong&gt;Introduction to on-device AI&lt;/strong&gt;&lt;/a&gt; by provided by DeepLearning.ai.&lt;/p&gt;
+
+&lt;section&gt;
+    &lt;h1&gt;Introduction&lt;/h1&gt;
+    &lt;p align=&quot;justify&quot;&gt;Modern smartphones, with their significant computational power of 10 to 30 teraflops, can run multiple AI models simultaneously for applications like real-time semantic segmentation and scene understanding. This course explores creating AI applications that run on-device, applicable to smartphones and billions of other devices such as cameras, robots, drones, and VR headsets. Despite differences in hardware and operating systems, the principles for deploying on-device AI are similar. Initially, models trained in the cloud need to be converted into a compatible format, involving freezing the model into a neural network graph and converting it into an executable format for the specific device.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;Devices like smartphones and edge devices usually contain a mix of CPUs, GPUs, and NPUs, enabling performance optimizations tailored to specific hardware. Understanding the target devices can significantly enhance performance, making applications run up to ten times faster. The course also covers tools to ensure consistent model performance across various devices, crucial due to the diversity of over 300 different smartphone types. Additionally, validating numerical correctness prevents discrepancies in model operation due to hardware differences. Quantization, reducing the model&apos;s calculation precision, is another important aspect, making apps run several times faster while decreasing model size, improving performance, and reducing the footprint.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+    &lt;h1&gt;Why On-Device&lt;/h1&gt;
+    &lt;p align=&quot;justify&quot;&gt;Learning about on-device AI offers several benefits, including reduced latency, improved efficiency, lower costs, and enhanced privacy. Applications of on-device AI are prevalent in real-world scenarios such as real-time speech detection, semantic segmentation, object detection, and physical activity detection. Each time you take a picture with your smartphone, over 20 AI models work in tandem to optimize the image within milliseconds. The industrial IoT sector alone sees an estimated economic impact of around $3 trillion due to these technologies.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;On-device AI is integrated into many everyday technologies. For instance, typing on a laptop keyboard or interacting with a smart speaker relies on AI running locally. Robots for delivery and assembly, as well as drones used in industrial and agricultural settings, utilize on-device AI. This technology is also pivotal in advanced driver assistance systems in cars and in editing photos on smartphones and laptops. Various applications across audio, image, video, and sensor data—like text-to-speech, speech recognition, photo classification, and physical activity detection—demonstrate the versatility of on-device AI. Running models on-device is advantageous for several reasons.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;It is cost-effective as it leverages local computational resources, thereby eliminating the need for cloud services.&lt;/li&gt;
+        &lt;li&gt;Its efficiency improves as data processing occurs locally, avoiding the delays associated with cloud communication.&lt;/li&gt;
+        &lt;li&gt;Privacy is enhanced since data remains on the device.&lt;/li&gt;
+        &lt;li&gt;Personalization is possible because models can be tailored locally without external data.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+    &lt;h1&gt;Deploying Segmentation Models On-Device&lt;/h1&gt;
+    &lt;p align=&quot;justify&quot;&gt;On-device AI has a wide range of applications, including real-time object detection to identify people, faces, and QR codes; speech recognition to convert spoken input into text; and pose estimation to predict human poses from real-time images or video streams. Additionally, it includes image generation from text descriptions, super-resolution to enhance low-resolution images, and image segmentation, which involves breaking down an image into meaningful segments for easier analysis and object identification.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;Image segmentation comes in various forms, with the most popular being semantic segmentation and instance segmentation.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Semantic segmentation labels every pixel according to a specific class.&lt;/li&gt;
+        &lt;li&gt;Instance segmentation labels each pixel by class and individual instance within the same category.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p align=&quot;justify&quot;&gt;The latter is widely used in advanced driver assistance systems to differentiate roads from pedestrians, in image editing software to apply filters or blur backgrounds, and in video conferencing to blur backgrounds during calls. It is also employed in drones for mapping landscapes in agricultural and industrial settings.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;Several models are used for semantic segmentation, including ResNet, which employs residual connections for training deep networks, and HRNet, which captures fine-grained details through high-resolution representations. FANet, or Feature Agglomeration Network, aggregates features from different scales for detailed predictions, while DDRNet, or Dual Dynamic Resolution Network, balances efficiency and accuracy with a dual-path architecture.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;We will focus on FFNET, or Fuss Free Network, which features a simple encoder-decoder architecture with a ResNet-like backbone and a small multi-scale head. FFNET offers comparable accuracy to more complex networks like HRNet and FANet, but with greater computational efficiency, making it ideal for on-device deployment. Its configurability allows for various encoder and decoder sizes to suit different environmental and accuracy needs.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+    &lt;h1&gt;Preparing for On-Device Deployment&lt;/h1&gt;
+    &lt;p align=&quot;justify&quot;&gt;The first step is neural network graph capture, which involves capturing the computation to be executed on the device. The second step is on-device compilation. The third step focuses on accelerating models using the device&apos;s hardware. The fourth step emphasizes validating the numerical correctness of the model on the device.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;There are three popular runtimes for on-device deployment. TensorFlow Lite is recommended for Android applications. ONNX Runtime is suitable for Windows-based applications. The Qualcomm AI Engine is ideal for fully embedded applications on Qualcomm&apos;s hardware.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;Let&apos;s delve into the TensorFlow Lite runtime. Specifically designed for mobile platforms and embedded devices, TensorFlow Lite delivers extremely efficient performance with fast response times by minimizing computation overhead. Its flexibility allows deployment on smartphones and various IoT devices, making it highly portable and ubiquitous. TensorFlow Lite is also energy-efficient, consuming less power. It supports hardware acceleration and is fully compatible with neural processing units (NPUs) through a mechanism called delegation.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+    &lt;h1&gt;Quantizing Models&lt;/h1&gt;
+    &lt;p align=&quot;justify&quot;&gt;Quantization reduces the precision of your model to speed up computation and decrease model size. This process can make models up to four times smaller and faster. The three main benefits of quantization are: reduced model size for better storage on devices with limited capacity, faster processing due to fewer computations, and lower power consumption, which is crucial for battery-operated devices.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;To understand quantization, consider a floating point tensor, which takes 32 bits per value. Quantization converts this to an integer representation with 8 bits per value, using a scale and zero point for accurate translation. The goal is to minimize error while converting from floating point to integer, applicable to various scenarios.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;There are two main types of quantization:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Weight quantization, which reduces the precision of model weights to optimize storage.&lt;/li&gt;
+        &lt;li&gt;Activation quantization, which applies lower precision to activation values to accelerate inference using lower precision numerics.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p align=&quot;justify&quot;&gt;Different levels of quantization exist, such as:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;W8int8, converting both weights and activations to 8-bit.&lt;/li&gt;
+        &lt;li&gt;W8int16, converting weights to 8-bit and keeping activations at 16-bit.&lt;/li&gt;
+        &lt;li&gt;Extreme quantization like W4 (weights at 4-bit and activations at 16-bit) is popular for large language models and generative AI applications.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p align=&quot;justify&quot;&gt;Quantization methods include:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Post-training quantization&lt;/li&gt;
+        &lt;li&gt;Quantization-aware training&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p align=&quot;justify&quot;&gt;Post-training quantization applies the process after training, using calibration with sample data to minimize quantization error. This typically requires a few hundred samples.&lt;/p&gt;
+    &lt;p align=&quot;justify&quot;&gt;Quantization-aware training incorporates quantization into the training process, ensuring the model learns integer values, which can yield more accurate models when post-training quantization is insufficient. This approach integrates quantization into the training process, learning the model weights and integer representation simultaneously.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+    &lt;h1&gt;Device Integration&lt;/h1&gt;
+    &lt;p align=&quot;justify&quot;&gt;The following outlines the steps for integrating an AI model into a smartphone application for real-time segmentation at 30 frames per second. Here is a summary of the process:&lt;/p&gt;
+    &lt;ol align=&quot;justify&quot;&gt;
+        &lt;li&gt;&lt;strong&gt;Understanding Data Transformation&lt;/strong&gt;: The data flow begins with the camera stream, which provides frames in either RGB or YUV format. The GPU is used for pre-processing to convert YUV to RGB and downsample to the model&apos;s required resolution (e.g., from 720p to 224x224).&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Device Integration Process&lt;/strong&gt;: Integration involves several stages:
+            &lt;ul&gt;
+                &lt;li&gt;Camera Stream Extraction: Extract frames at 30 frames per second in either RGB or YUV format.&lt;/li&gt;
+                &lt;li&gt;Pre-processing: Utilize the GPU and OpenCV for efficient conversion and downsampling of the frames to match the model&apos;s resolution.&lt;/li&gt;
+                &lt;li&gt;Model Inference: Run the AI model on the device&apos;s Neural Processing Unit (NPU) using runtime APIs (C++ or Java-based) for optimal performance. The model outputs a mask of the same resolution as it was trained on (e.g., 224x224).&lt;/li&gt;
+                &lt;li&gt;Post-processing: Use the GPU and OpenCV again for tasks like upsampling, smoothing, thresholding, and blurring to overlay the output mask onto the camera stream.&lt;/li&gt;
+                &lt;li&gt;Packaging Runtime: Ensure all runtime dependencies, including the AI models, are packaged within the application to leverage hardware acceleration effectively.&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Implementation&lt;/strong&gt;: There are five key parts:
+            &lt;ul&gt;
+                &lt;li&gt;Camera Stream Extraction: Capture frames from the camera.&lt;/li&gt;
+                &lt;li&gt;Pre-processing: Convert and downsample frames using the GPU.&lt;/li&gt;
+                &lt;li&gt;Model Inference: Perform inference on the NPU.&lt;/li&gt;
+                &lt;li&gt;Post-processing: Overlay the model&apos;s output on the camera stream using GPU-based techniques.&lt;/li&gt;
+                &lt;li&gt;Packaging: Include all necessary runtime dependencies in the application to ensure it runs efficiently on the device. This involves managing Java, native sources, and dependencies within an Android project.&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        <pubDate>Sat, 08 Jun 2024 09:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/2024/06/Introduction-to-On-Device</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2024/06/Introduction-to-On-Device</guid>
+        
+        
+        <category>Machine Learning and Statistics</category>
+        
+      </item>
     
       <item>
         <title>Emulator for the 3D Matter Power Spectrum</title>
@@ -534,61 +635,6 @@ Learning Multiscale Physics with Deep Neural Networks
         <pubDate>Tue, 30 Oct 2018 20:00:00 +0000</pubDate>
         <link>http://localhost:4000/blog/2018/10/Methods-for-Statistical-Inference-Paris</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2018/10/Methods-for-Statistical-Inference-Paris</guid>
-        
-        
-        <category>Workshop and Conference</category>
-        
-      </item>
-    
-      <item>
-        <title>Data Science Summer School 2018 (Paris)</title>
-        <description>&lt;p align=&quot;justify&quot;&gt;The &lt;a href=&quot;https://2018.ds3-datascience-polytechnique.fr/&quot;&gt;Data Science Summer School&lt;/a&gt; was organised from the 25&lt;sup&gt;th&lt;/sup&gt; to the 29&lt;sup&gt;th&lt;/sup&gt; June 2018 at the École Polytechnique. The school had a broad spectrum of topics covered and the presence of Prof. Yann Lecun, leading expert in the deep learning and Cédric Villani, winner of the Fields medal in 2010, did not go unnoticed.&lt;/p&gt;
-
-&lt;p align=&quot;justify&quot;&gt;I will briefly touch upon the talks which I attended. All the session on Monday were mostly related to the general non-technical issues around Machine Learning and we had the following lectures:&lt;/p&gt;
-
-&lt;ol type=&quot;1&quot;&gt;
-
-&lt;li&gt;
-Deep Learning
-&lt;/li&gt;
-&lt;li&gt;
-Trust and Transparency
-&lt;/li&gt;
-&lt;li&gt;
-Fairness in Machine Learning
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p align=&quot;justify&quot;&gt;On Tuesday and Wednesday, we had more technical talks in:&lt;/p&gt;
-
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;
-Machine Learning Research Design and the GDPR
-&lt;/li&gt;
-&lt;li&gt;
-Probabilistic Numerical Computation: A Role for Statisticians in Numerical Analysis?
-&lt;/li&gt;
-&lt;li&gt;
-Deep Learning for Medical Imaging and Precision Medicine
-&lt;/li&gt;
-&lt;li&gt;
-Deep Latent Variable Models in Medical Informatics
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p align=&quot;justify&quot;&gt;On Thursday and Friday, we had tutorials and I chose the following two:&lt;/p&gt;
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;
-Representing and Comparing Probabilities with Kernels
-&lt;/li&gt;
-&lt;li&gt;
-Crash Course in Deep Learning and Pytorch
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Sat, 30 Jun 2018 09:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2018/06/Data-Science-Summer-School</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2018/06/Data-Science-Summer-School</guid>
         
         
         <category>Workshop and Conference</category>
