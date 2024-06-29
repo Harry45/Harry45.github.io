@@ -161,18 +161,24 @@
 
 <p align="justify">On a separate note, I am also interested in Machine Learning and Deep Learning (from a probabilistic perspective). I believe uncertainty quantification is important and will be a central focus in the next decade of research in Machine Learning. Moreover, while 'curve-fitting' techniques have been very successful over the past two decades, there is still the requirement to understand and interpret these algorithms.</p>
 
-<p><!-- My research is mostly based on Bayesian Statistics. Recently, I have been looking at alternative ways of doing Bayesian Model Comparison. In literature, thermodynamic integration, nested sampling and reversible jump Monte Carlo are other methods of doing model comparison. In addition, I am working on the application of Bayesian Methods in Radio Astronomy. Recently, we have looked into the problem of not only determining the type of sources but also to predict the distance between two point sources, which are on top of each other but buried in noise. --></p>
-
 <h1 id="publications">Publications</h1>
 
 <p>Below is an updated list of publications in which I was involved:</p>
 
 <ol type="1">
+ <li>
+  <p><b>Assessment of Gradient-Based Samplers in Standard Cosmological Likelihoods</b>
+  <br /><font color="#A52A2A"><b>A. Mootoovaloo</b></font>, J. Ruiz-Zapatero, C. García-García, D. Alonso
+  <br /><a href="https://arxiv.org/abs/2406.04725">arXiv:2406.04725</a></p>
+  </li>
+  <p align="justify">
+We assess the usefulness of gradient-based samplers, such as the No-U-Turn Sampler (NUTS), by comparison with traditional Metropolis-Hastings algorithms, in tomographic $3\times 2$ point analyses. Specifically, we use the DES Year 1 data and a simulated future LSST-like survey as representative examples of these studies, containing a significant number of nuisance parameters (20 and 32, respectively) that affect the performance of rejection-based samplers. To do so, we implement a differentiable forward model using JAX-COSMO (<a href="https://doi.org/10.21105/astro.2302.05163">Campagne et al. 2023</a>), and we use it to derive parameter constraints from both datasets using the NUTS algorithm as implemented in §4, and the Metropolis-Hastings algorithm as implemented in Cobaya (<a href="https://doi.org/10.1103/PhysRevD.87.103529">Lewis 2013</a>). When quantified in terms of the number of effective number of samples taken per likelihood evaluation, we find a relative efficiency gain of $\mathcal{O}(10)$ in favour of NUTS. However, this efficiency is reduced to a factor $\sim 2$ when quantified in terms of computational time, since we find the cost of the gradient computation (needed by NUTS) relative to the likelihood to be $\sim 4.5$ times larger for both experiments. We validate these results making use of analytical multi-variate distributions (a multivariate Gaussian and a Rosenbrock distribution) with increasing dimensionality. Based on these results, we conclude that gradient-based samplers such as NUTS can be leveraged to sample high dimensional parameter spaces in Cosmology, although the efficiency improvement is relatively mild for moderate $(\mathcal{O}(50))$ dimension numbers, typical of tomographic large-scale structure analyses.
+  </p>
 
   <li>
   <p><b>LimberJack.jl: auto-differentiable methods for angular power spectra analyses</b>
   <br />J. Ruiz-Zapatero, D. Alonso, C. García-García, A. Nicola, <font color="#A52A2A"><b>A. Mootoovaloo</b></font>, J. M. Sullivan, M. Bonici, P. G. Ferreira
-  <br /><a href="https://arxiv.org/abs/2310.08306">arXiv:2310.08306</a></p>
+  <br /><a href="https://astro.theoj.org/article/92854-limberjack-jl-auto-differentiable-methods-for-angular-power-spectra-analyses">OJA</a>, <a href="https://arxiv.org/abs/2310.08306">arXiv:2310.08306</a></p>
   </li>
   <p align="justify">We present LimberJack.jl, a fully auto-differentiable code for cosmological analyses of 2 point auto- and cross-correlation measurements from galaxy clustering, CMB lensing and weak lensing data written in Julia. Using Julia's auto-differentiation ecosystem, LimberJack.jl can obtain gradients for its outputs up to an order of magnitude faster than traditional finite difference methods. This makes LimberJack.jl greatly synergistic with gradient-based sampling methods, such as Hamiltonian Monte Carlo, capable of efficiently exploring parameter spaces with hundreds of dimensions. We first prove LimberJack.jl's reliability by reanalysing the DES Y1 $3\times 2$-point data. We then showcase its capabilities by using a $\mathcal{O}(100)$ parameters Gaussian Process to reconstruct the cosmic growth from a combination of DES Y1 galaxy clustering and weak lensing data, eBOSS QSO's, CMB lensing and redshift-space distortions. Our Gaussian process reconstruction of the growth factor is statistically consistent with the $\Lambda$CDM Planck 2018 prediction at all redshifts. Moreover, we show that the addition of RSD data is extremely beneficial to this type of analysis, reducing the uncertainty in the reconstructed growth factor by $20\%$ on average across redshift. LimberJack.jl is a fully open-source project available on Julia's general repository of packages and GitHub.</p>
 
