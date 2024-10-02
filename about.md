@@ -24,12 +24,9 @@ blockquote {
 
 <p align="justify">He has an avid passion for technology and zealous to learn new tools. Since his background is in Physics, he is passionate about solving problems in a meticulous and principled way, which will benefit the community at large. In the same spirit, Mathematics, the universal and common language amongst scientists and engineers, allows him to develop a deep understanding of the topics he is interested in. When he is not doing research, he enjoys reading and watching soccer.</p>
 
-
-
 <blockquote>
 <p align="justify"><i>"You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future."</i> - Steve Jobs</p>
 </blockquote>
-
 
 <p><b><font size="6">Academic Background</font></b></p>
 
@@ -50,15 +47,15 @@ blockquote {
 <p><b>Postdoc Researcher (<a href="https://www.ox.ac.uk/">University of Oxford</a>)</b></p>
 <p align="justify">His research is focused on using Machine Learning techniques for finding unusual objects in the universe.</p>
 
-<p><b>Consultant - Data Science (<a href="https://metrixs.net/">Metrixs</a>)</b></p>
+<p><b>Data Scientist (<a href="https://metrixs.net/">Metrixs</a>)</b></p>
 <p align="justify">His work at Metrixs focused on developing Machine Learning algorithms for analysing consumers' data. In parallel, he also worked on testing and verifying an analytical model for investigating psychometric data.</p>
 
-<p><b>Consultant - Data Science (<a href="https://www.voxcroft.com/">Voxcroft Analytics</a>)</b></p>
-<p align="justify">At Voxcroft, he was involved in two projects related to Natural Language Processing. The first project involved the analysis of Twitter data while the second project was on speech-to-text analysis.</p>
+<!-- <p><b>Consultant - Data Science (<a href="https://www.voxcroft.com/">Voxcroft Analytics</a>)</b></p>
+<p align="justify">At Voxcroft, he was involved in two projects related to Natural Language Processing. The first project involved the analysis of Twitter data while the second project was on speech-to-text analysis.</p> -->
 
-<p><b>Consultant - Data Science (<a href="https://www.arcturus.io/">Arcturus ESG</a>)</b></p>
+<p><b>Data Scientist (<a href="https://www.arcturus.io/">Arcturus</a>)</b></p>
 <p align="justify">His work was primarily focused on developing a methodology for rating companies. He also had the opportunity to work on a diverse set of problems including the development of a dynamic model, name-matching algorithm, web scraping, Natural Language Processing and geospatial data analysis using Computer Vision.</p>
-
+<!--
 <p><b>Lead Data Scientist (<a href="https://vensy.co.uk/">Vensy</a>)</b></p>
 <p align="justify">Much of his work at Vensy was to investigate a Twitter database in order to understand the engagement rate of atheletes, which eventually helps in driving the business forward.</p>
 
@@ -66,4 +63,4 @@ blockquote {
 <p align="justify">Part of the RnD team, working on predictive analysis and statistics, to build both data pipelines and machine learning algorithms to produce insightful metrics while designing ways to integrate these algorithms as tools within an automated crypto-trading platform.</p>
 
 <p><b>Private Tutor (Mauritius)</b></p>
-<p align="justify">Taught Mathematics, Physics, Additional Mathematics and Further Mathematics to more than 150 O-Level and A-Level students in Mauritius over a course of 4 years (2011 to 2014).</p>
+<p align="justify">Taught Mathematics, Physics, Additional Mathematics and Further Mathematics to more than 150 O-Level and A-Level students in Mauritius over a course of 4 years (2011 to 2014).</p> -->
