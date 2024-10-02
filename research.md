@@ -11,12 +11,21 @@ permalink: /publications/
 
 <p align="justify">On a separate note, I am also interested in Machine Learning and Deep Learning (from a probabilistic perspective). I believe uncertainty quantification is important and will be a central focus in the next decade of research in Machine Learning. Moreover, while 'curve-fitting' techniques have been very successful over the past two decades, there is still the requirement to understand and interpret these algorithms.</p>
 
-
 # Publications
 
 Below is an updated list of publications in which I was involved:
 
 <ol type="1">
+
+ <li>
+  <p><b>emuflow: Normalising Flows for Joint Cosmological Analysis</b>
+  <br><font color="#A52A2A"><b>A. Mootoovaloo</b></font>, C. García-García, D. Alonso, J. Ruiz-Zapatero
+  <br><a href="https://arxiv.org/abs/2409.01407">arXiv:2409.01407</a></p>
+  </li>
+  <p align="justify">
+Given the growth in the variety and precision of astronomical datasets of interest for cosmology, the best cosmological constraints are invariably obtained by combining data from different experiments. At the likelihood level, one complication in doing so is the need to marginalise over large-dimensional parameter models describing the data of each experiment. These include both the relatively small number of cosmological parameters of interest and a large number of "nuisance" parameters. Sampling over the joint parameter space for multiple experiments can thus become a very computationally expensive operation. This can be significantly simplified if one could sample directly from the marginal cosmological posterior distribution of preceding experiments, depending only on the common set of cosmological parameters. In this paper, we show that this can be achieved by emulating marginal posterior distributions via normalising flows. The resulting trained normalising flow models can be used to efficiently combine cosmological constraints from independent datasets without increasing the dimensionality of the parameter space under study. We show that the method is able to accurately describe the posterior distribution of real cosmological datasets, as well as the joint distribution of different datasets, even when significant tension exists between experiments. The resulting joint constraints can be obtained in a fraction of the time it would take to combine the same datasets at the level of their likelihoods. We construct normalising flow models for a set of public cosmological datasets of general interests and make them available, together with the software used to train them, and to exploit them in cosmological parameter inference.
+  </p>
+
  <li>
   <p><b>Assessment of Gradient-Based Samplers in Standard Cosmological Likelihoods</b>
   <br><font color="#A52A2A"><b>A. Mootoovaloo</b></font>, J. Ruiz-Zapatero, C. García-García, D. Alonso
@@ -33,16 +42,12 @@ We assess the usefulness of gradient-based samplers, such as the No-U-Turn Sampl
   </li>
   <p align="justify">We present LimberJack.jl, a fully auto-differentiable code for cosmological analyses of 2 point auto- and cross-correlation measurements from galaxy clustering, CMB lensing and weak lensing data written in Julia. Using Julia's auto-differentiation ecosystem, LimberJack.jl can obtain gradients for its outputs up to an order of magnitude faster than traditional finite difference methods. This makes LimberJack.jl greatly synergistic with gradient-based sampling methods, such as Hamiltonian Monte Carlo, capable of efficiently exploring parameter spaces with hundreds of dimensions. We first prove LimberJack.jl's reliability by reanalysing the DES Y1 $3\times 2$-point data. We then showcase its capabilities by using a $\mathcal{O}(100)$ parameters Gaussian Process to reconstruct the cosmic growth from a combination of DES Y1 galaxy clustering and weak lensing data, eBOSS QSO's, CMB lensing and redshift-space distortions. Our Gaussian process reconstruction of the growth factor is statistically consistent with the $\Lambda$CDM Planck 2018 prediction at all redshifts. Moreover, we show that the addition of RSD data is extremely beneficial to this type of analysis, reducing the uncertainty in the reconstructed growth factor by $20\%$ on average across redshift. LimberJack.jl is a fully open-source project available on Julia's general repository of packages and GitHub.</p>
 
-
   <li>
   <p><b>Extreme data compression for Bayesian model comparison</b>
   <br>Alan F. Heavens, <font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Roberto Trotta, Elena Sellentin
   <br><a href="https://iopscience.iop.org/article/10.1088/1475-7516/2023/11/048/pdf">JCAP</a>, <a href="https://arxiv.org/abs/2306.15998">arXiv:2306.15998</a></p>
   </li>
   <p align="justify">We develop extreme data compression for use in Bayesian model comparison via the MOPED algorithm, as well as more general score compression. We find that Bayes factors from data compressed with the MOPED algorithm are identical to those from their uncompressed datasets when the models are linear and the errors Gaussian. In other nonlinear cases, whether nested or not, we find negligible differences in the Bayes factors, and show this explicitly for the Pantheon-SH0ES supernova dataset. We also investigate the sampling properties of the Bayesian Evidence as a frequentist statistic, and find that extreme data compression reduces the sampling variance of the Evidence, but has no impact on the sampling distribution of Bayes factors. Since model comparison can be a very computationally-intensive task, MOPED extreme data compression may present significant advantages in computational time.</p>
-
-
-
 
   <li>
   <p><b>Analytical marginalisation over photometric redshift uncertainties in cosmic shear analyses</b>
@@ -51,15 +56,12 @@ We assess the usefulness of gradient-based samplers, such as the No-U-Turn Sampl
   </li>
   <p align="justify">As the statistical power of imaging surveys grows, it is crucial to account for all systematic uncertainties. This is normally done by constructing a model of these uncertainties and then marginalizing over the additional model parameters. The resulting high dimensionality of the total parameter spaces makes inferring the cosmological parameters significantly more costly using traditional Monte-Carlo sampling methods. A particularly relevant example is the redshift distribution, $p(z)$, of the source samples, which may require tens of parameters to describe fully. However, relatively tight priors can be usually placed on these parameters through calibration of the associated systematics. In this paper we show, quantitatively, that a linearisation of the theoretical prediction with respect to these calibratable systematic parameters allows us to analytically marginalise over these extra parameters, leading to a factor $\sim 30$ reduction in the time needed for parameter inference, while accurately recovering the same posterior distributions for the cosmological parameters that would be obtained through a full numerical marginalisation over $160\; p(z)$ parameters. We demonstrate that this is feasible not only with current data and current achievable calibration priors but also for future Stage-IV datasets.</p>
 
-
-
   <li>
   <p><b>Fast Approximate Model for the 3D Matter Power Spectrum</b>
   <br><font color="#A52A2A"><b>Arrykrishna Mootoovaloo</b></font>, Andrew Jaffe, Alan Heavens, Florent Leclercq
   <br>Accepted for publication in NeurIPS 2021</p>
   </li>
   <p align="justify">Many Bayesian inference problems in cosmology involve complex models. Despite the fact that these models have been meticulously designed, they can lead to intractable likelihood and each forward simulation itself can be computationally expensive, thus making the inverse problem of learning the model parameters a challenging task. In this paper, we develop an approximate model for the 3D matter power spectrum, $P_{\delta}(k,z)$, which is a central quantity in a weak lensing analysis. An important output of this approximate model, often referred to as surrogate model or emulator, are the first and second derivatives with respect to the input cosmological parameters. Without the emulator, the calculation of the derivatives requires multiple calls of the simulator, that is, the accurate Boltzmann solver, CLASS. We illustrate the application of the emulator in the calculation of different weak lensing and intrinsic alignment power spectra and we also demonstrate its performance on a toy simulated weak lensing dataset.</p>
-
 
   <li>
   <p><b>Kernel-Based Emulator for the 3D Matter Power Spectrum from CLASS</b>
